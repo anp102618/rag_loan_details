@@ -1,0 +1,10 @@
+[2026-04-10 16:31:00,449] [TRACE:CHAT-CE81BEE8] [pipeline.run:45] INFO - [START] Pipeline execution | trace_id=CHAT-CE81BEE8
+[2026-04-10 16:31:00,449] [TRACE:CHAT-CE81BEE8] [pipeline.run:48] INFO - [STEP 1] Normalizing query
+[2026-04-10 16:31:00,449] [TRACE:CHAT-CE81BEE8] [pipeline.run:52] INFO - [STEP 2] Generating query embedding
+[2026-04-10 16:31:00,534] [TRACE:CHAT-CE81BEE8] [logger_setup.async_wrapper:101] INFO - Executed async 'embed' in 0.0822s | Mem: 55.32KB (Peak: 27620.44KB)
+[2026-04-10 16:31:00,534] [TRACE:CHAT-CE81BEE8] [pipeline.run:61] INFO - [STEP 3] Retrieving relevant context from FAISS
+[2026-04-10 16:31:00,540] [TRACE:CHAT-CE81BEE8] [logger_setup.async_wrapper:101] INFO - Executed async 'search' in 0.0037s | Mem: 0.86KB (Peak: 27620.44KB)
+[2026-04-10 16:31:00,540] [TRACE:CHAT-CE81BEE8] [pipeline.run:66] INFO - [STEP 3] Context built | chunks=5 | chars=3353
+[2026-04-10 16:31:00,540] [TRACE:CHAT-CE81BEE8] [pipeline.run:69] INFO - [STEP 4] Querying LLM for final answer
+[2026-04-10 16:31:32,820] [TRACE:CHAT-CE81BEE8] [logger_setup.async_wrapper:101] INFO - Executed async 'generate' in 32.2788s | Mem: -44.51KB (Peak: 27620.44KB)
+[2026-04-10 16:31:33,182] [TRACE:CHAT-CE81BEE8] [pipeline.run:82] INFO - [SUCCESS] Pipeline complete | trace_id=CHAT-CE81BEE8

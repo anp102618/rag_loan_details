@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+.env
+
+# Database & Migrations
+*.db
+*.sqlite3
+migrations/versions/*.pyc
+
+# Local Data & Search Indices
+Data/
+index.faiss
+index.pkl
