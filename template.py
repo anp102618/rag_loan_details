@@ -25,6 +25,8 @@ list_of_files = [
     "src/Users/models.py",
     "src/Users/routes.py",
     "src/Users/helpers.py",
+    "src/Users/schemas.py",
+    "src/Users/auth.py",
 
     "src/Utils/__init__.py",
     "src/Utils/logger_setup.py",
@@ -34,6 +36,7 @@ list_of_files = [
     "src/RAG/__init__.py",
     "src/RAG/models.py",
     "src/RAG/routes.py",
+    "src/RAG/app_state.py",
     "src/RAG/Utils/__init__.py",
     "src/RAG/Utils/circuit_breaker.py",
     "src/RAG/Utils/rate_limiter.py",

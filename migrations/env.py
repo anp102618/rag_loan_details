@@ -7,9 +7,11 @@ from sqlalchemy.ext.asyncio import async_engine_from_config
 
 from alembic import context
 
+# --- IMPORT YOUR STUFF HERE ---
 from sqlmodel import SQLModel 
 from src.config import config as app_config
-from src.RAG.models import QueryState # Import all models here
+from src.RAG.models import QueryState, Conversation
+from src.Users.models import User # Import all models here
 # ------------------------------
 
 config = context.config
@@ -23,6 +25,11 @@ target_metadata = SQLModel.metadata
 
 # SET DATABASE URL FROM YOUR CONFIG
 config.set_main_option("sqlalchemy.url", app_config.DATABASE_URL)
+
+# other values from the config, defined by the needs of env.py,
+# can be acquired:
+# my_important_option = config.get_main_option("my_important_option")
+# ... etc.
 
 
 def run_migrations_offline() -> None:

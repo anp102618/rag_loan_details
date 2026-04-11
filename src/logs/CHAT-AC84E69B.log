@@ -1,0 +1,9 @@
+[2026-04-11 18:01:39,789] [TRACE:CHAT-AC84E69B] [pipeline.run:42] INFO - Starting RAG flow for CHAT-AC84E69B
+[2026-04-11 18:01:39,796] [TRACE:CHAT-AC84E69B] [logger_setup.async_wrapper:101] INFO - Executed async 'get_stm' in 0.0033s | Mem: 19.48KB (Peak: 51479.66KB)
+[2026-04-11 18:01:39,796] [TRACE:CHAT-AC84E69B] [logger_setup.async_wrapper:101] INFO - Executed async 'get_ltm' in 0.0027s | Mem: 5.17KB (Peak: 51487.58KB)
+[2026-04-11 18:01:39,796] [TRACE:CHAT-AC84E69B] [pipeline.run:48] INFO - Memory fetched successfully
+[2026-04-11 18:01:42,532] [TRACE:CHAT-AC84E69B] [logger_setup.async_wrapper:101] INFO - Executed async 'embed' in 2.7353s | Mem: 38.68KB (Peak: 51541.85KB)
+[2026-04-11 18:01:42,545] [TRACE:CHAT-AC84E69B] [logger_setup.async_wrapper:101] INFO - Executed async 'search' in 0.0133s | Mem: 0.18KB (Peak: 51541.85KB)
+[2026-04-11 18:02:02,979] [TRACE:CHAT-AC84E69B] [logger_setup.async_wrapper:101] INFO - Executed async 'generate' in 20.4301s | Mem: 13.75KB (Peak: 51596.17KB)
+[2026-04-11 18:02:12,018] [TRACE:CHAT-AC84E69B] [logger_setup.async_wrapper:101] INFO - Executed async 'update_ltm' in 9.0361s | Mem: 8.39KB (Peak: 51596.17KB)
+[2026-04-11 18:02:12,035] [TRACE:CHAT-AC84E69B] [pipeline.run:103] INFO - RAG flow completed successfully

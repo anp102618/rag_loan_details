@@ -1,0 +1,4 @@
+[2026-04-11 13:49:30,436] [TRACE:CHAT-50C33BFB] [pipeline.run:38] INFO - Starting RAG flow for CHAT-50C33BFB
+[2026-04-11 13:49:33,402] [TRACE:CHAT-50C33BFB] [logger_setup.async_wrapper:101] INFO - Executed async 'embed' in 2.9620s | Mem: -30.41KB (Peak: 50242.07KB)
+[2026-04-11 13:49:33,416] [TRACE:CHAT-50C33BFB] [logger_setup.async_wrapper:101] INFO - Executed async 'search' in 0.0127s | Mem: 0.25KB (Peak: 50242.07KB)
+[2026-04-11 13:49:59,596] [TRACE:CHAT-50C33BFB] [logger_setup.async_wrapper:101] INFO - Executed async 'generate' in 26.1812s | Mem: 15.01KB (Peak: 50242.07KB)

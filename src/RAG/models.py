@@ -1,40 +1,88 @@
 from typing import Optional, Any, List
 from datetime import datetime, timezone
 from sqlmodel import SQLModel, Field as SQLField
-from sqlalchemy import Column
+from sqlalchemy import Column, Text, Index
 from sqlalchemy.dialects.postgresql import JSONB
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field as PydanticField
+import uuid
 
-# 1. Database Model (SQLModel)
+
+# =========================
+# Conversation Model
+# =========================
+class Conversation(SQLModel, table=True):
+    __tablename__ = "conversation"
+
+    id: str = SQLField(
+        default_factory=lambda: str(uuid.uuid4()),
+        primary_key=True,
+        index=True
+    )
+
+    user_id: int = SQLField(
+        foreign_key="users.user_id",
+        nullable=False,
+        index=True
+    )
+
+    created_at: datetime = SQLField(default_factory=lambda: datetime.now(timezone.utc).replace(tzinfo=None))
+
+
+# =========================
+# Query State Model
+# =========================
 class QueryState(SQLModel, table=True):
     __tablename__ = "query_states"
 
-    trace_id: str = SQLField(primary_key=True, index=True)
+    __table_args__ = (
+        Index("idx_conversation_sequence", "conversation_id", "sequence_id"),
+    )
+
+    trace_id: str = SQLField(
+        default_factory=lambda: str(uuid.uuid4()),
+        primary_key=True,
+        index=True
+    )
+
+    conversation_id: str = SQLField(
+        foreign_key="conversation.id",   # ✅ FIXED
+        nullable=False,
+        index=True
+    )
+
+    user_id: int = SQLField(nullable=False)
+
+    sequence_id: int = SQLField(nullable=False)
+
     query: str
+
     answer: Optional[str] = None
 
-    logs: Any = SQLField(
+    retrieved_chunks: Optional[str] = SQLField(
+        default=None,
+        sa_column=Column(Text)
+    )
+
+    memory: Optional[str] = SQLField(
+        default=None,
+        sa_column=Column(Text)
+    )
+    
+    logs: List[Any] = SQLField(
         default_factory=list,
-        sa_column=Column(JSONB, nullable=False)
+        sa_column=Column(JSONB)
     )
 
-    created_at: datetime = SQLField(
-        default_factory=lambda: datetime.now(timezone.utc).replace(tzinfo=None),
-        nullable=False
-    )
+    created_at: datetime = SQLField(default_factory=lambda: datetime.now(timezone.utc).replace(tzinfo=None))
 
-# 2. API Request Model (Pydantic)
+# =========================
+# API Schemas
+# =========================
 class ChatRequest(BaseModel):
-    query: str = Field(
-        ..., 
-        min_length=1, 
-        max_length=1000, 
-        description="The user's question or search query.",
-        # Use json_schema_extra for Pydantic v2 compatibility
-        json_schema_extra={"example": "What is the total revenue mentioned in the PDF?"}
-    )
+    conversation_id: str
+    query: str = PydanticField(..., min_length=1, max_length=1000)
 
-# 3. API Response Model (Pydantic)
+
 class ChatResponse(BaseModel):
     trace_id: str
     query: str

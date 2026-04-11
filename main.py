@@ -1,138 +1,126 @@
-import asyncio
+from fastapi import FastAPI
 from contextlib import asynccontextmanager
-from fastapi import FastAPI, Depends, HTTPException
-from sqlalchemy.ext.asyncio import AsyncSession
-from src.RAG.models import QueryState
-from sqlalchemy import select
 
-# Service Imports
+# Services
 from src.RAG.Service.extractor import PDFIngestor
 from src.RAG.Service.chunker import Chunker
 from src.RAG.Service.embedder import OllamaEmbeddings
 from src.RAG.Service.retriever import FaissVectorStore
 from src.RAG.Service.generator import Generator
 from src.RAG.Service.pipeline import RAGPipeline
+from src.RAG.Service.normalizer import Normalizer
+from src.RAG.Utils.memory import MemoryManager
 
-# Model and DB Imports
-from src.RAG.models import ChatRequest, ChatResponse
-from src.db.main import get_session 
+# Utils
 from src.Utils.logger_setup import get_log
+from src.Utils.exception_handler import CustomException
 
-# Global container for singleton RAG components
-rag_container = {}
+from src.RAG.app_state import rag_container
+
+# Routers
+from src.RAG.routes import router as chat_router
+from src.Users.routes import router as auth_router
+
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
-    """
-    Handles server startup:
-    1. Initializes all RAG services.
-    2. Ingests, chunks, and embeds PDFs from the data directory.
-    3. Builds the Vector Store index in memory.
-    """
-    logger = get_log() 
+    logger = get_log()
     logger.info("[STARTUP] Initializing RAG Components...")
 
     try:
-        # 1. Initialize Worker Instances
-        ingestor = PDFIngestor()
-        chunker = Chunker(chunk_size=800, chunk_overlap=150)
-        embedder = OllamaEmbeddings(model="nomic-embed-text")
-        generator = Generator(model="qwen2.5:7b")
-        
-        # 2. Ingest initial documents
-        raw_docs = await ingestor.load_pdfs("./Data")
-        text_chunks = chunker.chunk(raw_docs)
-        
-        # 3. Setup Vector Store (nomic-embed-text dimensionality is 768)
-        vector_store = FaissVectorStore(dim=768)
-        
-        if text_chunks:
-            logger.info(f"[STARTUP] Embedding {len(text_chunks)} chunks...")
-            embeddings = await embedder.embed(text_chunks)
-            await vector_store.add(embeddings, text_chunks)
-        
-        # 4. Initialize the Orchestrator
-        rag_container["pipeline"] = RAGPipeline(
-            embedder=embedder,
-            vectorstore=vector_store,
-            generator=generator
-        )
-        
-        logger.info("[STARTUP] RAG Engine Online and Ready.")
+        # =========================
+        # 1. Initialize Services
+        # =========================
+        try:
+            ingestor = PDFIngestor()
+            chunker = Chunker(chunk_size=500, chunk_overlap=100)
+            embedder = OllamaEmbeddings(model="nomic-embed-text")
+            generator = Generator(model="qwen2.5:7b")
+            normalizer = Normalizer()
+            memory_manager = MemoryManager(stm_k=3, max_memory_chars=1000)
+
+            logger.info("Services initialized")
+
+        except Exception as e:
+            raise CustomException(e, logger=logger)
+
+        # =========================
+        # 2. Load Documents
+        # =========================
+        try:
+            raw_docs = await ingestor.load_pdfs("./Data")
+
+            if not raw_docs:
+                logger.warning("No PDFs found in ./Data")
+
+        except Exception as e:
+            raise CustomException(e, logger=logger)
+
+        # =========================
+        # 3. Chunking
+        # =========================
+        try:
+            text_chunks = chunker.chunk(raw_docs) if raw_docs else []
+
+        except Exception as e:
+            raise CustomException(e, logger=logger)
+
+        # =========================
+        # 4. Vector Store Setup
+        # =========================
+        try:
+            vector_store = FaissVectorStore(dim=768)
+
+            if text_chunks:
+                logger.info(f"Embedding {len(text_chunks)} chunks...")
+
+                embeddings = await embedder.embed(text_chunks)
+                await vector_store.add(embeddings, text_chunks)
+
+            else:
+                logger.warning("Vector store initialized empty")
+
+        except Exception as e:
+            raise CustomException(e, logger=logger)
+
+        # =========================
+        # 5. Pipeline Assembly
+        # =========================
+        try:
+            rag_container["pipeline"] = RAGPipeline(
+                embedder=embedder,
+                vectorstore=vector_store,
+                generator=generator,
+                normalizer=normalizer,
+                memory_manager=memory_manager
+            )
+
+            logger.info("RAG Engine Ready ")
+
+        except Exception as e:
+            raise CustomException(e, logger=logger)
+
         yield
+
+    except CustomException:
+        # Already logged → just propagate
+        raise
+
     except Exception as e:
-        logger.error(f"[STARTUP-FAILED] {str(e)}")
-        raise e
+        # Catch any unknown failure
+        raise CustomException(e, logger=logger)
+
     finally:
-        logger.info("[SHUTDOWN] Releasing RAG resources.")
-        rag_container.clear()
+        logger.info("Shutting down cleanup...")
+        rag_container["pipeline"] = None
+
 
 app = FastAPI(
     title="Local RAG API",
-    description="Asynchronous RAG Pipeline using Ollama and FAISS",
+    description="Async RAG Pipeline using Ollama + FAISS",
+    version="1.0.0",
     lifespan=lifespan
 )
 
-# --- Endpoints ---
-
-@app.post("/chat", response_model=ChatResponse)
-async def chat_endpoint(
-    request: ChatRequest, 
-    db: AsyncSession = Depends(get_session)
-):
-    """
-    Primary chat endpoint:
-    - Validates input via ChatRequest model.
-    - Runs the full RAG pipeline (Normalize -> Embed -> Retrieve -> Generate).
-    - Persists query state and logs to Postgres via SQLAlchemy.
-    - Returns structured ChatResponse.
-    """
-    pipeline: RAGPipeline = rag_container.get("pipeline")
-    
-    if not pipeline:
-        raise HTTPException(
-            status_code=503, 
-            detail="Pipeline not initialized. Check server startup logs."
-        )
-
-    try:
-        # Pass the Pydantic request object to the pipeline
-        query_state = await pipeline.run(request, db)
-        
-        # Explicitly map the SQLModel 'QueryState' result to 'ChatResponse'
-        return ChatResponse(
-            trace_id=query_state.trace_id,
-            query=query_state.query,
-            answer=query_state.answer or "No response generated.",
-            status="success"
-        )
-
-    except Exception as e:
-        # Pipeline errors are caught and logged; this re-raises for the API client
-        raise HTTPException(
-            status_code=500, 
-            detail=f"Internal Pipeline Error: {str(e)}"
-        )
-    
-
-
-@app.get("/trace/{trace_id}")
-async def get_trace_logs(trace_id: str, db: AsyncSession = Depends(get_session)):
-    """
-    Retrieves the full record, including JSONB logs, for a specific query.
-    """
-    result = await db.execute(
-        select(QueryState).where(QueryState.trace_id == trace_id)
-    )
-    state = result.scalar_one_or_none()
-    
-    if not state:
-        raise HTTPException(status_code=404, detail="Trace ID not found")
-        
-    return {
-        "trace_id": state.trace_id,
-        "query": state.query,
-        "answer": state.answer,
-        "created_at": state.created_at,
-        "logs": state.logs  # This returns your captured internal steps
-    }
+app.include_router(chat_router, prefix="/chat", tags=["Chat"])
+app.include_router(auth_router, prefix="/auth", tags=["Auth"])
