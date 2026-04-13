@@ -37,6 +37,7 @@ list_of_files = [
     "src/RAG/models.py",
     "src/RAG/routes.py",
     "src/RAG/app_state.py",
+    "src/RAG/Strategies/__init__.py",
     "src/RAG/Utils/__init__.py",
     "src/RAG/Utils/circuit_breaker.py",
     "src/RAG/Utils/rate_limiter.py",

@@ -9,8 +9,9 @@ from alembic import context
 
 # --- IMPORT YOUR STUFF HERE ---
 from sqlmodel import SQLModel 
+import pgvector.sqlalchemy
 from src.config import config as app_config
-from src.RAG.models import QueryState, Conversation
+from src.RAG.models import QueryState, Conversation, ChunkModel
 from src.Users.models import User # Import all models here
 # ------------------------------
 

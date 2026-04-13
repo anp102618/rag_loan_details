@@ -1,0 +1,968 @@
+[
+    {
+        "section_id": "S001",
+        "section_name": "SecureSave Loan Against Approved Securities (SLAAS)",
+        "topic_id": "S001_T001",
+        "topic_name": "Product Overview",
+        "merged_content": "SecureSave Loan Against Approved Securities (SLAAS) is a secured credit facility offered to resident individuals against the pledge or assignment of approved financial securities such as National Savings Certificates (NSC), Kisan Vikas Patra (KVP), Life Insurance Policies, and Government/Relief Bonds . The product is designed to meet both productive financial needs and personal contingency requirements , while ensuring safety of funds through high-quality collateral."
+    },
+    {
+        "section_id": "S001",
+        "section_name": "SecureSave Loan Against Approved Securities (SLAAS)",
+        "topic_id": "S001_T002",
+        "topic_name": "Nature of Facility",
+        "merged_content": "The facility is available in the form of Demand Loan, Term Loan, or Overdraft . The loan is generally sanctioned for a period of 12 months , subject to annual review , and may continue up to the maturity of the underlying security in case of overdraft facilities."
+    },
+    {
+        "section_id": "S001",
+        "section_name": "SecureSave Loan Against Approved Securities (SLAAS)",
+        "topic_id": "S001_T003",
+        "topic_name": "Eligibility",
+        "merged_content": "The facility is available to resident individuals aged 21 years and above . Advances to third parties are strictly not permitted ."
+    },
+    {
+        "section_id": "S001",
+        "section_name": "SecureSave Loan Against Approved Securities (SLAAS)",
+        "topic_id": "S001_T004",
+        "topic_name": "Eligible Securities",
+        "merged_content": "Loans can be availed against the following approved securities:  National Savings Certificates (NSC)  Kisan Vikas Patra (KVP)  Life Insurance Policies (including policies issued by private insurance companies, subject to eligibility norms)  Relief Bonds and other eligible Government Bonds Only securities that are free from encumbrance and eligible for bank finance are accepted."
+    },
+    {
+        "section_id": "S001",
+        "section_name": "SecureSave Loan Against Approved Securities (SLAAS)",
+        "topic_id": "S001_T005",
+        "topic_name": "Margin Requirements",
+        "merged_content": "The margin depends on the residual maturity period of the security:  NSC / KVP / Government Bonds o 15% of face value if residual maturity is less than 3 years o 20% of face value if residual maturity is 3 years or more  Life Insurance Policies o 15% of surrender value if maturity is within 3 years o 20% of surrender value if maturity is 3 years or more For staff borrowers against NSC, a concessional margin of 10% of face value applies."
+    },
+    {
+        "section_id": "S001",
+        "section_name": "SecureSave Loan Against Approved Securities (SLAAS)",
+        "topic_id": "S001_T006",
+        "topic_name": "Loan Amount",
+        "merged_content": " Minimum Amount o Loan: ₹3,000 o Overdraft: ₹20,000  Maximum Amount o Generally no ceiling , subject to value of security and repayment capacity o For KVP-based advances, up to ₹1.00 lakh may be sanctioned at branch level; higher limits require approval of higher authorities o For staff borrowers, the maximum is limited to five times gross salary"
+    },
+    {
+        "section_id": "S001",
+        "section_name": "SecureSave Loan Against Approved Securities (SLAAS)",
+        "topic_id": "S001_T007",
+        "topic_name": "Purpose of Loan",
+        "merged_content": "The loan may be used for productive purposes or for meeting personal contingency needs , excluding any speculative activities ."
+    },
+    {
+        "section_id": "S001",
+        "section_name": "SecureSave Loan Against Approved Securities (SLAAS)",
+        "topic_id": "S001_T008",
+        "topic_name": "Rate of Interest",
+        "merged_content": "Interest rates are linked to the Benchmark Prime Lending Rate (BPLR) or the interest rate of the underlying security , whichever is higher, and are charged with monthly rests .  Loans o Generally 0.5% below BPLR or 0.5% over the security’s interest rate , whichever is higher  Overdrafts o At BPLR (presently 14.00%) or 0.75% over the security’s interest rate , whichever is higher For staff borrowers against NSC, interest is charged at 0.5% over the NSC rate . Where multiple securities with different interest rates are pledged, the weighted average method is applied."
+    },
+    {
+        "section_id": "S001",
+        "section_name": "SecureSave Loan Against Approved Securities (SLAAS)",
+        "topic_id": "S001_T009",
+        "topic_name": "Processing Charges",
+        "merged_content": " Public Customers : ₹100 flat plus out-of-pocket expenses, actual conveyance charges, and applicable service tax  Staff Borrowers : Nil"
+    },
+    {
+        "section_id": "S001",
+        "section_name": "SecureSave Loan Against Approved Securities (SLAAS)",
+        "topic_id": "S001_T010",
+        "topic_name": "Repayment Terms",
+        "merged_content": " Loans o Repayment in maximum 35 EMIs (60 EMIs in case of life insurance policies) or within the maturity period of the security , whichever is earlier o Alternatively, repayment of principal and interest may be made out of maturity proceeds , subject to a minimum margin of 20%  Overdrafts o Valid till maturity of the security o If monthly credit turnover is insufficient to cover interest debited, interest is recovered separately"
+    },
+    {
+        "section_id": "S001",
+        "section_name": "SecureSave Loan Against Approved Securities (SLAAS)",
+        "topic_id": "S001_T011",
+        "topic_name": "Security and Documentation",
+        "merged_content": "Depending on the security offered, documentation includes:  Demand Promissory Note (DPN)  Letter of Pledge of Security (LDOC-11)  Take Delivery Letter (LDOC-60)  Letter of Installments with acceleration clause (LDOC-57) for loans  Letter of Continuing Security (LDOC-7) for overdrafts  Assignment of Life Insurance Policies in bank’s favour (LDOC-84)  Pledge and lien marking on NSC/KVP with the issuing Post Office  Notice to RBI / issuing authority for Government Bonds All securities must be duly discharged , and lien or assignment must be noted before disbursement ."
+    },
+    {
+        "section_id": "S001",
+        "section_name": "SecureSave Loan Against Approved Securities (SLAAS)",
+        "topic_id": "S001_T012",
+        "topic_name": "Lien and Assignment Procedure",
+        "merged_content": " NSC/KVP : Lien is registered with the issuing Post Office. Certificates are not transferred in the bank’s name but marked as pledged.  Life Insurance Policies : Policies must be assigned in favour of the bank and registered with the insurance company.  Government Bonds : Lien or transfer is registered with RBI or the issuing bank, depending on whether bonds are held in physical or ledger form. Borrowers are never entrusted with lien or assignment formalities."
+    },
+    {
+        "section_id": "S001",
+        "section_name": "SecureSave Loan Against Approved Securities (SLAAS)",
+        "topic_id": "S001_T013",
+        "topic_name": "Special Conditions for Life Insurance Policies",
+        "merged_content": "Only eligible policies such as endowment policies in force for at least three years are accepted. Policies such as Whole Life Policies, policies under the Married Women’s Property Act, or policies assigned to minors are not eligible. Premium payment must be kept up to date, and branches must obtain standing instructions for premium payment."
+    },
+    {
+        "section_id": "S001",
+        "section_name": "SecureSave Loan Against Approved Securities (SLAAS)",
+        "topic_id": "S001_T014",
+        "topic_name": "Discretionary Lending Powers",
+        "merged_content": "Sanctioning authority is based on the fund-based lending powers of the approving official, taking into account the purpose of the advance, value of security, and repayment capacity of the borrower."
+    },
+    {
+        "section_id": "S001",
+        "section_name": "SecureSave Loan Against Approved Securities (SLAAS)",
+        "topic_id": "S001_T015",
+        "topic_name": "Summary",
+        "merged_content": "SecureSave Loan Against Approved Securities provides a flexible, low-risk borrowing option by unlocking the value of trusted savings instruments. With competitive interest rates, simple repayment options, and strong collateral security, the product serves as a reliable financing solution for individuals seeking liquidity without liquidating long-term investments."
+    },
+    {
+        "section_id": "S002",
+        "section_name": "DriveSure Auto Loan (DAL)",
+        "topic_id": "S002_T001",
+        "topic_name": "Product Overview",
+        "merged_content": "DriveSure Auto Loan (DAL) is a secured retail lending product designed to finance the purchase of new and pre-owned private vehicles , two-wheelers , and eco-friendly CNG/LPG gas kits , as well as to facilitate takeover of existing vehicle loans from other banks . The product is intended exclusively for non-commercial, private use and provides structured repayment options, competitive interest rates, and comprehensive risk-mitigation through defined eligibility, margin, documentation, and vigilance norms."
+    },
+    {
+        "section_id": "S002",
+        "section_name": "DriveSure Auto Loan (DAL)",
+        "topic_id": "S002_T002",
+        "topic_name": "Nature of Facility",
+        "merged_content": "The facility is extended strictly in the form of a Term Loan ."
+    },
+    {
+        "section_id": "S002",
+        "section_name": "DriveSure Auto Loan (DAL)",
+        "topic_id": "S002_T003",
+        "topic_name": "Purpose of Loan",
+        "merged_content": "The loan may be availed for the purchase of new four-wheelers such as cars, jeeps, and station wagons for private use; old four-wheelers not more than three years old ; new two- wheelers ; installation of CNG/LPG gas kits in new or eligible old vehicles; and takeover of existing car loans from other banks. Vehicles financed under this scheme must not be registered or used as commercial vehicles."
+    },
+    {
+        "section_id": "S002",
+        "section_name": "DriveSure Auto Loan (DAL)",
+        "topic_id": "S002_T004",
+        "topic_name": "Eligibility",
+        "merged_content": "The facility is available to resident individuals including salaried employees, businessmen, professionals, farmers, proprietors, partners of firms, directors of companies, and high-net- worth individuals (HNIs) . HNIs must have a minimum monthly salary of ₹1.25 lakh with at least 40% take-home salary, or an annual income of ₹15 lakh in case of businesspersons or farmers. Corporates , including partnership firms and private/public limited companies, are also eligible subject to a minimum tangible net worth of ten times the loan amount . Eligible staff members may avail the facility under the public scheme, subject to vigilance clearance and applicable approvals."
+    },
+    {
+        "section_id": "S002",
+        "section_name": "DriveSure Auto Loan (DAL)",
+        "topic_id": "S002_T005",
+        "topic_name": "Co-Borrower Conditions",
+        "merged_content": "A co-borrower may be added to enhance loan eligibility. The co-borrower must be 18 years or above and must be a close family member , namely spouse, parents, children, siblings, or specified in-laws. Where the income of the co-borrower is considered, its sustainability and continuity must be independently assessed. The vehicle shall be registered only in the name of the primary borrower ."
+    },
+    {
+        "section_id": "S002",
+        "section_name": "DriveSure Auto Loan (DAL)",
+        "topic_id": "S002_T006",
+        "topic_name": "Age Criteria",
+        "merged_content": "The minimum age of the applicant is 21 years and of the co-applicant 18 years . The maximum age , including the repayment period, shall not exceed 70 years . Where the applicant’s age exceeds retirement age (for salaried borrowers) or 65 years (for others), addition of a co-borrower, preferably a family member, is generally required."
+    },
+    {
+        "section_id": "S002",
+        "section_name": "DriveSure Auto Loan (DAL)",
+        "topic_id": "S002_T007",
+        "topic_name": "Loan Amount",
+        "merged_content": "The maximum loan amount is ₹100 lakh for HNIs and corporates. For other borrowers, the maximum loan amount is ₹15 lakh for new vehicles , ₹10 lakh for old vehicles , ₹1 lakh for two-wheelers , and ₹0.25 lakh for gas kits . The eligible amount is further restricted to 24 times gross monthly income for salaried borrowers and three times average gross annual income of the last two years for others. In takeover cases, the loan amount shall be limited to the outstanding balance or 85% of the on-road price , whichever is lower."
+    },
+    {
+        "section_id": "S002",
+        "section_name": "DriveSure Auto Loan (DAL)",
+        "topic_id": "S002_T008",
+        "topic_name": "Margin Requirements",
+        "merged_content": "The margin is 15% of on-road price for loans up to ₹15 lakh and 20% for loans above ₹15 lakh. For old vehicles, a margin of 40% of agreed sale price is stipulated. Gas kits require a margin of 15% , and two-wheelers require 10% margin on invoice value. Dealer advances are treated as margin only after due verification."
+    },
+    {
+        "section_id": "S002",
+        "section_name": "DriveSure Auto Loan (DAL)",
+        "topic_id": "S002_T009",
+        "topic_name": "Repayment Capacity",
+        "merged_content": "Total deductions including the proposed EMI shall not exceed 50% of gross monthly income for income up to ₹20,000, 60% for income above ₹20,000 and up to ₹1 lakh, and 70% for income exceeding ₹1 lakh per month."
+    },
+    {
+        "section_id": "S002",
+        "section_name": "DriveSure Auto Loan (DAL)",
+        "topic_id": "S002_T010",
+        "topic_name": "Rate of Interest",
+        "merged_content": "Interest is charged with reference to the Base Rate .  Car Loans are priced at Base Rate + 0.25%  Two-Wheeler Loans are priced at Base Rate + 4.00%  Staff / Ex-staff borrowers under the public scheme are charged at Base Rate"
+    },
+    {
+        "section_id": "S002",
+        "section_name": "DriveSure Auto Loan (DAL)",
+        "topic_id": "S002_T011",
+        "topic_name": "Interest Concessions",
+        "merged_content": "A concession of up to 0.25% is available on car loans where the borrower offers minimum 50% of the loan amount as liquid collateral such as fixed deposits, NSC, KVP, or life insurance policies. A further 0.25% concession is available to existing home loan borrowers with a clean repayment track record. In all cases, the effective rate of interest shall not fall below the Base Rate ."
+    },
+    {
+        "section_id": "S002",
+        "section_name": "DriveSure Auto Loan (DAL)",
+        "topic_id": "S002_T012",
+        "topic_name": "Repayment Period",
+        "merged_content": "The maximum repayment period is 84 months for new cars , 36 months for old cars , 24 months for standalone gas kit loans , and 60 months for two-wheelers . In case of loan takeovers, the combined tenure of the previous lender and this bank shall not exceed 84 months ."
+    },
+    {
+        "section_id": "S002",
+        "section_name": "DriveSure Auto Loan (DAL)",
+        "topic_id": "S002_T013",
+        "topic_name": "Security",
+        "merged_content": "The primary security is hypothecation of the vehicle . The bank’s charge must be registered with the RTO , and in case of corporate borrowers, also with the Registrar of Companies . Additional collateral or guarantees may be stipulated based on credit risk assessment."
+    },
+    {
+        "section_id": "S002",
+        "section_name": "DriveSure Auto Loan (DAL)",
+        "topic_id": "S002_T014",
+        "topic_name": "Insurance",
+        "merged_content": "All vehicles financed under the scheme must be covered by comprehensive insurance with the Bank’s clause . In the case of second-hand vehicles, the existing insurance policy must be transferred in the borrower’s name with appropriate endorsement."
+    },
+    {
+        "section_id": "S002",
+        "section_name": "DriveSure Auto Loan (DAL)",
+        "topic_id": "S002_T015",
+        "topic_name": "Processing Charges",
+        "merged_content": "A one-time processing charge of 0.50% of the loan amount (maximum ₹10,000) applies for car loans, and 2% of loan amount (minimum ₹250) for two-wheeler loans, plus applicable taxes. No pre-closure charges are levied."
+    },
+    {
+        "section_id": "S002",
+        "section_name": "DriveSure Auto Loan (DAL)",
+        "topic_id": "S002_T016",
+        "topic_name": "Documentation & Vigilance",
+        "merged_content": "Standard documentation includes Demand Promissory Note, hypothecation agreement, installment letter with acceleration clause, RTO endorsement, insurance documents, guarantees (if any), and collateral documents . Strict compliance with KYC norms, credit bureau checks, pre-sanction and post-sanction inspections, dealer verification, controlled disbursement through banker’s cheques, and periodic asset verification is mandatory."
+    },
+    {
+        "section_id": "S002",
+        "section_name": "DriveSure Auto Loan (DAL)",
+        "topic_id": "S002_T017",
+        "topic_name": "Credit Rating & Sanction",
+        "merged_content": "Borrowers must meet the minimum credit rating cut-off score of 30 (CL-7 and above) under the Clean Loan Rating Model. Sanctions and deviations are governed by the discretionary lending powers of the competent authority and approved deviation guidelines."
+    },
+    {
+        "section_id": "S002",
+        "section_name": "DriveSure Auto Loan (DAL)",
+        "topic_id": "S002_T018",
+        "topic_name": "Summary",
+        "merged_content": "DriveSure Auto Loan provides a structured, transparent, and risk-controlled vehicle financing solution that balances customer affordability , operational discipline , and preventive vigilance . The product enables borrowers to acquire personal vehicles with flexible repayment options while ensuring strong asset protection and regulatory compliance."
+    },
+    {
+        "section_id": "S003",
+        "section_name": "HomeSure Mortgage Loan (HML)",
+        "topic_id": "S003_T001",
+        "topic_name": "Product Overview",
+        "merged_content": "HomeSure Mortgage Loan (HML) is a secured lending product extended to individuals and eligible Non-Resident Indians (NRIs) against the equitable mortgage of immovable property for meeting any bona fide financial requirement , other than speculative activities. The product is designed to provide medium- to long-term liquidity by leveraging residential or commercial property, while ensuring prudent risk management through defined eligibility norms, conservative margins, structured repayment capacity assessment, and strict vigilance controls."
+    },
+    {
+        "section_id": "S003",
+        "section_name": "HomeSure Mortgage Loan (HML)",
+        "topic_id": "S003_T002",
+        "topic_name": "Purpose of Loan",
+        "merged_content": "The loan may be availed for any legitimate purpose , except for financial speculation of any kind . Proposals from persons involved in real estate development , property dealing or brokerage , share or stock broking , or any other speculative activities are not eligible and shall not be considered."
+    },
+    {
+        "section_id": "S003",
+        "section_name": "HomeSure Mortgage Loan (HML)",
+        "topic_id": "S003_T003",
+        "topic_name": "Nature of Facility",
+        "merged_content": "The facility may be sanctioned in the form of a Term Loan , Demand Loan , or Overdraft . In the case of overdraft facilities, the borrower must ensure a minimum annual turnover of at least 25% of the sanctioned limit . NRIs are eligible only for Term Loan or Demand Loan facilities and are not eligible for overdraft facilities ."
+    },
+    {
+        "section_id": "S003",
+        "section_name": "HomeSure Mortgage Loan (HML)",
+        "topic_id": "S003_T004",
+        "topic_name": "Eligibility",
+        "merged_content": "The facility is available to resident individuals , including salaried employees, professionals, self-employed persons, and others who are income tax assessees for a minimum of the last three years , with a minimum gross annual income of ₹60,000 . The scheme is also available to Non-Resident Indians (NRIs) holding a valid Indian passport and employed abroad with a reputed Indian or foreign company, organization, or government department. NRIs must have completed at least two years of overseas employment or business , supported by a valid job contract or work permit, and must have a minimum gross annual income of ₹5 lakh . Existing staff members are not eligible under this scheme."
+    },
+    {
+        "section_id": "S003",
+        "section_name": "HomeSure Mortgage Loan (HML)",
+        "topic_id": "S003_T005",
+        "topic_name": "Age Criteria",
+        "merged_content": "The minimum age of the borrower is 21 years , and the maximum age is 60 years . The sum of the borrower’s or co-borrower’s age and the loan tenure shall not exceed the retirement age for salaried persons and 65 years for NRIs and other categories ."
+    },
+    {
+        "section_id": "S003",
+        "section_name": "HomeSure Mortgage Loan (HML)",
+        "topic_id": "S003_T006",
+        "topic_name": "Loan Amount",
+        "merged_content": "The minimum loan amount is ₹1.00 lakh . The maximum loan amount is capped at ₹10 lakh for rural branches , ₹300 lakh for other branches , and ₹100 lakh in case of loans to professionals , subject to income eligibility, repayment capacity, and the advance value of the property offered as security."
+    },
+    {
+        "section_id": "S003",
+        "section_name": "HomeSure Mortgage Loan (HML)",
+        "topic_id": "S003_T007",
+        "topic_name": "Income Criteria",
+        "merged_content": "For salaried borrowers , eligibility is restricted to 36 times the gross monthly income . For other individuals , eligibility is capped at five times the average annual income of the last three years . In the case of loans to professionals , the eligible limit shall not exceed 25% of the average annual business turnover or professional receipts for the last three years . Income of all joint owners of the mortgaged property , who are co-borrowers, may be clubbed. The facility may be considered against property owned by the borrower or his/her close relatives , namely spouse, parents, son, daughter, brother, sister, or brother’s wife, provided such relatives stand as co-borrowers . Where the income of co-borrowers is considered, the sustainability and continuity of such income must be assessed independently. In the case of agriculturists not required to file income tax returns, income may be assessed based on a certificate issued by the competent local revenue authority, with due consideration to landholding, cropping pattern, irrigation facilities, and number of crops harvested annually. The basis of such assessment must be clearly recorded in the appraisal note."
+    },
+    {
+        "section_id": "S003",
+        "section_name": "HomeSure Mortgage Loan (HML)",
+        "topic_id": "S003_T008",
+        "topic_name": "Repayment Capacity",
+        "merged_content": "Total deductions, including proposed EMI or notional installment, shall not exceed 60% of gross monthly income . Deductions include income tax, provident fund, professional tax, existing EMIs, and all other commitments. In case of non-salaried borrowers, gross monthly income shall be derived from the average annual income of the last three years . For overdraft facilities, repayment capacity shall be assessed as if a 10-year term loan is sanctioned."
+    },
+    {
+        "section_id": "S003",
+        "section_name": "HomeSure Mortgage Loan (HML)",
+        "topic_id": "S003_T009",
+        "topic_name": "Rate of Interest",
+        "merged_content": "Interest is charged at Base Rate + 3.25% , with interest applied as per extant guidelines."
+    },
+    {
+        "section_id": "S003",
+        "section_name": "HomeSure Mortgage Loan (HML)",
+        "topic_id": "S003_T010",
+        "topic_name": "Penal Interest",
+        "merged_content": "A penal interest of 2% per annum is levied on overdue amounts."
+    },
+    {
+        "section_id": "S003",
+        "section_name": "HomeSure Mortgage Loan (HML)",
+        "topic_id": "S003_T011",
+        "topic_name": "Prepayment Charges",
+        "merged_content": "There are no charges for part or full prepayment of the loan."
+    },
+    {
+        "section_id": "S003",
+        "section_name": "HomeSure Mortgage Loan (HML)",
+        "topic_id": "S003_T012",
+        "topic_name": "Margin",
+        "merged_content": "The margin is fixed at 50% of the Distress Sale Value (DSV) of the immovable property offered as security."
+    },
+    {
+        "section_id": "S003",
+        "section_name": "HomeSure Mortgage Loan (HML)",
+        "topic_id": "S003_T013",
+        "topic_name": "Security",
+        "merged_content": "The loan is secured by equitable mortgage of residential property (house or flat), commercial property (land and building), or plots allotted or purchased from recognized development authorities, provided there is no stipulation mandating construction within a fixed timeframe . Loans against tenanted properties are generally not permitted, except where the property is leased to PSUs, reputed government or semi-government undertakings, large corporates, banks, financial institutions, or insurance companies ."
+    },
+    {
+        "section_id": "S003",
+        "section_name": "HomeSure Mortgage Loan (HML)",
+        "topic_id": "S003_T014",
+        "topic_name": "Personal Guarantee",
+        "merged_content": "For loans up to ₹10 lakh , personal guarantee may not be insisted upon. For loans above ₹10 lakh , a third-party personal guarantee of an individual with adequate net worth is required. In the case of NRIs, personal guarantee of a resident spouse or family member is required; otherwise, a third-party guarantee from a resident Indian of adequate worth must be obtained."
+    },
+    {
+        "section_id": "S003",
+        "section_name": "HomeSure Mortgage Loan (HML)",
+        "topic_id": "S003_T015",
+        "topic_name": "Repayment Terms",
+        "merged_content": "For term loans , the maximum repayment period is 84 months , repayable in equated monthly installments , with a moratorium of up to three months , during which interest is recovered separately. For overdrafts , the facility is sanctioned for 12 months , subject to annual review , with a maximum overall tenure of 10 years . Minimum annual turnover of 25% of the limit must be maintained. Where this condition is not met, the operative limit shall be progressively reduced annually. Alternatively, the overdraft may be converted into a term loan. For agriculturists , repayment may be structured on an annual or half-yearly basis , aligned with harvesting cycles and other income streams."
+    },
+    {
+        "section_id": "S003",
+        "section_name": "HomeSure Mortgage Loan (HML)",
+        "topic_id": "S003_T016",
+        "topic_name": "Processing Charges",
+        "merged_content": "For loans , unified processing charges are levied at 1% of the loan amount , subject to a minimum of ₹1,000 and a maximum of ₹1,50,000 , plus applicable taxes. For overdrafts , processing charges are levied at 0.35% , subject to a minimum of ₹1,000 and a maximum of ₹75,000 , plus applicable taxes. Charges are applicable up to the scheme ceiling of ₹3 crore , with pro-rata charges for limits beyond ₹3 crore where deviations are approved."
+    },
+    {
+        "section_id": "S003",
+        "section_name": "HomeSure Mortgage Loan (HML)",
+        "topic_id": "S003_T017",
+        "topic_name": "Valuation of Property",
+        "merged_content": "The property must be valued by a bank-approved or government-approved valuer . For properties acquired within the last three years , the registered sale deed value may be accepted. Where market value differs from registered value, the Distress Sale Value shall be adopted as per extant approval norms."
+    },
+    {
+        "section_id": "S003",
+        "section_name": "HomeSure Mortgage Loan (HML)",
+        "topic_id": "S003_T018",
+        "topic_name": "Age of Building",
+        "merged_content": "The age of the building should not exceed 25 years . Buildings older than 25 years may be accepted subject to approval of the Regional Authority , supported by a structural soundness certificate from an approved engineer confirming a residual life of at least five years beyond the loan tenure ."
+    },
+    {
+        "section_id": "S003",
+        "section_name": "HomeSure Mortgage Loan (HML)",
+        "topic_id": "S003_T019",
+        "topic_name": "Insurance",
+        "merged_content": "The mortgaged property must be insured for full value , with insurance expenses borne by the borrower."
+    },
+    {
+        "section_id": "S003",
+        "section_name": "HomeSure Mortgage Loan (HML)",
+        "topic_id": "S003_T020",
+        "topic_name": "Takeover of Existing Mortgage Loans",
+        "merged_content": "Mortgage loans from other banks or financial institutions may be taken over strictly as per extant takeover guidelines ."
+    },
+    {
+        "section_id": "S003",
+        "section_name": "HomeSure Mortgage Loan (HML)",
+        "topic_id": "S003_T021",
+        "topic_name": "Legal Scrutiny",
+        "merged_content": "A legal opinion on title deeds must be obtained from a bank-approved advocate. Actual legal expenses shall be borne by the borrower."
+    },
+    {
+        "section_id": "S003",
+        "section_name": "HomeSure Mortgage Loan (HML)",
+        "topic_id": "S003_T022",
+        "topic_name": "Credit Rating & Sanction",
+        "merged_content": "Credit rating shall be carried out under the Secured Loan Rating Model . Loans shall not be extended to borrowers scoring below the prescribed cut-off of 111 , corresponding to SL-7 and above . Sanctioning powers are exercised as per delegated lending powers ."
+    },
+    {
+        "section_id": "S003",
+        "section_name": "HomeSure Mortgage Loan (HML)",
+        "topic_id": "S003_T023",
+        "topic_name": "Preventive Vigilance Measures",
+        "merged_content": "Strict adherence to KYC norms , income verification , credit bureau checks , market reports , property valuation , and valid mortgage creation procedures is mandatory. Pre- and post-sanction checklists must be completed and documented to ensure robust risk mitigation."
+    },
+    {
+        "section_id": "S003",
+        "section_name": "HomeSure Mortgage Loan (HML)",
+        "topic_id": "S003_T024",
+        "topic_name": "Summary",
+        "merged_content": "HomeSure Mortgage Loan enables borrowers to unlock the value of owned immovable property for legitimate financial needs through a well-structured, prudently secured lending framework. With conservative margins, disciplined repayment norms, and strong preventive vigilance controls, the product ensures both borrower flexibility and portfolio stability ."
+    },
+    {
+        "section_id": "S004",
+        "section_name": "TradePlus Business Loan (TBL)",
+        "topic_id": "S004_T001",
+        "topic_name": "Product Overview",
+        "merged_content": "TradePlus Business Loan (TBL) is a structured credit facility designed to meet the working capital, shop development, and non-fund based requirements of retail and wholesale traders engaged in legitimate trading activities. The product offers flexibility in the form of Overdraft, Term Loan, and Non-Fund Based facilities , supported by tangible collateral and governed by prudent exposure norms, credit rating discipline, and strict preventive vigilance controls. Being a business loan , the facility is subject to party/group discretionary lending powers , applicable activity clearance norms, and the Domestic Loan Policy of the Bank."
+    },
+    {
+        "section_id": "S004",
+        "section_name": "TradePlus Business Loan (TBL)",
+        "topic_id": "S004_T002",
+        "topic_name": "Nature of Facility",
+        "merged_content": "The facility may be sanctioned as an Overdraft , Term Loan , or Non-Fund Based Facility such as Bank Guarantees and Letters of Credit , either independently or in combination, subject to eligibility and assessed limits."
+    },
+    {
+        "section_id": "S004",
+        "section_name": "TradePlus Business Loan (TBL)",
+        "topic_id": "S004_T003",
+        "topic_name": "Purpose of Finance",
+        "merged_content": "The Overdraft facility is intended to meet working capital requirements arising out of day-to-day trading operations. The Term Loan facility is permitted exclusively for shop development purposes , including purchase of equipment, computers, air-conditioners, furniture, and allied assets. Term Loan shall not be granted for purchase of shops , and the amount shall be restricted to need- based finance subject to a maximum of 25% of the working capital limit sanctioned . Non-Fund Based Facilities may be considered within limits assessed on the basis of value of securities. Such facilities may be sanctioned over and above the working capital or term loan limit , subject to the overall ceiling under the scheme. However, where the security- based limit is lower than the turnover-based limit, the non-fund facility shall be considered as a sub-limit of the working capital limit . Activity clearance from the Zonal Authority / Corporate Office , wherever applicable, shall be obtained in respect of activities specified in the Domestic Loan Policy."
+    },
+    {
+        "section_id": "S004",
+        "section_name": "TradePlus Business Loan (TBL)",
+        "topic_id": "S004_T004",
+        "topic_name": "Eligibility",
+        "merged_content": "The facility is available to Individuals, Proprietorships, Partnership Firms, Private Limited Companies, and Registered Cooperative Societies engaged in trading of lawful commodities or goods in physical form required by the community and not prohibited by law or opposed to public interest. Dealers in silver and gold jewellery are eligible; however, finance shall not be granted against bullion or raw gold , and borrowers must comply with all licensing requirements applicable to the trade, subject to prescribed activity clearance. HUFs and Public Limited Companies are not eligible under this scheme. The trading unit should ordinarily have been established for a minimum period of two years . However, trading units established by existing customers of the Bank with satisfactory conduct , or their close relatives, may be considered even if established for less than two years. Trading units of non-customers with less than two years’ establishment may be considered only with prior approval of the Regional Head ."
+    },
+    {
+        "section_id": "S004",
+        "section_name": "TradePlus Business Loan (TBL)",
+        "topic_id": "S004_T005",
+        "topic_name": "Loan Amount",
+        "merged_content": "The minimum credit limit under the scheme is ₹25,000 . The maximum limit is capped at ₹300 lakh for Rural and Semi-Urban branches and ₹400 lakh for Urban and Metro branches ."
+    },
+    {
+        "section_id": "S004",
+        "section_name": "TradePlus Business Loan (TBL)",
+        "topic_id": "S004_T006",
+        "topic_name": "Assessment of Working Capital & Term Loan",
+        "merged_content": "Working capital limits shall be assessed at 20% of projected sales , subject to verification of sales tax returns of previous years or quarters, or the advance value of collateral securities , whichever is lower. Loans for shop development shall be considered on a need-based basis , subject to a ceiling of 25% of the sanctioned working capital limit , and within the overall eligible limit assessed based on security. The combined exposure of working capital and shop development loan shall not exceed the advance value of collateral security or the maximum permissible limit under the scheme , whichever is lower."
+    },
+    {
+        "section_id": "S004",
+        "section_name": "TradePlus Business Loan (TBL)",
+        "topic_id": "S004_T007",
+        "topic_name": "Margin",
+        "merged_content": "A margin of 40% shall be maintained on the realisable market value of immovable property as per valuation report. Where the property has been purchased within the last three years, the registered value shall be accepted as market value. Margins applicable on other securities are 10% on the Bank’s own term deposits and 15% on surrender value of Life Insurance Policies, National Savings Certificates, and Government Bonds ."
+    },
+    {
+        "section_id": "S004",
+        "section_name": "TradePlus Business Loan (TBL)",
+        "topic_id": "S004_T008",
+        "topic_name": "Rate of Interest",
+        "merged_content": "For limits up to ₹4.00 crore , interest shall be charged at Base Rate + 2.00% . For enhanced limits through deviations, interest shall be Base Rate + 2.00% up to ₹5.00 crore . For limits above ₹5.00 crore, interest shall be Base Rate + 2.00% for obligor ratings BOB-4 and BOB-5 , and Base Rate + 2.50% for ratings BOB-6 and below ."
+    },
+    {
+        "section_id": "S004",
+        "section_name": "TradePlus Business Loan (TBL)",
+        "topic_id": "S004_T009",
+        "topic_name": "Period & Repayment",
+        "merged_content": "Overdraft facilities shall be sanctioned for 12 months , subject to annual review . Term Loans shall be repayable in a maximum of 60 EMIs , depending upon assessed repayment capacity."
+    },
+    {
+        "section_id": "S004",
+        "section_name": "TradePlus Business Loan (TBL)",
+        "topic_id": "S004_T010",
+        "topic_name": "Commitment Charges",
+        "merged_content": "A commitment charge of 0.50% per annum shall be levied where utilisation falls below 75% of the sanctioned limit on a quarterly average basis, applicable to limits of ₹500 lakh and above ."
+    },
+    {
+        "section_id": "S004",
+        "section_name": "TradePlus Business Loan (TBL)",
+        "topic_id": "S004_T011",
+        "topic_name": "Security",
+        "merged_content": "The facility shall be secured by tangible collateral , primarily through equitable mortgage of residential or commercial property, or non-agricultural plots allotted or purchased from Development or Government Authorities, subject to prescribed margins. Plots not allotted by government authorities may be accepted with Zonal Authority approval , subject to enhanced margin, demarcation, legal scrutiny, access, and display of bank charge. Property shall ordinarily stand in the name of the borrower or close relatives. Third-party property may be accepted subject to personal guarantee of the owner. Other acceptable securities include NSCs, Government Bonds, Term Deposits of the Bank, and assignment of Life Insurance Policies , standing in the name of borrower or promoters only."
+    },
+    {
+        "section_id": "S004",
+        "section_name": "TradePlus Business Loan (TBL)",
+        "topic_id": "S004_T012",
+        "topic_name": "Valuation & Age of Property",
+        "merged_content": "Valuation shall be obtained from a Bank or Government approved valuer and shall be conducted once every three years . For loans exceeding ₹1 crore , a second valuation is mandatory. The age of property for loans shall generally not exceed 25 years , subject to structural soundness certification. Older properties may be accepted selectively with Regional Head approval and engineer’s certificate confirming adequate residual life."
+    },
+    {
+        "section_id": "S004",
+        "section_name": "TradePlus Business Loan (TBL)",
+        "topic_id": "S004_T013",
+        "topic_name": "Documentation",
+        "merged_content": "Documentation shall include D.P. Note , Letter of Continuing Security or Letter of Installment , hypothecation agreement where applicable, mortgage documents, guarantees, undertakings regarding exclusive banking arrangements, statutory dues compliance, and all documents as per constitution of borrower. Documentation for non-fund facilities shall be as per extant guidelines."
+    },
+    {
+        "section_id": "S004",
+        "section_name": "TradePlus Business Loan (TBL)",
+        "topic_id": "S004_T014",
+        "topic_name": "Insurance",
+        "merged_content": "Mortgaged properties must be insured as per Bank norms. Stock insurance is not mandatory but may be advised in the borrower’s interest."
+    },
+    {
+        "section_id": "S004",
+        "section_name": "TradePlus Business Loan (TBL)",
+        "topic_id": "S004_T015",
+        "topic_name": "Credit Rating",
+        "merged_content": "Credit rating shall be conducted at the time of sanction and review. Fresh advances shall be granted only to borrowers securing a minimum rating of BTL-6 under the Retail Rating Model for limits up to ₹200 lakh. Limits above ₹200 lakh shall continue to be rated under the BOBRAM model ."
+    },
+    {
+        "section_id": "S004",
+        "section_name": "TradePlus Business Loan (TBL)",
+        "topic_id": "S004_T016",
+        "topic_name": "Other Conditions",
+        "merged_content": "Ad-hoc or excess drawings are not permitted. Interest in overdraft accounts must be serviced regularly. Borrowers must route all business transactions through their account with the Bank. Stock statements shall be obtained annually, inspections carried out periodically, and end-use of funds strictly monitored. Dual financing under multiple retail trader schemes is not permitted."
+    },
+    {
+        "section_id": "S004",
+        "section_name": "TradePlus Business Loan (TBL)",
+        "topic_id": "S004_T017",
+        "topic_name": "Deviation Powers & Vigilance",
+        "merged_content": "Deviation powers shall be exercised strictly as per approved delegation, subject to obligor rating and monetary caps. Strict compliance with KYC norms , credit bureau checks , legal scrutiny , valuation validation , and site inspection is mandatory to mitigate credit and operational risks."
+    },
+    {
+        "section_id": "S004",
+        "section_name": "TradePlus Business Loan (TBL)",
+        "topic_id": "S004_T018",
+        "topic_name": "Summary",
+        "merged_content": "TradePlus Business Loan provides traders with a comprehensive and disciplined credit solution to support working capital needs, business expansion, and trade facilitation through fund-based and non-fund based facilities. The product balances flexibility with strong collateral backing, structured assessment norms, and robust preventive vigilance to ensure sustainable business growth and portfolio quality."
+    },
+    {
+        "section_id": "S005",
+        "section_name": "EduGrow Education Loan",
+        "topic_id": "S005_T001",
+        "topic_name": "Product Overview",
+        "merged_content": "EduGrow Education Loan is a comprehensive education financing product designed to support students pursuing higher education in India as well as abroad . The product aims to ensure that meritorious students are not denied education due to financial constraints and provides need-based finance covering tuition and allied educational expenses, with structured repayment aligned to future earning potential. The loan is classified under Priority Sector and is governed by the Bank’s discretionary lending powers, educational loan guidelines, and applicable regulatory norms."
+    },
+    {
+        "section_id": "S005",
+        "section_name": "EduGrow Education Loan",
+        "topic_id": "S005_T002",
+        "topic_name": "Target Group",
+        "merged_content": "Students pursuing Graduation, Post Graduation, Professional, Technical, and Other Recognised Courses in India or abroad , through merit-based or entrance-test-based admission processes."
+    },
+    {
+        "section_id": "S005",
+        "section_name": "EduGrow Education Loan",
+        "topic_id": "S005_T003",
+        "topic_name": "Courses Eligible",
+        "merged_content": "Studies in India The following courses conducted by recognised institutions are eligible:  Graduation Courses : BA, B.Com, B.Sc., etc.  Post-Graduation & Doctoral Courses : Master’s Degree, Ph.D.  Professional Courses : Engineering, Medical, Agriculture, Veterinary, Law, Dental, Architecture, Computer Applications, Management, etc.  Management & Allied Courses including Hotel Management, Hospital Management, Event Management, Mass Communication offered by reputed institutions with assured employment prospects.  Professional Certifications : CA, ICWA, CFA and similar courses.  Courses conducted by IIMs, IITs, IISc, XLRI, NIFT , and similar institutions.  Evening / part-time courses of approved institutions.  Diploma / Degree courses approved by UGC / AICTE / Government / Statutory Bodies .  Any other course approved by Corporate Office based on recognition and future employment prospects. Studies Abroad  Graduation-level job-oriented professional or technical courses offered by reputed foreign universities.  Post-graduation and advanced studies such as MBA, MS, MCA , etc.  Courses conducted by international professional bodies such as CIMA (UK), CPA (USA) , etc. Student Eligibility  Student must be a Resident Indian / Indian National .  Secured admission to a recognised course through Entrance Test / Merit-Based Selection Process .  Admission letter from the institution is mandatory. Expenses Covered The loan shall cover need-based expenses required to complete the course, including:  Tuition / Admission fees payable to institution or university  Examination, library, laboratory fees  Hostel and mess charges  Purchase of books, equipment, instruments, uniforms  Purchase of computer / laptop , where required  Caution deposit, building fund, refundable deposits (supported by bills/receipts)  Study tours, project work, thesis, etc.  One-way travel expenses for studies abroad Cost of external coaching / private tuition is not permitted ."
+    },
+    {
+        "section_id": "S005",
+        "section_name": "EduGrow Education Loan",
+        "topic_id": "S005_T004",
+        "topic_name": "Quantum of Finance",
+        "merged_content": "Studies in India  Maximum Loan Amount : ₹7.50 lakh Studies Abroad  Graduation & courses up to 3 years: ₹10.00 lakh  Post-graduation & advanced studies: ₹15.00 lakh Finance shall be need-based , subject to repayment capacity of the student and/or parent, assessed on expected future income. Margin  Up to ₹4.00 lakh : NIL  Above ₹4.00 lakh (India) : 5%  Above ₹4.00 lakh (Abroad) : 15% Scholarship / assistantship, if any, shall be included as margin. Margin may be brought in pro-rata, year-wise , along with disbursements."
+    },
+    {
+        "section_id": "S005",
+        "section_name": "EduGrow Education Loan",
+        "topic_id": "S005_T005",
+        "topic_name": "Rate of Interest",
+        "merged_content": " Up to ₹4.00 lakh : BPLR (currently 10.50% p.a.)  Above ₹4.00 lakh : BPLR + 1% (currently 11.50% p.a.) Other conditions:  Simple interest to be charged during moratorium period.  Accrued interest during moratorium shall be capitalised and EMI fixed thereafter.  Penal interest @ 2% p.a. on overdue amounts for loans above ₹4.00 lakh.  1% interest concession if interest during moratorium is serviced regularly.  1% interest concession for girl students (for eligible sanctions)."
+    },
+    {
+        "section_id": "S005",
+        "section_name": "EduGrow Education Loan",
+        "topic_id": "S005_T006",
+        "topic_name": "Repayment Holiday / Moratorium",
+        "merged_content": "Moratorium period shall be:  Course period + 1 year , or  6 months after securing employment , whichever is earlier."
+    },
+    {
+        "section_id": "S005",
+        "section_name": "EduGrow Education Loan",
+        "topic_id": "S005_T007",
+        "topic_name": "Repayment Period",
+        "merged_content": " Loan to be repaid in 5 to 7 years after moratorium.  Extension of course completion up to 2 years may be permitted.  In genuine cases beyond student’s control, further extension may be considered by sanctioning authority.  Moratorium shall stand extended accordingly in such cases."
+    },
+    {
+        "section_id": "S005",
+        "section_name": "EduGrow Education Loan",
+        "topic_id": "S005_T008",
+        "topic_name": "Processing & Documentation Charges",
+        "merged_content": "NIL"
+    },
+    {
+        "section_id": "S005",
+        "section_name": "EduGrow Education Loan",
+        "topic_id": "S005_T009",
+        "topic_name": "Financing Branch",
+        "merged_content": "The branch nearest to the permanent residence of the parent/guardian shall finance the loan."
+    },
+    {
+        "section_id": "S005",
+        "section_name": "EduGrow Education Loan",
+        "topic_id": "S005_T010",
+        "topic_name": "Security",
+        "merged_content": "Studies in India  Up to ₹4.00 lakh : No security  Above ₹4.00 lakh : o Suitable third-party guarantee o Assignment of future income of the student  Parent/guardian and student to be joint borrowers  Regional Head may waive third-party guarantee in deserving / meritorious cases  Computers financed to be hypothecated to the Bank Studies Abroad  Up to ₹4.00 lakh : No security  ₹4.00 – ₹7.50 lakh : Third-party guarantee  Above ₹7.50 lakh : o Collateral security equal to 100% of loan amount OR o Third-party guarantee + assignment of future income Acceptable collateral includes land/building, bank deposits, NSC, LIC policies, Government securities, gold, shares, etc., with margins as per extant guidelines."
+    },
+    {
+        "section_id": "S005",
+        "section_name": "EduGrow Education Loan",
+        "topic_id": "S005_T011",
+        "topic_name": "Disbursement",
+        "merged_content": " Disbursement to be made in stages , term-wise / year-wise  Payments to be made directly to institutions / vendors , wherever possible  Subsequent disbursement only after satisfactory academic progress  Reimbursement permitted in genuine cases against proof of payment"
+    },
+    {
+        "section_id": "S005",
+        "section_name": "EduGrow Education Loan",
+        "topic_id": "S005_T012",
+        "topic_name": "Progress Monitoring",
+        "merged_content": " Academic progress reports to be obtained at regular intervals and kept on record."
+    },
+    {
+        "section_id": "S005",
+        "section_name": "EduGrow Education Loan",
+        "topic_id": "S005_T013",
+        "topic_name": "Other Conditions",
+        "merged_content": " Declaration/affidavit confirming no other education loan availed  Student shall not avail another education loan without NOC from the Bank  Future income prospects to be the primary basis of appraisal  Parent/guardian income may be considered where required  No Dues Certificate not to be insisted upon"
+    },
+    {
+        "section_id": "S005",
+        "section_name": "EduGrow Education Loan",
+        "topic_id": "S005_T014",
+        "topic_name": "Freebies",
+        "merged_content": " Debit Card for students (India studies)  Foreign currency drafts for overseas studies issued free of exchange / commission"
+    },
+    {
+        "section_id": "S005",
+        "section_name": "EduGrow Education Loan",
+        "topic_id": "S005_T015",
+        "topic_name": "Additional Loan / Enhancement",
+        "merged_content": " Additional loan or enhancement for higher studies may be considered within the overall ceiling , subject to satisfactory conduct of earlier loan.  Moratorium period shall stand extended corresponding to the higher course duration."
+    },
+    {
+        "section_id": "S005",
+        "section_name": "EduGrow Education Loan",
+        "topic_id": "S005_T016",
+        "topic_name": "Rephasement",
+        "merged_content": "Rephasement of repayment in genuine cases may be considered by the next higher authority ."
+    },
+    {
+        "section_id": "S005",
+        "section_name": "EduGrow Education Loan",
+        "topic_id": "S005_T017",
+        "topic_name": "Deviation",
+        "merged_content": "Deviations in eligibility, margin, security, etc., may be permitted by one level above the sanctioning authority , on merits."
+    },
+    {
+        "section_id": "S005",
+        "section_name": "EduGrow Education Loan",
+        "topic_id": "S005_T018",
+        "topic_name": "Classification of Advance",
+        "merged_content": "Priority Sector – Education"
+    },
+    {
+        "section_id": "S005",
+        "section_name": "EduGrow Education Loan",
+        "topic_id": "S005_T019",
+        "topic_name": "Summary",
+        "merged_content": "EduGrow Education Loan offers a unified, structured, and inclusive education financing solution for students pursuing higher education in India and abroad. The product balances social commitment with prudent credit discipline, ensuring accessibility, flexibility, and long- term repayment sustainability."
+    },
+    {
+        "section_id": "S006",
+        "section_name": "FlexiServe Personal Loan (FPL)",
+        "topic_id": "S006_T001",
+        "topic_name": "Product Overview",
+        "merged_content": "FlexiServe Personal Loan (FPL) is a clean, unsecured retail credit product designed to meet the personal, family, social, medical, educational, travel, and contingency needs of eligible individuals. The loan may also be extended for Earnest Money Deposit (EMD) for housing purposes and for purchase of consumer durables and laptops/PCs , subject to specific norms. The product is governed by the Bank’s Clean Loan Rating Model , discretionary lending powers, and applicable Master Circulars on Retail Loans."
+    },
+    {
+        "section_id": "S006",
+        "section_name": "FlexiServe Personal Loan (FPL)",
+        "topic_id": "S006_T002",
+        "topic_name": "Purpose of Loan",
+        "merged_content": "The loan is granted for any lawful personal purpose other than speculation , including:  Medical and family exigencies  Education and skill development  Social functions and travel  Purchase of consumer durables / laptop / PC  Earnest Money Deposit for housing projects (subject to conditions)"
+    },
+    {
+        "section_id": "S006",
+        "section_name": "FlexiServe Personal Loan (FPL)",
+        "topic_id": "S006_T003",
+        "topic_name": "Eligible Borrowers",
+        "merged_content": "Salaried Individuals  Permanent, confirmed employees of: o Central / State Government o Autonomous Bodies o Public / Joint Sector Undertakings o Reputed Limited Companies / MNCs o Reputed Universities, Colleges, Schools, Educational & Research Institutions  Minimum one year of confirmed service Not eligible :  Employees of Proprietorship and Partnership firms  Bank staff members Employees of Private Limited Companies may be considered only by Zonal Authority deviation , subject to strict conditions relating to company vintage, relationship with the Bank, employee strength, salary routing, auto-recovery, and employer undertakings. Self-Employed / Professionals  Doctors, Engineers, Architects, Interior Designers  Technical & Management Consultants  Practicing Company Secretaries  Minimum one year of stable business"
+    },
+    {
+        "section_id": "S006",
+        "section_name": "FlexiServe Personal Loan (FPL)",
+        "topic_id": "S006_T004",
+        "topic_name": "Insurance Agents",
+        "merged_content": "Eligible subject to:  Minimum 5 years in insurance business  Stable income  Commission credited through SB account with the Bank  Written instruction to Insurance Company to route commissions to the Bank"
+    },
+    {
+        "section_id": "S006",
+        "section_name": "FlexiServe Personal Loan (FPL)",
+        "topic_id": "S006_T005",
+        "topic_name": "Special Category – Earnest Money Deposit",
+        "merged_content": "Loan for Earnest Money Deposit may also be granted to Businesspersons , including Proprietors, Partners, and Directors of Private Limited Companies, subject to eligibility under Housing Loan guidelines."
+    },
+    {
+        "section_id": "S006",
+        "section_name": "FlexiServe Personal Loan (FPL)",
+        "topic_id": "S006_T006",
+        "topic_name": "Account Relationship",
+        "merged_content": " Minimum 6 months relationship with the Bank with satisfactory conduct OR  Relationship with another bank for at least 6 months (verified statement required)"
+    },
+    {
+        "section_id": "S006",
+        "section_name": "FlexiServe Personal Loan (FPL)",
+        "topic_id": "S006_T007",
+        "topic_name": "Credit Risk & Rating",
+        "merged_content": " Credit rating mandatory under Clean Loan Rating Model  Cut-off score: 30  Minimum Investment Grade: CL-7 & above  Loans shall not be sanctioned below cut-off score"
+    },
+    {
+        "section_id": "S006",
+        "section_name": "FlexiServe Personal Loan (FPL)",
+        "topic_id": "S006_T008",
+        "topic_name": "Age Criteria",
+        "merged_content": " Minimum Age : 21 years  Maximum Age : o Salaried: Borrower’s age + repayment period should not exceed retirement age o Self-employed / professionals: Maximum 65 years at loan maturity"
+    },
+    {
+        "section_id": "S006",
+        "section_name": "FlexiServe Personal Loan (FPL)",
+        "topic_id": "S006_T009",
+        "topic_name": "Loan Amount",
+        "merged_content": "Standard Personal Loan  Up to 6 times of Gross Monthly Income  Maximum ₹2.00 lakh Special Variants  Consumer Durables : o 5 times Gross Monthly Income o Maximum ₹1.00 lakh  Laptop / PC : o 5 times Gross Monthly Income o Maximum ₹1.00 lakh  Earnest Money Deposit : o 8 times Gross Monthly Income o OR 90% of application money o Maximum ₹5.00 lakh , whichever is lower"
+    },
+    {
+        "section_id": "S006",
+        "section_name": "FlexiServe Personal Loan (FPL)",
+        "topic_id": "S006_T010",
+        "topic_name": "Interest Rate",
+        "merged_content": " Standard Personal Loan : Base Rate + 4.50%  Earnest Money Deposit : Base Rate + 3.25%"
+    },
+    {
+        "section_id": "S006",
+        "section_name": "FlexiServe Personal Loan (FPL)",
+        "topic_id": "S006_T011",
+        "topic_name": "Penal Interest",
+        "merged_content": " Penal interest @ 2% p.a. on overdue amount  For Premium Personal Loan: Penal interest applicable only when overdue exceeds one EMI and persists for more than one month"
+    },
+    {
+        "section_id": "S006",
+        "section_name": "FlexiServe Personal Loan (FPL)",
+        "topic_id": "S006_T012",
+        "topic_name": "Repayment",
+        "merged_content": " Standard Personal Loan : Up to 36 months (EMI)  Laptop / Consumer Durable Loan : Up to 60 months  Earnest Money Deposit : Lump sum repayment within 6 months"
+    },
+    {
+        "section_id": "S006",
+        "section_name": "FlexiServe Personal Loan (FPL)",
+        "topic_id": "S006_T013",
+        "topic_name": "Repayment Capacity",
+        "merged_content": "Total deductions including proposed EMI shall not exceed 60% of Gross Monthly Income , except in EMD cases where Housing Loan norms shall apply."
+    },
+    {
+        "section_id": "S006",
+        "section_name": "FlexiServe Personal Loan (FPL)",
+        "topic_id": "S006_T014",
+        "topic_name": "Check-Off / Recovery Mechanism (Premium Segment)",
+        "merged_content": "Category – A (With Check-Off)  Salary deduction by employer OR salary credited to Bank account  Irrevocable standing instruction / auto recovery  Employer undertaking for NOC and service events  Minimum Net Monthly Income: ₹10,000 Category – B (Without Check-Off)  Salary credit + standing instruction OR  ECS mandate with employer undertaking  Minimum Net Monthly Income: ₹15,000"
+    },
+    {
+        "section_id": "S006",
+        "section_name": "FlexiServe Personal Loan (FPL)",
+        "topic_id": "S006_T015",
+        "topic_name": "Loan Ceiling – Premium Segment",
+        "merged_content": " Category A : o ₹10.00 lakh or 24 × NMI, whichever is lower  Category B : o ₹5.00 lakh or 24 × NMI, whichever is lower"
+    },
+    {
+        "section_id": "S006",
+        "section_name": "FlexiServe Personal Loan (FPL)",
+        "topic_id": "S006_T016",
+        "topic_name": "Repayment Period – Premium Segment",
+        "merged_content": "Maximum 84 months in Equated Monthly Instalments"
+    },
+    {
+        "section_id": "S006",
+        "section_name": "FlexiServe Personal Loan (FPL)",
+        "topic_id": "S006_T017",
+        "topic_name": "Security & Documentation",
+        "merged_content": " Clean loan (no tangible collateral)  Mandatory documentation includes: o Demand Promissory Note o Letter of Installment with acceleration clause o Declaration-cum-Undertaking-cum-Authority o Employer / borrower undertakings (as applicable) o Hypothecation of consumer goods / laptop where financed o Power of Attorney for EMD refund adjustment, where applicable"
+    },
+    {
+        "section_id": "S006",
+        "section_name": "FlexiServe Personal Loan (FPL)",
+        "topic_id": "S006_T018",
+        "topic_name": "Processing Charges",
+        "merged_content": " Standard Personal Loan : o 2% of loan amount + applicable taxes o Minimum ₹500  Premium Segment : o 2% of loan amount o Minimum ₹250 + applicable taxes"
+    },
+    {
+        "section_id": "S006",
+        "section_name": "FlexiServe Personal Loan (FPL)",
+        "topic_id": "S006_T019",
+        "topic_name": "Documents Required",
+        "merged_content": ""
+    },
+    {
+        "section_id": "S006",
+        "section_name": "FlexiServe Personal Loan (FPL)",
+        "topic_id": "S006_T020",
+        "topic_name": "Salaried Applicants",
+        "merged_content": " Passport size photographs  Identity & Address proof  Salary slips (last 6 months) / Form-16 / IT Returns  Bank statement (last 6 months if salary credited elsewhere)"
+    },
+    {
+        "section_id": "S006",
+        "section_name": "FlexiServe Personal Loan (FPL)",
+        "topic_id": "S006_T021",
+        "topic_name": "Self-Employed / Professionals",
+        "merged_content": " Photographs  Office & residence proof  IT returns and financials (last 2 years)  Professional qualification, registration / licence"
+    },
+    {
+        "section_id": "S006",
+        "section_name": "FlexiServe Personal Loan (FPL)",
+        "topic_id": "S006_T022",
+        "topic_name": "Transfer of Loan Account",
+        "merged_content": "In case of transfer/posting, loan may be shifted to another branch of the Bank following extant transfer guidelines."
+    },
+    {
+        "section_id": "S006",
+        "section_name": "FlexiServe Personal Loan (FPL)",
+        "topic_id": "S006_T023",
+        "topic_name": "Deviation & Lending Powers",
+        "merged_content": " Clean Loan discretionary lending powers applicable  Financial and non-financial deviations may be permitted as per approved deviation matrix and circulars"
+    },
+    {
+        "section_id": "S006",
+        "section_name": "FlexiServe Personal Loan (FPL)",
+        "topic_id": "S006_T024",
+        "topic_name": "Scheme Codes",
+        "merged_content": " Personal Loan : Finacle – LA141 | Ascrom – 240  Earnest Money Deposit Loan : Finacle – LA126 | Ascrom – 845"
+    },
+    {
+        "section_id": "S006",
+        "section_name": "FlexiServe Personal Loan (FPL)",
+        "topic_id": "S006_T025",
+        "topic_name": "Classification of Advance",
+        "merged_content": "Retail – Clean Loan"
+    },
+    {
+        "section_id": "S006",
+        "section_name": "FlexiServe Personal Loan (FPL)",
+        "topic_id": "S006_T026",
+        "topic_name": "Summary",
+        "merged_content": "FlexiServe Personal Loan offers a unified, risk-calibrated personal financing solution covering routine personal needs as well as premium salaried segments through structured recovery mechanisms. The product balances convenience, income-linked eligibility, and strong repayment controls to ensure portfolio quality and customer satisfaction."
+    },
+    {
+        "section_id": "S007",
+        "section_name": "HomeSecure Home Loan (HHL)",
+        "topic_id": "S007_T001",
+        "topic_name": "Product Overview",
+        "merged_content": "HomeSecure Home Loan (HHL) is a clean, secured retail credit product designed to assist eligible individuals in purchasing, constructing, extending, or renovating residential properties. The loan may also be extended for Earnest Money Deposit (EMD) for housing projects, subject to the Bank’s guidelines. The product is governed by the Bank’s Housing Loan Policy, Clean Loan Rating Model, discretionary lending powers, and applicable Master Circulars on Retail Loans."
+    },
+    {
+        "section_id": "S007",
+        "section_name": "HomeSecure Home Loan (HHL)",
+        "topic_id": "S007_T002",
+        "topic_name": "Purpose of Loan",
+        "merged_content": "The loan can be sanctioned for any lawful residential purpose, including:  Purchase of residential plots, houses, or flats  Construction of new house or additional floors  Extension, repair, or renovation of existing house  Earnest Money Deposit for housing projects (subject to conditions)  Purchase of residential property for self-occupation"
+    },
+    {
+        "section_id": "S007",
+        "section_name": "HomeSecure Home Loan (HHL)",
+        "topic_id": "S007_T003",
+        "topic_name": "Eligible Borrowers",
+        "merged_content": "Salaried Individuals  Permanent, confirmed employees of: o Central / State Government o Autonomous Bodies o Public / Joint Sector Undertakings o Reputed Limited Companies / MNCs o Educational & Research Institutions  Minimum 1 year of confirmed service  Not eligible: Employees of proprietorship/partnership firms, bank staff  Private Limited Company employees may be considered by Zonal Authority deviation, subject to strict conditions Self-Employed / Professionals  Doctors, Engineers, Architects, Interior Designers  Technical & Management Consultants  Practicing Company Secretaries  Minimum 1 year of stable business Special Category – Earnest Money Deposit (EMD)  Businesspersons, including Proprietors, Partners, and Directors of Private Limited Companies  Eligibility as per Housing Loan guidelines"
+    },
+    {
+        "section_id": "S007",
+        "section_name": "HomeSecure Home Loan (HHL)",
+        "topic_id": "S007_T004",
+        "topic_name": "Account Relationship",
+        "merged_content": " Minimum 6 months relationship with the Bank with satisfactory conduct OR  Relationship with another bank for at least 6 months (verified statement required)"
+    },
+    {
+        "section_id": "S007",
+        "section_name": "HomeSecure Home Loan (HHL)",
+        "topic_id": "S007_T005",
+        "topic_name": "Credit Risk & Rating",
+        "merged_content": " Credit rating mandatory under Clean Loan Rating Model  Cut-off score: 30  Minimum Investment Grade: CL-7 & above  Loans shall not be sanctioned below cut-off score"
+    },
+    {
+        "section_id": "S007",
+        "section_name": "HomeSecure Home Loan (HHL)",
+        "topic_id": "S007_T006",
+        "topic_name": "Age Criteria",
+        "merged_content": " Minimum Age: 21 years  Maximum Age: o Salaried: Borrower’s age + repayment period should not exceed retirement age o Self-employed / professionals: Maximum 65 years at loan maturity"
+    },
+    {
+        "section_id": "S007",
+        "section_name": "HomeSecure Home Loan (HHL)",
+        "topic_id": "S007_T007",
+        "topic_name": "Loan Amount",
+        "merged_content": "Standard Home Loan  Up to 80% of property value (up to 90% for special cases like government schemes)  Maximum ₹5.00 crore (subject to branch / zonal limits) Special Variants – EMD for Housing Projects  Up to 90% of EMD amount  Maximum ₹50 lakh"
+    },
+    {
+        "section_id": "S007",
+        "section_name": "HomeSecure Home Loan (HHL)",
+        "topic_id": "S007_T008",
+        "topic_name": "Interest Rate",
+        "merged_content": " Standard Home Loan: Base Rate + 2.50% (floating)  EMD: Base Rate + 2.25%  Penal Interest: 2% p.a. on overdue amount"
+    },
+    {
+        "section_id": "S007",
+        "section_name": "HomeSecure Home Loan (HHL)",
+        "topic_id": "S007_T009",
+        "topic_name": "Repayment",
+        "merged_content": " Standard Home Loan: Up to 30 years (EMI)  EMD: Lump sum repayment within 6 months  EMI structured as per borrower’s repayment capacity"
+    },
+    {
+        "section_id": "S007",
+        "section_name": "HomeSecure Home Loan (HHL)",
+        "topic_id": "S007_T010",
+        "topic_name": "Repayment Capacity",
+        "merged_content": " Total deductions including proposed EMI shall not exceed 50% of Gross Monthly Income  Higher repayment capacity may be considered for salaried borrowers with strong credit history  Housing Loan norms applicable for EMD cases"
+    },
+    {
+        "section_id": "S007",
+        "section_name": "HomeSecure Home Loan (HHL)",
+        "topic_id": "S007_T011",
+        "topic_name": "Security & Documentation",
+        "merged_content": " Mortgage / hypothecation of property financed  Mandatory documentation includes: o Demand Promissory Note o Letter of Installment with acceleration clause o Declaration-cum-Undertaking-cum-Authority o Employer / borrower undertakings (as applicable) o Power of Attorney for EMD refund adjustment (where applicable) Documents Required Salaried Applicants  Passport size photographs  Identity & Address proof  Salary slips (last 6 months) / Form-16 / IT Returns  Bank statement (last 6 months if salary credited elsewhere) Self-Employed / Professionals  Photographs  Office & residence proof  IT returns and financials (last 2 years)  Professional qualification, registration / license"
+    },
+    {
+        "section_id": "S007",
+        "section_name": "HomeSecure Home Loan (HHL)",
+        "topic_id": "S007_T012",
+        "topic_name": "Processing Charges",
+        "merged_content": " 0.25% to 1% of loan amount depending on branch discretion  Minimum ₹5,000 + applicable taxes"
+    },
+    {
+        "section_id": "S007",
+        "section_name": "HomeSecure Home Loan (HHL)",
+        "topic_id": "S007_T013",
+        "topic_name": "Check-Off / Recovery Mechanism (Premium Segment)",
+        "merged_content": "Category – A (With Check-Off)  Salary deduction by employer OR salary credited to Bank account  Irrevocable standing instruction / auto recovery  Employer undertaking for NOC and service events Category – B (Without Check-Off)  Salary credit + standing instruction  ECS mandate with employer undertaking"
+    },
+    {
+        "section_id": "S007",
+        "section_name": "HomeSecure Home Loan (HHL)",
+        "topic_id": "S007_T014",
+        "topic_name": "Loan Ceiling – Premium Segment",
+        "merged_content": " Category A: ₹10.00 crore or 24 × NMI, whichever is lower  Category B: ₹5.00 crore or 24 × NMI, whichever is lower"
+    },
+    {
+        "section_id": "S007",
+        "section_name": "HomeSecure Home Loan (HHL)",
+        "topic_id": "S007_T015",
+        "topic_name": "Deviation & Lending Powers",
+        "merged_content": " Clean Loan discretionary lending powers applicable  Financial and non-financial deviations may be permitted as per approved deviation matrix and circulars"
+    },
+    {
+        "section_id": "S007",
+        "section_name": "HomeSecure Home Loan (HHL)",
+        "topic_id": "S007_T016",
+        "topic_name": "Scheme Codes",
+        "merged_content": " Standard Home Loan: Finacle – HL101 | Ascrom – 501  Earnest Money Deposit: Finacle – HL126 | Ascrom – 502"
+    },
+    {
+        "section_id": "S007",
+        "section_name": "HomeSecure Home Loan (HHL)",
+        "topic_id": "S007_T017",
+        "topic_name": "Classification of Advance",
+        "merged_content": " Retail – Secured Housing Loan"
+    },
+    {
+        "section_id": "S007",
+        "section_name": "HomeSecure Home Loan (HHL)",
+        "topic_id": "S007_T018",
+        "topic_name": "Summary",
+        "merged_content": "HomeSecure Home Loan offers a comprehensive, structured home financing solution for salaried and self-employed individuals. It combines flexibility, income-linked eligibility, and strong repayment controls to ensure portfolio quality and customer satisfaction."
+    }
+]

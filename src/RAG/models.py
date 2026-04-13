@@ -1,9 +1,11 @@
-from typing import Optional, Any, List
+from typing import Dict, Optional, Any, List
 from datetime import datetime, timezone
 from sqlmodel import SQLModel, Field as SQLField
 from sqlalchemy import Column, Text, Index
 from sqlalchemy.dialects.postgresql import JSONB
 from pydantic import BaseModel, Field as PydanticField
+from pgvector.sqlalchemy import Vector
+
 import uuid
 
 
@@ -74,6 +76,43 @@ class QueryState(SQLModel, table=True):
     )
 
     created_at: datetime = SQLField(default_factory=lambda: datetime.now(timezone.utc).replace(tzinfo=None))
+
+
+
+
+class ChunkModel(SQLModel, table=True):
+    __tablename__ = "document_chunks"
+
+    # 🔹 Primary key
+    id: uuid.UUID = SQLField(default_factory=uuid.uuid4, primary_key=True)
+
+    # 🔹 Core content
+    chunk_text: str = SQLField(nullable=False)
+
+    # 🔹 Embedding (768 for nomic)
+    embedding: Optional[List[float]] = SQLField(
+        default=None,
+        sa_column=Column(Vector(768))
+    )
+
+    # 🔹 Metadata JSON
+    chunk_metadata: Dict[str, Any] = SQLField(
+        default_factory=dict,
+        sa_column=Column(JSONB)
+    )
+
+    # 🔹 Chunk linking
+    prev_chunk_id: Optional[uuid.UUID] = SQLField(default=None, foreign_key="document_chunks.id")
+    next_chunk_id: Optional[uuid.UUID] = SQLField(default=None, foreign_key="document_chunks.id")
+
+    created_at: datetime = SQLField(default_factory=lambda: datetime.now(timezone.utc).replace(tzinfo=None))
+
+    context_chunks: List[Dict[str, Any]] = SQLField(
+        default_factory=list,
+        sa_column=Column(JSONB)
+    )
+
+
 
 # =========================
 # API Schemas
