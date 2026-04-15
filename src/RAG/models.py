@@ -83,8 +83,8 @@ class QueryState(SQLModel, table=True):
 class ChunkModel(SQLModel, table=True):
     __tablename__ = "document_chunks"
 
-    # 🔹 Primary key
-    id: uuid.UUID = SQLField(default_factory=uuid.uuid4, primary_key=True)
+    # 🔹 Primary key - Now Integer
+    id: Optional[int] = SQLField(default=None, primary_key=True)
 
     # 🔹 Core content
     chunk_text: str = SQLField(nullable=False)
@@ -94,6 +94,8 @@ class ChunkModel(SQLModel, table=True):
         default=None,
         sa_column=Column(Vector(768))
     )
+    
+    confidence_score: float = SQLField(default=0.0)
 
     # 🔹 Metadata JSON
     chunk_metadata: Dict[str, Any] = SQLField(
@@ -101,11 +103,13 @@ class ChunkModel(SQLModel, table=True):
         sa_column=Column(JSONB)
     )
 
-    # 🔹 Chunk linking
-    prev_chunk_id: Optional[uuid.UUID] = SQLField(default=None, foreign_key="document_chunks.id")
-    next_chunk_id: Optional[uuid.UUID] = SQLField(default=None, foreign_key="document_chunks.id")
+    # 🔹 Chunk linking - FIXED: Changed from uuid.UUID to int
+    prev_chunk_id: Optional[int] = SQLField(default=None, foreign_key="document_chunks.id")
+    next_chunk_id: Optional[int] = SQLField(default=None, foreign_key="document_chunks.id")
 
-    created_at: datetime = SQLField(default_factory=lambda: datetime.now(timezone.utc).replace(tzinfo=None))
+    created_at: datetime = SQLField(
+        default_factory=lambda: datetime.now(timezone.utc).replace(tzinfo=None)
+    )
 
     context_chunks: List[Dict[str, Any]] = SQLField(
         default_factory=list,

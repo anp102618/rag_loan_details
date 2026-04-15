@@ -3,167 +3,217 @@ import json
 import asyncio
 import sys
 import nest_asyncio
+import time
+import re
 from collections import Counter
 from typing import List, Dict, Any
 
-# Internal Project Imports
-from src.Utils.logger_setup import get_log, track_performance
+from src.Utils.logger_setup import setup_logger, current_logger, track_performance
 from src.Utils.exception_handler import CustomException
 from src.RAG.Strategies_RAG_build.text_guardrails import TextGuardrails
-from metadata_enrichment import BatchPDFKeywordPipeline
+from src.RAG.Strategies_RAG_build.metadata_enrichment import BatchPDFKeywordPipeline
 
-# Initialize structured logger
-logger = get_log("DeepPipeline")
-
-# Allow nested event loops for notebook/environment compatibility
+# ---------------- GLOBAL SETUP ---------------- #
+logger = setup_logger("preprocessing")
+current_logger.set(logger)
 nest_asyncio.apply()
 
+# ---------------- FALLBACK KEYWORD GENERATOR ---------------- #
+DEFAULT_KEYWORDS = ["Banking", "Loan", "Finance", "Customer", "Policy"]
+
+def generate_fallback_keywords(text: str) -> List[str]:
+    """
+    Deterministic keyword extraction.
+    Used when LLM output is missing/invalid.
+    Guarantees 5 keywords always.
+    """
+    words = re.findall(r'\b[a-zA-Z]{4,}\b', text.lower())
+
+    stopwords = {"this", "that", "with", "from", "have", "will", "your"}
+    words = [w for w in words if w not in stopwords]
+
+    freq = {}
+    for w in words:
+        freq[w] = freq.get(w, 0) + 1
+
+    sorted_words = sorted(freq, key=freq.get, reverse=True)
+
+    if len(sorted_words) >= 5:
+        return sorted_words[:5]
+
+    return (sorted_words + DEFAULT_KEYWORDS)[:5]
+
+
+# ---------------- PDF PROCESSOR ---------------- #
 class PDFProcessor:
     def __init__(self):
         self.guardrails = TextGuardrails()
 
     @track_performance
     def extract_hierarchy(self, pdf_path: str) -> List[Dict[str, Any]]:
-        """Extracts text hierarchy based on font size analysis."""
+        """
+        Extracts structured sections/topics using font hierarchy.
+        """
         try:
-            logger.info(f"Step 1: Opening PDF at {pdf_path}")
+            logger.info(f"[STEP 1] Opening PDF: {pdf_path}")
             doc = fitz.open(pdf_path)
+
             spans = []
-            
+
+            # -------- Extract spans -------- #
             for page in doc:
                 blocks = page.get_text("dict")["blocks"]
+
                 for b in blocks:
-                    if "lines" in b:
-                        for l in b["lines"]:
-                            for s in l["spans"]:
-                                if s["text"].strip():
-                                    spans.append({
-                                        "text": s["text"].strip(), 
-                                        "size": round(s["size"], 1)
-                                    })
-            
+                    if "lines" not in b:
+                        continue
+
+                    for l in b["lines"]:
+                        for s in l["spans"]:
+                            text = s["text"].strip()
+                            if text:
+                                spans.append({
+                                    "text": text,
+                                    "size": round(s["size"], 1)
+                                })
+
+            doc.close()
+
             if not spans:
-                logger.warning("No text spans extracted from PDF.")
+                logger.warning("[STEP 1] No text found in PDF.")
                 return []
 
-            # Analyze font sizes to determine structure
+            # -------- Detect hierarchy -------- #
             size_counts = Counter([s["size"] for s in spans])
             unique_sizes = sorted(size_counts.keys(), reverse=True)
-            
+
             section_f = unique_sizes[0]
             topic_f = unique_sizes[1] if len(unique_sizes) > 1 else unique_sizes[0]
-            logger.info(f"Hierarchy Rule -> Section Size: {section_f}, Topic Size: {topic_f}")
 
-            results, cur_sec_name, cur_sec_id = [], "Header", "S001"
+            logger.info(f"[STEP 1] Font Rules → Section={section_f}, Topic={topic_f}")
+
+            results = []
+            cur_sec_name, cur_sec_id = "Header", "S001"
             s_idx, t_idx = 1, 0
 
+            # -------- Build structure -------- #
             for span in spans:
-                # Section Header Detection
-                if span["size"] == section_f and len(span["text"]) < 80:
+                text = span["text"]
+
+                if span["size"] == section_f and len(text) < 100:
                     s_idx += 1
-                    cur_sec_name, cur_sec_id = span["text"], f"S{s_idx:03}"
+                    cur_sec_name = text
+                    cur_sec_id = f"S{s_idx:03}"
                     t_idx = 0
-                # Topic Header Detection
-                elif span["size"] == topic_f and len(span["text"]) < 80:
+
+                elif span["size"] == topic_f and len(text) < 100:
                     t_idx += 1
+
                     results.append({
                         "section_id": cur_sec_id,
                         "section_name": cur_sec_name,
                         "topic_id": f"{cur_sec_id}_T{t_idx:03}",
-                        "topic_name": span["text"],
+                        "topic_name": text,
                         "raw_lines": []
                     })
-                # Content Collection
+
                 elif results:
-                    results[-1]["raw_lines"].append(span["text"])
-            
-            doc.close()
-            logger.info(f"Extraction complete. {len(results)} topics identified.")
+                    results[-1]["raw_lines"].append(text)
+
+            logger.info(f"[STEP 1 COMPLETE] Topics extracted: {len(results)}")
             return results
 
         except Exception as e:
+            logger.exception("[ERROR] Extraction failed")
             raise CustomException(f"PDF Extraction Failed: {e}", sys)
 
-async def run_master_pipeline(pdf_path: str , output_path: str = "structured_loan_data.json"):
-    """Orchestrates the full extraction, cleaning, and enrichment process."""
+
+# ---------------- MASTER PIPELINE ---------------- #
+async def preprocessing_pipeline(pdf_path: str, output_path: str = "structured_loan_data.json"):
     try:
-        logger.info("--- PIPELINE STARTING ---")
-        
+        start_time = time.perf_counter()
+
         processor = PDFProcessor()
-        pipeline = BatchPDFKeywordPipeline(batch_size=5)
         guardrails = TextGuardrails()
 
-        # 1. EXTRACTION
-        raw_data = processor.extract_hierarchy(pdf_path)
-        if not raw_data:
-            logger.error("No data extracted. Aborting.")
-            return
+        pipeline = BatchPDFKeywordPipeline(
+            batch_size=3,
+            max_retries=2,
+            timeout=540,
+            concurrency_limit=1
+        )
 
-        # 2. CLEANING & DEDUPLICATION
-        logger.info("Step 2: Cleaning and Deduplicating content...")
+        # ---------------- STEP 1: EXTRACTION ----------------
+        raw_data = processor.extract_hierarchy(pdf_path)
+        logger.info(f"[STEP 1] Extracted topics: {len(raw_data)}")
+
+        # ---------------- STEP 2: CLEANING ----------------
         processed_items = []
+
         for item in raw_data:
-            raw_string = " ".join(item.pop("raw_lines"))
-            clean_text = guardrails.apply(raw_string)
-            
-            if clean_text:
-                item["text"] = clean_text
+            text = guardrails.apply(" ".join(item.pop("raw_lines")))
+            if text:
+                item["text"] = text
                 processed_items.append(item)
 
-        logger.info(f"Step 2 Complete: {len(processed_items)} items ready for LLM.")
+        logger.info(f"[STEP 2] Cleaned items: {len(processed_items)}")
 
-        # 3. LLM BATCH KEYWORD GENERATION
-        logger.info(f"Step 3: Triggering Concurrent LLM Batches...")
-        
-        # Prepare batches for concurrent execution
+        # ---------------- STEP 3: LLM ----------------
         batch_tasks = []
+
         for i in range(0, len(processed_items), pipeline.batch_size):
-            batch = processed_items[i : i + pipeline.batch_size]
+            batch = processed_items[i:i + pipeline.batch_size]
             batch_num = (i // pipeline.batch_size) + 1
-            
-            # Slim down input for the LLM
-            llm_input = [{"topic_id": x["topic_id"], "text": x["text"][:600]} for x in batch]
-            batch_tasks.append(pipeline.process_batch(llm_input, batch_num))
 
-        # Run batches concurrently (respecting the internal semaphore)
-        all_keyword_maps = await asyncio.gather(*batch_tasks)
+            llm_payload = [
+                {"topic_id": x["topic_id"], "text": x["text"][:500]}
+                for x in batch
+            ]
 
-        # Merge results back into the final list
+            batch_tasks.append(pipeline.process_batch(llm_payload, batch_num))
+
+        keyword_results = await asyncio.gather(*batch_tasks)
+
+        logger.info(f"[STEP 3] LLM completed: {len(processed_items)} items")
+
+        # ---------------- STEP 4: ENRICHMENT ----------------
+        master_map = {}
+        for d in keyword_results:
+            if d:
+                master_map.update(d)
+
         final_output = []
-        # Combine all dictionary results from batches into one lookup
-        master_keywords = {k: v for d in all_keyword_maps for k, v in d.items()}
+        llm_used = 0
+        fallback_used = 0
 
         for item in processed_items:
             tid = item["topic_id"]
-            item["keywords"] = master_keywords.get(tid, ["Banking", "Retail", "General"])
+            keywords = master_map.get(tid)
+
+            if isinstance(keywords, list) and len(keywords) >= 3:
+                item["keywords"] = keywords[:5]
+                llm_used += 1
+            else:
+                item["keywords"] = generate_fallback_keywords(item["text"])
+                fallback_used += 1
+
             final_output.append(item)
 
-        # 4. EXPORT
-        output_path = "structured_loan_data.json"
-        with open(output_path, "w") as f:
-            json.dump(final_output, f, indent=4)
-        
-        logger.info(f"PIPELINE SUCCESS | Results saved to: {output_path}")
+        logger.info(
+            f"[STEP 4] Enriched: {len(final_output)} "
+            f"(LLM={llm_used} | Fallback={fallback_used})"
+        )
+
+        # ---------------- STEP 5: EXPORT ----------------
+        with open(output_path, "w", encoding="utf-8") as f:
+            json.dump(final_output, f, indent=4, ensure_ascii=False)
+
+        total_time = round(time.perf_counter() - start_time, 2)
+
+        logger.info(
+            f"[PIPELINE DONE] Total={len(final_output)} | Time={total_time}s"
+        )
 
     except Exception as e:
-        logger.critical(f"Master Pipeline crashed: {e}")
+        logger.error(f"[PIPELINE ERROR] {str(e)}")
         raise CustomException(e, sys)
-
-def start_processing(file_path: str):
-    """
-    Entry point to trigger the asynchronous master pipeline 
-    from a synchronous context.
-    """
-    try:
-        logger.info(f"Starting process for file: {file_path}")
-        # asyncio.run handles the event loop lifecycle
-        asyncio.run(run_master_pipeline(file_path))
-        logger.info("Process completed successfully.")
-        
-    except Exception as e:
-        # Catching at the entry point to ensure we log the final crash state
-        logger.critical(f"Entry point 'start_processing' failed: {e}")
-        raise CustomException(e, sys)
-
-# Example usage:
-# start_processing(r"F:\Loan_Details_RAG_System1\Data\loan_products_final.pdf")

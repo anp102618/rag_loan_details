@@ -1,0 +1,1139 @@
+[2026-04-14 16:32:52,429] [TRACE:DeepPipeline] [preprocessing.run_master_pipeline:114] INFO - ========== PIPELINE START ==========
+[2026-04-14 16:32:52,490] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:27] INFO - [STEP 1] Opening PDF: F:\Loan_Details_RAG_System1\Data\loan_products_final.pdf
+[2026-04-14 16:32:52,520] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:32] INFO - [STEP 1.1] Total pages detected: 35
+[2026-04-14 16:32:52,533] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:35] DEBUG - [STEP 1.2] Processing page 1/35
+[2026-04-14 16:32:52,573] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:51] DEBUG - [STEP 1.2] Page 1 processed | spans so far: 51
+[2026-04-14 16:32:52,578] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:35] DEBUG - [STEP 1.2] Processing page 2/35
+[2026-04-14 16:32:52,603] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:51] DEBUG - [STEP 1.2] Page 2 processed | spans so far: 131
+[2026-04-14 16:32:52,610] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:35] DEBUG - [STEP 1.2] Processing page 3/35
+[2026-04-14 16:32:52,621] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:51] DEBUG - [STEP 1.2] Page 3 processed | spans so far: 201
+[2026-04-14 16:32:52,624] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:35] DEBUG - [STEP 1.2] Processing page 4/35
+[2026-04-14 16:32:52,632] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:51] DEBUG - [STEP 1.2] Page 4 processed | spans so far: 226
+[2026-04-14 16:32:52,638] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:35] DEBUG - [STEP 1.2] Processing page 5/35
+[2026-04-14 16:32:52,649] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:51] DEBUG - [STEP 1.2] Page 5 processed | spans so far: 292
+[2026-04-14 16:32:52,653] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:35] DEBUG - [STEP 1.2] Processing page 6/35
+[2026-04-14 16:32:52,675] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:51] DEBUG - [STEP 1.2] Page 6 processed | spans so far: 373
+[2026-04-14 16:32:52,680] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:35] DEBUG - [STEP 1.2] Processing page 7/35
+[2026-04-14 16:32:52,689] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:51] DEBUG - [STEP 1.2] Page 7 processed | spans so far: 434
+[2026-04-14 16:32:52,693] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:35] DEBUG - [STEP 1.2] Processing page 8/35
+[2026-04-14 16:32:52,701] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:51] DEBUG - [STEP 1.2] Page 8 processed | spans so far: 458
+[2026-04-14 16:32:52,706] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:35] DEBUG - [STEP 1.2] Processing page 9/35
+[2026-04-14 16:32:52,721] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:51] DEBUG - [STEP 1.2] Page 9 processed | spans so far: 526
+[2026-04-14 16:32:52,726] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:35] DEBUG - [STEP 1.2] Processing page 10/35
+[2026-04-14 16:32:52,734] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:51] DEBUG - [STEP 1.2] Page 10 processed | spans so far: 607
+[2026-04-14 16:32:52,737] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:35] DEBUG - [STEP 1.2] Processing page 11/35
+[2026-04-14 16:32:52,744] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:51] DEBUG - [STEP 1.2] Page 11 processed | spans so far: 652
+[2026-04-14 16:32:52,749] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:35] DEBUG - [STEP 1.2] Processing page 12/35
+[2026-04-14 16:32:52,757] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:51] DEBUG - [STEP 1.2] Page 12 processed | spans so far: 729
+[2026-04-14 16:32:52,761] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:35] DEBUG - [STEP 1.2] Processing page 13/35
+[2026-04-14 16:32:52,769] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:51] DEBUG - [STEP 1.2] Page 13 processed | spans so far: 777
+[2026-04-14 16:32:52,774] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:35] DEBUG - [STEP 1.2] Processing page 14/35
+[2026-04-14 16:32:52,782] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:51] DEBUG - [STEP 1.2] Page 14 processed | spans so far: 840
+[2026-04-14 16:32:52,786] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:35] DEBUG - [STEP 1.2] Processing page 15/35
+[2026-04-14 16:32:52,793] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:51] DEBUG - [STEP 1.2] Page 15 processed | spans so far: 912
+[2026-04-14 16:32:52,794] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:35] DEBUG - [STEP 1.2] Processing page 16/35
+[2026-04-14 16:32:52,804] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:51] DEBUG - [STEP 1.2] Page 16 processed | spans so far: 974
+[2026-04-14 16:32:52,807] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:35] DEBUG - [STEP 1.2] Processing page 17/35
+[2026-04-14 16:32:52,814] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:51] DEBUG - [STEP 1.2] Page 17 processed | spans so far: 1021
+[2026-04-14 16:32:52,818] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:35] DEBUG - [STEP 1.2] Processing page 18/35
+[2026-04-14 16:32:52,824] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:51] DEBUG - [STEP 1.2] Page 18 processed | spans so far: 1043
+[2026-04-14 16:32:52,827] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:35] DEBUG - [STEP 1.2] Processing page 19/35
+[2026-04-14 16:32:52,834] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:51] DEBUG - [STEP 1.2] Page 19 processed | spans so far: 1103
+[2026-04-14 16:32:52,834] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:35] DEBUG - [STEP 1.2] Processing page 20/35
+[2026-04-14 16:32:52,844] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:51] DEBUG - [STEP 1.2] Page 20 processed | spans so far: 1170
+[2026-04-14 16:32:52,844] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:35] DEBUG - [STEP 1.2] Processing page 21/35
+[2026-04-14 16:32:52,855] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:51] DEBUG - [STEP 1.2] Page 21 processed | spans so far: 1231
+[2026-04-14 16:32:52,855] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:35] DEBUG - [STEP 1.2] Processing page 22/35
+[2026-04-14 16:32:52,866] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:51] DEBUG - [STEP 1.2] Page 22 processed | spans so far: 1288
+[2026-04-14 16:32:52,869] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:35] DEBUG - [STEP 1.2] Processing page 23/35
+[2026-04-14 16:32:52,880] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:51] DEBUG - [STEP 1.2] Page 23 processed | spans so far: 1329
+[2026-04-14 16:32:52,883] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:35] DEBUG - [STEP 1.2] Processing page 24/35
+[2026-04-14 16:32:52,887] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:51] DEBUG - [STEP 1.2] Page 24 processed | spans so far: 1332
+[2026-04-14 16:32:52,891] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:35] DEBUG - [STEP 1.2] Processing page 25/35
+[2026-04-14 16:32:52,900] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:51] DEBUG - [STEP 1.2] Page 25 processed | spans so far: 1394
+[2026-04-14 16:32:52,906] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:35] DEBUG - [STEP 1.2] Processing page 26/35
+[2026-04-14 16:32:52,916] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:51] DEBUG - [STEP 1.2] Page 26 processed | spans so far: 1451
+[2026-04-14 16:32:52,921] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:35] DEBUG - [STEP 1.2] Processing page 27/35
+[2026-04-14 16:32:52,927] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:51] DEBUG - [STEP 1.2] Page 27 processed | spans so far: 1519
+[2026-04-14 16:32:52,935] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:35] DEBUG - [STEP 1.2] Processing page 28/35
+[2026-04-14 16:32:52,939] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:51] DEBUG - [STEP 1.2] Page 28 processed | spans so far: 1577
+[2026-04-14 16:32:52,947] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:35] DEBUG - [STEP 1.2] Processing page 29/35
+[2026-04-14 16:32:52,955] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:51] DEBUG - [STEP 1.2] Page 29 processed | spans so far: 1627
+[2026-04-14 16:32:52,957] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:35] DEBUG - [STEP 1.2] Processing page 30/35
+[2026-04-14 16:32:52,965] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:51] DEBUG - [STEP 1.2] Page 30 processed | spans so far: 1648
+[2026-04-14 16:32:52,965] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:35] DEBUG - [STEP 1.2] Processing page 31/35
+[2026-04-14 16:32:52,974] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:51] DEBUG - [STEP 1.2] Page 31 processed | spans so far: 1699
+[2026-04-14 16:32:52,978] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:35] DEBUG - [STEP 1.2] Processing page 32/35
+[2026-04-14 16:32:52,980] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:51] DEBUG - [STEP 1.2] Page 32 processed | spans so far: 1743
+[2026-04-14 16:32:52,980] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:35] DEBUG - [STEP 1.2] Processing page 33/35
+[2026-04-14 16:32:52,994] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:51] DEBUG - [STEP 1.2] Page 33 processed | spans so far: 1795
+[2026-04-14 16:32:52,997] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:35] DEBUG - [STEP 1.2] Processing page 34/35
+[2026-04-14 16:32:52,997] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:51] DEBUG - [STEP 1.2] Page 34 processed | spans so far: 1832
+[2026-04-14 16:32:52,997] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:35] DEBUG - [STEP 1.2] Processing page 35/35
+[2026-04-14 16:32:53,008] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:51] DEBUG - [STEP 1.2] Page 35 processed | spans so far: 1832
+[2026-04-14 16:32:53,008] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:57] INFO - [STEP 1.3] Total spans extracted: 1832
+[2026-04-14 16:32:53,008] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:63] INFO - [STEP 1.4] Unique font sizes found: [18.0, 13.4, 13.0, 12.5, 12.0, 10.1]
+[2026-04-14 16:32:53,020] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:68] INFO - [STEP 1.5] Hierarchy rules → Section: 18.0, Topic: 13.4
+[2026-04-14 16:32:53,025] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:83] DEBUG - [SECTION DETECTED] S002 → SecureSave Loan Against Approved Securities (SLAAS)
+[2026-04-14 16:32:53,028] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:97] DEBUG - [TOPIC DETECTED] S002_T001 → Product Overview
+[2026-04-14 16:32:53,028] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:97] DEBUG - [TOPIC DETECTED] S002_T002 → Nature of Facility
+[2026-04-14 16:32:53,036] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:97] DEBUG - [TOPIC DETECTED] S002_T003 → Eligibility
+[2026-04-14 16:32:53,040] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:97] DEBUG - [TOPIC DETECTED] S002_T004 → Eligible Securities
+[2026-04-14 16:32:53,044] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:97] DEBUG - [TOPIC DETECTED] S002_T005 → Margin Requirements
+[2026-04-14 16:32:53,047] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:97] DEBUG - [TOPIC DETECTED] S002_T006 → Loan Amount
+[2026-04-14 16:32:53,050] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:97] DEBUG - [TOPIC DETECTED] S002_T007 → Purpose of Loan
+[2026-04-14 16:32:53,054] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:97] DEBUG - [TOPIC DETECTED] S002_T008 → Rate of Interest
+[2026-04-14 16:32:53,058] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:97] DEBUG - [TOPIC DETECTED] S002_T009 → Processing Charges
+[2026-04-14 16:32:53,062] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:97] DEBUG - [TOPIC DETECTED] S002_T010 → Repayment Terms
+[2026-04-14 16:32:53,066] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:97] DEBUG - [TOPIC DETECTED] S002_T011 → Security and Documentation
+[2026-04-14 16:32:53,068] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:97] DEBUG - [TOPIC DETECTED] S002_T012 → Lien and Assignment Procedure
+[2026-04-14 16:32:53,076] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:97] DEBUG - [TOPIC DETECTED] S002_T013 → Special Conditions for Life Insurance Policies
+[2026-04-14 16:32:53,081] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:97] DEBUG - [TOPIC DETECTED] S002_T014 → Discretionary Lending Powers
+[2026-04-14 16:32:53,083] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:97] DEBUG - [TOPIC DETECTED] S002_T015 → Summary
+[2026-04-14 16:32:53,088] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:83] DEBUG - [SECTION DETECTED] S003 → DriveSure Auto Loan (DAL)
+[2026-04-14 16:32:53,091] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:97] DEBUG - [TOPIC DETECTED] S003_T001 → Product Overview
+[2026-04-14 16:32:53,095] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:97] DEBUG - [TOPIC DETECTED] S003_T002 → Nature of Facility
+[2026-04-14 16:32:53,098] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:97] DEBUG - [TOPIC DETECTED] S003_T003 → Purpose of Loan
+[2026-04-14 16:32:53,103] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:97] DEBUG - [TOPIC DETECTED] S003_T004 → Eligibility
+[2026-04-14 16:32:53,108] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:97] DEBUG - [TOPIC DETECTED] S003_T005 → Co-Borrower Conditions
+[2026-04-14 16:32:53,113] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:97] DEBUG - [TOPIC DETECTED] S003_T006 → Age Criteria
+[2026-04-14 16:32:53,117] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:97] DEBUG - [TOPIC DETECTED] S003_T007 → Loan Amount
+[2026-04-14 16:32:53,121] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:97] DEBUG - [TOPIC DETECTED] S003_T008 → Margin Requirements
+[2026-04-14 16:32:53,122] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:97] DEBUG - [TOPIC DETECTED] S003_T009 → Repayment Capacity
+[2026-04-14 16:32:53,128] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:97] DEBUG - [TOPIC DETECTED] S003_T010 → Rate of Interest
+[2026-04-14 16:32:53,134] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:97] DEBUG - [TOPIC DETECTED] S003_T011 → Interest Concessions
+[2026-04-14 16:32:53,138] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:97] DEBUG - [TOPIC DETECTED] S003_T012 → Repayment Period
+[2026-04-14 16:32:53,141] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:97] DEBUG - [TOPIC DETECTED] S003_T013 → Security
+[2026-04-14 16:32:53,141] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:97] DEBUG - [TOPIC DETECTED] S003_T014 → Insurance
+[2026-04-14 16:32:53,148] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:97] DEBUG - [TOPIC DETECTED] S003_T015 → Processing Charges
+[2026-04-14 16:32:53,148] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:97] DEBUG - [TOPIC DETECTED] S003_T016 → Documentation & Vigilance
+[2026-04-14 16:32:53,148] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:97] DEBUG - [TOPIC DETECTED] S003_T017 → Credit Rating & Sanction
+[2026-04-14 16:32:53,148] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:97] DEBUG - [TOPIC DETECTED] S003_T018 → Summary
+[2026-04-14 16:32:53,148] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:83] DEBUG - [SECTION DETECTED] S004 → HomeSure Mortgage Loan (HML)
+[2026-04-14 16:32:53,148] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:97] DEBUG - [TOPIC DETECTED] S004_T001 → Product Overview
+[2026-04-14 16:32:53,163] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:97] DEBUG - [TOPIC DETECTED] S004_T002 → Purpose of Loan
+[2026-04-14 16:32:53,165] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:97] DEBUG - [TOPIC DETECTED] S004_T003 → Nature of Facility
+[2026-04-14 16:32:53,165] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:97] DEBUG - [TOPIC DETECTED] S004_T004 → Eligibility
+[2026-04-14 16:32:53,165] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:97] DEBUG - [TOPIC DETECTED] S004_T005 → Age Criteria
+[2026-04-14 16:32:53,165] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:97] DEBUG - [TOPIC DETECTED] S004_T006 → Loan Amount
+[2026-04-14 16:32:53,165] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:97] DEBUG - [TOPIC DETECTED] S004_T007 → Income Criteria
+[2026-04-14 16:32:53,179] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:97] DEBUG - [TOPIC DETECTED] S004_T008 → Repayment Capacity
+[2026-04-14 16:32:53,182] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:97] DEBUG - [TOPIC DETECTED] S004_T009 → Rate of Interest
+[2026-04-14 16:32:53,182] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:97] DEBUG - [TOPIC DETECTED] S004_T010 → Penal Interest
+[2026-04-14 16:32:53,182] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:97] DEBUG - [TOPIC DETECTED] S004_T011 → Prepayment Charges
+[2026-04-14 16:32:53,191] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:97] DEBUG - [TOPIC DETECTED] S004_T012 → Margin
+[2026-04-14 16:32:53,191] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:97] DEBUG - [TOPIC DETECTED] S004_T013 → Security
+[2026-04-14 16:32:53,194] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:97] DEBUG - [TOPIC DETECTED] S004_T014 → Personal Guarantee
+[2026-04-14 16:32:53,198] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:97] DEBUG - [TOPIC DETECTED] S004_T015 → Repayment Terms
+[2026-04-14 16:32:53,198] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:97] DEBUG - [TOPIC DETECTED] S004_T016 → Processing Charges
+[2026-04-14 16:32:53,198] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:97] DEBUG - [TOPIC DETECTED] S004_T017 → Valuation of Property
+[2026-04-14 16:32:53,198] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:97] DEBUG - [TOPIC DETECTED] S004_T018 → Age of Building
+[2026-04-14 16:32:53,209] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:97] DEBUG - [TOPIC DETECTED] S004_T019 → Insurance
+[2026-04-14 16:32:53,213] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:97] DEBUG - [TOPIC DETECTED] S004_T020 → Takeover of Existing Mortgage Loans
+[2026-04-14 16:32:53,217] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:97] DEBUG - [TOPIC DETECTED] S004_T021 → Legal Scrutiny
+[2026-04-14 16:32:53,222] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:97] DEBUG - [TOPIC DETECTED] S004_T022 → Credit Rating & Sanction
+[2026-04-14 16:32:53,225] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:97] DEBUG - [TOPIC DETECTED] S004_T023 → Preventive Vigilance Measures
+[2026-04-14 16:32:53,229] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:97] DEBUG - [TOPIC DETECTED] S004_T024 → Summary
+[2026-04-14 16:32:53,229] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:83] DEBUG - [SECTION DETECTED] S005 → TradePlus Business Loan (TBL)
+[2026-04-14 16:32:53,229] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:97] DEBUG - [TOPIC DETECTED] S005_T001 → Product Overview
+[2026-04-14 16:32:53,229] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:97] DEBUG - [TOPIC DETECTED] S005_T002 → Nature of Facility
+[2026-04-14 16:32:53,241] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:97] DEBUG - [TOPIC DETECTED] S005_T003 → Purpose of Finance
+[2026-04-14 16:32:53,241] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:97] DEBUG - [TOPIC DETECTED] S005_T004 → Eligibility
+[2026-04-14 16:32:53,241] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:97] DEBUG - [TOPIC DETECTED] S005_T005 → Loan Amount
+[2026-04-14 16:32:53,241] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:97] DEBUG - [TOPIC DETECTED] S005_T006 → Assessment of Working Capital & Term Loan
+[2026-04-14 16:32:53,251] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:97] DEBUG - [TOPIC DETECTED] S005_T007 → Margin
+[2026-04-14 16:32:53,256] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:97] DEBUG - [TOPIC DETECTED] S005_T008 → Rate of Interest
+[2026-04-14 16:32:53,256] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:97] DEBUG - [TOPIC DETECTED] S005_T009 → Period & Repayment
+[2026-04-14 16:32:53,260] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:97] DEBUG - [TOPIC DETECTED] S005_T010 → Commitment Charges
+[2026-04-14 16:32:53,260] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:97] DEBUG - [TOPIC DETECTED] S005_T011 → Security
+[2026-04-14 16:32:53,260] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:97] DEBUG - [TOPIC DETECTED] S005_T012 → Valuation & Age of Property
+[2026-04-14 16:32:53,272] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:97] DEBUG - [TOPIC DETECTED] S005_T013 → Documentation
+[2026-04-14 16:32:53,272] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:97] DEBUG - [TOPIC DETECTED] S005_T014 → Insurance
+[2026-04-14 16:32:53,278] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:97] DEBUG - [TOPIC DETECTED] S005_T015 → Credit Rating
+[2026-04-14 16:32:53,278] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:97] DEBUG - [TOPIC DETECTED] S005_T016 → Other Conditions
+[2026-04-14 16:32:53,285] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:97] DEBUG - [TOPIC DETECTED] S005_T017 → Deviation Powers & Vigilance
+[2026-04-14 16:32:53,290] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:97] DEBUG - [TOPIC DETECTED] S005_T018 → Summary
+[2026-04-14 16:32:53,296] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:83] DEBUG - [SECTION DETECTED] S006 → EduGrow Education Loan
+[2026-04-14 16:32:53,303] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:97] DEBUG - [TOPIC DETECTED] S006_T001 → Product Overview
+[2026-04-14 16:32:53,307] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:97] DEBUG - [TOPIC DETECTED] S006_T002 → Target Group
+[2026-04-14 16:32:53,310] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:97] DEBUG - [TOPIC DETECTED] S006_T003 → Courses Eligible
+[2026-04-14 16:32:53,317] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:97] DEBUG - [TOPIC DETECTED] S006_T004 → Quantum of Finance
+[2026-04-14 16:32:53,323] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:97] DEBUG - [TOPIC DETECTED] S006_T005 → Rate of Interest
+[2026-04-14 16:32:53,329] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:97] DEBUG - [TOPIC DETECTED] S006_T006 → Repayment Holiday / Moratorium
+[2026-04-14 16:32:53,337] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:97] DEBUG - [TOPIC DETECTED] S006_T007 → Repayment Period
+[2026-04-14 16:32:53,342] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:97] DEBUG - [TOPIC DETECTED] S006_T008 → Processing & Documentation Charges
+[2026-04-14 16:32:53,346] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:97] DEBUG - [TOPIC DETECTED] S006_T009 → Financing Branch
+[2026-04-14 16:32:53,352] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:97] DEBUG - [TOPIC DETECTED] S006_T010 → Security
+[2026-04-14 16:32:53,358] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:97] DEBUG - [TOPIC DETECTED] S006_T011 → Disbursement
+[2026-04-14 16:32:53,361] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:97] DEBUG - [TOPIC DETECTED] S006_T012 → Progress Monitoring
+[2026-04-14 16:32:53,363] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:97] DEBUG - [TOPIC DETECTED] S006_T013 → Other Conditions
+[2026-04-14 16:32:53,366] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:97] DEBUG - [TOPIC DETECTED] S006_T014 → Freebies
+[2026-04-14 16:32:53,370] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:97] DEBUG - [TOPIC DETECTED] S006_T015 → Additional Loan / Enhancement
+[2026-04-14 16:32:53,376] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:97] DEBUG - [TOPIC DETECTED] S006_T016 → Rephasement
+[2026-04-14 16:32:53,376] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:97] DEBUG - [TOPIC DETECTED] S006_T017 → Deviation
+[2026-04-14 16:32:53,381] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:97] DEBUG - [TOPIC DETECTED] S006_T018 → Classification of Advance
+[2026-04-14 16:32:53,385] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:97] DEBUG - [TOPIC DETECTED] S006_T019 → Summary
+[2026-04-14 16:32:53,385] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:83] DEBUG - [SECTION DETECTED] S007 → FlexiServe Personal Loan (FPL)
+[2026-04-14 16:32:53,392] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:97] DEBUG - [TOPIC DETECTED] S007_T001 → Product Overview
+[2026-04-14 16:32:53,395] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:97] DEBUG - [TOPIC DETECTED] S007_T002 → Purpose of Loan
+[2026-04-14 16:32:53,397] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:97] DEBUG - [TOPIC DETECTED] S007_T003 → Eligible Borrowers
+[2026-04-14 16:32:53,402] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:97] DEBUG - [TOPIC DETECTED] S007_T004 → Insurance Agents
+[2026-04-14 16:32:53,402] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:97] DEBUG - [TOPIC DETECTED] S007_T005 → Special Category – Earnest Money Deposit
+[2026-04-14 16:32:53,402] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:97] DEBUG - [TOPIC DETECTED] S007_T006 → Account Relationship
+[2026-04-14 16:32:53,411] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:97] DEBUG - [TOPIC DETECTED] S007_T007 → Credit Risk & Rating
+[2026-04-14 16:32:53,411] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:97] DEBUG - [TOPIC DETECTED] S007_T008 → Age Criteria
+[2026-04-14 16:32:53,419] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:97] DEBUG - [TOPIC DETECTED] S007_T009 → Loan Amount
+[2026-04-14 16:32:53,423] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:97] DEBUG - [TOPIC DETECTED] S007_T010 → Interest Rate
+[2026-04-14 16:32:53,429] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:97] DEBUG - [TOPIC DETECTED] S007_T011 → Penal Interest
+[2026-04-14 16:32:53,432] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:97] DEBUG - [TOPIC DETECTED] S007_T012 → Repayment
+[2026-04-14 16:32:53,432] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:97] DEBUG - [TOPIC DETECTED] S007_T013 → Repayment Capacity
+[2026-04-14 16:32:53,432] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:97] DEBUG - [TOPIC DETECTED] S007_T014 → Check-Off / Recovery Mechanism (Premium Segment)
+[2026-04-14 16:32:53,432] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:97] DEBUG - [TOPIC DETECTED] S007_T015 → Loan Ceiling – Premium Segment
+[2026-04-14 16:32:53,432] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:97] DEBUG - [TOPIC DETECTED] S007_T016 → Repayment Period – Premium Segment
+[2026-04-14 16:32:53,448] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:97] DEBUG - [TOPIC DETECTED] S007_T017 → Security & Documentation
+[2026-04-14 16:32:53,454] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:97] DEBUG - [TOPIC DETECTED] S007_T018 → Processing Charges
+[2026-04-14 16:32:53,456] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:97] DEBUG - [TOPIC DETECTED] S007_T019 → Documents Required
+[2026-04-14 16:32:53,458] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:97] DEBUG - [TOPIC DETECTED] S007_T020 → Salaried Applicants
+[2026-04-14 16:32:53,462] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:97] DEBUG - [TOPIC DETECTED] S007_T021 → Self-Employed / Professionals
+[2026-04-14 16:32:53,463] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:97] DEBUG - [TOPIC DETECTED] S007_T022 → Transfer of Loan Account
+[2026-04-14 16:32:53,467] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:97] DEBUG - [TOPIC DETECTED] S007_T023 → Deviation & Lending Powers
+[2026-04-14 16:32:53,469] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:97] DEBUG - [TOPIC DETECTED] S007_T024 → Scheme Codes
+[2026-04-14 16:32:53,473] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:97] DEBUG - [TOPIC DETECTED] S007_T025 → Classification of Advance
+[2026-04-14 16:32:53,475] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:97] DEBUG - [TOPIC DETECTED] S007_T026 → Summary
+[2026-04-14 16:32:53,479] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:83] DEBUG - [SECTION DETECTED] S008 → HomeSecure Home Loan (HHL)
+[2026-04-14 16:32:53,483] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:97] DEBUG - [TOPIC DETECTED] S008_T001 → Product Overview
+[2026-04-14 16:32:53,485] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:97] DEBUG - [TOPIC DETECTED] S008_T002 → Purpose of Loan
+[2026-04-14 16:32:53,487] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:97] DEBUG - [TOPIC DETECTED] S008_T003 → Eligible Borrowers
+[2026-04-14 16:32:53,491] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:97] DEBUG - [TOPIC DETECTED] S008_T004 → Account Relationship
+[2026-04-14 16:32:53,493] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:97] DEBUG - [TOPIC DETECTED] S008_T005 → Credit Risk & Rating
+[2026-04-14 16:32:53,497] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:97] DEBUG - [TOPIC DETECTED] S008_T006 → Age Criteria
+[2026-04-14 16:32:53,499] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:97] DEBUG - [TOPIC DETECTED] S008_T007 → Loan Amount
+[2026-04-14 16:32:53,501] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:97] DEBUG - [TOPIC DETECTED] S008_T008 → Interest Rate
+[2026-04-14 16:32:53,505] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:97] DEBUG - [TOPIC DETECTED] S008_T009 → Repayment
+[2026-04-14 16:32:53,507] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:97] DEBUG - [TOPIC DETECTED] S008_T010 → Repayment Capacity
+[2026-04-14 16:32:53,511] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:97] DEBUG - [TOPIC DETECTED] S008_T011 → Security & Documentation
+[2026-04-14 16:32:53,511] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:97] DEBUG - [TOPIC DETECTED] S008_T012 → Processing Charges
+[2026-04-14 16:32:53,511] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:97] DEBUG - [TOPIC DETECTED] S008_T013 → Check-Off / Recovery Mechanism (Premium Segment)
+[2026-04-14 16:32:53,511] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:97] DEBUG - [TOPIC DETECTED] S008_T014 → Loan Ceiling – Premium Segment
+[2026-04-14 16:32:53,527] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:97] DEBUG - [TOPIC DETECTED] S008_T015 → Deviation & Lending Powers
+[2026-04-14 16:32:53,530] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:97] DEBUG - [TOPIC DETECTED] S008_T016 → Scheme Codes
+[2026-04-14 16:32:53,534] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:97] DEBUG - [TOPIC DETECTED] S008_T017 → Classification of Advance
+[2026-04-14 16:32:53,538] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:97] DEBUG - [TOPIC DETECTED] S008_T018 → Summary
+[2026-04-14 16:32:53,554] [TRACE:DeepPipeline] [preprocessing.extract_hierarchy:104] INFO - [STEP 1 COMPLETE] Topics extracted: 138
+[2026-04-14 16:32:53,566] [TRACE:DeepPipeline] [logger_setup.sync_wrapper:136] INFO - [PERF] Sync 'extract_hierarchy' | Time=1.0752s | MemΔ=475.15KB | Peak=15273.01KB
+[2026-04-14 16:32:53,576] [TRACE:DeepPipeline] [preprocessing.run_master_pipeline:127] INFO - [STEP 1 RESULT] Extracted topics: 138
+[2026-04-14 16:32:53,583] [TRACE:DeepPipeline] [preprocessing.run_master_pipeline:130] INFO - [STEP 2] Cleaning & deduplication started
+[2026-04-14 16:32:53,698] [TRACE:DeepPipeline] [logger_setup.sync_wrapper:136] INFO - [PERF] Sync 'apply' | Time=0.1083s | MemΔ=14.03KB | Peak=15273.01KB
+[2026-04-14 16:32:53,746] [TRACE:DeepPipeline] [logger_setup.sync_wrapper:136] INFO - [PERF] Sync 'apply' | Time=0.0475s | MemΔ=-34.44KB | Peak=15273.01KB
+[2026-04-14 16:32:53,780] [TRACE:DeepPipeline] [logger_setup.sync_wrapper:136] INFO - [PERF] Sync 'apply' | Time=0.0267s | MemΔ=5.42KB | Peak=15273.01KB
+[2026-04-14 16:32:53,848] [TRACE:DeepPipeline] [logger_setup.sync_wrapper:136] INFO - [PERF] Sync 'apply' | Time=0.0688s | MemΔ=3.21KB | Peak=15273.01KB
+[2026-04-14 16:32:53,905] [TRACE:DeepPipeline] [logger_setup.sync_wrapper:136] INFO - [PERF] Sync 'apply' | Time=0.0540s | MemΔ=3.32KB | Peak=15273.01KB
+[2026-04-14 16:32:53,976] [TRACE:DeepPipeline] [logger_setup.sync_wrapper:136] INFO - [PERF] Sync 'apply' | Time=0.0633s | MemΔ=-107.62KB | Peak=15273.01KB
+[2026-04-14 16:32:54,010] [TRACE:DeepPipeline] [logger_setup.sync_wrapper:136] INFO - [PERF] Sync 'apply' | Time=0.0314s | MemΔ=2.56KB | Peak=15273.01KB
+[2026-04-14 16:32:54,112] [TRACE:DeepPipeline] [logger_setup.sync_wrapper:136] INFO - [PERF] Sync 'apply' | Time=0.0942s | MemΔ=8.23KB | Peak=15273.01KB
+[2026-04-14 16:32:54,147] [TRACE:DeepPipeline] [logger_setup.sync_wrapper:136] INFO - [PERF] Sync 'apply' | Time=0.0308s | MemΔ=2.72KB | Peak=15273.01KB
+[2026-04-14 16:32:54,237] [TRACE:DeepPipeline] [logger_setup.sync_wrapper:136] INFO - [PERF] Sync 'apply' | Time=0.0860s | MemΔ=-146.97KB | Peak=15273.01KB
+[2026-04-14 16:32:54,341] [TRACE:DeepPipeline] [logger_setup.sync_wrapper:136] INFO - [PERF] Sync 'apply' | Time=0.0992s | MemΔ=3.59KB | Peak=15273.01KB
+[2026-04-14 16:32:54,421] [TRACE:DeepPipeline] [logger_setup.sync_wrapper:136] INFO - [PERF] Sync 'apply' | Time=0.0832s | MemΔ=14.25KB | Peak=15273.01KB
+[2026-04-14 16:32:54,477] [TRACE:DeepPipeline] [logger_setup.sync_wrapper:136] INFO - [PERF] Sync 'apply' | Time=0.0600s | MemΔ=-110.30KB | Peak=15273.01KB
+[2026-04-14 16:32:54,540] [TRACE:DeepPipeline] [logger_setup.sync_wrapper:136] INFO - [PERF] Sync 'apply' | Time=0.0436s | MemΔ=2.63KB | Peak=15273.01KB
+[2026-04-14 16:32:54,644] [TRACE:DeepPipeline] [logger_setup.sync_wrapper:136] INFO - [PERF] Sync 'apply' | Time=0.1039s | MemΔ=5.12KB | Peak=15273.01KB
+[2026-04-14 16:32:54,749] [TRACE:DeepPipeline] [logger_setup.sync_wrapper:136] INFO - [PERF] Sync 'apply' | Time=0.1000s | MemΔ=-0.10KB | Peak=15273.01KB
+[2026-04-14 16:32:54,764] [TRACE:DeepPipeline] [logger_setup.sync_wrapper:136] INFO - [PERF] Sync 'apply' | Time=0.0111s | MemΔ=2.49KB | Peak=15273.01KB
+[2026-04-14 16:32:54,864] [TRACE:DeepPipeline] [logger_setup.sync_wrapper:136] INFO - [PERF] Sync 'apply' | Time=0.0998s | MemΔ=5.15KB | Peak=15273.01KB
+[2026-04-14 16:32:55,022] [TRACE:DeepPipeline] [logger_setup.sync_wrapper:136] INFO - [PERF] Sync 'apply' | Time=0.1548s | MemΔ=-137.75KB | Peak=15273.01KB
+[2026-04-14 16:32:55,038] [TRACE:DeepPipeline] [preprocessing.run_master_pipeline:139] DEBUG - [STEP 2 PROGRESS] Processed 20/138 items
+[2026-04-14 16:32:55,148] [TRACE:DeepPipeline] [logger_setup.sync_wrapper:136] INFO - [PERF] Sync 'apply' | Time=0.1136s | MemΔ=9.80KB | Peak=15273.01KB
+[2026-04-14 16:32:55,234] [TRACE:DeepPipeline] [logger_setup.sync_wrapper:136] INFO - [PERF] Sync 'apply' | Time=0.0772s | MemΔ=7.86KB | Peak=15273.01KB
+[2026-04-14 16:32:55,327] [TRACE:DeepPipeline] [logger_setup.sync_wrapper:136] INFO - [PERF] Sync 'apply' | Time=0.0991s | MemΔ=10.47KB | Peak=15273.01KB
+[2026-04-14 16:32:55,401] [TRACE:DeepPipeline] [logger_setup.sync_wrapper:136] INFO - [PERF] Sync 'apply' | Time=0.0578s | MemΔ=10.07KB | Peak=15273.01KB
+[2026-04-14 16:32:55,436] [TRACE:DeepPipeline] [logger_setup.sync_wrapper:136] INFO - [PERF] Sync 'apply' | Time=0.0344s | MemΔ=2.87KB | Peak=15273.01KB
+[2026-04-14 16:32:55,480] [TRACE:DeepPipeline] [logger_setup.sync_wrapper:136] INFO - [PERF] Sync 'apply' | Time=0.0402s | MemΔ=-105.16KB | Peak=15273.01KB
+[2026-04-14 16:32:55,670] [TRACE:DeepPipeline] [logger_setup.sync_wrapper:136] INFO - [PERF] Sync 'apply' | Time=0.1780s | MemΔ=7.46KB | Peak=15273.01KB
+[2026-04-14 16:32:55,733] [TRACE:DeepPipeline] [logger_setup.sync_wrapper:136] INFO - [PERF] Sync 'apply' | Time=0.0569s | MemΔ=-120.57KB | Peak=15273.01KB
+[2026-04-14 16:32:55,815] [TRACE:DeepPipeline] [logger_setup.sync_wrapper:136] INFO - [PERF] Sync 'apply' | Time=0.0759s | MemΔ=7.64KB | Peak=15273.01KB
+[2026-04-14 16:32:55,876] [TRACE:DeepPipeline] [logger_setup.sync_wrapper:136] INFO - [PERF] Sync 'apply' | Time=0.0528s | MemΔ=5.27KB | Peak=15273.01KB
+[2026-04-14 16:32:55,917] [TRACE:DeepPipeline] [logger_setup.sync_wrapper:136] INFO - [PERF] Sync 'apply' | Time=0.0388s | MemΔ=5.30KB | Peak=15273.01KB
+[2026-04-14 16:32:56,008] [TRACE:DeepPipeline] [logger_setup.sync_wrapper:136] INFO - [PERF] Sync 'apply' | Time=0.0865s | MemΔ=-146.16KB | Peak=15273.01KB
+[2026-04-14 16:32:56,070] [TRACE:DeepPipeline] [logger_setup.sync_wrapper:136] INFO - [PERF] Sync 'apply' | Time=0.0544s | MemΔ=5.01KB | Peak=15273.01KB
+[2026-04-14 16:32:56,143] [TRACE:DeepPipeline] [logger_setup.sync_wrapper:136] INFO - [PERF] Sync 'apply' | Time=0.0682s | MemΔ=5.10KB | Peak=15273.01KB
+[2026-04-14 16:32:56,250] [TRACE:DeepPipeline] [logger_setup.sync_wrapper:136] INFO - [PERF] Sync 'apply' | Time=0.1131s | MemΔ=-112.63KB | Peak=15273.01KB
+[2026-04-14 16:32:56,327] [TRACE:DeepPipeline] [logger_setup.sync_wrapper:136] INFO - [PERF] Sync 'apply' | Time=0.0619s | MemΔ=5.05KB | Peak=15273.01KB
+[2026-04-14 16:32:56,388] [TRACE:DeepPipeline] [logger_setup.sync_wrapper:136] INFO - [PERF] Sync 'apply' | Time=0.0582s | MemΔ=13.54KB | Peak=15273.01KB
+[2026-04-14 16:32:56,556] [TRACE:DeepPipeline] [logger_setup.sync_wrapper:136] INFO - [PERF] Sync 'apply' | Time=0.1696s | MemΔ=-12.65KB | Peak=15273.01KB
+[2026-04-14 16:32:56,612] [TRACE:DeepPipeline] [logger_setup.sync_wrapper:136] INFO - [PERF] Sync 'apply' | Time=0.0442s | MemΔ=5.22KB | Peak=15273.01KB
+[2026-04-14 16:32:56,660] [TRACE:DeepPipeline] [logger_setup.sync_wrapper:136] INFO - [PERF] Sync 'apply' | Time=0.0541s | MemΔ=5.37KB | Peak=15273.01KB
+[2026-04-14 16:32:56,660] [TRACE:DeepPipeline] [preprocessing.run_master_pipeline:139] DEBUG - [STEP 2 PROGRESS] Processed 40/138 items
+[2026-04-14 16:32:56,911] [TRACE:DeepPipeline] [logger_setup.sync_wrapper:136] INFO - [PERF] Sync 'apply' | Time=0.2396s | MemΔ=-8.55KB | Peak=15273.01KB
+[2026-04-14 16:32:57,003] [TRACE:DeepPipeline] [logger_setup.sync_wrapper:136] INFO - [PERF] Sync 'apply' | Time=0.0888s | MemΔ=9.86KB | Peak=15273.01KB
+[2026-04-14 16:32:57,017] [TRACE:DeepPipeline] [logger_setup.sync_wrapper:136] INFO - [PERF] Sync 'apply' | Time=0.0173s | MemΔ=2.52KB | Peak=15273.01KB
+[2026-04-14 16:32:57,032] [TRACE:DeepPipeline] [logger_setup.sync_wrapper:136] INFO - [PERF] Sync 'apply' | Time=0.0117s | MemΔ=2.49KB | Peak=15273.01KB
+[2026-04-14 16:32:57,048] [TRACE:DeepPipeline] [logger_setup.sync_wrapper:136] INFO - [PERF] Sync 'apply' | Time=0.0126s | MemΔ=2.49KB | Peak=15273.01KB
+[2026-04-14 16:32:57,076] [TRACE:DeepPipeline] [logger_setup.sync_wrapper:136] INFO - [PERF] Sync 'apply' | Time=0.0199s | MemΔ=2.54KB | Peak=15273.01KB
+[2026-04-14 16:32:57,191] [TRACE:DeepPipeline] [logger_setup.sync_wrapper:136] INFO - [PERF] Sync 'apply' | Time=0.1105s | MemΔ=-5.20KB | Peak=15273.01KB
+[2026-04-14 16:32:57,302] [TRACE:DeepPipeline] [logger_setup.sync_wrapper:136] INFO - [PERF] Sync 'apply' | Time=0.1001s | MemΔ=7.78KB | Peak=15273.01KB
+[2026-04-14 16:32:57,449] [TRACE:DeepPipeline] [logger_setup.sync_wrapper:136] INFO - [PERF] Sync 'apply' | Time=0.1405s | MemΔ=-132.74KB | Peak=15273.01KB
+[2026-04-14 16:32:57,538] [TRACE:DeepPipeline] [logger_setup.sync_wrapper:136] INFO - [PERF] Sync 'apply' | Time=0.0839s | MemΔ=7.97KB | Peak=15273.01KB
+[2026-04-14 16:32:57,592] [TRACE:DeepPipeline] [logger_setup.sync_wrapper:136] INFO - [PERF] Sync 'apply' | Time=0.0567s | MemΔ=7.38KB | Peak=15273.01KB
+[2026-04-14 16:32:57,656] [TRACE:DeepPipeline] [logger_setup.sync_wrapper:136] INFO - [PERF] Sync 'apply' | Time=0.0539s | MemΔ=5.05KB | Peak=15273.01KB
+[2026-04-14 16:32:57,679] [TRACE:DeepPipeline] [logger_setup.sync_wrapper:136] INFO - [PERF] Sync 'apply' | Time=0.0194s | MemΔ=2.53KB | Peak=15273.01KB
+[2026-04-14 16:32:57,711] [TRACE:DeepPipeline] [logger_setup.sync_wrapper:136] INFO - [PERF] Sync 'apply' | Time=0.0266s | MemΔ=2.79KB | Peak=15273.01KB
+[2026-04-14 16:32:57,737] [TRACE:DeepPipeline] [logger_setup.sync_wrapper:136] INFO - [PERF] Sync 'apply' | Time=0.0273s | MemΔ=4.89KB | Peak=15273.01KB
+[2026-04-14 16:32:57,794] [TRACE:DeepPipeline] [logger_setup.sync_wrapper:136] INFO - [PERF] Sync 'apply' | Time=0.0472s | MemΔ=7.50KB | Peak=15273.01KB
+[2026-04-14 16:32:57,847] [TRACE:DeepPipeline] [logger_setup.sync_wrapper:136] INFO - [PERF] Sync 'apply' | Time=0.0496s | MemΔ=5.02KB | Peak=15273.01KB
+[2026-04-14 16:32:57,922] [TRACE:DeepPipeline] [logger_setup.sync_wrapper:136] INFO - [PERF] Sync 'apply' | Time=0.0715s | MemΔ=-97.26KB | Peak=15273.01KB
+[2026-04-14 16:32:58,073] [TRACE:DeepPipeline] [logger_setup.sync_wrapper:136] INFO - [PERF] Sync 'apply' | Time=0.1538s | MemΔ=7.71KB | Peak=15273.01KB
+[2026-04-14 16:32:58,118] [TRACE:DeepPipeline] [logger_setup.sync_wrapper:136] INFO - [PERF] Sync 'apply' | Time=0.0387s | MemΔ=2.65KB | Peak=15273.01KB
+[2026-04-14 16:32:58,128] [TRACE:DeepPipeline] [preprocessing.run_master_pipeline:139] DEBUG - [STEP 2 PROGRESS] Processed 60/138 items
+[2026-04-14 16:32:58,341] [TRACE:DeepPipeline] [logger_setup.sync_wrapper:136] INFO - [PERF] Sync 'apply' | Time=0.2099s | MemΔ=12.69KB | Peak=15273.01KB
+[2026-04-14 16:32:58,550] [TRACE:DeepPipeline] [logger_setup.sync_wrapper:136] INFO - [PERF] Sync 'apply' | Time=0.2080s | MemΔ=16.28KB | Peak=15273.01KB
+[2026-04-14 16:32:58,593] [TRACE:DeepPipeline] [logger_setup.sync_wrapper:136] INFO - [PERF] Sync 'apply' | Time=0.0335s | MemΔ=5.12KB | Peak=15273.01KB
+[2026-04-14 16:32:58,731] [TRACE:DeepPipeline] [logger_setup.sync_wrapper:136] INFO - [PERF] Sync 'apply' | Time=0.1345s | MemΔ=7.69KB | Peak=15273.01KB
+[2026-04-14 16:32:58,837] [TRACE:DeepPipeline] [logger_setup.sync_wrapper:136] INFO - [PERF] Sync 'apply' | Time=0.0972s | MemΔ=-140.01KB | Peak=15273.01KB
+[2026-04-14 16:32:58,902] [TRACE:DeepPipeline] [logger_setup.sync_wrapper:136] INFO - [PERF] Sync 'apply' | Time=0.0690s | MemΔ=7.76KB | Peak=15273.01KB
+[2026-04-14 16:32:58,944] [TRACE:DeepPipeline] [logger_setup.sync_wrapper:136] INFO - [PERF] Sync 'apply' | Time=0.0363s | MemΔ=4.94KB | Peak=15273.01KB
+[2026-04-14 16:32:58,986] [TRACE:DeepPipeline] [logger_setup.sync_wrapper:136] INFO - [PERF] Sync 'apply' | Time=0.0352s | MemΔ=2.82KB | Peak=15273.01KB
+[2026-04-14 16:32:59,148] [TRACE:DeepPipeline] [logger_setup.sync_wrapper:136] INFO - [PERF] Sync 'apply' | Time=0.1563s | MemΔ=-139.05KB | Peak=15273.01KB
+[2026-04-14 16:32:59,253] [TRACE:DeepPipeline] [logger_setup.sync_wrapper:136] INFO - [PERF] Sync 'apply' | Time=0.1016s | MemΔ=10.50KB | Peak=15273.01KB
+[2026-04-14 16:32:59,330] [TRACE:DeepPipeline] [logger_setup.sync_wrapper:136] INFO - [PERF] Sync 'apply' | Time=0.0791s | MemΔ=7.46KB | Peak=15273.01KB
+[2026-04-14 16:32:59,355] [TRACE:DeepPipeline] [logger_setup.sync_wrapper:136] INFO - [PERF] Sync 'apply' | Time=0.0281s | MemΔ=5.05KB | Peak=15273.01KB
+[2026-04-14 16:32:59,439] [TRACE:DeepPipeline] [logger_setup.sync_wrapper:136] INFO - [PERF] Sync 'apply' | Time=0.0627s | MemΔ=7.67KB | Peak=15273.01KB
+[2026-04-14 16:32:59,513] [TRACE:DeepPipeline] [logger_setup.sync_wrapper:136] INFO - [PERF] Sync 'apply' | Time=0.0775s | MemΔ=12.12KB | Peak=15273.01KB
+[2026-04-14 16:32:59,575] [TRACE:DeepPipeline] [logger_setup.sync_wrapper:136] INFO - [PERF] Sync 'apply' | Time=0.0569s | MemΔ=5.04KB | Peak=15273.01KB
+[2026-04-14 16:32:59,689] [TRACE:DeepPipeline] [logger_setup.sync_wrapper:136] INFO - [PERF] Sync 'apply' | Time=0.1094s | MemΔ=5.16KB | Peak=15273.01KB
+[2026-04-14 16:32:59,804] [TRACE:DeepPipeline] [logger_setup.sync_wrapper:136] INFO - [PERF] Sync 'apply' | Time=0.1057s | MemΔ=-132.63KB | Peak=15273.01KB
+[2026-04-14 16:32:59,844] [TRACE:DeepPipeline] [logger_setup.sync_wrapper:136] INFO - [PERF] Sync 'apply' | Time=0.0354s | MemΔ=2.61KB | Peak=15273.01KB
+[2026-04-14 16:33:00,249] [TRACE:DeepPipeline] [logger_setup.sync_wrapper:136] INFO - [PERF] Sync 'apply' | Time=0.4027s | MemΔ=27.75KB | Peak=15273.01KB
+[2026-04-14 16:33:00,341] [TRACE:DeepPipeline] [logger_setup.sync_wrapper:136] INFO - [PERF] Sync 'apply' | Time=0.0946s | MemΔ=8.15KB | Peak=15273.01KB
+[2026-04-14 16:33:00,352] [TRACE:DeepPipeline] [preprocessing.run_master_pipeline:139] DEBUG - [STEP 2 PROGRESS] Processed 80/138 items
+[2026-04-14 16:33:00,440] [TRACE:DeepPipeline] [logger_setup.sync_wrapper:136] INFO - [PERF] Sync 'apply' | Time=0.0928s | MemΔ=15.21KB | Peak=15273.01KB
+[2026-04-14 16:33:00,475] [TRACE:DeepPipeline] [logger_setup.sync_wrapper:136] INFO - [PERF] Sync 'apply' | Time=0.0241s | MemΔ=-3.89KB | Peak=15273.01KB
+[2026-04-14 16:33:00,569] [TRACE:DeepPipeline] [logger_setup.sync_wrapper:136] INFO - [PERF] Sync 'apply' | Time=0.0936s | MemΔ=10.00KB | Peak=15273.01KB
+[2026-04-14 16:33:00,579] [TRACE:DeepPipeline] [logger_setup.sync_wrapper:136] INFO - [PERF] Sync 'apply' | Time=0.0001s | MemΔ=0.05KB | Peak=15273.01KB
+[2026-04-14 16:33:00,604] [TRACE:DeepPipeline] [logger_setup.sync_wrapper:136] INFO - [PERF] Sync 'apply' | Time=0.0227s | MemΔ=2.52KB | Peak=15273.01KB
+[2026-04-14 16:33:00,721] [TRACE:DeepPipeline] [logger_setup.sync_wrapper:136] INFO - [PERF] Sync 'apply' | Time=0.1154s | MemΔ=-146.38KB | Peak=15273.01KB
+[2026-04-14 16:33:00,785] [TRACE:DeepPipeline] [logger_setup.sync_wrapper:136] INFO - [PERF] Sync 'apply' | Time=0.0570s | MemΔ=2.99KB | Peak=15273.01KB
+[2026-04-14 16:33:00,805] [TRACE:DeepPipeline] [logger_setup.sync_wrapper:136] INFO - [PERF] Sync 'apply' | Time=0.0181s | MemΔ=2.62KB | Peak=15273.01KB
+[2026-04-14 16:33:00,868] [TRACE:DeepPipeline] [logger_setup.sync_wrapper:136] INFO - [PERF] Sync 'apply' | Time=0.0562s | MemΔ=3.06KB | Peak=15273.01KB
+[2026-04-14 16:33:00,900] [TRACE:DeepPipeline] [logger_setup.sync_wrapper:136] INFO - [PERF] Sync 'apply' | Time=0.0279s | MemΔ=2.70KB | Peak=15273.01KB
+[2026-04-14 16:33:00,950] [TRACE:DeepPipeline] [logger_setup.sync_wrapper:136] INFO - [PERF] Sync 'apply' | Time=0.0488s | MemΔ=-146.55KB | Peak=15273.01KB
+[2026-04-14 16:33:00,974] [TRACE:DeepPipeline] [logger_setup.sync_wrapper:136] INFO - [PERF] Sync 'apply' | Time=0.0184s | MemΔ=2.47KB | Peak=15273.01KB
+[2026-04-14 16:33:01,007] [TRACE:DeepPipeline] [logger_setup.sync_wrapper:136] INFO - [PERF] Sync 'apply' | Time=0.0278s | MemΔ=2.55KB | Peak=15273.01KB
+[2026-04-14 16:33:01,014] [TRACE:DeepPipeline] [logger_setup.sync_wrapper:136] INFO - [PERF] Sync 'apply' | Time=0.0069s | MemΔ=2.51KB | Peak=15273.01KB
+[2026-04-14 16:33:01,075] [TRACE:DeepPipeline] [logger_setup.sync_wrapper:136] INFO - [PERF] Sync 'apply' | Time=0.0564s | MemΔ=5.06KB | Peak=15273.01KB
+[2026-04-14 16:33:01,172] [TRACE:DeepPipeline] [logger_setup.sync_wrapper:136] INFO - [PERF] Sync 'apply' | Time=0.0998s | MemΔ=-95.04KB | Peak=15273.01KB
+[2026-04-14 16:33:01,244] [TRACE:DeepPipeline] [logger_setup.sync_wrapper:136] INFO - [PERF] Sync 'apply' | Time=0.0597s | MemΔ=3.04KB | Peak=15273.01KB
+[2026-04-14 16:33:01,392] [TRACE:DeepPipeline] [logger_setup.sync_wrapper:136] INFO - [PERF] Sync 'apply' | Time=0.1438s | MemΔ=6.41KB | Peak=15273.01KB
+[2026-04-14 16:33:01,433] [TRACE:DeepPipeline] [logger_setup.sync_wrapper:136] INFO - [PERF] Sync 'apply' | Time=0.0393s | MemΔ=2.86KB | Peak=15273.01KB
+[2026-04-14 16:33:01,501] [TRACE:DeepPipeline] [logger_setup.sync_wrapper:136] INFO - [PERF] Sync 'apply' | Time=0.0692s | MemΔ=2.63KB | Peak=15273.01KB
+[2026-04-14 16:33:01,514] [TRACE:DeepPipeline] [preprocessing.run_master_pipeline:139] DEBUG - [STEP 2 PROGRESS] Processed 100/138 items
+[2026-04-14 16:33:01,545] [TRACE:DeepPipeline] [logger_setup.sync_wrapper:136] INFO - [PERF] Sync 'apply' | Time=0.0288s | MemΔ=2.77KB | Peak=15273.01KB
+[2026-04-14 16:33:01,579] [TRACE:DeepPipeline] [logger_setup.sync_wrapper:136] INFO - [PERF] Sync 'apply' | Time=0.0321s | MemΔ=2.78KB | Peak=15273.01KB
+[2026-04-14 16:33:01,620] [TRACE:DeepPipeline] [logger_setup.sync_wrapper:136] INFO - [PERF] Sync 'apply' | Time=0.0356s | MemΔ=-137.72KB | Peak=15273.01KB
+[2026-04-14 16:33:01,675] [TRACE:DeepPipeline] [logger_setup.sync_wrapper:136] INFO - [PERF] Sync 'apply' | Time=0.0499s | MemΔ=3.18KB | Peak=15273.01KB
+[2026-04-14 16:33:01,686] [TRACE:DeepPipeline] [logger_setup.sync_wrapper:136] INFO - [PERF] Sync 'apply' | Time=0.0162s | MemΔ=2.63KB | Peak=15273.01KB
+[2026-04-14 16:33:01,718] [TRACE:DeepPipeline] [logger_setup.sync_wrapper:136] INFO - [PERF] Sync 'apply' | Time=0.0277s | MemΔ=2.74KB | Peak=15273.01KB
+[2026-04-14 16:33:01,756] [TRACE:DeepPipeline] [logger_setup.sync_wrapper:136] INFO - [PERF] Sync 'apply' | Time=0.0275s | MemΔ=2.77KB | Peak=15273.01KB
+[2026-04-14 16:33:01,778] [TRACE:DeepPipeline] [logger_setup.sync_wrapper:136] INFO - [PERF] Sync 'apply' | Time=0.0282s | MemΔ=2.57KB | Peak=15273.01KB
+[2026-04-14 16:33:01,849] [TRACE:DeepPipeline] [logger_setup.sync_wrapper:136] INFO - [PERF] Sync 'apply' | Time=0.0574s | MemΔ=-137.47KB | Peak=15273.01KB
+[2026-04-14 16:33:01,870] [TRACE:DeepPipeline] [logger_setup.sync_wrapper:136] INFO - [PERF] Sync 'apply' | Time=0.0155s | MemΔ=2.69KB | Peak=15273.01KB
+[2026-04-14 16:33:01,884] [TRACE:DeepPipeline] [logger_setup.sync_wrapper:136] INFO - [PERF] Sync 'apply' | Time=0.0117s | MemΔ=2.48KB | Peak=15273.01KB
+[2026-04-14 16:33:01,977] [TRACE:DeepPipeline] [logger_setup.sync_wrapper:136] INFO - [PERF] Sync 'apply' | Time=0.0876s | MemΔ=3.17KB | Peak=15273.01KB
+[2026-04-14 16:33:02,006] [TRACE:DeepPipeline] [logger_setup.sync_wrapper:136] INFO - [PERF] Sync 'apply' | Time=0.0248s | MemΔ=2.76KB | Peak=15273.01KB
+[2026-04-14 16:33:02,006] [TRACE:DeepPipeline] [logger_setup.sync_wrapper:136] INFO - [PERF] Sync 'apply' | Time=0.0000s | MemΔ=0.05KB | Peak=15273.01KB
+[2026-04-14 16:33:02,040] [TRACE:DeepPipeline] [logger_setup.sync_wrapper:136] INFO - [PERF] Sync 'apply' | Time=0.0324s | MemΔ=2.79KB | Peak=15273.01KB
+[2026-04-14 16:33:02,082] [TRACE:DeepPipeline] [logger_setup.sync_wrapper:136] INFO - [PERF] Sync 'apply' | Time=0.0352s | MemΔ=-9.92KB | Peak=15273.01KB
+[2026-04-14 16:33:02,118] [TRACE:DeepPipeline] [logger_setup.sync_wrapper:136] INFO - [PERF] Sync 'apply' | Time=0.0271s | MemΔ=2.54KB | Peak=15273.01KB
+[2026-04-14 16:33:02,171] [TRACE:DeepPipeline] [logger_setup.sync_wrapper:136] INFO - [PERF] Sync 'apply' | Time=0.0457s | MemΔ=2.76KB | Peak=15273.01KB
+[2026-04-14 16:33:02,196] [TRACE:DeepPipeline] [logger_setup.sync_wrapper:136] INFO - [PERF] Sync 'apply' | Time=0.0212s | MemΔ=2.67KB | Peak=15273.01KB
+[2026-04-14 16:33:02,199] [TRACE:DeepPipeline] [logger_setup.sync_wrapper:136] INFO - [PERF] Sync 'apply' | Time=0.0002s | MemΔ=0.16KB | Peak=15273.01KB
+[2026-04-14 16:33:02,203] [TRACE:DeepPipeline] [preprocessing.run_master_pipeline:139] DEBUG - [STEP 2 PROGRESS] Processed 120/138 items
+[2026-04-14 16:33:02,273] [TRACE:DeepPipeline] [logger_setup.sync_wrapper:136] INFO - [PERF] Sync 'apply' | Time=0.0718s | MemΔ=5.09KB | Peak=15273.01KB
+[2026-04-14 16:33:02,384] [TRACE:DeepPipeline] [logger_setup.sync_wrapper:136] INFO - [PERF] Sync 'apply' | Time=0.1039s | MemΔ=-36.07KB | Peak=15273.01KB
+[2026-04-14 16:33:02,496] [TRACE:DeepPipeline] [logger_setup.sync_wrapper:136] INFO - [PERF] Sync 'apply' | Time=0.1076s | MemΔ=3.45KB | Peak=15273.01KB
+[2026-04-14 16:33:02,689] [TRACE:DeepPipeline] [logger_setup.sync_wrapper:136] INFO - [PERF] Sync 'apply' | Time=0.1822s | MemΔ=-144.39KB | Peak=15273.01KB
+[2026-04-14 16:33:02,696] [TRACE:DeepPipeline] [logger_setup.sync_wrapper:136] INFO - [PERF] Sync 'apply' | Time=0.0003s | MemΔ=0.05KB | Peak=15273.01KB
+[2026-04-14 16:33:02,701] [TRACE:DeepPipeline] [logger_setup.sync_wrapper:136] INFO - [PERF] Sync 'apply' | Time=0.0003s | MemΔ=0.05KB | Peak=15273.01KB
+[2026-04-14 16:33:02,750] [TRACE:DeepPipeline] [logger_setup.sync_wrapper:136] INFO - [PERF] Sync 'apply' | Time=0.0455s | MemΔ=7.45KB | Peak=15273.01KB
+[2026-04-14 16:33:02,804] [TRACE:DeepPipeline] [logger_setup.sync_wrapper:136] INFO - [PERF] Sync 'apply' | Time=0.0493s | MemΔ=2.94KB | Peak=15273.01KB
+[2026-04-14 16:33:02,830] [TRACE:DeepPipeline] [logger_setup.sync_wrapper:136] INFO - [PERF] Sync 'apply' | Time=0.0214s | MemΔ=2.69KB | Peak=15273.01KB
+[2026-04-14 16:33:02,863] [TRACE:DeepPipeline] [logger_setup.sync_wrapper:136] INFO - [PERF] Sync 'apply' | Time=0.0279s | MemΔ=2.73KB | Peak=15273.01KB
+[2026-04-14 16:33:02,918] [TRACE:DeepPipeline] [logger_setup.sync_wrapper:136] INFO - [PERF] Sync 'apply' | Time=0.0512s | MemΔ=2.90KB | Peak=15273.01KB
+[2026-04-14 16:33:03,103] [TRACE:DeepPipeline] [logger_setup.sync_wrapper:136] INFO - [PERF] Sync 'apply' | Time=0.1774s | MemΔ=3.81KB | Peak=15273.01KB
+[2026-04-14 16:33:03,130] [TRACE:DeepPipeline] [logger_setup.sync_wrapper:136] INFO - [PERF] Sync 'apply' | Time=0.0231s | MemΔ=2.64KB | Peak=15273.01KB
+[2026-04-14 16:33:03,194] [TRACE:DeepPipeline] [logger_setup.sync_wrapper:136] INFO - [PERF] Sync 'apply' | Time=0.0545s | MemΔ=3.06KB | Peak=15273.01KB
+[2026-04-14 16:33:03,216] [TRACE:DeepPipeline] [logger_setup.sync_wrapper:136] INFO - [PERF] Sync 'apply' | Time=0.0175s | MemΔ=2.68KB | Peak=15273.01KB
+[2026-04-14 16:33:03,220] [TRACE:DeepPipeline] [logger_setup.sync_wrapper:136] INFO - [PERF] Sync 'apply' | Time=0.0002s | MemΔ=0.05KB | Peak=15273.01KB
+[2026-04-14 16:33:03,241] [TRACE:DeepPipeline] [logger_setup.sync_wrapper:136] INFO - [PERF] Sync 'apply' | Time=0.0184s | MemΔ=2.67KB | Peak=15273.01KB
+[2026-04-14 16:33:03,253] [TRACE:DeepPipeline] [logger_setup.sync_wrapper:136] INFO - [PERF] Sync 'apply' | Time=0.0076s | MemΔ=2.52KB | Peak=15273.01KB
+[2026-04-14 16:33:03,359] [TRACE:DeepPipeline] [logger_setup.sync_wrapper:136] INFO - [PERF] Sync 'apply' | Time=0.1020s | MemΔ=-40.11KB | Peak=15273.01KB
+[2026-04-14 16:33:03,363] [TRACE:DeepPipeline] [preprocessing.run_master_pipeline:149] INFO - [STEP 2 COMPLETE] Clean items: 132 | Dropped: 6
+[2026-04-14 16:33:03,367] [TRACE:DeepPipeline] [preprocessing.run_master_pipeline:152] INFO - [STEP 3] Starting LLM keyword generation
+[2026-04-14 16:33:03,371] [TRACE:DeepPipeline] [preprocessing.run_master_pipeline:161] INFO - [BATCH 1/27] Preparing batch with 5 items
+[2026-04-14 16:33:03,374] [TRACE:DeepPipeline] [preprocessing.run_master_pipeline:168] DEBUG - [BATCH 1] Sample input: [{'topic_id': 'S002_T001', 'text': 'SecureSave Loan Against Approved Securities (SLAAS) is a secured credit facility offered to resident individuals against the pledge or assignment of approved financial securities such as National Savings Certificates (NSC), Kisan Vikas Patra (KVP), Life Insurance Policies, and Government/Relief Bonds . The product is designed to meet both productive financial needs and personal contingency requirements , while ensuring safety of funds through high-quality collateral.'}]
+[2026-04-14 16:33:03,379] [TRACE:DeepPipeline] [preprocessing.run_master_pipeline:161] INFO - [BATCH 2/27] Preparing batch with 5 items
+[2026-04-14 16:33:03,383] [TRACE:DeepPipeline] [preprocessing.run_master_pipeline:168] DEBUG - [BATCH 2] Sample input: [{'topic_id': 'S002_T006', 'text': '\uf0b7 Minimum Amount o Loan: ₹3,000 o Overdraft: ₹20,000 \uf0b7 Maximum Amount o Generally no ceiling , subject to value of security and repayment capacity o For KVP-based advances, up to ₹1.00 lakh may be sanctioned at branch level; higher limits require approval of higher authorities o For staff borrowers, the maximum is limited to five times gross salary'}]
+[2026-04-14 16:33:03,388] [TRACE:DeepPipeline] [preprocessing.run_master_pipeline:161] INFO - [BATCH 3/27] Preparing batch with 5 items
+[2026-04-14 16:33:03,394] [TRACE:DeepPipeline] [preprocessing.run_master_pipeline:168] DEBUG - [BATCH 3] Sample input: [{'topic_id': 'S002_T011', 'text': 'Depending on the security offered, documentation includes: \uf0b7 Demand Promissory Note (DPN) \uf0b7 Letter of Pledge of Security (LDOC-11) \uf0b7 Take Delivery Letter (LDOC-60) \uf0b7 Letter of Installments with acceleration clause (LDOC-57) for loans \uf0b7 Letter of Continuing Security (LDOC-7) for overdrafts \uf0b7 Assignment of Life Insurance Policies in bank’s favour (LDOC-84) \uf0b7 Pledge and lien marking on NSC/KVP with the issuing Post Office \uf0b7 Notice to RBI / issuing authority for Government Bonds All securities must be duly discharged , and lien or assignment must be noted before disbursement .'}]
+[2026-04-14 16:33:03,399] [TRACE:DeepPipeline] [preprocessing.run_master_pipeline:161] INFO - [BATCH 4/27] Preparing batch with 5 items
+[2026-04-14 16:33:03,403] [TRACE:DeepPipeline] [preprocessing.run_master_pipeline:168] DEBUG - [BATCH 4] Sample input: [{'topic_id': 'S003_T001', 'text': 'DriveSure Auto Loan (DAL) is a secured retail lending product designed to finance the purchase of new and pre-owned private vehicles , two-wheelers , and eco-friendly CNG/LPG gas kits , as well as to facilitate takeover of existing vehicle loans from other banks . The product is intended exclusively for non-commercial, private use and provides structured repayment options, competitive interest rates, and comprehensive risk-mitigation through defined eligibility, margin, documentation, and vigilance norms.'}]
+[2026-04-14 16:33:03,407] [TRACE:DeepPipeline] [preprocessing.run_master_pipeline:161] INFO - [BATCH 5/27] Preparing batch with 5 items
+[2026-04-14 16:33:03,413] [TRACE:DeepPipeline] [preprocessing.run_master_pipeline:168] DEBUG - [BATCH 5] Sample input: [{'topic_id': 'S003_T006', 'text': 'The minimum age of the applicant is 21 years and of the co-applicant 18 years . The maximum age , including the repayment period, shall not exceed 70 years . Where the applicant’s age exceeds retirement age (for salaried borrowers) or 65 years (for others), addition of a co-borrower, preferably a family member, is generally required.'}]
+[2026-04-14 16:33:03,419] [TRACE:DeepPipeline] [preprocessing.run_master_pipeline:161] INFO - [BATCH 6/27] Preparing batch with 5 items
+[2026-04-14 16:33:03,425] [TRACE:DeepPipeline] [preprocessing.run_master_pipeline:168] DEBUG - [BATCH 6] Sample input: [{'topic_id': 'S003_T011', 'text': 'A concession of up to 0.25% is available on car loans where the borrower offers minimum 50% of the loan amount as liquid collateral such as fixed deposits, NSC, KVP, or life insurance policies. A further 0.25% concession is available to existing home loan borrowers with a clean repayment track record. In all cases, the effective rate of interest shall not fall below the Base Rate .'}]
+[2026-04-14 16:33:03,430] [TRACE:DeepPipeline] [preprocessing.run_master_pipeline:161] INFO - [BATCH 7/27] Preparing batch with 5 items
+[2026-04-14 16:33:03,437] [TRACE:DeepPipeline] [preprocessing.run_master_pipeline:168] DEBUG - [BATCH 7] Sample input: [{'topic_id': 'S003_T016', 'text': 'Standard documentation includes Demand Promissory Note, hypothecation agreement, installment letter with acceleration clause, RTO endorsement, insurance documents, guarantees (if any), and collateral documents . Strict compliance with KYC norms, credit bureau checks, pre-sanction and post-sanction inspections, dealer verification, controlled disbursement through banker’s cheques, and periodic asset verification is mandatory.'}]
+[2026-04-14 16:33:03,442] [TRACE:DeepPipeline] [preprocessing.run_master_pipeline:161] INFO - [BATCH 8/27] Preparing batch with 5 items
+[2026-04-14 16:33:03,443] [TRACE:DeepPipeline] [preprocessing.run_master_pipeline:168] DEBUG - [BATCH 8] Sample input: [{'topic_id': 'S004_T003', 'text': 'The facility may be sanctioned in the form of a Term Loan , Demand Loan , or Overdraft . In the case of overdraft facilities, the borrower must ensure a minimum annual turnover of at least 25% of the sanctioned limit . NRIs are eligible only for Term Loan or Demand Loan facilities and are not eligible for overdraft facilities .'}]
+[2026-04-14 16:33:03,450] [TRACE:DeepPipeline] [preprocessing.run_master_pipeline:161] INFO - [BATCH 9/27] Preparing batch with 5 items
+[2026-04-14 16:33:03,454] [TRACE:DeepPipeline] [preprocessing.run_master_pipeline:168] DEBUG - [BATCH 9] Sample input: [{'topic_id': 'S004_T008', 'text': 'Total deductions, including proposed EMI or notional installment, shall not exceed 60% of gross monthly income . Deductions include income tax, provident fund, professional tax, existing EMIs, and all other commitments. In case of non-salaried borrowers, gross monthly income shall be derived from the average annual income of the last three years . For overdraft facilities, repayment capacity shall be assessed as if a 10-year term loan is sanctioned.'}]
+[2026-04-14 16:33:03,457] [TRACE:DeepPipeline] [preprocessing.run_master_pipeline:161] INFO - [BATCH 10/27] Preparing batch with 5 items
+[2026-04-14 16:33:03,462] [TRACE:DeepPipeline] [preprocessing.run_master_pipeline:168] DEBUG - [BATCH 10] Sample input: [{'topic_id': 'S004_T013', 'text': 'The loan is secured by equitable mortgage of residential property (house or flat), commercial property (land and building), or plots allotted or purchased from recognized development authorities, provided there is no stipulation mandating construction within a fixed timeframe . Loans against tenanted properties are generally not permitted, except where the property is leased to PSUs, reputed government or semi-government undertakings, large corporates, banks, financial institutions, or insurance companies .'}]
+[2026-04-14 16:33:03,465] [TRACE:DeepPipeline] [preprocessing.run_master_pipeline:161] INFO - [BATCH 11/27] Preparing batch with 5 items
+[2026-04-14 16:33:03,468] [TRACE:DeepPipeline] [preprocessing.run_master_pipeline:168] DEBUG - [BATCH 11] Sample input: [{'topic_id': 'S004_T018', 'text': 'The age of the building should not exceed 25 years . Buildings older than 25 years may be accepted subject to approval of the Regional Authority , supported by a structural soundness certificate from an approved engineer confirming a residual life of at least five years beyond the loan tenure .'}]
+[2026-04-14 16:33:03,472] [TRACE:DeepPipeline] [preprocessing.run_master_pipeline:161] INFO - [BATCH 12/27] Preparing batch with 5 items
+[2026-04-14 16:33:03,475] [TRACE:DeepPipeline] [preprocessing.run_master_pipeline:168] DEBUG - [BATCH 12] Sample input: [{'topic_id': 'S004_T023', 'text': 'Strict adherence to KYC norms , income verification , credit bureau checks , market reports , property valuation , and valid mortgage creation procedures is mandatory. Pre- and post-sanction checklists must be completed and documented to ensure robust risk mitigation.'}]
+[2026-04-14 16:33:03,479] [TRACE:DeepPipeline] [preprocessing.run_master_pipeline:161] INFO - [BATCH 13/27] Preparing batch with 5 items
+[2026-04-14 16:33:03,482] [TRACE:DeepPipeline] [preprocessing.run_master_pipeline:168] DEBUG - [BATCH 13] Sample input: [{'topic_id': 'S005_T004', 'text': 'The facility is available to Individuals, Proprietorships, Partnership Firms, Private Limited Companies, and Registered Cooperative Societies engaged in trading of lawful commodities or goods in physical form required by the community and not prohibited by law or opposed to public interest. Dealers in silver and gold jewellery are eligible; however, finance shall not be granted against bullion or raw gold , and borrowers must comply with all licensing requirements applicable to the trade, subject to prescribed activity clearance. HUFs and Public Limited Companies are not eligible under this sc'}]
+[2026-04-14 16:33:03,485] [TRACE:DeepPipeline] [preprocessing.run_master_pipeline:161] INFO - [BATCH 14/27] Preparing batch with 5 items
+[2026-04-14 16:33:03,487] [TRACE:DeepPipeline] [preprocessing.run_master_pipeline:168] DEBUG - [BATCH 14] Sample input: [{'topic_id': 'S005_T009', 'text': 'Overdraft facilities shall be sanctioned for 12 months , subject to annual review . Term Loans shall be repayable in a maximum of 60 EMIs , depending upon assessed repayment capacity.'}]
+[2026-04-14 16:33:03,487] [TRACE:DeepPipeline] [preprocessing.run_master_pipeline:161] INFO - [BATCH 15/27] Preparing batch with 5 items
+[2026-04-14 16:33:03,496] [TRACE:DeepPipeline] [preprocessing.run_master_pipeline:168] DEBUG - [BATCH 15] Sample input: [{'topic_id': 'S005_T014', 'text': 'Mortgaged properties must be insured as per Bank norms. Stock insurance is not mandatory but may be advised in the borrower’s interest.'}]
+[2026-04-14 16:33:03,499] [TRACE:DeepPipeline] [preprocessing.run_master_pipeline:161] INFO - [BATCH 16/27] Preparing batch with 5 items
+[2026-04-14 16:33:03,502] [TRACE:DeepPipeline] [preprocessing.run_master_pipeline:168] DEBUG - [BATCH 16] Sample input: [{'topic_id': 'S006_T001', 'text': 'EduGrow Education Loan is a comprehensive education financing product designed to support students pursuing higher education in India as well as abroad . The product aims to ensure that meritorious students are not denied education due to financial constraints and provides need-based finance covering tuition and allied educational expenses, with structured repayment aligned to future earning potential. The loan is classified under Priority Sector and is governed by the Bank’s discretionary lending powers, educational loan guidelines, and applicable regulatory norms.'}]
+[2026-04-14 16:33:03,506] [TRACE:DeepPipeline] [preprocessing.run_master_pipeline:161] INFO - [BATCH 17/27] Preparing batch with 5 items
+[2026-04-14 16:33:03,509] [TRACE:DeepPipeline] [preprocessing.run_master_pipeline:168] DEBUG - [BATCH 17] Sample input: [{'topic_id': 'S006_T006', 'text': 'Moratorium period shall be: \uf0b7 Course period + 1 year , or \uf0b7 6 months after securing employment , whichever is earlier.'}]
+[2026-04-14 16:33:03,512] [TRACE:DeepPipeline] [preprocessing.run_master_pipeline:161] INFO - [BATCH 18/27] Preparing batch with 5 items
+[2026-04-14 16:33:03,516] [TRACE:DeepPipeline] [preprocessing.run_master_pipeline:168] DEBUG - [BATCH 18] Sample input: [{'topic_id': 'S006_T012', 'text': '\uf0b7 Academic progress reports to be obtained at regular intervals and kept on record.'}]
+[2026-04-14 16:33:03,518] [TRACE:DeepPipeline] [preprocessing.run_master_pipeline:161] INFO - [BATCH 19/27] Preparing batch with 5 items
+[2026-04-14 16:33:03,522] [TRACE:DeepPipeline] [preprocessing.run_master_pipeline:168] DEBUG - [BATCH 19] Sample input: [{'topic_id': 'S006_T017', 'text': 'Deviations in eligibility, margin, security, etc., may be permitted by one level above the sanctioning authority , on merits.'}]
+[2026-04-14 16:33:03,524] [TRACE:DeepPipeline] [preprocessing.run_master_pipeline:161] INFO - [BATCH 20/27] Preparing batch with 5 items
+[2026-04-14 16:33:03,527] [TRACE:DeepPipeline] [preprocessing.run_master_pipeline:168] DEBUG - [BATCH 20] Sample input: [{'topic_id': 'S007_T003', 'text': 'Salaried Individuals \uf0b7 Permanent, confirmed employees of: o Central / State Government o Autonomous Bodies o Public / Joint Sector Undertakings o Reputed Limited Companies / MNCs o Reputed Universities, Colleges, Schools, Educational & Research Institutions \uf0b7 Minimum one year of confirmed service Not eligible : \uf0b7 Employees of Proprietorship and Partnership firms \uf0b7 Bank staff members Employees of Private Limited Companies may be considered only by Zonal Authority deviation , subject to strict conditions relating to company vintage, relationship with the Bank, employee strength, salary routing, '}]
+[2026-04-14 16:33:03,531] [TRACE:DeepPipeline] [preprocessing.run_master_pipeline:161] INFO - [BATCH 21/27] Preparing batch with 5 items
+[2026-04-14 16:33:03,536] [TRACE:DeepPipeline] [preprocessing.run_master_pipeline:168] DEBUG - [BATCH 21] Sample input: [{'topic_id': 'S007_T008', 'text': '\uf0b7 Minimum Age : 21 years \uf0b7 Maximum Age : o Salaried: Borrower’s age + repayment period should not exceed retirement age o Self-employed / professionals: Maximum 65 years at loan maturity'}]
+[2026-04-14 16:33:03,540] [TRACE:DeepPipeline] [preprocessing.run_master_pipeline:161] INFO - [BATCH 22/27] Preparing batch with 5 items
+[2026-04-14 16:33:03,544] [TRACE:DeepPipeline] [preprocessing.run_master_pipeline:168] DEBUG - [BATCH 22] Sample input: [{'topic_id': 'S007_T013', 'text': 'Total deductions including proposed EMI shall not exceed 60% of Gross Monthly Income , except in EMD cases where Housing Loan norms shall apply.'}]
+[2026-04-14 16:33:03,546] [TRACE:DeepPipeline] [preprocessing.run_master_pipeline:161] INFO - [BATCH 23/27] Preparing batch with 5 items
+[2026-04-14 16:33:03,551] [TRACE:DeepPipeline] [preprocessing.run_master_pipeline:168] DEBUG - [BATCH 23] Sample input: [{'topic_id': 'S007_T018', 'text': '\uf0b7 Standard Personal Loan : o 2% of loan amount + applicable taxes o Minimum ₹500 \uf0b7 Premium Segment : o 2% of loan amount o Minimum ₹250 + applicable taxes'}]
+[2026-04-14 16:33:03,554] [TRACE:DeepPipeline] [preprocessing.run_master_pipeline:161] INFO - [BATCH 24/27] Preparing batch with 5 items
+[2026-04-14 16:33:03,558] [TRACE:DeepPipeline] [preprocessing.run_master_pipeline:168] DEBUG - [BATCH 24] Sample input: [{'topic_id': 'S007_T024', 'text': '\uf0b7 Personal Loan : Finacle – LA141 | Ascrom – 240 \uf0b7 Earnest Money Deposit Loan : Finacle – LA126 | Ascrom – 845'}]
+[2026-04-14 16:33:03,562] [TRACE:DeepPipeline] [preprocessing.run_master_pipeline:161] INFO - [BATCH 25/27] Preparing batch with 5 items
+[2026-04-14 16:33:03,572] [TRACE:DeepPipeline] [preprocessing.run_master_pipeline:168] DEBUG - [BATCH 25] Sample input: [{'topic_id': 'S008_T003', 'text': 'Salaried Individuals \uf0b7 Permanent, confirmed employees of: o Central / State Government o Autonomous Bodies o Public / Joint Sector Undertakings o Reputed Limited Companies / MNCs o Educational & Research Institutions \uf0b7 Minimum 1 year of confirmed service \uf0b7 Not eligible: Employees of proprietorship/partnership firms, bank staff \uf0b7 Private Limited Company employees may be considered by Zonal Authority deviation, subject to strict conditions Self-Employed / Professionals \uf0b7 Doctors, Engineers, Architects, Interior Designers \uf0b7 Technical & Management Consultants \uf0b7 Practicing Company Secretaries \uf0b7 Min'}]
+[2026-04-14 16:33:03,582] [TRACE:DeepPipeline] [preprocessing.run_master_pipeline:161] INFO - [BATCH 26/27] Preparing batch with 5 items
+[2026-04-14 16:33:03,590] [TRACE:DeepPipeline] [preprocessing.run_master_pipeline:168] DEBUG - [BATCH 26] Sample input: [{'topic_id': 'S008_T011', 'text': '\uf0b7 Mortgage / hypothecation of property financed \uf0b7 Mandatory documentation includes: o Demand Promissory Note o Letter of Installment with acceleration clause o Declaration-cum-Undertaking-cum-Authority o Employer / borrower undertakings (as applicable) o Power of Attorney for EMD refund adjustment (where applicable) Documents Required Salaried Applicants \uf0b7 Passport size photographs \uf0b7 Identity & Address proof \uf0b7 Salary slips (last 6 months) / Form-16 / IT Returns \uf0b7 Bank statement (last 6 months if salary credited elsewhere) Self-Employed / Professionals \uf0b7 Photographs \uf0b7 Office & residence proof \uf0b7'}]
+[2026-04-14 16:33:03,601] [TRACE:DeepPipeline] [preprocessing.run_master_pipeline:161] INFO - [BATCH 27/27] Preparing batch with 2 items
+[2026-04-14 16:33:03,607] [TRACE:DeepPipeline] [preprocessing.run_master_pipeline:168] DEBUG - [BATCH 27] Sample input: [{'topic_id': 'S008_T017', 'text': '\uf0b7 Retail – Secured Housing Loan'}]
+[2026-04-14 16:33:03,614] [TRACE:DeepPipeline] [preprocessing.run_master_pipeline:172] INFO - [STEP 3] Dispatching 27 concurrent batches
+[2026-04-14 16:34:08,571] [TRACE:DeepPipeline] [logger_setup.async_wrapper:119] INFO - [PERF] Async 'process_batch' | Time=64.9227s | MemΔ=277.92KB | Peak=15273.01KB
+[2026-04-14 16:34:22,624] [TRACE:DeepPipeline] [logger_setup.async_wrapper:119] INFO - [PERF] Async 'process_batch' | Time=79.0000s | MemΔ=328.37KB | Peak=15273.01KB
+[2026-04-14 16:34:37,197] [TRACE:DeepPipeline] [logger_setup.async_wrapper:119] INFO - [PERF] Async 'process_batch' | Time=93.5262s | MemΔ=280.56KB | Peak=15273.01KB
+[2026-04-14 16:34:52,377] [TRACE:DeepPipeline] [logger_setup.async_wrapper:119] INFO - [PERF] Async 'process_batch' | Time=108.7066s | MemΔ=290.09KB | Peak=15273.01KB
+[2026-04-14 16:35:05,142] [TRACE:DeepPipeline] [logger_setup.async_wrapper:119] INFO - [PERF] Async 'process_batch' | Time=121.4718s | MemΔ=296.79KB | Peak=15273.01KB
+[2026-04-14 16:35:18,986] [TRACE:DeepPipeline] [logger_setup.async_wrapper:119] INFO - [PERF] Async 'process_batch' | Time=135.3176s | MemΔ=307.64KB | Peak=15273.01KB
+[2026-04-14 16:35:37,212] [TRACE:DeepPipeline] [logger_setup.async_wrapper:119] INFO - [PERF] Async 'process_batch' | Time=153.5422s | MemΔ=266.29KB | Peak=15273.01KB
+[2026-04-14 16:35:52,072] [TRACE:DeepPipeline] [logger_setup.async_wrapper:119] INFO - [PERF] Async 'process_batch' | Time=168.4018s | MemΔ=270.99KB | Peak=15273.01KB
+[2026-04-14 16:36:38,173] [TRACE:DeepPipeline] [logger_setup.async_wrapper:119] INFO - [PERF] Async 'process_batch' | Time=214.5013s | MemΔ=280.30KB | Peak=15273.01KB
+[2026-04-14 16:36:52,384] [TRACE:DeepPipeline] [logger_setup.async_wrapper:119] INFO - [PERF] Async 'process_batch' | Time=228.7129s | MemΔ=285.42KB | Peak=15273.01KB
+[2026-04-14 16:37:05,961] [TRACE:DeepPipeline] [logger_setup.async_wrapper:119] INFO - [PERF] Async 'process_batch' | Time=242.2896s | MemΔ=293.28KB | Peak=15273.01KB
+[2026-04-14 16:37:19,425] [TRACE:DeepPipeline] [logger_setup.async_wrapper:119] INFO - [PERF] Async 'process_batch' | Time=255.7539s | MemΔ=301.15KB | Peak=15273.01KB
+[2026-04-14 16:37:33,713] [TRACE:DeepPipeline] [logger_setup.async_wrapper:119] INFO - [PERF] Async 'process_batch' | Time=270.0418s | MemΔ=306.32KB | Peak=15273.01KB
+[2026-04-14 16:37:45,941] [TRACE:DeepPipeline] [logger_setup.async_wrapper:119] INFO - [PERF] Async 'process_batch' | Time=282.2690s | MemΔ=312.00KB | Peak=15273.01KB
+[2026-04-14 16:37:58,528] [TRACE:DeepPipeline] [logger_setup.async_wrapper:119] INFO - [PERF] Async 'process_batch' | Time=294.8566s | MemΔ=322.16KB | Peak=15273.01KB
+[2026-04-14 16:38:13,621] [TRACE:DeepPipeline] [logger_setup.async_wrapper:119] INFO - [PERF] Async 'process_batch' | Time=309.9500s | MemΔ=331.29KB | Peak=15273.01KB
+[2026-04-14 16:38:56,872] [TRACE:DeepPipeline] [logger_setup.async_wrapper:119] INFO - [PERF] Async 'process_batch' | Time=353.2024s | MemΔ=335.93KB | Peak=15273.01KB
+[2026-04-14 16:39:06,188] [TRACE:DeepPipeline] [logger_setup.async_wrapper:119] INFO - [PERF] Async 'process_batch' | Time=362.5165s | MemΔ=342.35KB | Peak=15273.01KB
+[2026-04-14 16:39:14,446] [TRACE:DeepPipeline] [logger_setup.async_wrapper:119] INFO - [PERF] Async 'process_batch' | Time=370.7743s | MemΔ=350.46KB | Peak=15273.01KB
+[2026-04-14 16:39:28,406] [TRACE:DeepPipeline] [logger_setup.async_wrapper:119] INFO - [PERF] Async 'process_batch' | Time=384.7339s | MemΔ=357.36KB | Peak=15273.01KB
+[2026-04-14 16:39:40,464] [TRACE:DeepPipeline] [logger_setup.async_wrapper:119] INFO - [PERF] Async 'process_batch' | Time=396.7924s | MemΔ=363.60KB | Peak=15273.01KB
+[2026-04-14 16:39:53,763] [TRACE:DeepPipeline] [logger_setup.async_wrapper:119] INFO - [PERF] Async 'process_batch' | Time=410.0912s | MemΔ=370.58KB | Peak=15273.01KB
+[2026-04-14 16:41:03,505] [TRACE:DeepPipeline] [logger_setup.async_wrapper:119] INFO - [PERF] Async 'process_batch' | Time=479.8330s | MemΔ=381.12KB | Peak=15273.01KB
+[2026-04-14 16:42:01,353] [TRACE:DeepPipeline] [logger_setup.async_wrapper:119] INFO - [PERF] Async 'process_batch' | Time=537.6832s | MemΔ=253.46KB | Peak=15273.01KB
+[2026-04-14 16:42:13,658] [TRACE:DeepPipeline] [logger_setup.async_wrapper:119] INFO - [PERF] Async 'process_batch' | Time=549.9857s | MemΔ=260.30KB | Peak=15273.01KB
+[2026-04-14 16:42:27,280] [TRACE:DeepPipeline] [logger_setup.async_wrapper:119] INFO - [PERF] Async 'process_batch' | Time=563.6075s | MemΔ=263.45KB | Peak=15273.01KB
+[2026-04-14 16:42:38,821] [TRACE:DeepPipeline] [logger_setup.async_wrapper:119] INFO - [PERF] Async 'process_batch' | Time=575.1529s | MemΔ=187.89KB | Peak=15273.01KB
+[2026-04-14 16:42:38,830] [TRACE:DeepPipeline] [preprocessing.run_master_pipeline:176] INFO - [STEP 3 COMPLETE] All batches processed
+[2026-04-14 16:42:38,833] [TRACE:DeepPipeline] [preprocessing.run_master_pipeline:179] INFO - [STEP 4] Merging keyword results
+[2026-04-14 16:42:38,835] [TRACE:DeepPipeline] [preprocessing.run_master_pipeline:185] DEBUG - [STEP 4] Total keyword entries: 33
+[2026-04-14 16:42:38,835] [TRACE:DeepPipeline] [preprocessing.run_master_pipeline:203] INFO - [STEP 4 COMPLETE] Fallback keywords used: 102
+[2026-04-14 16:42:38,842] [TRACE:DeepPipeline] [preprocessing.run_master_pipeline:206] INFO - [STEP 5] Writing output file
+[2026-04-14 16:42:38,862] [TRACE:DeepPipeline] [preprocessing.run_master_pipeline:211] INFO - [PIPELINE SUCCESS] Output saved → structured_loan_data1.json
+[2026-04-14 16:42:38,867] [TRACE:DeepPipeline] [preprocessing.run_master_pipeline:212] INFO - ========== PIPELINE END ==========
+[2026-04-14 17:02:18,674] [INFO] [preprocessing:98] ========== PIPELINE START ==========
+[2026-04-14 17:02:18,679] [INFO] [preprocessing:28] [EXTRACT] Opening PDF: F:\Loan_Details_RAG_System1\Data\loan_products_final.pdf
+[2026-04-14 17:02:18,846] [INFO] [preprocessing:59] [EXTRACT] Font Sizes -> Section: 18.0, Topic: 13.4
+[2026-04-14 17:02:18,859] [INFO] [preprocessing:87] [EXTRACT] Complete. Found 138 topics.
+[2026-04-14 17:02:18,859] [INFO] [logger_setup:123] extract_hierarchy completed in 0.18s
+[2026-04-14 17:02:18,859] [INFO] [preprocessing:112] [STEP 2] Cleaning text via Guardrails
+[2026-04-14 17:02:18,944] [INFO] [logger_setup:123] apply completed in 0.09s
+[2026-04-14 17:02:19,006] [INFO] [logger_setup:123] apply completed in 0.05s
+[2026-04-14 17:02:19,032] [INFO] [logger_setup:123] apply completed in 0.02s
+[2026-04-14 17:02:19,093] [INFO] [logger_setup:123] apply completed in 0.07s
+[2026-04-14 17:02:19,162] [INFO] [logger_setup:123] apply completed in 0.06s
+[2026-04-14 17:02:19,233] [INFO] [logger_setup:123] apply completed in 0.07s
+[2026-04-14 17:02:19,259] [INFO] [logger_setup:123] apply completed in 0.02s
+[2026-04-14 17:02:19,358] [INFO] [logger_setup:123] apply completed in 0.10s
+[2026-04-14 17:02:19,386] [INFO] [logger_setup:123] apply completed in 0.03s
+[2026-04-14 17:02:19,468] [INFO] [logger_setup:123] apply completed in 0.08s
+[2026-04-14 17:02:19,582] [INFO] [logger_setup:123] apply completed in 0.12s
+[2026-04-14 17:02:19,666] [INFO] [logger_setup:123] apply completed in 0.08s
+[2026-04-14 17:02:19,732] [INFO] [logger_setup:123] apply completed in 0.06s
+[2026-04-14 17:02:19,770] [INFO] [logger_setup:123] apply completed in 0.04s
+[2026-04-14 17:02:19,847] [INFO] [logger_setup:123] apply completed in 0.07s
+[2026-04-14 17:02:19,937] [INFO] [logger_setup:123] apply completed in 0.10s
+[2026-04-14 17:02:19,953] [INFO] [logger_setup:123] apply completed in 0.01s
+[2026-04-14 17:02:20,025] [INFO] [logger_setup:123] apply completed in 0.07s
+[2026-04-14 17:02:20,143] [INFO] [logger_setup:123] apply completed in 0.12s
+[2026-04-14 17:02:20,224] [INFO] [logger_setup:123] apply completed in 0.07s
+[2026-04-14 17:02:20,287] [INFO] [logger_setup:123] apply completed in 0.06s
+[2026-04-14 17:02:20,374] [INFO] [logger_setup:123] apply completed in 0.09s
+[2026-04-14 17:02:20,429] [INFO] [logger_setup:123] apply completed in 0.06s
+[2026-04-14 17:02:20,460] [INFO] [logger_setup:123] apply completed in 0.03s
+[2026-04-14 17:02:20,509] [INFO] [logger_setup:123] apply completed in 0.04s
+[2026-04-14 17:02:20,593] [INFO] [logger_setup:123] apply completed in 0.08s
+[2026-04-14 17:02:20,638] [INFO] [logger_setup:123] apply completed in 0.04s
+[2026-04-14 17:02:20,691] [INFO] [logger_setup:123] apply completed in 0.05s
+[2026-04-14 17:02:20,733] [INFO] [logger_setup:123] apply completed in 0.05s
+[2026-04-14 17:02:20,782] [INFO] [logger_setup:123] apply completed in 0.04s
+[2026-04-14 17:02:20,856] [INFO] [logger_setup:123] apply completed in 0.08s
+[2026-04-14 17:02:20,905] [INFO] [logger_setup:123] apply completed in 0.05s
+[2026-04-14 17:02:20,969] [INFO] [logger_setup:123] apply completed in 0.07s
+[2026-04-14 17:02:21,086] [INFO] [logger_setup:123] apply completed in 0.11s
+[2026-04-14 17:02:21,135] [INFO] [logger_setup:123] apply completed in 0.06s
+[2026-04-14 17:02:21,205] [INFO] [logger_setup:123] apply completed in 0.06s
+[2026-04-14 17:02:21,325] [INFO] [logger_setup:123] apply completed in 0.13s
+[2026-04-14 17:02:21,377] [INFO] [logger_setup:123] apply completed in 0.05s
+[2026-04-14 17:02:21,440] [INFO] [logger_setup:123] apply completed in 0.06s
+[2026-04-14 17:02:21,655] [INFO] [logger_setup:123] apply completed in 0.22s
+[2026-04-14 17:02:21,750] [INFO] [logger_setup:123] apply completed in 0.09s
+[2026-04-14 17:02:21,769] [INFO] [logger_setup:123] apply completed in 0.02s
+[2026-04-14 17:02:21,781] [INFO] [logger_setup:123] apply completed in 0.01s
+[2026-04-14 17:02:21,808] [INFO] [logger_setup:123] apply completed in 0.02s
+[2026-04-14 17:02:21,830] [INFO] [logger_setup:123] apply completed in 0.02s
+[2026-04-14 17:02:21,934] [INFO] [logger_setup:123] apply completed in 0.10s
+[2026-04-14 17:02:22,011] [INFO] [logger_setup:123] apply completed in 0.08s
+[2026-04-14 17:02:22,145] [INFO] [logger_setup:123] apply completed in 0.14s
+[2026-04-14 17:02:22,232] [INFO] [logger_setup:123] apply completed in 0.08s
+[2026-04-14 17:02:22,294] [INFO] [logger_setup:123] apply completed in 0.06s
+[2026-04-14 17:02:22,352] [INFO] [logger_setup:123] apply completed in 0.06s
+[2026-04-14 17:02:22,377] [INFO] [logger_setup:123] apply completed in 0.02s
+[2026-04-14 17:02:22,405] [INFO] [logger_setup:123] apply completed in 0.03s
+[2026-04-14 17:02:22,444] [INFO] [logger_setup:123] apply completed in 0.04s
+[2026-04-14 17:02:22,524] [INFO] [logger_setup:123] apply completed in 0.08s
+[2026-04-14 17:02:22,583] [INFO] [logger_setup:123] apply completed in 0.06s
+[2026-04-14 17:02:22,685] [INFO] [logger_setup:123] apply completed in 0.09s
+[2026-04-14 17:02:22,868] [INFO] [logger_setup:123] apply completed in 0.18s
+[2026-04-14 17:02:22,927] [INFO] [logger_setup:123] apply completed in 0.06s
+[2026-04-14 17:02:23,154] [INFO] [logger_setup:123] apply completed in 0.22s
+[2026-04-14 17:02:23,358] [INFO] [logger_setup:123] apply completed in 0.20s
+[2026-04-14 17:02:23,393] [INFO] [logger_setup:123] apply completed in 0.03s
+[2026-04-14 17:02:23,520] [INFO] [logger_setup:123] apply completed in 0.12s
+[2026-04-14 17:02:23,609] [INFO] [logger_setup:123] apply completed in 0.09s
+[2026-04-14 17:02:23,671] [INFO] [logger_setup:123] apply completed in 0.06s
+[2026-04-14 17:02:23,707] [INFO] [logger_setup:123] apply completed in 0.04s
+[2026-04-14 17:02:23,747] [INFO] [logger_setup:123] apply completed in 0.04s
+[2026-04-14 17:02:23,915] [INFO] [logger_setup:123] apply completed in 0.17s
+[2026-04-14 17:02:24,019] [INFO] [logger_setup:123] apply completed in 0.10s
+[2026-04-14 17:02:24,100] [INFO] [logger_setup:123] apply completed in 0.08s
+[2026-04-14 17:02:24,130] [INFO] [logger_setup:123] apply completed in 0.03s
+[2026-04-14 17:02:24,188] [INFO] [logger_setup:123] apply completed in 0.06s
+[2026-04-14 17:02:24,275] [INFO] [logger_setup:123] apply completed in 0.08s
+[2026-04-14 17:02:24,335] [INFO] [logger_setup:123] apply completed in 0.06s
+[2026-04-14 17:02:24,414] [INFO] [logger_setup:123] apply completed in 0.08s
+[2026-04-14 17:02:24,536] [INFO] [logger_setup:123] apply completed in 0.12s
+[2026-04-14 17:02:24,578] [INFO] [logger_setup:123] apply completed in 0.04s
+[2026-04-14 17:02:24,982] [INFO] [logger_setup:123] apply completed in 0.40s
+[2026-04-14 17:02:25,077] [INFO] [logger_setup:123] apply completed in 0.10s
+[2026-04-14 17:02:25,169] [INFO] [logger_setup:123] apply completed in 0.09s
+[2026-04-14 17:02:25,201] [INFO] [logger_setup:123] apply completed in 0.02s
+[2026-04-14 17:02:25,284] [INFO] [logger_setup:123] apply completed in 0.08s
+[2026-04-14 17:02:25,285] [INFO] [logger_setup:123] apply completed in 0.00s
+[2026-04-14 17:02:25,297] [INFO] [logger_setup:123] apply completed in 0.02s
+[2026-04-14 17:02:25,406] [INFO] [logger_setup:123] apply completed in 0.11s
+[2026-04-14 17:02:25,472] [INFO] [logger_setup:123] apply completed in 0.05s
+[2026-04-14 17:02:25,490] [INFO] [logger_setup:123] apply completed in 0.02s
+[2026-04-14 17:02:25,551] [INFO] [logger_setup:123] apply completed in 0.06s
+[2026-04-14 17:02:25,580] [INFO] [logger_setup:123] apply completed in 0.03s
+[2026-04-14 17:02:25,625] [INFO] [logger_setup:123] apply completed in 0.05s
+[2026-04-14 17:02:25,639] [INFO] [logger_setup:123] apply completed in 0.02s
+[2026-04-14 17:02:25,677] [INFO] [logger_setup:123] apply completed in 0.03s
+[2026-04-14 17:02:25,685] [INFO] [logger_setup:123] apply completed in 0.01s
+[2026-04-14 17:02:25,747] [INFO] [logger_setup:123] apply completed in 0.06s
+[2026-04-14 17:02:25,856] [INFO] [logger_setup:123] apply completed in 0.10s
+[2026-04-14 17:02:25,906] [INFO] [logger_setup:123] apply completed in 0.06s
+[2026-04-14 17:02:26,063] [INFO] [logger_setup:123] apply completed in 0.15s
+[2026-04-14 17:02:26,104] [INFO] [logger_setup:123] apply completed in 0.04s
+[2026-04-14 17:02:26,136] [INFO] [logger_setup:123] apply completed in 0.04s
+[2026-04-14 17:02:26,181] [INFO] [logger_setup:123] apply completed in 0.03s
+[2026-04-14 17:02:26,214] [INFO] [logger_setup:123] apply completed in 0.03s
+[2026-04-14 17:02:26,250] [INFO] [logger_setup:123] apply completed in 0.03s
+[2026-04-14 17:02:26,305] [INFO] [logger_setup:123] apply completed in 0.05s
+[2026-04-14 17:02:26,324] [INFO] [logger_setup:123] apply completed in 0.02s
+[2026-04-14 17:02:26,354] [INFO] [logger_setup:123] apply completed in 0.03s
+[2026-04-14 17:02:26,377] [INFO] [logger_setup:123] apply completed in 0.03s
+[2026-04-14 17:02:26,416] [INFO] [logger_setup:123] apply completed in 0.03s
+[2026-04-14 17:02:26,479] [INFO] [logger_setup:123] apply completed in 0.06s
+[2026-04-14 17:02:26,495] [INFO] [logger_setup:123] apply completed in 0.02s
+[2026-04-14 17:02:26,507] [INFO] [logger_setup:123] apply completed in 0.01s
+[2026-04-14 17:02:26,588] [INFO] [logger_setup:123] apply completed in 0.08s
+[2026-04-14 17:02:26,621] [INFO] [logger_setup:123] apply completed in 0.03s
+[2026-04-14 17:02:26,622] [INFO] [logger_setup:123] apply completed in 0.00s
+[2026-04-14 17:02:26,660] [INFO] [logger_setup:123] apply completed in 0.04s
+[2026-04-14 17:02:26,692] [INFO] [logger_setup:123] apply completed in 0.03s
+[2026-04-14 17:02:26,711] [INFO] [logger_setup:123] apply completed in 0.02s
+[2026-04-14 17:02:26,750] [INFO] [logger_setup:123] apply completed in 0.03s
+[2026-04-14 17:02:26,774] [INFO] [logger_setup:123] apply completed in 0.02s
+[2026-04-14 17:02:26,776] [INFO] [logger_setup:123] apply completed in 0.00s
+[2026-04-14 17:02:26,848] [INFO] [logger_setup:123] apply completed in 0.07s
+[2026-04-14 17:02:26,946] [INFO] [logger_setup:123] apply completed in 0.10s
+[2026-04-14 17:02:27,015] [INFO] [logger_setup:123] apply completed in 0.06s
+[2026-04-14 17:02:27,146] [INFO] [logger_setup:123] apply completed in 0.14s
+[2026-04-14 17:02:27,146] [INFO] [logger_setup:123] apply completed in 0.00s
+[2026-04-14 17:02:27,146] [INFO] [logger_setup:123] apply completed in 0.00s
+[2026-04-14 17:02:27,187] [INFO] [logger_setup:123] apply completed in 0.04s
+[2026-04-14 17:02:27,240] [INFO] [logger_setup:123] apply completed in 0.05s
+[2026-04-14 17:02:27,250] [INFO] [logger_setup:123] apply completed in 0.02s
+[2026-04-14 17:02:27,291] [INFO] [logger_setup:123] apply completed in 0.03s
+[2026-04-14 17:02:27,326] [INFO] [logger_setup:123] apply completed in 0.05s
+[2026-04-14 17:02:27,462] [INFO] [logger_setup:123] apply completed in 0.12s
+[2026-04-14 17:02:27,489] [INFO] [logger_setup:123] apply completed in 0.02s
+[2026-04-14 17:02:27,532] [INFO] [logger_setup:123] apply completed in 0.05s
+[2026-04-14 17:02:27,555] [INFO] [logger_setup:123] apply completed in 0.02s
+[2026-04-14 17:02:27,558] [INFO] [logger_setup:123] apply completed in 0.00s
+[2026-04-14 17:02:27,580] [INFO] [logger_setup:123] apply completed in 0.02s
+[2026-04-14 17:02:27,589] [INFO] [logger_setup:123] apply completed in 0.01s
+[2026-04-14 17:02:27,636] [INFO] [logger_setup:123] apply completed in 0.06s
+[2026-04-14 17:02:27,636] [INFO] [preprocessing:123] [STEP 2] Result: 132 items ready for LLM.
+[2026-04-14 17:02:27,651] [INFO] [preprocessing:126] [STEP 3] Starting Async LLM Batch Processing
+[2026-04-14 17:03:12,680] [INFO] [logger_setup:109] process_batch completed in 45.03s
+[2026-04-14 17:04:02,012] [INFO] [logger_setup:109] process_batch completed in 94.36s
+[2026-04-14 17:04:40,563] [INFO] [logger_setup:109] process_batch completed in 132.91s
+[2026-04-14 17:05:09,338] [INFO] [logger_setup:109] process_batch completed in 161.68s
+[2026-04-14 17:05:40,032] [INFO] [logger_setup:109] process_batch completed in 192.38s
+[2026-04-14 17:06:17,937] [INFO] [logger_setup:109] process_batch completed in 230.28s
+[2026-04-14 17:06:55,169] [INFO] [logger_setup:109] process_batch completed in 267.51s
+[2026-04-14 17:07:04,588] [INFO] [logger_setup:109] process_batch completed in 276.93s
+[2026-04-14 17:07:29,137] [INFO] [logger_setup:109] process_batch completed in 301.48s
+[2026-04-14 17:08:04,774] [INFO] [logger_setup:109] process_batch completed in 337.12s
+[2026-04-14 17:08:38,429] [INFO] [logger_setup:109] process_batch completed in 370.77s
+[2026-04-14 17:09:18,724] [INFO] [logger_setup:109] process_batch completed in 411.07s
+[2026-04-14 17:09:44,187] [INFO] [logger_setup:109] process_batch completed in 436.53s
+[2026-04-14 17:10:23,775] [INFO] [logger_setup:109] process_batch completed in 476.12s
+[2026-04-14 17:11:00,696] [INFO] [logger_setup:109] process_batch completed in 513.04s
+[2026-04-14 17:11:38,102] [INFO] [logger_setup:109] process_batch completed in 550.44s
+[2026-04-14 17:12:05,490] [INFO] [logger_setup:109] process_batch completed in 577.83s
+[2026-04-14 17:12:30,744] [INFO] [logger_setup:109] process_batch completed in 603.09s
+[2026-04-14 17:13:07,519] [INFO] [logger_setup:109] process_batch completed in 639.86s
+[2026-04-14 17:45:25,021] [INFO] [logger_setup:109] process_batch completed in 2577.37s
+[2026-04-14 17:47:01,192] [INFO] [preprocessing:98] ========== PIPELINE START ==========
+[2026-04-14 17:47:01,208] [INFO] [preprocessing:28] [EXTRACT] Opening PDF: F:\Loan_Details_RAG_System1\Data\loan_products_final.pdf
+[2026-04-14 17:47:01,403] [INFO] [preprocessing:59] [EXTRACT] Font Sizes -> Section: 18.0, Topic: 13.4
+[2026-04-14 17:47:01,406] [INFO] [preprocessing:87] [EXTRACT] Complete. Found 138 topics.
+[2026-04-14 17:47:01,408] [INFO] [logger_setup:123] extract_hierarchy completed in 0.20s
+[2026-04-14 17:47:01,408] [INFO] [preprocessing:112] [STEP 2] Cleaning text via Guardrails
+[2026-04-14 17:47:01,491] [INFO] [logger_setup:123] apply completed in 0.09s
+[2026-04-14 17:47:01,548] [INFO] [logger_setup:123] apply completed in 0.05s
+[2026-04-14 17:47:01,585] [INFO] [logger_setup:123] apply completed in 0.03s
+[2026-04-14 17:47:01,670] [INFO] [logger_setup:123] apply completed in 0.08s
+[2026-04-14 17:47:01,737] [INFO] [logger_setup:123] apply completed in 0.06s
+[2026-04-14 17:47:01,815] [INFO] [logger_setup:123] apply completed in 0.07s
+[2026-04-14 17:47:01,843] [INFO] [logger_setup:123] apply completed in 0.03s
+[2026-04-14 17:47:01,932] [INFO] [logger_setup:123] apply completed in 0.09s
+[2026-04-14 17:47:01,968] [INFO] [logger_setup:123] apply completed in 0.03s
+[2026-04-14 17:47:02,041] [INFO] [logger_setup:123] apply completed in 0.07s
+[2026-04-14 17:47:02,144] [INFO] [logger_setup:123] apply completed in 0.10s
+[2026-04-14 17:47:02,214] [INFO] [logger_setup:123] apply completed in 0.08s
+[2026-04-14 17:47:02,278] [INFO] [logger_setup:123] apply completed in 0.06s
+[2026-04-14 17:47:02,325] [INFO] [logger_setup:123] apply completed in 0.04s
+[2026-04-14 17:47:02,408] [INFO] [logger_setup:123] apply completed in 0.09s
+[2026-04-14 17:47:02,522] [INFO] [logger_setup:123] apply completed in 0.10s
+[2026-04-14 17:47:02,522] [INFO] [logger_setup:123] apply completed in 0.01s
+[2026-04-14 17:47:02,600] [INFO] [logger_setup:123] apply completed in 0.07s
+[2026-04-14 17:47:02,720] [INFO] [logger_setup:123] apply completed in 0.12s
+[2026-04-14 17:47:02,808] [INFO] [logger_setup:123] apply completed in 0.07s
+[2026-04-14 17:47:02,868] [INFO] [logger_setup:123] apply completed in 0.06s
+[2026-04-14 17:47:02,957] [INFO] [logger_setup:123] apply completed in 0.09s
+[2026-04-14 17:47:03,017] [INFO] [logger_setup:123] apply completed in 0.06s
+[2026-04-14 17:47:03,050] [INFO] [logger_setup:123] apply completed in 0.04s
+[2026-04-14 17:47:03,095] [INFO] [logger_setup:123] apply completed in 0.04s
+[2026-04-14 17:47:03,165] [INFO] [logger_setup:123] apply completed in 0.07s
+[2026-04-14 17:47:03,213] [INFO] [logger_setup:123] apply completed in 0.04s
+[2026-04-14 17:47:03,270] [INFO] [logger_setup:123] apply completed in 0.05s
+[2026-04-14 17:47:03,318] [INFO] [logger_setup:123] apply completed in 0.05s
+[2026-04-14 17:47:03,359] [INFO] [logger_setup:123] apply completed in 0.04s
+[2026-04-14 17:47:03,442] [INFO] [logger_setup:123] apply completed in 0.08s
+[2026-04-14 17:47:03,491] [INFO] [logger_setup:123] apply completed in 0.05s
+[2026-04-14 17:47:03,548] [INFO] [logger_setup:123] apply completed in 0.07s
+[2026-04-14 17:47:03,666] [INFO] [logger_setup:123] apply completed in 0.11s
+[2026-04-14 17:47:03,730] [INFO] [logger_setup:123] apply completed in 0.06s
+[2026-04-14 17:47:03,783] [INFO] [logger_setup:123] apply completed in 0.06s
+[2026-04-14 17:47:03,920] [INFO] [logger_setup:123] apply completed in 0.13s
+[2026-04-14 17:47:03,968] [INFO] [logger_setup:123] apply completed in 0.05s
+[2026-04-14 17:47:04,025] [INFO] [logger_setup:123] apply completed in 0.06s
+[2026-04-14 17:47:04,236] [INFO] [logger_setup:123] apply completed in 0.21s
+[2026-04-14 17:47:04,333] [INFO] [logger_setup:123] apply completed in 0.09s
+[2026-04-14 17:47:04,338] [INFO] [logger_setup:123] apply completed in 0.02s
+[2026-04-14 17:47:04,357] [INFO] [logger_setup:123] apply completed in 0.01s
+[2026-04-14 17:47:04,379] [INFO] [logger_setup:123] apply completed in 0.01s
+[2026-04-14 17:47:04,401] [INFO] [logger_setup:123] apply completed in 0.02s
+[2026-04-14 17:47:04,498] [INFO] [logger_setup:123] apply completed in 0.10s
+[2026-04-14 17:47:04,568] [INFO] [logger_setup:123] apply completed in 0.07s
+[2026-04-14 17:47:04,706] [INFO] [logger_setup:123] apply completed in 0.13s
+[2026-04-14 17:47:04,775] [INFO] [logger_setup:123] apply completed in 0.08s
+[2026-04-14 17:47:04,840] [INFO] [logger_setup:123] apply completed in 0.06s
+[2026-04-14 17:47:04,893] [INFO] [logger_setup:123] apply completed in 0.05s
+[2026-04-14 17:47:04,922] [INFO] [logger_setup:123] apply completed in 0.02s
+[2026-04-14 17:47:04,942] [INFO] [logger_setup:123] apply completed in 0.02s
+[2026-04-14 17:47:04,979] [INFO] [logger_setup:123] apply completed in 0.03s
+[2026-04-14 17:47:05,025] [INFO] [logger_setup:123] apply completed in 0.05s
+[2026-04-14 17:47:05,087] [INFO] [logger_setup:123] apply completed in 0.05s
+[2026-04-14 17:47:05,161] [INFO] [logger_setup:123] apply completed in 0.07s
+[2026-04-14 17:47:05,287] [INFO] [logger_setup:123] apply completed in 0.12s
+[2026-04-14 17:47:05,332] [INFO] [logger_setup:123] apply completed in 0.05s
+[2026-04-14 17:47:05,539] [INFO] [logger_setup:123] apply completed in 0.20s
+[2026-04-14 17:47:05,734] [INFO] [logger_setup:123] apply completed in 0.20s
+[2026-04-14 17:47:05,770] [INFO] [logger_setup:123] apply completed in 0.03s
+[2026-04-14 17:47:05,886] [INFO] [logger_setup:123] apply completed in 0.11s
+[2026-04-14 17:47:05,955] [INFO] [logger_setup:123] apply completed in 0.08s
+[2026-04-14 17:47:06,018] [INFO] [logger_setup:123] apply completed in 0.06s
+[2026-04-14 17:47:06,067] [INFO] [logger_setup:123] apply completed in 0.04s
+[2026-04-14 17:47:06,101] [INFO] [logger_setup:123] apply completed in 0.04s
+[2026-04-14 17:47:06,258] [INFO] [logger_setup:123] apply completed in 0.15s
+[2026-04-14 17:47:06,346] [INFO] [logger_setup:123] apply completed in 0.09s
+[2026-04-14 17:47:06,422] [INFO] [logger_setup:123] apply completed in 0.07s
+[2026-04-14 17:47:06,453] [INFO] [logger_setup:123] apply completed in 0.03s
+[2026-04-14 17:47:06,515] [INFO] [logger_setup:123] apply completed in 0.07s
+[2026-04-14 17:47:06,605] [INFO] [logger_setup:123] apply completed in 0.08s
+[2026-04-14 17:47:06,666] [INFO] [logger_setup:123] apply completed in 0.06s
+[2026-04-14 17:47:06,752] [INFO] [logger_setup:123] apply completed in 0.08s
+[2026-04-14 17:47:06,879] [INFO] [logger_setup:123] apply completed in 0.13s
+[2026-04-14 17:47:06,916] [INFO] [logger_setup:123] apply completed in 0.03s
+[2026-04-14 17:47:07,370] [INFO] [logger_setup:123] apply completed in 0.45s
+[2026-04-14 17:47:07,475] [INFO] [logger_setup:123] apply completed in 0.10s
+[2026-04-14 17:47:07,584] [INFO] [logger_setup:123] apply completed in 0.11s
+[2026-04-14 17:47:07,613] [INFO] [logger_setup:123] apply completed in 0.03s
+[2026-04-14 17:47:07,687] [INFO] [logger_setup:123] apply completed in 0.07s
+[2026-04-14 17:47:07,689] [INFO] [logger_setup:123] apply completed in 0.00s
+[2026-04-14 17:47:07,710] [INFO] [logger_setup:123] apply completed in 0.02s
+[2026-04-14 17:47:07,816] [INFO] [logger_setup:123] apply completed in 0.11s
+[2026-04-14 17:47:07,874] [INFO] [logger_setup:123] apply completed in 0.05s
+[2026-04-14 17:47:07,896] [INFO] [logger_setup:123] apply completed in 0.02s
+[2026-04-14 17:47:07,957] [INFO] [logger_setup:123] apply completed in 0.06s
+[2026-04-14 17:47:07,985] [INFO] [logger_setup:123] apply completed in 0.03s
+[2026-04-14 17:47:08,035] [INFO] [logger_setup:123] apply completed in 0.05s
+[2026-04-14 17:47:08,060] [INFO] [logger_setup:123] apply completed in 0.02s
+[2026-04-14 17:47:08,090] [INFO] [logger_setup:123] apply completed in 0.03s
+[2026-04-14 17:47:08,098] [INFO] [logger_setup:123] apply completed in 0.01s
+[2026-04-14 17:47:08,158] [INFO] [logger_setup:123] apply completed in 0.06s
+[2026-04-14 17:47:08,261] [INFO] [logger_setup:123] apply completed in 0.10s
+[2026-04-14 17:47:08,335] [INFO] [logger_setup:123] apply completed in 0.07s
+[2026-04-14 17:47:08,515] [INFO] [logger_setup:123] apply completed in 0.18s
+[2026-04-14 17:47:08,558] [INFO] [logger_setup:123] apply completed in 0.04s
+[2026-04-14 17:47:08,619] [INFO] [logger_setup:123] apply completed in 0.06s
+[2026-04-14 17:47:08,661] [INFO] [logger_setup:123] apply completed in 0.04s
+[2026-04-14 17:47:08,713] [INFO] [logger_setup:123] apply completed in 0.05s
+[2026-04-14 17:47:08,765] [INFO] [logger_setup:123] apply completed in 0.05s
+[2026-04-14 17:47:08,852] [INFO] [logger_setup:123] apply completed in 0.08s
+[2026-04-14 17:47:08,873] [INFO] [logger_setup:123] apply completed in 0.02s
+[2026-04-14 17:47:08,915] [INFO] [logger_setup:123] apply completed in 0.04s
+[2026-04-14 17:47:08,959] [INFO] [logger_setup:123] apply completed in 0.04s
+[2026-04-14 17:47:09,000] [INFO] [logger_setup:123] apply completed in 0.04s
+[2026-04-14 17:47:09,132] [INFO] [logger_setup:123] apply completed in 0.13s
+[2026-04-14 17:47:09,174] [INFO] [logger_setup:123] apply completed in 0.04s
+[2026-04-14 17:47:09,194] [INFO] [logger_setup:123] apply completed in 0.01s
+[2026-04-14 17:47:09,285] [INFO] [logger_setup:123] apply completed in 0.09s
+[2026-04-14 17:47:09,312] [INFO] [logger_setup:123] apply completed in 0.03s
+[2026-04-14 17:47:09,318] [INFO] [logger_setup:123] apply completed in 0.00s
+[2026-04-14 17:47:09,357] [INFO] [logger_setup:123] apply completed in 0.04s
+[2026-04-14 17:47:09,390] [INFO] [logger_setup:123] apply completed in 0.03s
+[2026-04-14 17:47:09,419] [INFO] [logger_setup:123] apply completed in 0.03s
+[2026-04-14 17:47:09,455] [INFO] [logger_setup:123] apply completed in 0.03s
+[2026-04-14 17:47:09,477] [INFO] [logger_setup:123] apply completed in 0.02s
+[2026-04-14 17:47:09,481] [INFO] [logger_setup:123] apply completed in 0.00s
+[2026-04-14 17:47:09,553] [INFO] [logger_setup:123] apply completed in 0.08s
+[2026-04-14 17:47:09,668] [INFO] [logger_setup:123] apply completed in 0.11s
+[2026-04-14 17:47:09,743] [INFO] [logger_setup:123] apply completed in 0.07s
+[2026-04-14 17:47:09,900] [INFO] [logger_setup:123] apply completed in 0.15s
+[2026-04-14 17:47:09,901] [INFO] [logger_setup:123] apply completed in 0.00s
+[2026-04-14 17:47:09,903] [INFO] [logger_setup:123] apply completed in 0.00s
+[2026-04-14 17:47:09,945] [INFO] [logger_setup:123] apply completed in 0.04s
+[2026-04-14 17:47:09,997] [INFO] [logger_setup:123] apply completed in 0.05s
+[2026-04-14 17:47:10,019] [INFO] [logger_setup:123] apply completed in 0.02s
+[2026-04-14 17:47:10,051] [INFO] [logger_setup:123] apply completed in 0.03s
+[2026-04-14 17:47:10,101] [INFO] [logger_setup:123] apply completed in 0.05s
+[2026-04-14 17:47:10,248] [INFO] [logger_setup:123] apply completed in 0.14s
+[2026-04-14 17:47:10,273] [INFO] [logger_setup:123] apply completed in 0.02s
+[2026-04-14 17:47:10,328] [INFO] [logger_setup:123] apply completed in 0.05s
+[2026-04-14 17:47:10,347] [INFO] [logger_setup:123] apply completed in 0.02s
+[2026-04-14 17:47:10,349] [INFO] [logger_setup:123] apply completed in 0.00s
+[2026-04-14 17:47:10,370] [INFO] [logger_setup:123] apply completed in 0.02s
+[2026-04-14 17:47:10,382] [INFO] [logger_setup:123] apply completed in 0.01s
+[2026-04-14 17:47:10,440] [INFO] [logger_setup:123] apply completed in 0.06s
+[2026-04-14 17:47:10,440] [INFO] [preprocessing:123] [STEP 2] Result: 132 items ready for LLM.
+[2026-04-14 17:47:10,440] [INFO] [preprocessing:126] [STEP 3] Starting Async LLM Batch Processing
+[2026-04-14 17:48:28,808] [INFO] [preprocessing:98] ========== PIPELINE START ==========
+[2026-04-14 17:48:28,814] [INFO] [preprocessing:28] [EXTRACT] Opening PDF: F:\Loan_Details_RAG_System1\Data\loan_products_final.pdf
+[2026-04-14 17:48:28,983] [INFO] [preprocessing:59] [EXTRACT] Font Sizes -> Section: 18.0, Topic: 13.4
+[2026-04-14 17:48:28,983] [INFO] [preprocessing:87] [EXTRACT] Complete. Found 138 topics.
+[2026-04-14 17:48:28,994] [INFO] [logger_setup:123] extract_hierarchy completed in 0.18s
+[2026-04-14 17:48:28,994] [INFO] [preprocessing:112] [STEP 2] Cleaning text via Guardrails
+[2026-04-14 17:48:29,076] [INFO] [logger_setup:123] apply completed in 0.08s
+[2026-04-14 17:48:29,124] [INFO] [logger_setup:123] apply completed in 0.05s
+[2026-04-14 17:48:29,153] [INFO] [logger_setup:123] apply completed in 0.02s
+[2026-04-14 17:48:29,214] [INFO] [logger_setup:123] apply completed in 0.07s
+[2026-04-14 17:48:29,273] [INFO] [logger_setup:123] apply completed in 0.05s
+[2026-04-14 17:48:29,354] [INFO] [logger_setup:123] apply completed in 0.07s
+[2026-04-14 17:48:29,379] [INFO] [logger_setup:123] apply completed in 0.02s
+[2026-04-14 17:48:29,473] [INFO] [logger_setup:123] apply completed in 0.09s
+[2026-04-14 17:48:29,501] [INFO] [logger_setup:123] apply completed in 0.03s
+[2026-04-14 17:48:29,582] [INFO] [logger_setup:123] apply completed in 0.08s
+[2026-04-14 17:48:29,680] [INFO] [logger_setup:123] apply completed in 0.09s
+[2026-04-14 17:48:29,755] [INFO] [logger_setup:123] apply completed in 0.08s
+[2026-04-14 17:48:29,819] [INFO] [logger_setup:123] apply completed in 0.06s
+[2026-04-14 17:48:29,846] [INFO] [logger_setup:123] apply completed in 0.03s
+[2026-04-14 17:48:29,922] [INFO] [logger_setup:123] apply completed in 0.07s
+[2026-04-14 17:48:30,015] [INFO] [logger_setup:123] apply completed in 0.10s
+[2026-04-14 17:48:30,030] [INFO] [logger_setup:123] apply completed in 0.01s
+[2026-04-14 17:48:30,109] [INFO] [logger_setup:123] apply completed in 0.07s
+[2026-04-14 17:48:30,231] [INFO] [logger_setup:123] apply completed in 0.12s
+[2026-04-14 17:48:30,310] [INFO] [logger_setup:123] apply completed in 0.08s
+[2026-04-14 17:48:30,359] [INFO] [logger_setup:123] apply completed in 0.06s
+[2026-04-14 17:48:30,449] [INFO] [logger_setup:123] apply completed in 0.09s
+[2026-04-14 17:48:30,522] [INFO] [logger_setup:123] apply completed in 0.06s
+[2026-04-14 17:48:30,558] [INFO] [logger_setup:123] apply completed in 0.03s
+[2026-04-14 17:48:30,593] [INFO] [logger_setup:123] apply completed in 0.03s
+[2026-04-14 17:48:30,660] [INFO] [logger_setup:123] apply completed in 0.07s
+[2026-04-14 17:48:30,706] [INFO] [logger_setup:123] apply completed in 0.05s
+[2026-04-14 17:48:30,764] [INFO] [logger_setup:123] apply completed in 0.05s
+[2026-04-14 17:48:30,811] [INFO] [logger_setup:123] apply completed in 0.05s
+[2026-04-14 17:48:30,845] [INFO] [logger_setup:123] apply completed in 0.04s
+[2026-04-14 17:48:30,923] [INFO] [logger_setup:123] apply completed in 0.08s
+[2026-04-14 17:48:30,965] [INFO] [logger_setup:123] apply completed in 0.05s
+[2026-04-14 17:48:31,034] [INFO] [logger_setup:123] apply completed in 0.07s
+[2026-04-14 17:48:31,148] [INFO] [logger_setup:123] apply completed in 0.10s
+[2026-04-14 17:48:31,213] [INFO] [logger_setup:123] apply completed in 0.06s
+[2026-04-14 17:48:31,273] [INFO] [logger_setup:123] apply completed in 0.06s
+[2026-04-14 17:48:31,394] [INFO] [logger_setup:123] apply completed in 0.13s
+[2026-04-14 17:48:31,442] [INFO] [logger_setup:123] apply completed in 0.04s
+[2026-04-14 17:48:31,492] [INFO] [logger_setup:123] apply completed in 0.05s
+[2026-04-14 17:48:31,714] [INFO] [logger_setup:123] apply completed in 0.21s
+[2026-04-14 17:48:31,821] [INFO] [logger_setup:123] apply completed in 0.10s
+[2026-04-14 17:48:31,842] [INFO] [logger_setup:123] apply completed in 0.02s
+[2026-04-14 17:48:31,852] [INFO] [logger_setup:123] apply completed in 0.01s
+[2026-04-14 17:48:31,859] [INFO] [logger_setup:123] apply completed in 0.01s
+[2026-04-14 17:48:31,887] [INFO] [logger_setup:123] apply completed in 0.02s
+[2026-04-14 17:48:31,981] [INFO] [logger_setup:123] apply completed in 0.10s
+[2026-04-14 17:48:32,063] [INFO] [logger_setup:123] apply completed in 0.07s
+[2026-04-14 17:48:32,186] [INFO] [logger_setup:123] apply completed in 0.13s
+[2026-04-14 17:48:32,279] [INFO] [logger_setup:123] apply completed in 0.08s
+[2026-04-14 17:48:32,339] [INFO] [logger_setup:123] apply completed in 0.06s
+[2026-04-14 17:48:32,393] [INFO] [logger_setup:123] apply completed in 0.06s
+[2026-04-14 17:48:32,419] [INFO] [logger_setup:123] apply completed in 0.02s
+[2026-04-14 17:48:32,447] [INFO] [logger_setup:123] apply completed in 0.02s
+[2026-04-14 17:48:32,472] [INFO] [logger_setup:123] apply completed in 0.03s
+[2026-04-14 17:48:32,526] [INFO] [logger_setup:123] apply completed in 0.05s
+[2026-04-14 17:48:32,583] [INFO] [logger_setup:123] apply completed in 0.05s
+[2026-04-14 17:48:32,662] [INFO] [logger_setup:123] apply completed in 0.08s
+[2026-04-14 17:48:32,783] [INFO] [logger_setup:123] apply completed in 0.12s
+[2026-04-14 17:48:32,830] [INFO] [logger_setup:123] apply completed in 0.04s
+[2026-04-14 17:48:33,033] [INFO] [logger_setup:123] apply completed in 0.20s
+[2026-04-14 17:48:33,249] [INFO] [logger_setup:123] apply completed in 0.21s
+[2026-04-14 17:48:33,281] [INFO] [logger_setup:123] apply completed in 0.03s
+[2026-04-14 17:48:33,394] [INFO] [logger_setup:123] apply completed in 0.12s
+[2026-04-14 17:48:33,482] [INFO] [logger_setup:123] apply completed in 0.08s
+[2026-04-14 17:48:33,548] [INFO] [logger_setup:123] apply completed in 0.06s
+[2026-04-14 17:48:33,586] [INFO] [logger_setup:123] apply completed in 0.04s
+[2026-04-14 17:48:33,629] [INFO] [logger_setup:123] apply completed in 0.04s
+[2026-04-14 17:48:33,793] [INFO] [logger_setup:123] apply completed in 0.16s
+[2026-04-14 17:48:33,881] [INFO] [logger_setup:123] apply completed in 0.09s
+[2026-04-14 17:48:33,950] [INFO] [logger_setup:123] apply completed in 0.07s
+[2026-04-14 17:48:33,986] [INFO] [logger_setup:123] apply completed in 0.03s
+[2026-04-14 17:48:34,034] [INFO] [logger_setup:123] apply completed in 0.06s
+[2026-04-14 17:48:34,129] [INFO] [logger_setup:123] apply completed in 0.08s
+[2026-04-14 17:48:34,189] [INFO] [logger_setup:123] apply completed in 0.06s
+[2026-04-14 17:48:34,261] [INFO] [logger_setup:123] apply completed in 0.08s
+[2026-04-14 17:48:34,378] [INFO] [logger_setup:123] apply completed in 0.11s
+[2026-04-14 17:48:34,421] [INFO] [logger_setup:123] apply completed in 0.04s
+[2026-04-14 17:48:34,788] [INFO] [logger_setup:123] apply completed in 0.37s
+[2026-04-14 17:48:34,885] [INFO] [logger_setup:123] apply completed in 0.09s
+[2026-04-14 17:48:34,981] [INFO] [logger_setup:123] apply completed in 0.09s
+[2026-04-14 17:48:35,009] [INFO] [logger_setup:123] apply completed in 0.02s
+[2026-04-14 17:48:35,069] [INFO] [logger_setup:123] apply completed in 0.06s
+[2026-04-14 17:48:35,071] [INFO] [logger_setup:123] apply completed in 0.00s
+[2026-04-14 17:48:35,096] [INFO] [logger_setup:123] apply completed in 0.02s
+[2026-04-14 17:48:35,202] [INFO] [logger_setup:123] apply completed in 0.11s
+[2026-04-14 17:48:35,258] [INFO] [logger_setup:123] apply completed in 0.05s
+[2026-04-14 17:48:35,277] [INFO] [logger_setup:123] apply completed in 0.02s
+[2026-04-14 17:48:35,338] [INFO] [logger_setup:123] apply completed in 0.06s
+[2026-04-14 17:48:35,370] [INFO] [logger_setup:123] apply completed in 0.03s
+[2026-04-14 17:48:35,407] [INFO] [logger_setup:123] apply completed in 0.05s
+[2026-04-14 17:48:35,441] [INFO] [logger_setup:123] apply completed in 0.02s
+[2026-04-14 17:48:35,470] [INFO] [logger_setup:123] apply completed in 0.03s
+[2026-04-14 17:48:35,478] [INFO] [logger_setup:123] apply completed in 0.01s
+[2026-04-14 17:48:35,540] [INFO] [logger_setup:123] apply completed in 0.06s
+[2026-04-14 17:48:35,627] [INFO] [logger_setup:123] apply completed in 0.10s
+[2026-04-14 17:48:35,700] [INFO] [logger_setup:123] apply completed in 0.06s
+[2026-04-14 17:48:35,839] [INFO] [logger_setup:123] apply completed in 0.15s
+[2026-04-14 17:48:35,887] [INFO] [logger_setup:123] apply completed in 0.04s
+[2026-04-14 17:48:35,927] [INFO] [logger_setup:123] apply completed in 0.04s
+[2026-04-14 17:48:35,955] [INFO] [logger_setup:123] apply completed in 0.03s
+[2026-04-14 17:48:35,991] [INFO] [logger_setup:123] apply completed in 0.03s
+[2026-04-14 17:48:36,019] [INFO] [logger_setup:123] apply completed in 0.03s
+[2026-04-14 17:48:36,088] [INFO] [logger_setup:123] apply completed in 0.06s
+[2026-04-14 17:48:36,110] [INFO] [logger_setup:123] apply completed in 0.02s
+[2026-04-14 17:48:36,147] [INFO] [logger_setup:123] apply completed in 0.03s
+[2026-04-14 17:48:36,172] [INFO] [logger_setup:123] apply completed in 0.03s
+[2026-04-14 17:48:36,210] [INFO] [logger_setup:123] apply completed in 0.03s
+[2026-04-14 17:48:36,270] [INFO] [logger_setup:123] apply completed in 0.06s
+[2026-04-14 17:48:36,286] [INFO] [logger_setup:123] apply completed in 0.02s
+[2026-04-14 17:48:36,290] [INFO] [logger_setup:123] apply completed in 0.01s
+[2026-04-14 17:48:36,375] [INFO] [logger_setup:123] apply completed in 0.07s
+[2026-04-14 17:48:36,393] [INFO] [logger_setup:123] apply completed in 0.02s
+[2026-04-14 17:48:36,393] [INFO] [logger_setup:123] apply completed in 0.00s
+[2026-04-14 17:48:36,441] [INFO] [logger_setup:123] apply completed in 0.03s
+[2026-04-14 17:48:36,471] [INFO] [logger_setup:123] apply completed in 0.03s
+[2026-04-14 17:48:36,490] [INFO] [logger_setup:123] apply completed in 0.02s
+[2026-04-14 17:48:36,532] [INFO] [logger_setup:123] apply completed in 0.03s
+[2026-04-14 17:48:36,539] [INFO] [logger_setup:123] apply completed in 0.02s
+[2026-04-14 17:48:36,553] [INFO] [logger_setup:123] apply completed in 0.00s
+[2026-04-14 17:48:36,609] [INFO] [logger_setup:123] apply completed in 0.07s
+[2026-04-14 17:48:36,717] [INFO] [logger_setup:123] apply completed in 0.10s
+[2026-04-14 17:48:36,783] [INFO] [logger_setup:123] apply completed in 0.06s
+[2026-04-14 17:48:36,924] [INFO] [logger_setup:123] apply completed in 0.14s
+[2026-04-14 17:48:36,931] [INFO] [logger_setup:123] apply completed in 0.00s
+[2026-04-14 17:48:36,934] [INFO] [logger_setup:123] apply completed in 0.00s
+[2026-04-14 17:48:36,977] [INFO] [logger_setup:123] apply completed in 0.04s
+[2026-04-14 17:48:37,010] [INFO] [logger_setup:123] apply completed in 0.05s
+[2026-04-14 17:48:37,042] [INFO] [logger_setup:123] apply completed in 0.02s
+[2026-04-14 17:48:37,073] [INFO] [logger_setup:123] apply completed in 0.03s
+[2026-04-14 17:48:37,118] [INFO] [logger_setup:123] apply completed in 0.04s
+[2026-04-14 17:48:37,225] [INFO] [logger_setup:123] apply completed in 0.12s
+[2026-04-14 17:48:37,262] [INFO] [logger_setup:123] apply completed in 0.02s
+[2026-04-14 17:48:37,325] [INFO] [logger_setup:123] apply completed in 0.06s
+[2026-04-14 17:48:37,343] [INFO] [logger_setup:123] apply completed in 0.02s
+[2026-04-14 17:48:37,345] [INFO] [logger_setup:123] apply completed in 0.00s
+[2026-04-14 17:48:37,368] [INFO] [logger_setup:123] apply completed in 0.02s
+[2026-04-14 17:48:37,380] [INFO] [logger_setup:123] apply completed in 0.01s
+[2026-04-14 17:48:37,443] [INFO] [logger_setup:123] apply completed in 0.07s
+[2026-04-14 17:48:37,443] [INFO] [preprocessing:123] [STEP 2] Result: 132 items ready for LLM.
+[2026-04-14 17:48:37,459] [INFO] [preprocessing:126] [STEP 3] Starting Async LLM Batch Processing
+[2026-04-14 17:49:22,159] [INFO] [preprocessing:98] ========== PIPELINE START ==========
+[2026-04-14 17:49:22,164] [INFO] [preprocessing:28] [EXTRACT] Opening PDF: F:\Loan_Details_RAG_System1\Data\loan_products_final.pdf
+[2026-04-14 17:49:22,341] [INFO] [preprocessing:59] [EXTRACT] Font Sizes -> Section: 18.0, Topic: 13.4
+[2026-04-14 17:49:22,343] [INFO] [preprocessing:87] [EXTRACT] Complete. Found 138 topics.
+[2026-04-14 17:49:22,345] [INFO] [logger_setup:123] extract_hierarchy completed in 0.18s
+[2026-04-14 17:49:22,347] [INFO] [preprocessing:112] [STEP 2] Cleaning text via Guardrails
+[2026-04-14 17:49:22,441] [INFO] [logger_setup:123] apply completed in 0.09s
+[2026-04-14 17:49:22,492] [INFO] [logger_setup:123] apply completed in 0.05s
+[2026-04-14 17:49:22,521] [INFO] [logger_setup:123] apply completed in 0.02s
+[2026-04-14 17:49:22,598] [INFO] [logger_setup:123] apply completed in 0.08s
+[2026-04-14 17:49:22,658] [INFO] [logger_setup:123] apply completed in 0.06s
+[2026-04-14 17:49:22,731] [INFO] [logger_setup:123] apply completed in 0.07s
+[2026-04-14 17:49:22,759] [INFO] [logger_setup:123] apply completed in 0.03s
+[2026-04-14 17:49:22,858] [INFO] [logger_setup:123] apply completed in 0.10s
+[2026-04-14 17:49:22,886] [INFO] [logger_setup:123] apply completed in 0.03s
+[2026-04-14 17:49:22,961] [INFO] [logger_setup:123] apply completed in 0.08s
+[2026-04-14 17:49:23,065] [INFO] [logger_setup:123] apply completed in 0.10s
+[2026-04-14 17:49:23,155] [INFO] [logger_setup:123] apply completed in 0.09s
+[2026-04-14 17:49:23,218] [INFO] [logger_setup:123] apply completed in 0.06s
+[2026-04-14 17:49:23,259] [INFO] [logger_setup:123] apply completed in 0.04s
+[2026-04-14 17:49:23,336] [INFO] [logger_setup:123] apply completed in 0.08s
+[2026-04-14 17:49:23,440] [INFO] [logger_setup:123] apply completed in 0.10s
+[2026-04-14 17:49:23,454] [INFO] [logger_setup:123] apply completed in 0.01s
+[2026-04-14 17:49:23,535] [INFO] [logger_setup:123] apply completed in 0.08s
+[2026-04-14 17:49:23,662] [INFO] [logger_setup:123] apply completed in 0.13s
+[2026-04-14 17:49:23,745] [INFO] [logger_setup:123] apply completed in 0.08s
+[2026-04-14 17:49:23,831] [INFO] [logger_setup:123] apply completed in 0.09s
+[2026-04-14 17:49:23,954] [INFO] [logger_setup:123] apply completed in 0.12s
+[2026-04-14 17:49:24,023] [INFO] [logger_setup:123] apply completed in 0.06s
+[2026-04-14 17:49:24,058] [INFO] [logger_setup:123] apply completed in 0.04s
+[2026-04-14 17:49:24,103] [INFO] [logger_setup:123] apply completed in 0.04s
+[2026-04-14 17:49:24,178] [INFO] [logger_setup:123] apply completed in 0.08s
+[2026-04-14 17:49:24,231] [INFO] [logger_setup:123] apply completed in 0.05s
+[2026-04-14 17:49:24,281] [INFO] [logger_setup:123] apply completed in 0.05s
+[2026-04-14 17:49:24,342] [INFO] [logger_setup:123] apply completed in 0.05s
+[2026-04-14 17:49:24,384] [INFO] [logger_setup:123] apply completed in 0.04s
+[2026-04-14 17:49:24,473] [INFO] [logger_setup:123] apply completed in 0.09s
+[2026-04-14 17:49:24,517] [INFO] [logger_setup:123] apply completed in 0.05s
+[2026-04-14 17:49:24,609] [INFO] [logger_setup:123] apply completed in 0.08s
+[2026-04-14 17:49:24,745] [INFO] [logger_setup:123] apply completed in 0.13s
+[2026-04-14 17:49:24,829] [INFO] [logger_setup:123] apply completed in 0.09s
+[2026-04-14 17:49:24,927] [INFO] [logger_setup:123] apply completed in 0.09s
+[2026-04-14 17:49:25,068] [INFO] [logger_setup:123] apply completed in 0.14s
+[2026-04-14 17:49:25,121] [INFO] [logger_setup:123] apply completed in 0.05s
+[2026-04-14 17:49:25,199] [INFO] [logger_setup:123] apply completed in 0.08s
+[2026-04-14 17:49:25,442] [INFO] [logger_setup:123] apply completed in 0.24s
+[2026-04-14 17:49:25,538] [INFO] [logger_setup:123] apply completed in 0.09s
+[2026-04-14 17:49:25,557] [INFO] [logger_setup:123] apply completed in 0.02s
+[2026-04-14 17:49:25,572] [INFO] [logger_setup:123] apply completed in 0.01s
+[2026-04-14 17:49:25,587] [INFO] [logger_setup:123] apply completed in 0.01s
+[2026-04-14 17:49:25,608] [INFO] [logger_setup:123] apply completed in 0.02s
+[2026-04-14 17:49:25,719] [INFO] [logger_setup:123] apply completed in 0.11s
+[2026-04-14 17:49:25,794] [INFO] [logger_setup:123] apply completed in 0.07s
+[2026-04-14 17:49:25,925] [INFO] [logger_setup:123] apply completed in 0.14s
+[2026-04-14 17:49:26,009] [INFO] [logger_setup:123] apply completed in 0.08s
+[2026-04-14 17:49:26,073] [INFO] [logger_setup:123] apply completed in 0.06s
+[2026-04-14 17:49:26,136] [INFO] [logger_setup:123] apply completed in 0.06s
+[2026-04-14 17:49:26,163] [INFO] [logger_setup:123] apply completed in 0.02s
+[2026-04-14 17:49:26,182] [INFO] [logger_setup:123] apply completed in 0.02s
+[2026-04-14 17:49:26,220] [INFO] [logger_setup:123] apply completed in 0.03s
+[2026-04-14 17:49:26,275] [INFO] [logger_setup:123] apply completed in 0.05s
+[2026-04-14 17:49:26,334] [INFO] [logger_setup:123] apply completed in 0.06s
+[2026-04-14 17:49:26,415] [INFO] [logger_setup:123] apply completed in 0.07s
+[2026-04-14 17:49:26,545] [INFO] [logger_setup:123] apply completed in 0.13s
+[2026-04-14 17:49:26,592] [INFO] [logger_setup:123] apply completed in 0.04s
+[2026-04-14 17:49:26,862] [INFO] [logger_setup:123] apply completed in 0.27s
+[2026-04-14 17:49:27,094] [INFO] [logger_setup:123] apply completed in 0.23s
+[2026-04-14 17:49:27,133] [INFO] [logger_setup:123] apply completed in 0.04s
+[2026-04-14 17:49:27,267] [INFO] [logger_setup:123] apply completed in 0.13s
+[2026-04-14 17:49:27,365] [INFO] [logger_setup:123] apply completed in 0.10s
+[2026-04-14 17:49:27,450] [INFO] [logger_setup:123] apply completed in 0.08s
+[2026-04-14 17:49:27,507] [INFO] [logger_setup:123] apply completed in 0.06s
+[2026-04-14 17:49:27,551] [INFO] [logger_setup:123] apply completed in 0.05s
+[2026-04-14 17:49:27,718] [INFO] [logger_setup:123] apply completed in 0.16s
+[2026-04-14 17:49:27,806] [INFO] [logger_setup:123] apply completed in 0.08s
+[2026-04-14 17:49:27,883] [INFO] [logger_setup:123] apply completed in 0.08s
+[2026-04-14 17:49:27,904] [INFO] [logger_setup:123] apply completed in 0.03s
+[2026-04-14 17:49:27,966] [INFO] [logger_setup:123] apply completed in 0.06s
+[2026-04-14 17:49:28,058] [INFO] [logger_setup:123] apply completed in 0.08s
+[2026-04-14 17:49:28,105] [INFO] [logger_setup:123] apply completed in 0.06s
+[2026-04-14 17:49:28,201] [INFO] [logger_setup:123] apply completed in 0.08s
+[2026-04-14 17:49:28,306] [INFO] [logger_setup:123] apply completed in 0.11s
+[2026-04-14 17:49:28,350] [INFO] [logger_setup:123] apply completed in 0.04s
+[2026-04-14 17:49:28,737] [INFO] [logger_setup:123] apply completed in 0.40s
+[2026-04-14 17:49:28,841] [INFO] [logger_setup:123] apply completed in 0.10s
+[2026-04-14 17:49:28,934] [INFO] [logger_setup:123] apply completed in 0.10s
+[2026-04-14 17:49:28,969] [INFO] [logger_setup:123] apply completed in 0.02s
+[2026-04-14 17:49:29,029] [INFO] [logger_setup:123] apply completed in 0.06s
+[2026-04-14 17:49:29,029] [INFO] [logger_setup:123] apply completed in 0.00s
+[2026-04-14 17:49:29,054] [INFO] [logger_setup:123] apply completed in 0.02s
+[2026-04-14 17:49:29,173] [INFO] [logger_setup:123] apply completed in 0.12s
+[2026-04-14 17:49:29,223] [INFO] [logger_setup:123] apply completed in 0.05s
+[2026-04-14 17:49:29,244] [INFO] [logger_setup:123] apply completed in 0.02s
+[2026-04-14 17:49:29,301] [INFO] [logger_setup:123] apply completed in 0.06s
+[2026-04-14 17:49:29,332] [INFO] [logger_setup:123] apply completed in 0.03s
+[2026-04-14 17:49:29,378] [INFO] [logger_setup:123] apply completed in 0.05s
+[2026-04-14 17:49:29,403] [INFO] [logger_setup:123] apply completed in 0.02s
+[2026-04-14 17:49:29,434] [INFO] [logger_setup:123] apply completed in 0.03s
+[2026-04-14 17:49:29,438] [INFO] [logger_setup:123] apply completed in 0.01s
+[2026-04-14 17:49:29,490] [INFO] [logger_setup:123] apply completed in 0.06s
+[2026-04-14 17:49:29,606] [INFO] [logger_setup:123] apply completed in 0.11s
+[2026-04-14 17:49:29,674] [INFO] [logger_setup:123] apply completed in 0.06s
+[2026-04-14 17:49:29,820] [INFO] [logger_setup:123] apply completed in 0.15s
+[2026-04-14 17:49:29,868] [INFO] [logger_setup:123] apply completed in 0.04s
+[2026-04-14 17:49:29,910] [INFO] [logger_setup:123] apply completed in 0.04s
+[2026-04-14 17:49:29,946] [INFO] [logger_setup:123] apply completed in 0.03s
+[2026-04-14 17:49:29,979] [INFO] [logger_setup:123] apply completed in 0.03s
+[2026-04-14 17:49:30,015] [INFO] [logger_setup:123] apply completed in 0.04s
+[2026-04-14 17:49:30,069] [INFO] [logger_setup:123] apply completed in 0.05s
+[2026-04-14 17:49:30,088] [INFO] [logger_setup:123] apply completed in 0.02s
+[2026-04-14 17:49:30,119] [INFO] [logger_setup:123] apply completed in 0.03s
+[2026-04-14 17:49:30,139] [INFO] [logger_setup:123] apply completed in 0.03s
+[2026-04-14 17:49:30,173] [INFO] [logger_setup:123] apply completed in 0.03s
+[2026-04-14 17:49:30,237] [INFO] [logger_setup:123] apply completed in 0.06s
+[2026-04-14 17:49:30,258] [INFO] [logger_setup:123] apply completed in 0.02s
+[2026-04-14 17:49:30,271] [INFO] [logger_setup:123] apply completed in 0.01s
+[2026-04-14 17:49:30,328] [INFO] [logger_setup:123] apply completed in 0.07s
+[2026-04-14 17:49:30,367] [INFO] [logger_setup:123] apply completed in 0.02s
+[2026-04-14 17:49:30,369] [INFO] [logger_setup:123] apply completed in 0.00s
+[2026-04-14 17:49:30,404] [INFO] [logger_setup:123] apply completed in 0.03s
+[2026-04-14 17:49:30,433] [INFO] [logger_setup:123] apply completed in 0.03s
+[2026-04-14 17:49:30,456] [INFO] [logger_setup:123] apply completed in 0.02s
+[2026-04-14 17:49:30,491] [INFO] [logger_setup:123] apply completed in 0.03s
+[2026-04-14 17:49:30,511] [INFO] [logger_setup:123] apply completed in 0.02s
+[2026-04-14 17:49:30,511] [INFO] [logger_setup:123] apply completed in 0.00s
+[2026-04-14 17:49:30,580] [INFO] [logger_setup:123] apply completed in 0.07s
+[2026-04-14 17:49:30,686] [INFO] [logger_setup:123] apply completed in 0.10s
+[2026-04-14 17:49:30,745] [INFO] [logger_setup:123] apply completed in 0.07s
+[2026-04-14 17:49:30,898] [INFO] [logger_setup:123] apply completed in 0.14s
+[2026-04-14 17:49:30,898] [INFO] [logger_setup:123] apply completed in 0.00s
+[2026-04-14 17:49:30,901] [INFO] [logger_setup:123] apply completed in 0.00s
+[2026-04-14 17:49:30,937] [INFO] [logger_setup:123] apply completed in 0.04s
+[2026-04-14 17:49:30,986] [INFO] [logger_setup:123] apply completed in 0.05s
+[2026-04-14 17:49:30,993] [INFO] [logger_setup:123] apply completed in 0.02s
+[2026-04-14 17:49:31,035] [INFO] [logger_setup:123] apply completed in 0.03s
+[2026-04-14 17:49:31,074] [INFO] [logger_setup:123] apply completed in 0.05s
+[2026-04-14 17:49:31,208] [INFO] [logger_setup:123] apply completed in 0.13s
+[2026-04-14 17:49:31,232] [INFO] [logger_setup:123] apply completed in 0.02s
+[2026-04-14 17:49:31,271] [INFO] [logger_setup:123] apply completed in 0.05s
+[2026-04-14 17:49:31,289] [INFO] [logger_setup:123] apply completed in 0.02s
+[2026-04-14 17:49:31,289] [INFO] [logger_setup:123] apply completed in 0.00s
+[2026-04-14 17:49:31,319] [INFO] [logger_setup:123] apply completed in 0.02s
+[2026-04-14 17:49:31,333] [INFO] [logger_setup:123] apply completed in 0.01s
+[2026-04-14 17:49:31,391] [INFO] [logger_setup:123] apply completed in 0.06s
+[2026-04-14 17:49:31,391] [INFO] [preprocessing:123] [STEP 2] Result: 132 items ready for LLM.
+[2026-04-14 17:49:31,391] [INFO] [preprocessing:126] [STEP 3] Starting Async LLM Batch Processing
+[2026-04-14 17:50:11,223] [INFO] [logger_setup:109] process_batch completed in 39.83s
+[2026-04-14 17:50:49,494] [INFO] [logger_setup:109] process_batch completed in 78.10s
+[2026-04-14 17:51:21,803] [INFO] [logger_setup:109] process_batch completed in 110.40s
+[2026-04-14 17:51:54,325] [INFO] [logger_setup:109] process_batch completed in 142.93s
+[2026-04-14 17:52:24,539] [INFO] [logger_setup:109] process_batch completed in 173.14s
+[2026-04-14 17:53:04,589] [INFO] [logger_setup:109] process_batch completed in 213.19s
+[2026-04-14 17:53:46,921] [INFO] [logger_setup:109] process_batch completed in 255.52s
+[2026-04-14 17:54:21,436] [INFO] [logger_setup:109] process_batch completed in 290.04s
+[2026-04-14 17:54:51,511] [INFO] [logger_setup:109] process_batch completed in 320.12s
+[2026-04-14 17:55:42,155] [INFO] [logger_setup:109] process_batch completed in 370.76s
+[2026-04-14 17:56:14,120] [INFO] [logger_setup:109] process_batch completed in 402.72s
+[2026-04-14 17:56:51,391] [INFO] [logger_setup:109] process_batch completed in 439.99s
+[2026-04-14 17:57:15,297] [INFO] [logger_setup:109] process_batch completed in 463.90s
+[2026-04-14 17:57:55,701] [INFO] [logger_setup:109] process_batch completed in 504.30s
+[2026-04-14 17:58:32,785] [INFO] [logger_setup:109] process_batch completed in 541.39s
+[2026-04-14 17:59:03,530] [INFO] [logger_setup:109] process_batch completed in 572.13s
+[2026-04-14 17:59:32,301] [INFO] [logger_setup:109] process_batch completed in 600.90s
+[2026-04-14 17:59:47,439] [INFO] [logger_setup:109] process_batch completed in 616.04s
+[2026-04-14 18:00:24,181] [INFO] [logger_setup:109] process_batch completed in 652.78s
+[2026-04-14 18:01:01,402] [INFO] [logger_setup:109] process_batch completed in 690.00s
+[2026-04-14 18:01:29,161] [INFO] [logger_setup:109] process_batch completed in 717.76s
+[2026-04-14 18:02:16,318] [INFO] [logger_setup:109] process_batch completed in 764.92s
+[2026-04-14 18:02:36,880] [INFO] [logger_setup:109] process_batch completed in 785.48s
+[2026-04-14 18:03:16,734] [INFO] [logger_setup:109] process_batch completed in 825.34s
+[2026-04-14 18:03:36,247] [INFO] [logger_setup:109] process_batch completed in 844.85s
+[2026-04-14 18:33:30,712] [INFO] [logger_setup:109] process_batch completed in 2639.31s
+[2026-04-14 18:34:13,966] [INFO] [logger_setup:109] process_batch completed in 2682.57s
+[2026-04-14 18:34:13,973] [INFO] [preprocessing:144] [STEP 4] Merging results with strict keyword filtering
+[2026-04-14 18:34:13,979] [WARNING] [preprocessing:164] [DROP] Topic S002_T011 excluded (No LLM keywords).
+[2026-04-14 18:34:13,981] [WARNING] [preprocessing:164] [DROP] Topic S002_T012 excluded (No LLM keywords).
+[2026-04-14 18:34:13,984] [WARNING] [preprocessing:164] [DROP] Topic S002_T013 excluded (No LLM keywords).
+[2026-04-14 18:34:13,986] [WARNING] [preprocessing:164] [DROP] Topic S002_T014 excluded (No LLM keywords).
+[2026-04-14 18:34:13,989] [WARNING] [preprocessing:164] [DROP] Topic S002_T015 excluded (No LLM keywords).
+[2026-04-14 18:34:13,989] [WARNING] [preprocessing:164] [DROP] Topic S003_T001 excluded (No LLM keywords).
+[2026-04-14 18:34:13,989] [WARNING] [preprocessing:164] [DROP] Topic S003_T002 excluded (No LLM keywords).
+[2026-04-14 18:34:13,989] [WARNING] [preprocessing:164] [DROP] Topic S003_T003 excluded (No LLM keywords).
+[2026-04-14 18:34:13,996] [WARNING] [preprocessing:164] [DROP] Topic S003_T004 excluded (No LLM keywords).
+[2026-04-14 18:34:13,998] [WARNING] [preprocessing:164] [DROP] Topic S003_T005 excluded (No LLM keywords).
+[2026-04-14 18:34:14,000] [WARNING] [preprocessing:164] [DROP] Topic S004_T003 excluded (No LLM keywords).
+[2026-04-14 18:34:14,003] [WARNING] [preprocessing:164] [DROP] Topic S004_T004 excluded (No LLM keywords).
+[2026-04-14 18:34:14,005] [WARNING] [preprocessing:164] [DROP] Topic S004_T005 excluded (No LLM keywords).
+[2026-04-14 18:34:14,007] [WARNING] [preprocessing:164] [DROP] Topic S004_T006 excluded (No LLM keywords).
+[2026-04-14 18:34:14,009] [WARNING] [preprocessing:164] [DROP] Topic S004_T007 excluded (No LLM keywords).
+[2026-04-14 18:34:14,011] [WARNING] [preprocessing:164] [DROP] Topic S004_T008 excluded (No LLM keywords).
+[2026-04-14 18:34:14,012] [WARNING] [preprocessing:164] [DROP] Topic S004_T009 excluded (No LLM keywords).
+[2026-04-14 18:34:14,014] [WARNING] [preprocessing:164] [DROP] Topic S004_T010 excluded (No LLM keywords).
+[2026-04-14 18:34:14,017] [WARNING] [preprocessing:164] [DROP] Topic S004_T011 excluded (No LLM keywords).
+[2026-04-14 18:34:14,020] [WARNING] [preprocessing:164] [DROP] Topic S004_T012 excluded (No LLM keywords).
+[2026-04-14 18:34:14,022] [WARNING] [preprocessing:164] [DROP] Topic S005_T004 excluded (No LLM keywords).
+[2026-04-14 18:34:14,024] [WARNING] [preprocessing:164] [DROP] Topic S005_T005 excluded (No LLM keywords).
+[2026-04-14 18:34:14,027] [WARNING] [preprocessing:164] [DROP] Topic S005_T006 excluded (No LLM keywords).
+[2026-04-14 18:34:14,029] [WARNING] [preprocessing:164] [DROP] Topic S005_T007 excluded (No LLM keywords).
+[2026-04-14 18:34:14,033] [WARNING] [preprocessing:164] [DROP] Topic S005_T008 excluded (No LLM keywords).
+[2026-04-14 18:34:14,036] [WARNING] [preprocessing:164] [DROP] Topic S006_T001 excluded (No LLM keywords).
+[2026-04-14 18:34:14,041] [WARNING] [preprocessing:164] [DROP] Topic S006_T002 excluded (No LLM keywords).
+[2026-04-14 18:34:14,047] [WARNING] [preprocessing:164] [DROP] Topic S006_T003 excluded (No LLM keywords).
+[2026-04-14 18:34:14,050] [WARNING] [preprocessing:164] [DROP] Topic S006_T004 excluded (No LLM keywords).
+[2026-04-14 18:34:14,052] [WARNING] [preprocessing:164] [DROP] Topic S006_T005 excluded (No LLM keywords).
+[2026-04-14 18:34:14,056] [WARNING] [preprocessing:164] [DROP] Topic S006_T012 excluded (No LLM keywords).
+[2026-04-14 18:34:14,061] [WARNING] [preprocessing:164] [DROP] Topic S006_T013 excluded (No LLM keywords).
+[2026-04-14 18:34:14,065] [WARNING] [preprocessing:164] [DROP] Topic S006_T014 excluded (No LLM keywords).
+[2026-04-14 18:34:14,068] [WARNING] [preprocessing:164] [DROP] Topic S006_T015 excluded (No LLM keywords).
+[2026-04-14 18:34:14,070] [WARNING] [preprocessing:164] [DROP] Topic S006_T016 excluded (No LLM keywords).
+[2026-04-14 18:34:14,073] [WARNING] [preprocessing:164] [DROP] Topic S007_T018 excluded (No LLM keywords).
+[2026-04-14 18:34:14,076] [WARNING] [preprocessing:164] [DROP] Topic S007_T020 excluded (No LLM keywords).
+[2026-04-14 18:34:14,077] [WARNING] [preprocessing:164] [DROP] Topic S007_T021 excluded (No LLM keywords).
+[2026-04-14 18:34:14,080] [WARNING] [preprocessing:164] [DROP] Topic S007_T022 excluded (No LLM keywords).
+[2026-04-14 18:34:14,084] [WARNING] [preprocessing:164] [DROP] Topic S007_T023 excluded (No LLM keywords).
+[2026-04-14 18:34:14,087] [WARNING] [preprocessing:164] [DROP] Topic S008_T003 excluded (No LLM keywords).
+[2026-04-14 18:34:14,089] [WARNING] [preprocessing:164] [DROP] Topic S008_T007 excluded (No LLM keywords).
+[2026-04-14 18:34:14,091] [WARNING] [preprocessing:164] [DROP] Topic S008_T008 excluded (No LLM keywords).
+[2026-04-14 18:34:14,093] [WARNING] [preprocessing:164] [DROP] Topic S008_T009 excluded (No LLM keywords).
+[2026-04-14 18:34:14,094] [WARNING] [preprocessing:164] [DROP] Topic S008_T010 excluded (No LLM keywords).
+[2026-04-14 18:34:14,096] [INFO] [preprocessing:168] [STEP 5] Exporting 87 items to structured_loan_data1.json
+[2026-04-14 18:34:14,142] [INFO] [preprocessing:175] ========== PIPELINE SUCCESS | Duration: 2691.98s | Dropped: 45 ==========

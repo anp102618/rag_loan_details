@@ -1,0 +1,32 @@
+[2026-04-14 16:32:52,480] [TRACE:text_guardrails] [text_guardrails.__init__:31] INFO - TextGuardrails initialized successfully.
+[2026-04-14 16:32:52,488] [TRACE:text_guardrails] [text_guardrails.__init__:31] INFO - TextGuardrails initialized successfully.
+[2026-04-14 16:33:02,373] [TRACE:text_guardrails] [text_guardrails.is_duplicate:87] INFO - Semantic duplicate detected via MinHash.
+[2026-04-14 16:33:02,742] [TRACE:text_guardrails] [text_guardrails.is_duplicate:87] INFO - Semantic duplicate detected via MinHash.
+[2026-04-14 17:02:18,679] [INFO] [text_guardrails:31] TextGuardrails initialized successfully.
+[2026-04-14 17:02:18,679] [INFO] [text_guardrails:31] TextGuardrails initialized successfully.
+[2026-04-14 17:02:26,946] [INFO] [text_guardrails:87] Semantic duplicate detected via MinHash.
+[2026-04-14 17:02:27,187] [INFO] [text_guardrails:87] Semantic duplicate detected via MinHash.
+[2026-04-14 17:47:01,192] [INFO] [text_guardrails:31] TextGuardrails initialized successfully.
+[2026-04-14 17:47:01,192] [INFO] [text_guardrails:31] TextGuardrails initialized successfully.
+[2026-04-14 17:47:09,666] [INFO] [text_guardrails:87] Semantic duplicate detected via MinHash.
+[2026-04-14 17:47:09,945] [INFO] [text_guardrails:87] Semantic duplicate detected via MinHash.
+[2026-04-14 17:48:28,808] [INFO] [text_guardrails:31] TextGuardrails initialized successfully.
+[2026-04-14 17:48:28,813] [INFO] [text_guardrails:31] TextGuardrails initialized successfully.
+[2026-04-14 17:48:36,717] [INFO] [text_guardrails:87] Semantic duplicate detected via MinHash.
+[2026-04-14 17:48:36,975] [INFO] [text_guardrails:87] Semantic duplicate detected via MinHash.
+[2026-04-14 17:49:22,159] [INFO] [text_guardrails:31] TextGuardrails initialized successfully.
+[2026-04-14 17:49:22,163] [INFO] [text_guardrails:31] TextGuardrails initialized successfully.
+[2026-04-14 17:49:30,684] [INFO] [text_guardrails:87] Semantic duplicate detected via MinHash.
+[2026-04-14 17:49:30,937] [INFO] [text_guardrails:87] Semantic duplicate detected via MinHash.
+[2026-04-14 19:13:58,551] [INFO] [text_guardrails:31] TextGuardrails initialized successfully.
+[2026-04-14 19:13:58,554] [INFO] [text_guardrails:31] TextGuardrails initialized successfully.
+[2026-04-14 19:14:07,427] [INFO] [text_guardrails:87] Semantic duplicate detected via MinHash.
+[2026-04-14 19:14:07,687] [INFO] [text_guardrails:87] Semantic duplicate detected via MinHash.
+[2026-04-15 11:10:44,712] [INFO] [text_guardrails:31] TextGuardrails initialized successfully.
+[2026-04-15 11:10:44,714] [INFO] [text_guardrails:31] TextGuardrails initialized successfully.
+[2026-04-15 11:10:53,908] [INFO] [text_guardrails:87] Semantic duplicate detected via MinHash.
+[2026-04-15 11:10:54,172] [INFO] [text_guardrails:87] Semantic duplicate detected via MinHash.
+[2026-04-15 11:12:26,121] [INFO] [text_guardrails:31] TextGuardrails initialized successfully.
+[2026-04-15 11:12:26,124] [INFO] [text_guardrails:31] TextGuardrails initialized successfully.
+[2026-04-15 11:12:34,067] [INFO] [text_guardrails:87] Semantic duplicate detected via MinHash.
+[2026-04-15 11:12:34,325] [INFO] [text_guardrails:87] Semantic duplicate detected via MinHash.

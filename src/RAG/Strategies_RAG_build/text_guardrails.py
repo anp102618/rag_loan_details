@@ -6,11 +6,12 @@ from hashlib import blake2b
 from typing import List, Set, Optional, Dict
 
 # Importing your specific utility modules
-from src.Utils.logger_setup import get_log, track_performance
+from src.Utils.logger_setup import setup_logger, current_logger, track_performance
 from src.Utils.exception_handler import CustomException
 
 # Initialize logger
-logger = get_log(__name__)
+logger = setup_logger("text_guardrails")
+current_logger.set(logger)
 
 class TextGuardrails:
     def __init__(self, semantic_threshold: float = 0.85, num_perm: int = 64):

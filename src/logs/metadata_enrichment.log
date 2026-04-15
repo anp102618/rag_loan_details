@@ -1,0 +1,310 @@
+[2026-04-14 16:32:52,484] [TRACE:metadata_enrichment] [metadata_enrichment.__init__:30] INFO - [INIT] Model=qwen2.5:7b | Batch=5 | Retries=2 | Timeout=270s | Concurrency=2
+[2026-04-14 16:33:03,624] [TRACE:metadata_enrichment] [metadata_enrichment.process_batch:92] INFO - [BATCH 1] START | Items=5 | Semaphore Locked=1
+[2026-04-14 16:33:03,631] [TRACE:metadata_enrichment] [metadata_enrichment.process_batch:98] DEBUG - [BATCH 1] Sample Input: [{'topic_id': 'S002_T001', 'text': 'SecureSave Loan Against Approved Securities (SLAAS) is a secured credit facility offered to resident individuals against the pledge or assignment of approved financial securities such as National Savings Certificates (NSC), Kisan Vikas Patra (KVP), Life Insurance Policies, and Government/Relief Bonds . The product is designed to meet both productive financial needs and personal contingency requirements , while ensuring safety of funds through high-quality collateral.'}]
+[2026-04-14 16:33:03,639] [TRACE:metadata_enrichment] [metadata_enrichment.process_batch:104] INFO - [BATCH 1] Attempt 1
+[2026-04-14 16:33:03,648] [TRACE:metadata_enrichment] [metadata_enrichment.process_batch:92] INFO - [BATCH 2] START | Items=5 | Semaphore Locked=0
+[2026-04-14 16:33:03,656] [TRACE:metadata_enrichment] [metadata_enrichment.process_batch:98] DEBUG - [BATCH 2] Sample Input: [{'topic_id': 'S002_T006', 'text': '\uf0b7 Minimum Amount o Loan: ₹3,000 o Overdraft: ₹20,000 \uf0b7 Maximum Amount o Generally no ceiling , subject to value of security and repayment capacity o For KVP-based advances, up to ₹1.00 lakh may be sanctioned at branch level; higher limits require approval of higher authorities o For staff borrowers, the maximum is limited to five times gross salary'}]
+[2026-04-14 16:33:03,665] [TRACE:metadata_enrichment] [metadata_enrichment.process_batch:104] INFO - [BATCH 2] Attempt 1
+[2026-04-14 16:34:08,548] [TRACE:metadata_enrichment] [metadata_enrichment.process_batch:113] INFO - [BATCH 2] SUCCESS | Time=64.9s | Keys=5
+[2026-04-14 16:34:08,575] [TRACE:metadata_enrichment] [metadata_enrichment.process_batch:92] INFO - [BATCH 3] START | Items=5 | Semaphore Locked=0
+[2026-04-14 16:34:08,580] [TRACE:metadata_enrichment] [metadata_enrichment.process_batch:98] DEBUG - [BATCH 3] Sample Input: [{'topic_id': 'S002_T011', 'text': 'Depending on the security offered, documentation includes: \uf0b7 Demand Promissory Note (DPN) \uf0b7 Letter of Pledge of Security (LDOC-11) \uf0b7 Take Delivery Letter (LDOC-60) \uf0b7 Letter of Installments with acceleration clause (LDOC-57) for loans \uf0b7 Letter of Continuing Security (LDOC-7) for overdrafts \uf0b7 Assignment of Life Insurance Policies in bank’s favour (LDOC-84) \uf0b7 Pledge and lien marking on NSC/KVP with the issuing Post Office \uf0b7 Notice to RBI / issuing authority for Government Bonds All securities must be duly discharged , and lien or assignment must be noted before disbursement .'}]
+[2026-04-14 16:34:08,584] [TRACE:metadata_enrichment] [metadata_enrichment.process_batch:104] INFO - [BATCH 3] Attempt 1
+[2026-04-14 16:34:22,606] [TRACE:metadata_enrichment] [metadata_enrichment.process_batch:113] INFO - [BATCH 1] SUCCESS | Time=78.98s | Keys=1
+[2026-04-14 16:34:22,629] [TRACE:metadata_enrichment] [metadata_enrichment.process_batch:92] INFO - [BATCH 4] START | Items=5 | Semaphore Locked=0
+[2026-04-14 16:34:22,638] [TRACE:metadata_enrichment] [metadata_enrichment.process_batch:98] DEBUG - [BATCH 4] Sample Input: [{'topic_id': 'S003_T001', 'text': 'DriveSure Auto Loan (DAL) is a secured retail lending product designed to finance the purchase of new and pre-owned private vehicles , two-wheelers , and eco-friendly CNG/LPG gas kits , as well as to facilitate takeover of existing vehicle loans from other banks . The product is intended exclusively for non-commercial, private use and provides structured repayment options, competitive interest rates, and comprehensive risk-mitigation through defined eligibility, margin, documentation, and vigilance norms.'}]
+[2026-04-14 16:34:22,646] [TRACE:metadata_enrichment] [metadata_enrichment.process_batch:104] INFO - [BATCH 4] Attempt 1
+[2026-04-14 16:34:37,191] [TRACE:metadata_enrichment] [metadata_enrichment.process_batch:113] INFO - [BATCH 3] SUCCESS | Time=28.62s | Keys=1
+[2026-04-14 16:34:37,199] [TRACE:metadata_enrichment] [metadata_enrichment.process_batch:92] INFO - [BATCH 5] START | Items=5 | Semaphore Locked=0
+[2026-04-14 16:34:37,199] [TRACE:metadata_enrichment] [metadata_enrichment.process_batch:98] DEBUG - [BATCH 5] Sample Input: [{'topic_id': 'S003_T006', 'text': 'The minimum age of the applicant is 21 years and of the co-applicant 18 years . The maximum age , including the repayment period, shall not exceed 70 years . Where the applicant’s age exceeds retirement age (for salaried borrowers) or 65 years (for others), addition of a co-borrower, preferably a family member, is generally required.'}]
+[2026-04-14 16:34:37,206] [TRACE:metadata_enrichment] [metadata_enrichment.process_batch:104] INFO - [BATCH 5] Attempt 1
+[2026-04-14 16:34:52,372] [TRACE:metadata_enrichment] [metadata_enrichment.process_batch:113] INFO - [BATCH 4] SUCCESS | Time=29.74s | Keys=2
+[2026-04-14 16:34:52,380] [TRACE:metadata_enrichment] [metadata_enrichment.process_batch:92] INFO - [BATCH 6] START | Items=5 | Semaphore Locked=0
+[2026-04-14 16:34:52,384] [TRACE:metadata_enrichment] [metadata_enrichment.process_batch:98] DEBUG - [BATCH 6] Sample Input: [{'topic_id': 'S003_T011', 'text': 'A concession of up to 0.25% is available on car loans where the borrower offers minimum 50% of the loan amount as liquid collateral such as fixed deposits, NSC, KVP, or life insurance policies. A further 0.25% concession is available to existing home loan borrowers with a clean repayment track record. In all cases, the effective rate of interest shall not fall below the Base Rate .'}]
+[2026-04-14 16:34:52,388] [TRACE:metadata_enrichment] [metadata_enrichment.process_batch:104] INFO - [BATCH 6] Attempt 1
+[2026-04-14 16:35:05,132] [TRACE:metadata_enrichment] [metadata_enrichment.process_batch:113] INFO - [BATCH 5] SUCCESS | Time=27.93s | Keys=1
+[2026-04-14 16:35:05,147] [TRACE:metadata_enrichment] [metadata_enrichment.process_batch:92] INFO - [BATCH 7] START | Items=5 | Semaphore Locked=0
+[2026-04-14 16:35:05,152] [TRACE:metadata_enrichment] [metadata_enrichment.process_batch:98] DEBUG - [BATCH 7] Sample Input: [{'topic_id': 'S003_T016', 'text': 'Standard documentation includes Demand Promissory Note, hypothecation agreement, installment letter with acceleration clause, RTO endorsement, insurance documents, guarantees (if any), and collateral documents . Strict compliance with KYC norms, credit bureau checks, pre-sanction and post-sanction inspections, dealer verification, controlled disbursement through banker’s cheques, and periodic asset verification is mandatory.'}]
+[2026-04-14 16:35:05,157] [TRACE:metadata_enrichment] [metadata_enrichment.process_batch:104] INFO - [BATCH 7] Attempt 1
+[2026-04-14 16:35:18,982] [TRACE:metadata_enrichment] [metadata_enrichment.process_batch:113] INFO - [BATCH 6] SUCCESS | Time=26.6s | Keys=1
+[2026-04-14 16:35:18,992] [TRACE:metadata_enrichment] [metadata_enrichment.process_batch:92] INFO - [BATCH 8] START | Items=5 | Semaphore Locked=0
+[2026-04-14 16:35:18,996] [TRACE:metadata_enrichment] [metadata_enrichment.process_batch:98] DEBUG - [BATCH 8] Sample Input: [{'topic_id': 'S004_T003', 'text': 'The facility may be sanctioned in the form of a Term Loan , Demand Loan , or Overdraft . In the case of overdraft facilities, the borrower must ensure a minimum annual turnover of at least 25% of the sanctioned limit . NRIs are eligible only for Term Loan or Demand Loan facilities and are not eligible for overdraft facilities .'}]
+[2026-04-14 16:35:19,002] [TRACE:metadata_enrichment] [metadata_enrichment.process_batch:104] INFO - [BATCH 8] Attempt 1
+[2026-04-14 16:35:37,202] [TRACE:metadata_enrichment] [metadata_enrichment.process_batch:113] INFO - [BATCH 7] SUCCESS | Time=32.05s | Keys=2
+[2026-04-14 16:35:37,216] [TRACE:metadata_enrichment] [metadata_enrichment.process_batch:92] INFO - [BATCH 9] START | Items=5 | Semaphore Locked=0
+[2026-04-14 16:35:37,222] [TRACE:metadata_enrichment] [metadata_enrichment.process_batch:98] DEBUG - [BATCH 9] Sample Input: [{'topic_id': 'S004_T008', 'text': 'Total deductions, including proposed EMI or notional installment, shall not exceed 60% of gross monthly income . Deductions include income tax, provident fund, professional tax, existing EMIs, and all other commitments. In case of non-salaried borrowers, gross monthly income shall be derived from the average annual income of the last three years . For overdraft facilities, repayment capacity shall be assessed as if a 10-year term loan is sanctioned.'}]
+[2026-04-14 16:35:37,228] [TRACE:metadata_enrichment] [metadata_enrichment.process_batch:104] INFO - [BATCH 9] Attempt 1
+[2026-04-14 16:35:52,050] [TRACE:metadata_enrichment] [metadata_enrichment.process_batch:113] INFO - [BATCH 8] SUCCESS | Time=33.06s | Keys=1
+[2026-04-14 16:35:52,078] [TRACE:metadata_enrichment] [metadata_enrichment.process_batch:92] INFO - [BATCH 10] START | Items=5 | Semaphore Locked=0
+[2026-04-14 16:35:52,085] [TRACE:metadata_enrichment] [metadata_enrichment.process_batch:98] DEBUG - [BATCH 10] Sample Input: [{'topic_id': 'S004_T013', 'text': 'The loan is secured by equitable mortgage of residential property (house or flat), commercial property (land and building), or plots allotted or purchased from recognized development authorities, provided there is no stipulation mandating construction within a fixed timeframe . Loans against tenanted properties are generally not permitted, except where the property is leased to PSUs, reputed government or semi-government undertakings, large corporates, banks, financial institutions, or insurance companies .'}]
+[2026-04-14 16:35:52,094] [TRACE:metadata_enrichment] [metadata_enrichment.process_batch:104] INFO - [BATCH 10] Attempt 1
+[2026-04-14 16:36:38,165] [TRACE:metadata_enrichment] [metadata_enrichment.process_batch:113] INFO - [BATCH 9] SUCCESS | Time=60.95s | Keys=5
+[2026-04-14 16:36:38,177] [TRACE:metadata_enrichment] [metadata_enrichment.process_batch:92] INFO - [BATCH 11] START | Items=5 | Semaphore Locked=0
+[2026-04-14 16:36:38,177] [TRACE:metadata_enrichment] [metadata_enrichment.process_batch:98] DEBUG - [BATCH 11] Sample Input: [{'topic_id': 'S004_T018', 'text': 'The age of the building should not exceed 25 years . Buildings older than 25 years may be accepted subject to approval of the Regional Authority , supported by a structural soundness certificate from an approved engineer confirming a residual life of at least five years beyond the loan tenure .'}]
+[2026-04-14 16:36:38,185] [TRACE:metadata_enrichment] [metadata_enrichment.process_batch:104] INFO - [BATCH 11] Attempt 1
+[2026-04-14 16:36:52,379] [TRACE:metadata_enrichment] [metadata_enrichment.process_batch:113] INFO - [BATCH 10] SUCCESS | Time=60.3s | Keys=2
+[2026-04-14 16:36:52,388] [TRACE:metadata_enrichment] [metadata_enrichment.process_batch:92] INFO - [BATCH 12] START | Items=5 | Semaphore Locked=0
+[2026-04-14 16:36:52,392] [TRACE:metadata_enrichment] [metadata_enrichment.process_batch:98] DEBUG - [BATCH 12] Sample Input: [{'topic_id': 'S004_T023', 'text': 'Strict adherence to KYC norms , income verification , credit bureau checks , market reports , property valuation , and valid mortgage creation procedures is mandatory. Pre- and post-sanction checklists must be completed and documented to ensure robust risk mitigation.'}]
+[2026-04-14 16:36:52,395] [TRACE:metadata_enrichment] [metadata_enrichment.process_batch:104] INFO - [BATCH 12] Attempt 1
+[2026-04-14 16:37:05,955] [TRACE:metadata_enrichment] [metadata_enrichment.process_batch:113] INFO - [BATCH 11] SUCCESS | Time=27.78s | Keys=2
+[2026-04-14 16:37:05,965] [TRACE:metadata_enrichment] [metadata_enrichment.process_batch:92] INFO - [BATCH 13] START | Items=5 | Semaphore Locked=0
+[2026-04-14 16:37:05,969] [TRACE:metadata_enrichment] [metadata_enrichment.process_batch:98] DEBUG - [BATCH 13] Sample Input: [{'topic_id': 'S005_T004', 'text': 'The facility is available to Individuals, Proprietorships, Partnership Firms, Private Limited Companies, and Registered Cooperative Societies engaged in trading of lawful commodities or goods in physical form required by the community and not prohibited by law or opposed to public interest. Dealers in silver and gold jewellery are eligible; however, finance shall not be granted against bullion or raw gold , and borrowers must comply with all licensing requirements applicable to the trade, subject to prescribed activity clearance. HUFs and Public Limited Companies are not eligible under this sc'}]
+[2026-04-14 16:37:05,973] [TRACE:metadata_enrichment] [metadata_enrichment.process_batch:104] INFO - [BATCH 13] Attempt 1
+[2026-04-14 16:37:19,421] [TRACE:metadata_enrichment] [metadata_enrichment.process_batch:113] INFO - [BATCH 12] SUCCESS | Time=27.03s | Keys=2
+[2026-04-14 16:37:19,429] [TRACE:metadata_enrichment] [metadata_enrichment.process_batch:92] INFO - [BATCH 14] START | Items=5 | Semaphore Locked=0
+[2026-04-14 16:37:19,431] [TRACE:metadata_enrichment] [metadata_enrichment.process_batch:98] DEBUG - [BATCH 14] Sample Input: [{'topic_id': 'S005_T009', 'text': 'Overdraft facilities shall be sanctioned for 12 months , subject to annual review . Term Loans shall be repayable in a maximum of 60 EMIs , depending upon assessed repayment capacity.'}]
+[2026-04-14 16:37:19,435] [TRACE:metadata_enrichment] [metadata_enrichment.process_batch:104] INFO - [BATCH 14] Attempt 1
+[2026-04-14 16:37:33,709] [TRACE:metadata_enrichment] [metadata_enrichment.process_batch:113] INFO - [BATCH 13] SUCCESS | Time=27.74s | Keys=2
+[2026-04-14 16:37:33,717] [TRACE:metadata_enrichment] [metadata_enrichment.process_batch:92] INFO - [BATCH 15] START | Items=5 | Semaphore Locked=0
+[2026-04-14 16:37:33,720] [TRACE:metadata_enrichment] [metadata_enrichment.process_batch:98] DEBUG - [BATCH 15] Sample Input: [{'topic_id': 'S005_T014', 'text': 'Mortgaged properties must be insured as per Bank norms. Stock insurance is not mandatory but may be advised in the borrower’s interest.'}]
+[2026-04-14 16:37:33,722] [TRACE:metadata_enrichment] [metadata_enrichment.process_batch:104] INFO - [BATCH 15] Attempt 1
+[2026-04-14 16:37:45,936] [TRACE:metadata_enrichment] [metadata_enrichment.process_batch:113] INFO - [BATCH 14] SUCCESS | Time=26.51s | Keys=2
+[2026-04-14 16:37:45,944] [TRACE:metadata_enrichment] [metadata_enrichment.process_batch:92] INFO - [BATCH 16] START | Items=5 | Semaphore Locked=0
+[2026-04-14 16:37:45,947] [TRACE:metadata_enrichment] [metadata_enrichment.process_batch:98] DEBUG - [BATCH 16] Sample Input: [{'topic_id': 'S006_T001', 'text': 'EduGrow Education Loan is a comprehensive education financing product designed to support students pursuing higher education in India as well as abroad . The product aims to ensure that meritorious students are not denied education due to financial constraints and provides need-based finance covering tuition and allied educational expenses, with structured repayment aligned to future earning potential. The loan is classified under Priority Sector and is governed by the Bank’s discretionary lending powers, educational loan guidelines, and applicable regulatory norms.'}]
+[2026-04-14 16:37:45,951] [TRACE:metadata_enrichment] [metadata_enrichment.process_batch:104] INFO - [BATCH 16] Attempt 1
+[2026-04-14 16:37:58,524] [TRACE:metadata_enrichment] [metadata_enrichment.process_batch:113] INFO - [BATCH 15] SUCCESS | Time=24.81s | Keys=2
+[2026-04-14 16:37:58,532] [TRACE:metadata_enrichment] [metadata_enrichment.process_batch:92] INFO - [BATCH 17] START | Items=5 | Semaphore Locked=0
+[2026-04-14 16:37:58,533] [TRACE:metadata_enrichment] [metadata_enrichment.process_batch:98] DEBUG - [BATCH 17] Sample Input: [{'topic_id': 'S006_T006', 'text': 'Moratorium period shall be: \uf0b7 Course period + 1 year , or \uf0b7 6 months after securing employment , whichever is earlier.'}]
+[2026-04-14 16:37:58,539] [TRACE:metadata_enrichment] [metadata_enrichment.process_batch:104] INFO - [BATCH 17] Attempt 1
+[2026-04-14 16:38:13,605] [TRACE:metadata_enrichment] [metadata_enrichment.process_batch:113] INFO - [BATCH 16] SUCCESS | Time=27.66s | Keys=1
+[2026-04-14 16:38:13,627] [TRACE:metadata_enrichment] [metadata_enrichment.process_batch:92] INFO - [BATCH 18] START | Items=5 | Semaphore Locked=0
+[2026-04-14 16:38:13,632] [TRACE:metadata_enrichment] [metadata_enrichment.process_batch:98] DEBUG - [BATCH 18] Sample Input: [{'topic_id': 'S006_T012', 'text': '\uf0b7 Academic progress reports to be obtained at regular intervals and kept on record.'}]
+[2026-04-14 16:38:13,638] [TRACE:metadata_enrichment] [metadata_enrichment.process_batch:104] INFO - [BATCH 18] Attempt 1
+[2026-04-14 16:38:56,829] [TRACE:metadata_enrichment] [metadata_enrichment.process_batch:113] INFO - [BATCH 17] SUCCESS | Time=58.3s | Keys=5
+[2026-04-14 16:38:56,878] [TRACE:metadata_enrichment] [metadata_enrichment.process_batch:92] INFO - [BATCH 19] START | Items=5 | Semaphore Locked=0
+[2026-04-14 16:38:56,887] [TRACE:metadata_enrichment] [metadata_enrichment.process_batch:98] DEBUG - [BATCH 19] Sample Input: [{'topic_id': 'S006_T017', 'text': 'Deviations in eligibility, margin, security, etc., may be permitted by one level above the sanctioning authority , on merits.'}]
+[2026-04-14 16:38:56,892] [TRACE:metadata_enrichment] [metadata_enrichment.process_batch:104] INFO - [BATCH 19] Attempt 1
+[2026-04-14 16:39:06,184] [TRACE:metadata_enrichment] [metadata_enrichment.process_batch:113] INFO - [BATCH 18] SUCCESS | Time=52.56s | Keys=1
+[2026-04-14 16:39:06,191] [TRACE:metadata_enrichment] [metadata_enrichment.process_batch:92] INFO - [BATCH 20] START | Items=5 | Semaphore Locked=0
+[2026-04-14 16:39:06,194] [TRACE:metadata_enrichment] [metadata_enrichment.process_batch:98] DEBUG - [BATCH 20] Sample Input: [{'topic_id': 'S007_T003', 'text': 'Salaried Individuals \uf0b7 Permanent, confirmed employees of: o Central / State Government o Autonomous Bodies o Public / Joint Sector Undertakings o Reputed Limited Companies / MNCs o Reputed Universities, Colleges, Schools, Educational & Research Institutions \uf0b7 Minimum one year of confirmed service Not eligible : \uf0b7 Employees of Proprietorship and Partnership firms \uf0b7 Bank staff members Employees of Private Limited Companies may be considered only by Zonal Authority deviation , subject to strict conditions relating to company vintage, relationship with the Bank, employee strength, salary routing, '}]
+[2026-04-14 16:39:06,199] [TRACE:metadata_enrichment] [metadata_enrichment.process_batch:104] INFO - [BATCH 20] Attempt 1
+[2026-04-14 16:39:14,441] [TRACE:metadata_enrichment] [metadata_enrichment.process_batch:113] INFO - [BATCH 19] SUCCESS | Time=17.56s | Keys=1
+[2026-04-14 16:39:14,450] [TRACE:metadata_enrichment] [metadata_enrichment.process_batch:92] INFO - [BATCH 21] START | Items=5 | Semaphore Locked=0
+[2026-04-14 16:39:14,455] [TRACE:metadata_enrichment] [metadata_enrichment.process_batch:98] DEBUG - [BATCH 21] Sample Input: [{'topic_id': 'S007_T008', 'text': '\uf0b7 Minimum Age : 21 years \uf0b7 Maximum Age : o Salaried: Borrower’s age + repayment period should not exceed retirement age o Self-employed / professionals: Maximum 65 years at loan maturity'}]
+[2026-04-14 16:39:14,458] [TRACE:metadata_enrichment] [metadata_enrichment.process_batch:104] INFO - [BATCH 21] Attempt 1
+[2026-04-14 16:39:28,402] [TRACE:metadata_enrichment] [metadata_enrichment.process_batch:113] INFO - [BATCH 20] SUCCESS | Time=22.21s | Keys=1
+[2026-04-14 16:39:28,409] [TRACE:metadata_enrichment] [metadata_enrichment.process_batch:92] INFO - [BATCH 22] START | Items=5 | Semaphore Locked=0
+[2026-04-14 16:39:28,411] [TRACE:metadata_enrichment] [metadata_enrichment.process_batch:98] DEBUG - [BATCH 22] Sample Input: [{'topic_id': 'S007_T013', 'text': 'Total deductions including proposed EMI shall not exceed 60% of Gross Monthly Income , except in EMD cases where Housing Loan norms shall apply.'}]
+[2026-04-14 16:39:28,416] [TRACE:metadata_enrichment] [metadata_enrichment.process_batch:104] INFO - [BATCH 22] Attempt 1
+[2026-04-14 16:39:40,460] [TRACE:metadata_enrichment] [metadata_enrichment.process_batch:113] INFO - [BATCH 21] SUCCESS | Time=26.01s | Keys=1
+[2026-04-14 16:39:40,468] [TRACE:metadata_enrichment] [metadata_enrichment.process_batch:92] INFO - [BATCH 23] START | Items=5 | Semaphore Locked=0
+[2026-04-14 16:39:40,469] [TRACE:metadata_enrichment] [metadata_enrichment.process_batch:98] DEBUG - [BATCH 23] Sample Input: [{'topic_id': 'S007_T018', 'text': '\uf0b7 Standard Personal Loan : o 2% of loan amount + applicable taxes o Minimum ₹500 \uf0b7 Premium Segment : o 2% of loan amount o Minimum ₹250 + applicable taxes'}]
+[2026-04-14 16:39:40,474] [TRACE:metadata_enrichment] [metadata_enrichment.process_batch:104] INFO - [BATCH 23] Attempt 1
+[2026-04-14 16:39:53,759] [TRACE:metadata_enrichment] [metadata_enrichment.process_batch:113] INFO - [BATCH 22] SUCCESS | Time=25.35s | Keys=2
+[2026-04-14 16:39:53,766] [TRACE:metadata_enrichment] [metadata_enrichment.process_batch:92] INFO - [BATCH 24] START | Items=5 | Semaphore Locked=0
+[2026-04-14 16:39:53,769] [TRACE:metadata_enrichment] [metadata_enrichment.process_batch:98] DEBUG - [BATCH 24] Sample Input: [{'topic_id': 'S007_T024', 'text': '\uf0b7 Personal Loan : Finacle – LA141 | Ascrom – 240 \uf0b7 Earnest Money Deposit Loan : Finacle – LA126 | Ascrom – 845'}]
+[2026-04-14 16:39:53,772] [TRACE:metadata_enrichment] [metadata_enrichment.process_batch:104] INFO - [BATCH 24] Attempt 1
+[2026-04-14 16:41:03,496] [TRACE:metadata_enrichment] [metadata_enrichment.process_batch:113] INFO - [BATCH 23] SUCCESS | Time=83.03s | Keys=1
+[2026-04-14 16:41:03,508] [TRACE:metadata_enrichment] [metadata_enrichment.process_batch:92] INFO - [BATCH 25] START | Items=5 | Semaphore Locked=0
+[2026-04-14 16:41:03,512] [TRACE:metadata_enrichment] [metadata_enrichment.process_batch:98] DEBUG - [BATCH 25] Sample Input: [{'topic_id': 'S008_T003', 'text': 'Salaried Individuals \uf0b7 Permanent, confirmed employees of: o Central / State Government o Autonomous Bodies o Public / Joint Sector Undertakings o Reputed Limited Companies / MNCs o Educational & Research Institutions \uf0b7 Minimum 1 year of confirmed service \uf0b7 Not eligible: Employees of proprietorship/partnership firms, bank staff \uf0b7 Private Limited Company employees may be considered by Zonal Authority deviation, subject to strict conditions Self-Employed / Professionals \uf0b7 Doctors, Engineers, Architects, Interior Designers \uf0b7 Technical & Management Consultants \uf0b7 Practicing Company Secretaries \uf0b7 Min'}]
+[2026-04-14 16:41:03,514] [TRACE:metadata_enrichment] [metadata_enrichment.process_batch:104] INFO - [BATCH 25] Attempt 1
+[2026-04-14 16:42:01,348] [TRACE:metadata_enrichment] [metadata_enrichment.process_batch:113] INFO - [BATCH 24] SUCCESS | Time=127.58s | Keys=5
+[2026-04-14 16:42:01,359] [TRACE:metadata_enrichment] [metadata_enrichment.process_batch:92] INFO - [BATCH 26] START | Items=5 | Semaphore Locked=0
+[2026-04-14 16:42:01,362] [TRACE:metadata_enrichment] [metadata_enrichment.process_batch:98] DEBUG - [BATCH 26] Sample Input: [{'topic_id': 'S008_T011', 'text': '\uf0b7 Mortgage / hypothecation of property financed \uf0b7 Mandatory documentation includes: o Demand Promissory Note o Letter of Installment with acceleration clause o Declaration-cum-Undertaking-cum-Authority o Employer / borrower undertakings (as applicable) o Power of Attorney for EMD refund adjustment (where applicable) Documents Required Salaried Applicants \uf0b7 Passport size photographs \uf0b7 Identity & Address proof \uf0b7 Salary slips (last 6 months) / Form-16 / IT Returns \uf0b7 Bank statement (last 6 months if salary credited elsewhere) Self-Employed / Professionals \uf0b7 Photographs \uf0b7 Office & residence proof \uf0b7'}]
+[2026-04-14 16:42:01,365] [TRACE:metadata_enrichment] [metadata_enrichment.process_batch:104] INFO - [BATCH 26] Attempt 1
+[2026-04-14 16:42:13,652] [TRACE:metadata_enrichment] [metadata_enrichment.process_batch:113] INFO - [BATCH 25] SUCCESS | Time=70.14s | Keys=2
+[2026-04-14 16:42:13,662] [TRACE:metadata_enrichment] [metadata_enrichment.process_batch:92] INFO - [BATCH 27] START | Items=2 | Semaphore Locked=0
+[2026-04-14 16:42:13,666] [TRACE:metadata_enrichment] [metadata_enrichment.process_batch:98] DEBUG - [BATCH 27] Sample Input: [{'topic_id': 'S008_T017', 'text': '\uf0b7 Retail – Secured Housing Loan'}]
+[2026-04-14 16:42:13,669] [TRACE:metadata_enrichment] [metadata_enrichment.process_batch:104] INFO - [BATCH 27] Attempt 1
+[2026-04-14 16:42:27,275] [TRACE:metadata_enrichment] [metadata_enrichment.process_batch:113] INFO - [BATCH 26] SUCCESS | Time=25.92s | Keys=2
+[2026-04-14 16:42:38,821] [TRACE:metadata_enrichment] [metadata_enrichment.process_batch:113] INFO - [BATCH 27] SUCCESS | Time=25.16s | Keys=2
+[2026-04-14 17:02:18,679] [INFO] [metadata_enrichment:29] [INIT] Model=qwen2.5:7b | Batch=5 | Retries=2 | Timeout=270s | Concurrency=2
+[2026-04-14 17:02:27,651] [INFO] [metadata_enrichment:111] [BATCH 1] START | Size=5
+[2026-04-14 17:02:27,651] [INFO] [metadata_enrichment:111] [BATCH 2] START | Size=5
+[2026-04-14 17:03:12,677] [INFO] [metadata_enrichment:121] [BATCH 1] SUCCESS | Time=45.02s
+[2026-04-14 17:03:12,680] [INFO] [metadata_enrichment:111] [BATCH 3] START | Size=5
+[2026-04-14 17:04:02,007] [INFO] [metadata_enrichment:121] [BATCH 2] SUCCESS | Time=94.35s
+[2026-04-14 17:04:02,017] [INFO] [metadata_enrichment:111] [BATCH 4] START | Size=5
+[2026-04-14 17:04:40,557] [INFO] [metadata_enrichment:121] [BATCH 3] SUCCESS | Time=87.87s
+[2026-04-14 17:04:40,565] [INFO] [metadata_enrichment:111] [BATCH 5] START | Size=5
+[2026-04-14 17:05:09,334] [INFO] [metadata_enrichment:121] [BATCH 4] SUCCESS | Time=67.32s
+[2026-04-14 17:05:09,340] [INFO] [metadata_enrichment:111] [BATCH 6] START | Size=5
+[2026-04-14 17:05:40,028] [INFO] [metadata_enrichment:121] [BATCH 5] SUCCESS | Time=59.46s
+[2026-04-14 17:05:40,035] [INFO] [metadata_enrichment:111] [BATCH 7] START | Size=5
+[2026-04-14 17:06:17,932] [INFO] [metadata_enrichment:121] [BATCH 6] SUCCESS | Time=68.59s
+[2026-04-14 17:06:17,939] [INFO] [metadata_enrichment:111] [BATCH 8] START | Size=5
+[2026-04-14 17:06:55,163] [INFO] [metadata_enrichment:121] [BATCH 7] SUCCESS | Time=75.13s
+[2026-04-14 17:06:55,171] [INFO] [metadata_enrichment:111] [BATCH 9] START | Size=5
+[2026-04-14 17:07:04,586] [INFO] [metadata_enrichment:121] [BATCH 8] SUCCESS | Time=46.65s
+[2026-04-14 17:07:04,591] [INFO] [metadata_enrichment:111] [BATCH 10] START | Size=5
+[2026-04-14 17:07:29,134] [INFO] [metadata_enrichment:121] [BATCH 9] SUCCESS | Time=33.96s
+[2026-04-14 17:07:29,140] [INFO] [metadata_enrichment:111] [BATCH 11] START | Size=5
+[2026-04-14 17:08:04,770] [INFO] [metadata_enrichment:121] [BATCH 10] SUCCESS | Time=60.18s
+[2026-04-14 17:08:04,777] [INFO] [metadata_enrichment:111] [BATCH 12] START | Size=5
+[2026-04-14 17:08:38,428] [INFO] [metadata_enrichment:121] [BATCH 11] SUCCESS | Time=69.29s
+[2026-04-14 17:08:38,433] [INFO] [metadata_enrichment:111] [BATCH 13] START | Size=5
+[2026-04-14 17:09:18,719] [INFO] [metadata_enrichment:121] [BATCH 12] SUCCESS | Time=73.94s
+[2026-04-14 17:09:18,733] [INFO] [metadata_enrichment:111] [BATCH 14] START | Size=5
+[2026-04-14 17:09:44,184] [INFO] [metadata_enrichment:121] [BATCH 13] SUCCESS | Time=65.75s
+[2026-04-14 17:09:44,189] [INFO] [metadata_enrichment:111] [BATCH 15] START | Size=5
+[2026-04-14 17:10:23,770] [INFO] [metadata_enrichment:121] [BATCH 14] SUCCESS | Time=65.04s
+[2026-04-14 17:10:23,777] [INFO] [metadata_enrichment:111] [BATCH 16] START | Size=5
+[2026-04-14 17:11:00,690] [INFO] [metadata_enrichment:121] [BATCH 15] SUCCESS | Time=76.5s
+[2026-04-14 17:11:00,699] [INFO] [metadata_enrichment:111] [BATCH 17] START | Size=5
+[2026-04-14 17:11:38,097] [INFO] [metadata_enrichment:121] [BATCH 16] SUCCESS | Time=74.32s
+[2026-04-14 17:11:38,103] [INFO] [metadata_enrichment:111] [BATCH 18] START | Size=5
+[2026-04-14 17:12:05,488] [INFO] [metadata_enrichment:121] [BATCH 17] SUCCESS | Time=64.79s
+[2026-04-14 17:12:05,492] [INFO] [metadata_enrichment:111] [BATCH 19] START | Size=5
+[2026-04-14 17:12:30,734] [INFO] [metadata_enrichment:121] [BATCH 18] SUCCESS | Time=52.63s
+[2026-04-14 17:12:30,748] [INFO] [metadata_enrichment:111] [BATCH 20] START | Size=5
+[2026-04-14 17:13:07,503] [INFO] [metadata_enrichment:121] [BATCH 19] SUCCESS | Time=62.01s
+[2026-04-14 17:13:07,521] [INFO] [metadata_enrichment:111] [BATCH 21] START | Size=5
+[2026-04-14 17:45:24,998] [INFO] [metadata_enrichment:121] [BATCH 20] SUCCESS | Time=1974.26s
+[2026-04-14 17:45:25,028] [INFO] [metadata_enrichment:111] [BATCH 22] START | Size=5
+[2026-04-14 17:45:25,048] [ERROR] [metadata_enrichment:95] [BATCH 21] Ollama request timed out.
+[2026-04-14 17:45:25,053] [WARNING] [metadata_enrichment:126] [BATCH 21] Attempt 1 failed: . Retrying in 2s...
+[2026-04-14 17:47:01,192] [INFO] [metadata_enrichment:29] [INIT] Model=qwen2.5:7b | Batch=5 | Retries=2 | Timeout=540s | Concurrency=2
+[2026-04-14 17:47:10,449] [INFO] [metadata_enrichment:111] [BATCH 1] START | Size=5
+[2026-04-14 17:47:10,451] [INFO] [metadata_enrichment:111] [BATCH 2] START | Size=5
+[2026-04-14 17:48:28,811] [INFO] [metadata_enrichment:29] [INIT] Model=qwen2.5:7b | Batch=5 | Retries=2 | Timeout=540s | Concurrency=2
+[2026-04-14 17:48:37,464] [INFO] [metadata_enrichment:111] [BATCH 1] START | Size=5
+[2026-04-14 17:48:37,467] [INFO] [metadata_enrichment:111] [BATCH 2] START | Size=5
+[2026-04-14 17:49:22,162] [INFO] [metadata_enrichment:29] [INIT] Model=qwen2.5:7b | Batch=5 | Retries=2 | Timeout=540s | Concurrency=2
+[2026-04-14 17:49:31,391] [INFO] [metadata_enrichment:111] [BATCH 1] START | Size=5
+[2026-04-14 17:49:31,398] [INFO] [metadata_enrichment:111] [BATCH 2] START | Size=5
+[2026-04-14 17:50:11,213] [INFO] [metadata_enrichment:121] [BATCH 2] SUCCESS | Time=39.82s
+[2026-04-14 17:50:11,223] [INFO] [metadata_enrichment:111] [BATCH 3] START | Size=5
+[2026-04-14 17:50:49,485] [INFO] [metadata_enrichment:121] [BATCH 1] SUCCESS | Time=78.09s
+[2026-04-14 17:50:49,497] [INFO] [metadata_enrichment:111] [BATCH 4] START | Size=5
+[2026-04-14 17:51:21,793] [INFO] [metadata_enrichment:121] [BATCH 3] SUCCESS | Time=70.56s
+[2026-04-14 17:51:21,808] [INFO] [metadata_enrichment:111] [BATCH 5] START | Size=5
+[2026-04-14 17:51:54,319] [INFO] [metadata_enrichment:121] [BATCH 4] SUCCESS | Time=64.82s
+[2026-04-14 17:51:54,325] [INFO] [metadata_enrichment:111] [BATCH 6] START | Size=5
+[2026-04-14 17:52:24,528] [INFO] [metadata_enrichment:121] [BATCH 5] SUCCESS | Time=62.72s
+[2026-04-14 17:52:24,543] [INFO] [metadata_enrichment:111] [BATCH 7] START | Size=5
+[2026-04-14 17:53:04,582] [INFO] [metadata_enrichment:121] [BATCH 6] SUCCESS | Time=70.25s
+[2026-04-14 17:53:04,593] [INFO] [metadata_enrichment:111] [BATCH 8] START | Size=5
+[2026-04-14 17:53:46,881] [INFO] [metadata_enrichment:121] [BATCH 7] SUCCESS | Time=82.34s
+[2026-04-14 17:53:46,930] [INFO] [metadata_enrichment:111] [BATCH 9] START | Size=5
+[2026-04-14 17:54:21,417] [INFO] [metadata_enrichment:121] [BATCH 8] SUCCESS | Time=76.82s
+[2026-04-14 17:54:21,441] [INFO] [metadata_enrichment:111] [BATCH 10] START | Size=5
+[2026-04-14 17:54:51,507] [INFO] [metadata_enrichment:121] [BATCH 9] SUCCESS | Time=64.58s
+[2026-04-14 17:54:51,519] [INFO] [metadata_enrichment:111] [BATCH 11] START | Size=5
+[2026-04-14 17:55:42,139] [INFO] [metadata_enrichment:121] [BATCH 10] SUCCESS | Time=80.7s
+[2026-04-14 17:55:42,162] [INFO] [metadata_enrichment:111] [BATCH 12] START | Size=5
+[2026-04-14 17:56:14,118] [INFO] [metadata_enrichment:121] [BATCH 11] SUCCESS | Time=82.6s
+[2026-04-14 17:56:14,124] [INFO] [metadata_enrichment:111] [BATCH 13] START | Size=5
+[2026-04-14 17:56:51,384] [INFO] [metadata_enrichment:121] [BATCH 12] SUCCESS | Time=69.22s
+[2026-04-14 17:56:51,394] [INFO] [metadata_enrichment:111] [BATCH 14] START | Size=5
+[2026-04-14 17:57:15,295] [INFO] [metadata_enrichment:121] [BATCH 13] SUCCESS | Time=61.17s
+[2026-04-14 17:57:15,301] [INFO] [metadata_enrichment:111] [BATCH 15] START | Size=5
+[2026-04-14 17:57:55,695] [INFO] [metadata_enrichment:121] [BATCH 14] SUCCESS | Time=64.3s
+[2026-04-14 17:57:55,705] [INFO] [metadata_enrichment:111] [BATCH 16] START | Size=5
+[2026-04-14 17:58:32,782] [INFO] [metadata_enrichment:121] [BATCH 15] SUCCESS | Time=77.48s
+[2026-04-14 17:58:32,788] [INFO] [metadata_enrichment:111] [BATCH 17] START | Size=5
+[2026-04-14 17:59:03,523] [INFO] [metadata_enrichment:121] [BATCH 16] SUCCESS | Time=67.82s
+[2026-04-14 17:59:03,533] [INFO] [metadata_enrichment:111] [BATCH 18] START | Size=5
+[2026-04-14 17:59:32,298] [INFO] [metadata_enrichment:121] [BATCH 17] SUCCESS | Time=59.51s
+[2026-04-14 17:59:32,304] [INFO] [metadata_enrichment:111] [BATCH 19] START | Size=5
+[2026-04-14 17:59:47,437] [INFO] [metadata_enrichment:121] [BATCH 18] SUCCESS | Time=43.9s
+[2026-04-14 17:59:47,442] [INFO] [metadata_enrichment:111] [BATCH 20] START | Size=5
+[2026-04-14 18:00:24,177] [INFO] [metadata_enrichment:121] [BATCH 19] SUCCESS | Time=51.87s
+[2026-04-14 18:00:24,185] [INFO] [metadata_enrichment:111] [BATCH 21] START | Size=5
+[2026-04-14 18:01:01,396] [INFO] [metadata_enrichment:121] [BATCH 20] SUCCESS | Time=73.95s
+[2026-04-14 18:01:01,404] [INFO] [metadata_enrichment:111] [BATCH 22] START | Size=5
+[2026-04-14 18:01:29,143] [INFO] [metadata_enrichment:121] [BATCH 21] SUCCESS | Time=64.96s
+[2026-04-14 18:01:29,164] [INFO] [metadata_enrichment:111] [BATCH 23] START | Size=5
+[2026-04-14 18:02:16,310] [INFO] [metadata_enrichment:121] [BATCH 22] SUCCESS | Time=74.91s
+[2026-04-14 18:02:16,322] [INFO] [metadata_enrichment:111] [BATCH 24] START | Size=5
+[2026-04-14 18:02:36,877] [INFO] [metadata_enrichment:121] [BATCH 23] SUCCESS | Time=67.71s
+[2026-04-14 18:02:36,882] [INFO] [metadata_enrichment:111] [BATCH 25] START | Size=5
+[2026-04-14 18:03:16,729] [INFO] [metadata_enrichment:121] [BATCH 24] SUCCESS | Time=60.41s
+[2026-04-14 18:03:16,738] [INFO] [metadata_enrichment:111] [BATCH 26] START | Size=5
+[2026-04-14 18:03:36,245] [INFO] [metadata_enrichment:121] [BATCH 25] SUCCESS | Time=59.36s
+[2026-04-14 18:03:36,250] [INFO] [metadata_enrichment:111] [BATCH 27] START | Size=2
+[2026-04-14 18:33:30,434] [INFO] [metadata_enrichment:121] [BATCH 26] SUCCESS | Time=1813.67s
+[2026-04-14 18:33:30,793] [ERROR] [metadata_enrichment:95] [BATCH 27] Ollama request timed out.
+[2026-04-14 18:33:30,807] [WARNING] [metadata_enrichment:126] [BATCH 27] Attempt 1 failed: . Retrying in 2s...
+[2026-04-14 18:34:13,948] [INFO] [metadata_enrichment:121] [BATCH 27] SUCCESS | Time=1837.7s
+[2026-04-14 19:13:58,555] [INFO] [metadata_enrichment:29] [INIT] Model=qwen2.5:7b | Batch=3 | Retries=2 | Timeout=540s | Concurrency=1
+[2026-04-14 19:14:08,196] [INFO] [metadata_enrichment:105] [BATCH 1] START | Size=3
+[2026-04-14 19:14:49,115] [INFO] [metadata_enrichment:115] [BATCH 1] SUCCESS | Time=40.92s
+[2026-04-14 19:14:49,162] [INFO] [metadata_enrichment:105] [BATCH 2] START | Size=3
+[2026-04-14 19:15:33,124] [INFO] [metadata_enrichment:115] [BATCH 2] SUCCESS | Time=43.96s
+[2026-04-14 19:15:33,162] [INFO] [metadata_enrichment:105] [BATCH 3] START | Size=3
+[2026-04-14 19:16:02,663] [INFO] [metadata_enrichment:115] [BATCH 3] SUCCESS | Time=29.5s
+[2026-04-14 19:16:02,684] [INFO] [metadata_enrichment:105] [BATCH 4] START | Size=3
+[2026-04-14 19:16:35,685] [INFO] [metadata_enrichment:115] [BATCH 4] SUCCESS | Time=33.0s
+[2026-04-14 19:16:35,718] [INFO] [metadata_enrichment:105] [BATCH 5] START | Size=3
+[2026-04-14 19:17:11,587] [INFO] [metadata_enrichment:115] [BATCH 5] SUCCESS | Time=35.87s
+[2026-04-14 19:17:11,636] [INFO] [metadata_enrichment:105] [BATCH 6] START | Size=3
+[2026-04-14 19:17:42,144] [INFO] [metadata_enrichment:115] [BATCH 6] SUCCESS | Time=30.51s
+[2026-04-14 19:17:42,160] [INFO] [metadata_enrichment:105] [BATCH 7] START | Size=3
+[2026-04-14 19:18:13,917] [INFO] [metadata_enrichment:115] [BATCH 7] SUCCESS | Time=31.76s
+[2026-04-14 19:18:13,924] [INFO] [metadata_enrichment:105] [BATCH 8] START | Size=3
+[2026-04-14 19:18:43,088] [INFO] [metadata_enrichment:115] [BATCH 8] SUCCESS | Time=29.16s
+[2026-04-14 19:18:43,101] [INFO] [metadata_enrichment:105] [BATCH 9] START | Size=3
+[2026-04-14 19:19:14,777] [INFO] [metadata_enrichment:115] [BATCH 9] SUCCESS | Time=31.68s
+[2026-04-14 19:19:14,786] [INFO] [metadata_enrichment:105] [BATCH 10] START | Size=3
+[2026-04-14 19:19:44,416] [INFO] [metadata_enrichment:115] [BATCH 10] SUCCESS | Time=29.63s
+[2026-04-14 19:19:44,425] [INFO] [metadata_enrichment:105] [BATCH 11] START | Size=3
+[2026-04-14 19:20:18,762] [INFO] [metadata_enrichment:115] [BATCH 11] SUCCESS | Time=34.34s
+[2026-04-14 19:20:18,769] [INFO] [metadata_enrichment:105] [BATCH 12] START | Size=3
+[2026-04-14 19:20:47,567] [INFO] [metadata_enrichment:115] [BATCH 12] SUCCESS | Time=28.8s
+[2026-04-14 19:20:47,573] [INFO] [metadata_enrichment:105] [BATCH 13] START | Size=3
+[2026-04-14 19:21:14,267] [INFO] [metadata_enrichment:115] [BATCH 13] SUCCESS | Time=26.69s
+[2026-04-14 19:21:14,275] [INFO] [metadata_enrichment:105] [BATCH 14] START | Size=3
+[2026-04-14 19:21:43,986] [INFO] [metadata_enrichment:115] [BATCH 14] SUCCESS | Time=29.72s
+[2026-04-14 19:21:44,003] [INFO] [metadata_enrichment:105] [BATCH 15] START | Size=3
+[2026-04-14 19:22:11,443] [INFO] [metadata_enrichment:115] [BATCH 15] SUCCESS | Time=27.44s
+[2026-04-14 19:22:11,468] [INFO] [metadata_enrichment:105] [BATCH 16] START | Size=3
+[2026-04-14 19:22:43,127] [INFO] [metadata_enrichment:115] [BATCH 16] SUCCESS | Time=31.66s
+[2026-04-14 19:22:43,137] [INFO] [metadata_enrichment:105] [BATCH 17] START | Size=3
+[2026-04-14 19:23:12,052] [INFO] [metadata_enrichment:115] [BATCH 17] SUCCESS | Time=28.92s
+[2026-04-14 19:23:12,061] [INFO] [metadata_enrichment:105] [BATCH 18] START | Size=3
+[2026-04-14 19:23:35,848] [INFO] [metadata_enrichment:115] [BATCH 18] SUCCESS | Time=23.79s
+[2026-04-14 19:23:35,856] [INFO] [metadata_enrichment:105] [BATCH 19] START | Size=3
+[2026-04-14 19:24:06,709] [INFO] [metadata_enrichment:115] [BATCH 19] SUCCESS | Time=30.85s
+[2026-04-14 19:24:06,716] [INFO] [metadata_enrichment:105] [BATCH 20] START | Size=3
+[2026-04-14 19:24:37,487] [INFO] [metadata_enrichment:115] [BATCH 20] SUCCESS | Time=30.77s
+[2026-04-14 19:24:37,494] [INFO] [metadata_enrichment:105] [BATCH 21] START | Size=3
+[2026-04-14 19:25:01,407] [INFO] [metadata_enrichment:115] [BATCH 21] SUCCESS | Time=23.91s
+[2026-04-14 19:25:01,414] [INFO] [metadata_enrichment:105] [BATCH 22] START | Size=3
+[2026-04-14 19:25:39,401] [INFO] [metadata_enrichment:115] [BATCH 22] SUCCESS | Time=37.99s
+[2026-04-14 19:25:39,408] [INFO] [metadata_enrichment:105] [BATCH 23] START | Size=3
+[2026-04-14 19:26:04,072] [INFO] [metadata_enrichment:115] [BATCH 23] SUCCESS | Time=24.67s
+[2026-04-14 19:26:04,078] [INFO] [metadata_enrichment:105] [BATCH 24] START | Size=3
+[2026-04-14 19:26:34,307] [INFO] [metadata_enrichment:115] [BATCH 24] SUCCESS | Time=30.23s
+[2026-04-14 19:26:34,325] [INFO] [metadata_enrichment:105] [BATCH 25] START | Size=3
+[2026-04-14 19:27:05,809] [INFO] [metadata_enrichment:115] [BATCH 25] SUCCESS | Time=31.48s
+[2026-04-14 19:27:05,852] [INFO] [metadata_enrichment:105] [BATCH 26] START | Size=3
+[2026-04-14 19:39:58,089] [INFO] [metadata_enrichment:115] [BATCH 26] SUCCESS | Time=772.25s
+[2026-04-14 19:39:58,123] [INFO] [metadata_enrichment:105] [BATCH 27] START | Size=3
+[2026-04-14 19:40:25,455] [INFO] [metadata_enrichment:115] [BATCH 27] SUCCESS | Time=27.33s
+[2026-04-14 19:40:25,467] [INFO] [metadata_enrichment:105] [BATCH 28] START | Size=3
+[2026-04-14 19:40:57,556] [INFO] [metadata_enrichment:115] [BATCH 28] SUCCESS | Time=32.09s
+[2026-04-14 19:40:57,582] [INFO] [metadata_enrichment:105] [BATCH 29] START | Size=3
+[2026-04-14 19:41:34,163] [INFO] [metadata_enrichment:115] [BATCH 29] SUCCESS | Time=36.58s
+[2026-04-14 19:41:34,181] [INFO] [metadata_enrichment:105] [BATCH 30] START | Size=3
+[2026-04-14 19:42:13,240] [INFO] [metadata_enrichment:115] [BATCH 30] SUCCESS | Time=39.05s
+[2026-04-14 19:42:13,298] [INFO] [metadata_enrichment:105] [BATCH 31] START | Size=3
+[2026-04-14 19:42:44,596] [INFO] [metadata_enrichment:115] [BATCH 31] SUCCESS | Time=31.3s
+[2026-04-14 19:42:44,618] [INFO] [metadata_enrichment:105] [BATCH 32] START | Size=3
+[2026-04-14 19:43:19,490] [INFO] [metadata_enrichment:115] [BATCH 32] SUCCESS | Time=34.87s
+[2026-04-14 19:43:19,532] [INFO] [metadata_enrichment:105] [BATCH 33] START | Size=3
+[2026-04-14 19:44:04,217] [INFO] [metadata_enrichment:115] [BATCH 33] SUCCESS | Time=44.69s
+[2026-04-14 19:44:04,231] [INFO] [metadata_enrichment:105] [BATCH 34] START | Size=3
+[2026-04-14 19:44:35,510] [INFO] [metadata_enrichment:115] [BATCH 34] SUCCESS | Time=31.28s
+[2026-04-14 19:44:35,528] [INFO] [metadata_enrichment:105] [BATCH 35] START | Size=3
+[2026-04-14 19:45:07,533] [INFO] [metadata_enrichment:115] [BATCH 35] SUCCESS | Time=32.01s
+[2026-04-14 19:45:07,538] [INFO] [metadata_enrichment:105] [BATCH 36] START | Size=3
+[2026-04-14 19:45:34,855] [INFO] [metadata_enrichment:115] [BATCH 36] SUCCESS | Time=27.31s
+[2026-04-14 19:45:34,866] [INFO] [metadata_enrichment:105] [BATCH 37] START | Size=3
+[2026-04-14 19:46:06,213] [INFO] [metadata_enrichment:115] [BATCH 37] SUCCESS | Time=31.35s
+[2026-04-14 19:46:06,225] [INFO] [metadata_enrichment:105] [BATCH 38] START | Size=3
+[2026-04-14 19:46:42,352] [INFO] [metadata_enrichment:115] [BATCH 38] SUCCESS | Time=36.13s
+[2026-04-14 19:46:42,368] [INFO] [metadata_enrichment:105] [BATCH 39] START | Size=3
+[2026-04-14 19:47:04,628] [INFO] [metadata_enrichment:115] [BATCH 39] SUCCESS | Time=22.26s
+[2026-04-14 19:47:04,638] [INFO] [metadata_enrichment:105] [BATCH 40] START | Size=3
+[2026-04-14 19:47:34,854] [INFO] [metadata_enrichment:115] [BATCH 40] SUCCESS | Time=30.22s
+[2026-04-14 19:47:34,858] [INFO] [metadata_enrichment:105] [BATCH 41] START | Size=3
+[2026-04-14 19:48:00,236] [INFO] [metadata_enrichment:115] [BATCH 41] SUCCESS | Time=25.37s
+[2026-04-14 19:48:00,250] [INFO] [metadata_enrichment:105] [BATCH 42] START | Size=3
+[2026-04-14 19:48:34,029] [INFO] [metadata_enrichment:115] [BATCH 42] SUCCESS | Time=33.78s
+[2026-04-14 19:48:34,033] [INFO] [metadata_enrichment:105] [BATCH 43] START | Size=3
+[2026-04-14 19:49:03,209] [INFO] [metadata_enrichment:115] [BATCH 43] SUCCESS | Time=29.17s
+[2026-04-14 19:49:03,217] [INFO] [metadata_enrichment:105] [BATCH 44] START | Size=3
+[2026-04-14 19:49:34,001] [INFO] [metadata_enrichment:115] [BATCH 44] SUCCESS | Time=30.78s
+[2026-04-15 11:10:44,715] [INFO] [metadata_enrichment:29] [INIT] Model=qwen2.5:7b | Batch=3 | Retries=2 | Timeout=540s | Concurrency=1
+[2026-04-15 11:10:54,674] [INFO] [metadata_enrichment:105] [BATCH 1] START | Size=3
+[2026-04-15 11:12:26,124] [INFO] [metadata_enrichment:29] [INIT] Model=qwen2.5:7b | Batch=3 | Retries=2 | Timeout=540s | Concurrency=1
+[2026-04-15 11:12:34,777] [INFO] [metadata_enrichment:105] [BATCH 1] START | Size=3

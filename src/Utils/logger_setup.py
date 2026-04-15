@@ -2,32 +2,29 @@ import logging
 import time
 import tracemalloc
 import asyncio
+import sys
 from pathlib import Path
-from typing import Callable, Any
+from typing import Callable
 from functools import wraps
 from contextvars import ContextVar
 
-# ──────────────────────────────────────────────────────────────────────────────
-# 1. GLOBAL SETUP
-# ──────────────────────────────────────────────────────────────────────────────
+# ─────────────────────────────────────────────────────────────
+# GLOBAL SETUP
+# ─────────────────────────────────────────────────────────────
 
-# Resolve project paths
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 LOG_DIR = PROJECT_ROOT / "logs"
 LOG_DIR.mkdir(parents=True, exist_ok=True)
 
-# Start tracking memory allocations
 tracemalloc.start()
 
-# ContextVar ensures each async task or thread has its own logger instance
-current_logger: ContextVar[logging.Logger] = ContextVar("current_logger")
+current_logger: ContextVar[logging.Logger] = ContextVar("current_logger", default=None)
 
-# ──────────────────────────────────────────────────────────────────────────────
-# 2. CUSTOM HANDLERS & HELPERS
-# ──────────────────────────────────────────────────────────────────────────────
+# ─────────────────────────────────────────────────────────────
+# MEMORY HANDLER (optional, silent)
+# ─────────────────────────────────────────────────────────────
 
 class MemoryHandler(logging.Handler):
-    """Stores log records in a list for easy retrieval (e.g., returning in an API)."""
     def __init__(self):
         super().__init__()
         self.logs = []
@@ -35,88 +32,99 @@ class MemoryHandler(logging.Handler):
     def emit(self, record):
         self.logs.append(self.format(record))
 
+# ─────────────────────────────────────────────────────────────
+# LOGGER SETUP (CLEAN)
+# ─────────────────────────────────────────────────────────────
+
 def setup_logger(trace_id: str) -> logging.Logger:
-    """Creates a unique logger for a specific trace/request."""
     logger = logging.getLogger(f"app.{trace_id}")
-    
+
     if logger.hasHandlers():
         return logger
 
-    logger.setLevel(logging.INFO)
+    logger.setLevel(logging.INFO)  # 🔥 cleaner than DEBUG
     logger.propagate = False
-    
+
     formatter = logging.Formatter(
-        f"[%(asctime)s] [TRACE:{trace_id}] [%(module)s.%(funcName)s:%(lineno)d] %(levelname)s - %(message)s"
+        "[%(asctime)s] [%(levelname)s] %(message)s"
     )
 
-    # Handlers: File, Console (Stream), and Memory
+    # Console handler (clean output)
+    ch = logging.StreamHandler(sys.stdout)
+    ch.setLevel(logging.INFO)
+    ch.setFormatter(formatter)
+
+    # File handler (optional detailed logs)
     fh = logging.FileHandler(LOG_DIR / f"{trace_id}.log")
-    ch = logging.StreamHandler()
+    fh.setLevel(logging.DEBUG)  # full logs go to file
+    fh.setFormatter(logging.Formatter(
+        "[%(asctime)s] [%(levelname)s] [%(module)s:%(lineno)d] %(message)s"
+    ))
+
+    # Memory handler (optional)
     mh = MemoryHandler()
+    mh.setFormatter(formatter)
 
-    for h in [fh, ch, mh]:
-        h.setFormatter(formatter)
-        logger.addHandler(h)
+    logger.addHandler(ch)
+    logger.addHandler(fh)
+    logger.addHandler(mh)
 
-    # Attach MemoryHandler to the logger for easy access to logger.memory_handler.logs
-    logger.memory_handler = mh 
+    logger.memory_handler = mh
     return logger
 
-def get_log(name: str = "default") -> logging.Logger:
-    """
-    Helper to fetch a logger. 
-    If a name is provided, it returns a logger with that name.
-    Otherwise, it attempts to fetch the context-specific logger.
-    """
-    # 1. Try to get the logger from the ContextVar (for tracing)
-    ctx_logger = current_logger.get(None)
-    
-    if ctx_logger:
-        return ctx_logger
-        
-    # 2. If no context logger exists (like during startup/lifespan), 
-    # return a named logger
-    return logging.getLogger(name)
+# ─────────────────────────────────────────────────────────────
+# LOGGER FETCHER
+# ─────────────────────────────────────────────────────────────
 
-# ──────────────────────────────────────────────────────────────────────────────
-# 3. PERFORMANCE TRACKER DECORATOR
-# ──────────────────────────────────────────────────────────────────────────────
+# In src/Utils/logger_setup.py
+
+def get_log(name: str = None) -> logging.Logger:
+    logger = current_logger.get()
+    if logger:
+        return logger
+
+    # If no context logger, return a named logger or default
+    log_name = f"app.{name}" if name else "default"
+    
+    # Fallback minimal configuration
+    logging.basicConfig(
+        level=logging.INFO,
+        format="[%(asctime)s] [%(levelname)s] %(message)s"
+    )
+    return logging.getLogger(log_name)
+
+# ─────────────────────────────────────────────────────────────
+# PERFORMANCE DECORATOR (MINIMAL)
+# ─────────────────────────────────────────────────────────────
 
 def track_performance(func: Callable):
-    """
-    Decorator that measures execution time and memory delta.
-    Automatically detects if the decorated function is sync or async.
-    """
+
     @wraps(func)
     async def async_wrapper(*args, **kwargs):
         logger = get_log()
-        start_time = time.perf_counter()
-        start_mem, _ = tracemalloc.get_traced_memory()
+        start = time.perf_counter()
 
         try:
             return await func(*args, **kwargs)
+        except Exception as e:
+            logger.error(f"{func.__name__} failed: {str(e)}")
+            return None  # 🔥 prevent noisy crash
         finally:
-            end_mem, peak_mem = tracemalloc.get_traced_memory()
-            duration = time.perf_counter() - start_time
-            logger.info(
-                f"Executed async '{func.__name__}' in {duration:.4f}s | "
-                f"Mem: {(end_mem - start_mem) / 1024:.2f}KB (Peak: {peak_mem / 1024:.2f}KB)"
-            )
+            duration = time.perf_counter() - start
+            logger.info(f"{func.__name__} completed in {duration:.2f}s")
 
     @wraps(func)
     def sync_wrapper(*args, **kwargs):
         logger = get_log()
-        start_time = time.perf_counter()
-        start_mem, _ = tracemalloc.get_traced_memory()
+        start = time.perf_counter()
 
         try:
             return func(*args, **kwargs)
+        except Exception as e:
+            logger.error(f"{func.__name__} failed: {str(e)}")
+            return None
         finally:
-            end_mem, peak_mem = tracemalloc.get_traced_memory()
-            duration = time.perf_counter() - start_time
-            logger.info(
-                f"Executed sync '{func.__name__}' in {duration:.4f}s | "
-                f"Mem: {(end_mem - start_mem) / 1024:.2f}KB (Peak: {peak_mem / 1024:.2f}KB)"
-            )
+            duration = time.perf_counter() - start
+            logger.info(f"{func.__name__} completed in {duration:.2f}s")
 
     return async_wrapper if asyncio.iscoroutinefunction(func) else sync_wrapper

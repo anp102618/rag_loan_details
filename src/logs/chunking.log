@@ -1,0 +1,95 @@
+[2026-04-15 11:02:57,945] [CRITICAL] [chunking:187] Crash: get_log() takes 0 positional arguments but 1 was given
+[2026-04-15 11:04:42,399] [CRITICAL] [chunking:187] Crash: get_log() takes 0 positional arguments but 1 was given
+[2026-04-15 11:10:28,163] [CRITICAL] [chunking:187] Crash: get_log() takes 0 positional arguments but 1 was given
+[2026-04-15 11:13:23,056] [INFO] [embeddings:23] [INIT] Embedder | model=nomic-embed-text, concurrency=10
+[2026-04-15 11:13:23,056] [INFO] [chunking:41] Chunker Configured | Size: 100, Overlap: 20
+[2026-04-15 11:13:23,155] [INFO] [embeddings:56] [EMBED] Processing batch size=645
+[2026-04-15 11:13:41,131] [INFO] [embeddings:67] [EMBED] Completed | success=645/645
+[2026-04-15 11:13:41,131] [INFO] [logger_setup:114] embed_batch completed in 17.97s
+[2026-04-15 11:13:41,145] [ERROR] [chunking:171] Chunking Pipeline failed.
+[2026-04-15 11:13:41,146] [ERROR] [logger_setup:110] process_and_upload failed: module 'sys' has no attribute 'error'
+[2026-04-15 11:13:41,148] [INFO] [logger_setup:114] process_and_upload completed in 18.01s
+[2026-04-15 11:13:41,150] [INFO] [chunking:185] Pipeline Complete.
+[2026-04-15 11:24:31,119] [INFO] [embeddings:23] [INIT] Embedder | model=nomic-embed-text, concurrency=10
+[2026-04-15 11:24:31,126] [INFO] [chunking:34] Chunker Configured | Size: 100, Overlap: 20
+[2026-04-15 11:24:31,163] [INFO] [chunking:74] Generating embeddings for 645 chunks...
+[2026-04-15 11:24:31,165] [INFO] [embeddings:56] [EMBED] Processing batch size=645
+[2026-04-15 11:24:47,086] [INFO] [embeddings:67] [EMBED] Completed | success=645/645
+[2026-04-15 11:24:47,086] [INFO] [logger_setup:114] embed_batch completed in 15.92s
+[2026-04-15 11:24:47,099] [ERROR] [chunking:159] Chunking Pipeline failed during processing.
+Traceback (most recent call last):
+  File "f:\Loan_Details_RAG_System1\src\RAG\Strategies_RAG_build\chunking.py", line 101, in process_and_upload
+    chunk.prev_chunk_id = all_chunks[-1].chunk_id
+  File "c:\Users\prasa\anaconda3\envs\olm-env\lib\site-packages\pydantic\main.py", line 1026, in __getattr__
+    raise AttributeError(f'{type(self).__name__!r} object has no attribute {item!r}')
+AttributeError: 'ChunkModel' object has no attribute 'chunk_id'
+[2026-04-15 11:24:47,113] [ERROR] [logger_setup:110] process_and_upload failed: module 'sys' has no attribute 'error'
+[2026-04-15 11:24:47,114] [INFO] [logger_setup:114] process_and_upload completed in 15.98s
+[2026-04-15 11:24:47,114] [INFO] [chunking:174] Pipeline Workflow Complete.
+[2026-04-15 11:33:28,560] [INFO] [embeddings:23] [INIT] Embedder | model=nomic-embed-text, concurrency=10
+[2026-04-15 11:33:28,560] [INFO] [chunking:34] Chunker Configured | Size: 100, Overlap: 20
+[2026-04-15 11:33:28,616] [INFO] [chunking:74] Generating embeddings for 645 chunks...
+[2026-04-15 11:33:28,616] [INFO] [embeddings:56] [EMBED] Processing batch size=645
+[2026-04-15 11:33:47,671] [INFO] [embeddings:67] [EMBED] Completed | success=645/645
+[2026-04-15 11:33:47,674] [INFO] [logger_setup:114] embed_batch completed in 19.06s
+[2026-04-15 11:33:48,360] [ERROR] [chunking:159] Chunking Pipeline failed during processing.
+Traceback (most recent call last):
+  File "f:\Loan_Details_RAG_System1\src\RAG\Strategies_RAG_build\chunking.py", line 109, in process_and_upload
+    window = self._get_dynamic_window(chunk.confidence_score)
+  File "c:\Users\prasa\anaconda3\envs\olm-env\lib\site-packages\pydantic\main.py", line 1026, in __getattr__
+    raise AttributeError(f'{type(self).__name__!r} object has no attribute {item!r}')
+AttributeError: 'ChunkModel' object has no attribute 'confidence_score'
+[2026-04-15 11:33:48,402] [ERROR] [logger_setup:110] process_and_upload failed: module 'sys' has no attribute 'error'
+[2026-04-15 11:33:48,406] [INFO] [logger_setup:114] process_and_upload completed in 19.82s
+[2026-04-15 11:33:48,408] [INFO] [chunking:174] Pipeline Workflow Complete.
+[2026-04-15 11:38:06,227] [INFO] [embeddings:23] [INIT] Embedder | model=nomic-embed-text, concurrency=10
+[2026-04-15 11:38:06,252] [INFO] [chunking:34] Chunker Configured | Size: 100, Overlap: 20
+[2026-04-15 11:38:06,630] [INFO] [chunking:74] Generating embeddings for 645 chunks...
+[2026-04-15 11:38:06,633] [INFO] [embeddings:56] [EMBED] Processing batch size=645
+[2026-04-15 11:38:27,531] [INFO] [embeddings:67] [EMBED] Completed | success=645/645
+[2026-04-15 11:38:27,533] [INFO] [logger_setup:114] embed_batch completed in 20.90s
+[2026-04-15 11:38:28,202] [ERROR] [chunking:159] Chunking Pipeline failed during processing.
+Traceback (most recent call last):
+  File "f:\Loan_Details_RAG_System1\src\RAG\Strategies_RAG_build\chunking.py", line 109, in process_and_upload
+    window = self._get_dynamic_window(chunk.confidence_score)
+  File "c:\Users\prasa\anaconda3\envs\olm-env\lib\site-packages\pydantic\main.py", line 1026, in __getattr__
+    raise AttributeError(f'{type(self).__name__!r} object has no attribute {item!r}')
+AttributeError: 'ChunkModel' object has no attribute 'confidence_score'
+[2026-04-15 11:38:28,245] [ERROR] [logger_setup:110] process_and_upload failed: module 'sys' has no attribute 'error'
+[2026-04-15 11:38:28,247] [INFO] [logger_setup:114] process_and_upload completed in 21.96s
+[2026-04-15 11:38:28,247] [INFO] [chunking:174] Pipeline Workflow Complete.
+[2026-04-15 12:00:35,486] [INFO] [embeddings:23] [INIT] Embedder | model=nomic-embed-text, concurrency=10
+[2026-04-15 12:00:35,495] [INFO] [chunking:34] Chunker Configured | Size: 100, Overlap: 20
+[2026-04-15 12:00:35,605] [INFO] [chunking:74] Generating embeddings for 645 chunks...
+[2026-04-15 12:00:35,610] [INFO] [embeddings:56] [EMBED] Processing batch size=645
+[2026-04-15 12:00:55,354] [INFO] [embeddings:67] [EMBED] Completed | success=645/645
+[2026-04-15 12:00:55,356] [INFO] [logger_setup:114] embed_batch completed in 19.75s
+[2026-04-15 12:00:56,196] [ERROR] [chunking:159] Chunking Pipeline failed during processing.
+Traceback (most recent call last):
+  File "f:\Loan_Details_RAG_System1\src\RAG\Strategies_RAG_build\chunking.py", line 109, in process_and_upload
+    async for session in get_session():
+  File "c:\Users\prasa\anaconda3\envs\olm-env\lib\site-packages\pydantic\main.py", line 1026, in __getattr__
+    raise AttributeError(f'{type(self).__name__!r} object has no attribute {item!r}')
+AttributeError: 'ChunkModel' object has no attribute 'confidence_score'
+[2026-04-15 12:00:56,238] [ERROR] [logger_setup:110] process_and_upload failed: module 'sys' has no attribute 'error'
+[2026-04-15 12:00:56,243] [INFO] [logger_setup:114] process_and_upload completed in 20.68s
+[2026-04-15 12:00:56,247] [INFO] [chunking:174] Pipeline Workflow Complete.
+[2026-04-15 12:05:45,958] [INFO] [chunking:140] --- Starting Pipeline for: structured_loan_data1.json ---
+[2026-04-15 12:05:45,958] [INFO] [embeddings:23] [INIT] Embedder | model=nomic-embed-text, concurrency=10
+[2026-04-15 12:05:45,965] [INFO] [chunking:28] [INIT] Chunker Configured | Size: 100, Overlap: 20
+[2026-04-15 12:05:45,965] [INFO] [chunking:146] [PIPE] Loading JSON source data...
+[2026-04-15 12:05:45,971] [INFO] [chunking:52] [STEP 1] Starting text splitting for 132 source items...
+[2026-04-15 12:05:46,008] [INFO] [chunking:59] [STEP 1] Completed. Created 614 total chunks.
+[2026-04-15 12:05:46,010] [INFO] [chunking:62] [STEP 2] Sending 614 chunks to the embedding model...
+[2026-04-15 12:05:46,011] [INFO] [embeddings:56] [EMBED] Processing batch size=614
+[2026-04-15 12:06:04,348] [INFO] [embeddings:67] [EMBED] Completed | success=614/614
+[2026-04-15 12:06:04,353] [INFO] [logger_setup:114] embed_batch completed in 18.34s
+[2026-04-15 12:06:04,355] [INFO] [chunking:64] [STEP 2] Received 614 embedding vectors successfully.
+[2026-04-15 12:06:04,355] [INFO] [chunking:67] [STEP 3] Initializing ChunkModel objects and sequence linking...
+[2026-04-15 12:06:04,968] [INFO] [chunking:85] [STEP 3] Created 614 objects with integer IDs 1 to 614.
+[2026-04-15 12:06:04,969] [INFO] [chunking:88] [STEP 4] Computing dynamic context windows based on confidence scores...
+[2026-04-15 12:06:05,009] [INFO] [chunking:105] [STEP 4] Context expansion complete for all chunks.
+[2026-04-15 12:06:05,011] [INFO] [chunking:108] [STEP 5] Preparing bulk upsert for PostgreSQL...
+[2026-04-15 12:06:09,478] [INFO] [chunking:126] [STEP 5] Database Sync Successful. 614 chunks upserted.
+[2026-04-15 12:06:09,618] [INFO] [logger_setup:114] process_and_upload completed in 23.65s
+[2026-04-15 12:06:09,619] [INFO] [chunking:151] --- Pipeline Completed Successfully ---
