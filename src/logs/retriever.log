@@ -1,0 +1,10 @@
+[2026-04-15 15:36:02,206] [INFO] [retriever:25] HybridRetriever initialized (Hybrid Mode).
+[2026-04-15 17:44:05,823] [INFO] [retriever:25] HybridRetriever initialized (Hybrid Mode).
+[2026-04-15 17:49:50,461] [INFO] [retriever:25] HybridRetriever initialized (Hybrid Mode).
+[2026-04-15 17:50:04,414] [ERROR] [retriever:45] Retrieval flow failed: Error in [f:\Loan_Details_RAG_System1\src\RAG\Strategies_RAG_Inference\retriever.py] at line [64] → Message: name 'BM25Okapi' is not defined
+[2026-04-15 17:52:46,741] [INFO] [retriever:25] HybridRetriever initialized (Hybrid Mode).
+[2026-04-15 17:52:59,393] [ERROR] [retriever:45] Retrieval flow failed: Error in [f:\Loan_Details_RAG_System1\src\RAG\Strategies_RAG_Inference\retriever.py] at line [64] → Message: name 'BM25Okapi' is not defined
+[2026-04-15 18:03:28,656] [INFO] [retriever:25] HybridRetriever initialized (Hybrid Mode).
+[2026-04-15 18:03:42,126] [ERROR] [retriever:45] Retrieval flow failed: Error in [f:\Loan_Details_RAG_System1\src\RAG\Strategies_RAG_Inference\retriever.py] at line [64] → Message: name 'BM25Okapi' is not defined
+[2026-04-15 18:42:50,428] [INFO] [9158247:43] Filter-First HybridRetriever initialized
+[2026-04-15 18:42:51,522] [ERROR] [9158247:81] Batch retrieval failed: Error in [C:\Users\prasa\AppData\Local\Temp\ipykernel_18028\9158247.py] at line [135] → Message: 'DocumentEmbedder' object has no attribute 'embed_query'

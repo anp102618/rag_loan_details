@@ -1,0 +1,2 @@
+[2026-04-15 21:17:47,428] [ERROR] [1968379031:83] Generation Function Error: 'str' object has no attribute 'get'
+[2026-04-15 21:24:15,236] [ERROR] [1968379031:83] Generation Function Error: 'str' object has no attribute 'get'

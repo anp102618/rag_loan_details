@@ -1,0 +1,58 @@
+[2026-04-15 15:36:02,192] [INFO] [semantic_query_classification:32] Classifier initialized | Embedding Model: nomic-embed-text | LLM: qwen2.5
+[2026-04-15 15:36:12,556] [INFO] [semantic_query_classification:53] Syncing unique section names from database...
+[2026-04-15 15:36:14,026] [INFO] [semantic_query_classification:68] Successfully prepared 7 section vectors.
+[2026-04-15 15:36:14,030] [ERROR] [semantic_query_classification:144] Bulk query classification failed.
+[2026-04-15 17:44:05,811] [INFO] [semantic_query_classification:32] Classifier initialized | Embedding Model: nomic-embed-text | LLM: qwen2.5
+[2026-04-15 17:49:50,444] [INFO] [semantic_query_classification:32] Classifier initialized | Embedding Model: nomic-embed-text | LLM: qwen2.5
+[2026-04-15 17:50:00,493] [INFO] [semantic_query_classification:53] Syncing unique section names from database...
+[2026-04-15 17:50:02,792] [INFO] [semantic_query_classification:68] Successfully prepared 7 section vectors.
+[2026-04-15 17:50:02,797] [INFO] [semantic_query_classification:126] Classifying 1 query variations...
+[2026-04-15 17:50:02,896] [WARNING] [semantic_query_classification:112] Qwen reranking failed for query: provide details on car loan. Falling back to top-2 similarity.
+[2026-04-15 17:50:02,898] [INFO] [semantic_query_classification:140] Query-to-Section mapping completed successfully.
+[2026-04-15 17:52:46,731] [INFO] [semantic_query_classification:32] Classifier initialized | Embedding Model: nomic-embed-text | LLM: qwen2.5
+[2026-04-15 17:52:58,001] [INFO] [semantic_query_classification:53] Syncing unique section names from database...
+[2026-04-15 17:52:58,554] [INFO] [semantic_query_classification:68] Successfully prepared 7 section vectors.
+[2026-04-15 17:52:58,559] [INFO] [semantic_query_classification:126] Classifying 1 query variations...
+[2026-04-15 17:52:58,634] [WARNING] [semantic_query_classification:112] Qwen reranking failed for query: provide details on car loan. Falling back to top-2 similarity.
+[2026-04-15 17:52:58,634] [INFO] [semantic_query_classification:140] Query-to-Section mapping completed successfully.
+[2026-04-15 18:03:28,621] [INFO] [semantic_query_classification:32] Classifier initialized | Embedding Model: nomic-embed-text | LLM: qwen2.5
+[2026-04-15 18:03:39,681] [INFO] [semantic_query_classification:53] Syncing unique section names from database...
+[2026-04-15 18:03:41,093] [INFO] [semantic_query_classification:68] Successfully prepared 7 section vectors.
+[2026-04-15 18:03:41,108] [INFO] [semantic_query_classification:126] Classifying 1 query variations...
+[2026-04-15 18:03:41,227] [WARNING] [semantic_query_classification:112] Qwen reranking failed for query: provide details on car loan. Falling back to top-2 similarity.
+[2026-04-15 18:03:41,227] [INFO] [semantic_query_classification:140] Query-to-Section mapping completed successfully.
+[2026-04-15 18:16:39,602] [INFO] [semantic_query_classification:32] Classifier initialized | Embedding Model: nomic-embed-text | LLM: phi3.5
+[2026-04-15 18:16:39,611] [INFO] [semantic_query_classification:53] Syncing unique section names from database...
+[2026-04-15 18:16:40,221] [INFO] [logger_setup:114] get_unique_sections completed in 0.60s
+[2026-04-15 18:16:41,355] [INFO] [semantic_query_classification:68] Successfully prepared 7 section vectors.
+[2026-04-15 18:16:41,355] [INFO] [logger_setup:114] prepare_context completed in 1.75s
+[2026-04-15 18:16:41,355] [INFO] [semantic_query_classification:126] Classifying 2 query variations...
+[2026-04-15 18:17:05,441] [WARNING] [semantic_query_classification:112] Qwen reranking failed for query: 1. Elucthy precice specifications of automobile financing options available for purchase. Falling back to top-2 similarity.
+[2026-04-15 18:17:47,465] [WARNING] [semantic_query_classification:112] Qwen reranking failed for query: 2. Request comprehensive information regarding vehicle-related credit facilities and terms offered by financial institutions. Falling back to top-2 similarity.
+[2026-04-15 18:17:47,465] [INFO] [semantic_query_classification:140] Query-to-Section mapping completed successfully.
+[2026-04-15 18:17:47,485] [INFO] [logger_setup:114] classify_expanded_queries completed in 67.88s
+[2026-04-15 18:19:53,256] [INFO] [semantic_query_classification:32] Classifier initialized | Embedding Model: nomic-embed-text | LLM: phi3.5
+[2026-04-15 18:19:53,262] [INFO] [semantic_query_classification:53] Syncing unique section names from database...
+[2026-04-15 18:19:53,422] [INFO] [logger_setup:114] get_unique_sections completed in 0.16s
+[2026-04-15 18:19:54,856] [INFO] [semantic_query_classification:68] Successfully prepared 7 section vectors.
+[2026-04-15 18:19:54,859] [INFO] [logger_setup:114] prepare_context completed in 1.60s
+[2026-04-15 18:19:54,860] [INFO] [semantic_query_classification:126] Classifying 2 query variations...
+[2026-04-15 18:20:18,068] [WARNING] [semantic_query_classification:112] Qwen reranking failed for query: 1. Elucthy precice specifications of automobile financing options available for purchase. Falling back to top-2 similarity.
+[2026-04-15 18:20:53,407] [WARNING] [semantic_query_classification:112] Qwen reranking failed for query: 2. Request comprehensive information regarding vehicle-related credit facilities and terms offered by financial institutions. Falling back to top-2 similarity.
+[2026-04-15 18:20:53,420] [INFO] [semantic_query_classification:140] Query-to-Section mapping completed successfully.
+[2026-04-15 18:20:53,425] [INFO] [logger_setup:114] classify_expanded_queries completed in 60.16s
+[2026-04-15 18:21:01,647] [INFO] [semantic_query_classification:32] Classifier initialized | Embedding Model: nomic-embed-text | LLM: phi3.5
+[2026-04-15 18:21:01,650] [INFO] [semantic_query_classification:53] Syncing unique section names from database...
+[2026-04-15 18:21:01,725] [INFO] [logger_setup:114] get_unique_sections completed in 0.08s
+[2026-04-15 18:21:02,310] [INFO] [semantic_query_classification:68] Successfully prepared 7 section vectors.
+[2026-04-15 18:21:02,310] [INFO] [logger_setup:114] prepare_context completed in 0.66s
+[2026-04-15 18:21:02,310] [INFO] [semantic_query_classification:126] Classifying 2 query variations...
+[2026-04-15 18:21:19,108] [WARNING] [semantic_query_classification:112] Qwen reranking failed for query: 1. Elucthy precice specifications of automobile financing options available for purchase. Falling back to top-2 similarity.
+[2026-04-15 18:21:52,141] [WARNING] [semantic_query_classification:112] Qwen reranking failed for query: 2. Request comprehensive information regarding vehicle-related credit facilities and terms offered by financial institutions. Falling back to top-2 similarity.
+[2026-04-15 18:21:52,142] [INFO] [semantic_query_classification:140] Query-to-Section mapping completed successfully.
+[2026-04-15 18:21:52,142] [INFO] [logger_setup:114] classify_expanded_queries completed in 50.49s
+[2026-04-15 18:27:01,149] [INFO] [3392167073:26] LLM-only classifier initialized | Model: qwen2.5:7b
+[2026-04-15 18:27:01,586] [INFO] [logger_setup:114] get_unique_sections completed in 0.44s
+[2026-04-15 18:27:01,590] [INFO] [3392167073:43] Loaded 7 sections
+[2026-04-15 18:27:01,590] [INFO] [logger_setup:114] prepare_context completed in 0.44s
+[2026-04-15 18:28:07,945] [INFO] [logger_setup:114] classify_expanded_queries completed in 66.78s

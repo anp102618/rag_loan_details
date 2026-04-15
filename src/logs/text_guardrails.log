@@ -30,3 +30,47 @@
 [2026-04-15 11:12:26,124] [INFO] [text_guardrails:31] TextGuardrails initialized successfully.
 [2026-04-15 11:12:34,067] [INFO] [text_guardrails:87] Semantic duplicate detected via MinHash.
 [2026-04-15 11:12:34,325] [INFO] [text_guardrails:87] Semantic duplicate detected via MinHash.
+[2026-04-15 12:25:03,720] [INFO] [text_guardrails:31] TextGuardrails initialized successfully.
+[2026-04-15 12:25:03,720] [INFO] [query_expander:30] QueryExpander active with qwen2.5 and TextGuardrails.
+[2026-04-15 12:26:52,132] [INFO] [127904894:20] Initializing RAG Components...
+[2026-04-15 12:26:52,159] [INFO] [text_guardrails:31] TextGuardrails initialized successfully.
+[2026-04-15 12:26:52,161] [INFO] [query_expander:30] QueryExpander active with qwen2.5 and TextGuardrails.
+[2026-04-15 12:26:52,161] [INFO] [semantic_query_classification:31] Classifier initialized | Embedding Model: nomic-embed-text | LLM: qwen2.5
+[2026-04-15 12:26:52,161] [INFO] [vector_store:41] [INIT] FAISS | type=hnsw, dim=768
+[2026-04-15 12:26:52,161] [INFO] [embeddings:23] [INIT] Embedder | model=nomic-embed-text, concurrency=10
+[2026-04-15 12:26:52,161] [INFO] [retriever:28] HybridRetriever initialized (Object-Preservation Mode).
+[2026-04-15 12:27:05,948] [INFO] [reranker:19] Cross-Encoder loaded: cross-encoder/ms-marco-MiniLM-L-6-v2
+[2026-04-15 12:27:05,948] [INFO] [127904894:28] Step 1: Expanding Query -> provide details on car loan
+[2026-04-15 12:27:05,960] [INFO] [logger_setup:128] apply completed in 0.01s
+[2026-04-15 12:27:06,103] [ERROR] [query_expander:80] Error during query expansion phase.
+[2026-04-15 12:27:06,103] [ERROR] [logger_setup:110] expand_query failed: module 'sys' has no attribute 'error'
+[2026-04-15 12:27:06,103] [INFO] [logger_setup:114] expand_query completed in 0.15s
+[2026-04-15 12:27:06,103] [INFO] [127904894:32] Step 2: Classifying Query Sections...
+[2026-04-15 12:27:06,103] [INFO] [semantic_query_classification:52] Syncing unique section names from database...
+[2026-04-15 12:27:06,406] [INFO] [metadata_extractor:51] Successfully extracted 7 unique sections.
+[2026-04-15 12:27:06,413] [INFO] [logger_setup:114] get_unique_sections completed in 0.30s
+[2026-04-15 12:27:07,517] [INFO] [semantic_query_classification:67] Successfully prepared 7 section vectors.
+[2026-04-15 12:27:07,517] [INFO] [logger_setup:114] prepare_context completed in 1.41s
+[2026-04-15 12:27:07,517] [ERROR] [semantic_query_classification:143] Bulk query classification failed.
+[2026-04-15 12:27:07,522] [ERROR] [logger_setup:110] classify_expanded_queries failed: module 'sys' has no attribute 'error'
+[2026-04-15 12:27:07,523] [INFO] [logger_setup:114] classify_expanded_queries completed in 0.00s
+[2026-04-15 12:27:07,524] [INFO] [127904894:38] Step 3: Executing Hybrid Retrieval...
+[2026-04-15 12:27:07,525] [INFO] [logger_setup:114] main_retrieval_flow completed in 0.00s
+[2026-04-15 12:27:07,525] [INFO] [127904894:42] Step 4: Reranking Chunks for Precision...
+[2026-04-15 12:27:07,525] [INFO] [logger_setup:128] rerank completed in 0.00s
+[2026-04-15 12:27:07,529] [INFO] [127904894:59] Step 5: Generating Final Response...
+[2026-04-15 12:27:07,531] [ERROR] [generator:92] LLM Generation Error: object of type 'NoneType' has no len()
+[2026-04-15 12:27:07,533] [ERROR] [logger_setup:110] generate_response failed: module 'sys' has no attribute 'error'
+[2026-04-15 12:27:07,534] [INFO] [logger_setup:114] generate_response completed in 0.00s
+[2026-04-15 15:36:02,189] [INFO] [text_guardrails:31] TextGuardrails initialized successfully.
+[2026-04-15 17:44:05,806] [INFO] [text_guardrails:31] TextGuardrails initialized successfully.
+[2026-04-15 17:49:50,429] [INFO] [text_guardrails:31] TextGuardrails initialized successfully.
+[2026-04-15 17:52:46,725] [INFO] [text_guardrails:31] TextGuardrails initialized successfully.
+[2026-04-15 17:56:52,346] [INFO] [text_guardrails:31] TextGuardrails initialized successfully.
+[2026-04-15 17:57:19,717] [INFO] [text_guardrails:31] TextGuardrails initialized successfully.
+[2026-04-15 17:59:13,672] [INFO] [text_guardrails:31] TextGuardrails initialized successfully.
+[2026-04-15 18:03:28,609] [INFO] [text_guardrails:31] TextGuardrails initialized successfully.
+[2026-04-15 18:04:46,567] [INFO] [text_guardrails:31] TextGuardrails initialized successfully.
+[2026-04-15 18:07:32,464] [INFO] [text_guardrails:31] TextGuardrails initialized successfully.
+[2026-04-15 18:24:42,846] [INFO] [text_guardrails:31] TextGuardrails initialized successfully.
+[2026-04-15 18:25:35,034] [INFO] [text_guardrails:31] TextGuardrails initialized successfully.

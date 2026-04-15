@@ -1,0 +1,14 @@
+[2026-04-15 18:46:43,639] [INFO] [3748116837:36] HybridRetriever initialized successfully.
+[2026-04-15 18:46:43,641] [INFO] [3748116837:54] Starting batch retrieval for 2 queries.
+[2026-04-15 18:46:44,732] [ERROR] [3748116837:134] Error in _retrieve_single: 'DocumentEmbedder' object has no attribute 'embed_query'
+[2026-04-15 18:46:44,733] [ERROR] [3748116837:70] Batch retrieval execution error: Error in [C:\Users\prasa\AppData\Local\Temp\ipykernel_18028\3748116837.py] at line [105] → Message: 'DocumentEmbedder' object has no attribute 'embed_query'
+[2026-04-15 18:55:55,358] [INFO] [2528972850:36] HybridRetriever initialized successfully.
+[2026-04-15 18:55:55,362] [INFO] [2528972850:54] Starting batch retrieval for 2 queries.
+[2026-04-15 18:55:56,162] [INFO] [2528972850:116] Filtering complete. Unique chunks in scope: 86
+[2026-04-15 18:55:56,170] [ERROR] [2528972850:170] Failed _retrieve_single for query 'outline information ': DocumentEmbedder._embed_single() missing 1 required positional argument: 'index'
+[2026-04-15 18:55:56,172] [ERROR] [2528972850:70] Batch retrieval execution error: Error in [C:\Users\prasa\AppData\Local\Temp\ipykernel_18028\2528972850.py] at line [124] → Message: DocumentEmbedder._embed_single() missing 1 required positional argument: 'index'
+[2026-04-15 20:22:18,127] [INFO] [2528972850:36] HybridRetriever initialized successfully.
+[2026-04-15 20:22:18,131] [INFO] [2528972850:54] Starting batch retrieval for 2 queries.
+[2026-04-15 20:22:18,980] [INFO] [2528972850:116] Filtering complete. Unique chunks in scope: 86
+[2026-04-15 20:22:18,992] [ERROR] [2528972850:170] Failed _retrieve_single for query 'outline information ': DocumentEmbedder._embed_single() missing 1 required positional argument: 'index'
+[2026-04-15 20:22:19,001] [ERROR] [2528972850:70] Batch retrieval execution error: Error in [C:\Users\prasa\AppData\Local\Temp\ipykernel_18028\2528972850.py] at line [124] → Message: DocumentEmbedder._embed_single() missing 1 required positional argument: 'index'

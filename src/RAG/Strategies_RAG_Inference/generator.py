@@ -1,12 +1,15 @@
 import sys
 import ollama
+import asyncio
+import nest_asyncio
 from typing import List, Any
 
-# Internal Imports
-from src.Utils.logger_setup import get_log, track_performance
+from src.Utils.logger_setup import setup_logger, current_logger, track_performance
 from src.Utils.exception_handler import CustomException
 
-logger = get_log("LLMGenerator")
+logger = setup_logger("generator")
+current_logger.set(logger)
+nest_asyncio.apply()
 
 class LLMGenerator:
     """
@@ -14,7 +17,7 @@ class LLMGenerator:
     Handles ChunkModel object extraction and prompt synthesis internally.
     """
     
-    def __init__(self, model_name: str = "qwen2.5:7b"):
+    def __init__(self, model_name: str = "phi3.5"):
         self.model_name = model_name
 
     @track_performance

@@ -1,0 +1,51 @@
+[2026-04-15 15:36:02,190] [INFO] [query_expander:32] QueryExpander active with qwen2.5 and TextGuardrails.
+[2026-04-15 15:36:12,544] [ERROR] [query_expander:82] Error during query expansion phase.
+[2026-04-15 17:44:05,810] [INFO] [query_expander:32] QueryExpander active with qwen2.5 and TextGuardrails.
+[2026-04-15 17:44:16,658] [ERROR] [query_expander:82] Error during query expansion phase.
+[2026-04-15 17:49:50,444] [INFO] [query_expander:32] QueryExpander active with qwen2.5 and TextGuardrails.
+[2026-04-15 17:50:00,484] [ERROR] [query_expander:82] Error during query expansion phase.
+[2026-04-15 17:52:46,725] [INFO] [query_expander:32] QueryExpander active with qwen2.5 and TextGuardrails.
+[2026-04-15 17:52:57,989] [ERROR] [query_expander:82] Error during query expansion phase.
+[2026-04-15 17:56:52,346] [INFO] [query_expander:32] QueryExpander active with qwen2.5 and TextGuardrails.
+[2026-04-15 17:56:52,360] [INFO] [logger_setup:128] apply completed in 0.01s
+[2026-04-15 17:56:52,484] [ERROR] [query_expander:82] Error during query expansion phase.
+[2026-04-15 17:56:52,493] [ERROR] [logger_setup:110] expand_query failed: Error in [c:\Users\prasa\anaconda3\envs\olm-env\lib\site-packages\ollama\_client.py] at line [757] → Message: model 'qwen2.5' not found (status code: 404)
+[2026-04-15 17:56:52,493] [INFO] [logger_setup:114] expand_query completed in 0.14s
+[2026-04-15 17:57:19,721] [INFO] [query_expander:32] QueryExpander active with qwen2.5:7b and TextGuardrails.
+[2026-04-15 17:57:19,737] [INFO] [logger_setup:128] apply completed in 0.01s
+[2026-04-15 17:57:59,111] [INFO] [logger_setup:128] apply completed in 0.03s
+[2026-04-15 17:57:59,187] [INFO] [logger_setup:128] apply completed in 0.01s
+[2026-04-15 17:57:59,203] [INFO] [query_expander:78] Expanded into 2 safe variations.
+[2026-04-15 17:57:59,208] [INFO] [logger_setup:114] expand_query completed in 39.48s
+[2026-04-15 17:59:13,693] [INFO] [query_expander:32] QueryExpander active with phi3.5 and TextGuardrails.
+[2026-04-15 17:59:13,718] [INFO] [logger_setup:128] apply completed in 0.02s
+[2026-04-15 17:59:38,252] [INFO] [logger_setup:128] apply completed in 0.06s
+[2026-04-15 17:59:38,323] [INFO] [logger_setup:128] apply completed in 0.07s
+[2026-04-15 17:59:38,326] [INFO] [query_expander:78] Expanded into 2 safe variations.
+[2026-04-15 17:59:38,328] [INFO] [logger_setup:114] expand_query completed in 24.63s
+[2026-04-15 18:03:28,617] [INFO] [query_expander:32] QueryExpander active with qwen2.5 and TextGuardrails.
+[2026-04-15 18:03:39,681] [ERROR] [query_expander:82] Error during query expansion phase.
+[2026-04-15 18:04:46,573] [INFO] [query_expander:32] QueryExpander active with phi3.5 and TextGuardrails.
+[2026-04-15 18:04:46,577] [INFO] [logger_setup:128] apply completed in 0.01s
+[2026-04-15 18:05:08,214] [INFO] [logger_setup:128] apply completed in 0.02s
+[2026-04-15 18:05:08,249] [INFO] [logger_setup:128] apply completed in 0.03s
+[2026-04-15 18:05:08,251] [INFO] [query_expander:78] Expanded into 2 safe variations.
+[2026-04-15 18:05:08,254] [INFO] [logger_setup:114] expand_query completed in 21.68s
+[2026-04-15 18:07:32,474] [INFO] [query_expander:32] QueryExpander active with phi3.5 and TextGuardrails.
+[2026-04-15 18:07:32,491] [INFO] [logger_setup:128] apply completed in 0.01s
+[2026-04-15 18:07:56,234] [INFO] [logger_setup:128] apply completed in 0.02s
+[2026-04-15 18:07:56,272] [INFO] [logger_setup:128] apply completed in 0.03s
+[2026-04-15 18:07:56,277] [INFO] [query_expander:78] Expanded into 2 safe variations.
+[2026-04-15 18:07:56,277] [INFO] [logger_setup:114] expand_query completed in 23.80s
+[2026-04-15 18:24:42,849] [INFO] [query_expander:26] QueryExpander active with phi3.5 (Ollama native).
+[2026-04-15 18:24:42,858] [INFO] [logger_setup:128] apply completed in 0.01s
+[2026-04-15 18:25:03,873] [INFO] [logger_setup:128] apply completed in 0.02s
+[2026-04-15 18:25:03,936] [INFO] [logger_setup:128] apply completed in 0.05s
+[2026-04-15 18:25:03,936] [INFO] [query_expander:98] Expanded into 2 queries.
+[2026-04-15 18:25:03,936] [INFO] [logger_setup:114] expand_query completed in 21.09s
+[2026-04-15 18:25:35,042] [INFO] [query_expander:26] QueryExpander active with qwen2.5:7b (Ollama native).
+[2026-04-15 18:25:35,270] [INFO] [logger_setup:128] apply completed in 0.12s
+[2026-04-15 18:26:34,234] [INFO] [logger_setup:128] apply completed in 0.02s
+[2026-04-15 18:26:34,316] [INFO] [logger_setup:128] apply completed in 0.01s
+[2026-04-15 18:26:34,323] [INFO] [query_expander:98] Expanded into 2 queries.
+[2026-04-15 18:26:34,326] [INFO] [logger_setup:114] expand_query completed in 59.17s

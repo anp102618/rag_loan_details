@@ -1,0 +1,448 @@
+[2026-04-15 13:08:25,082] [INFO] [vector_store:43] [INIT] FAISS | type=hnsw, dim=768
+[2026-04-15 13:08:25,085] [INFO] [vector_store:50] Synchronizing FAISS index with PostgreSQL...
+[2026-04-15 13:08:25,086] [INFO] [vector_store:53] Session opened. Executing query...
+[2026-04-15 13:08:26,064] [INFO] [vector_store:60] Fetched 614 chunks from DB.
+[2026-04-15 13:08:26,064] [INFO] [vector_store:64] Resetting index for rebuild...
+[2026-04-15 13:08:26,064] [INFO] [vector_store:85] [ADD] Stacking 614 NumPy embeddings...
+[2026-04-15 13:08:26,080] [INFO] [vector_store:96] [ADD] Matrix ready. Shape: (614, 768). Ingesting...
+[2026-04-15 13:13:25,425] [INFO] [logger_setup:114] add completed in 299.36s
+[2026-04-15 13:13:25,455] [INFO] [logger_setup:114] sync_from_db completed in 300.37s
+[2026-04-15 14:30:18,979] [INFO] [vector_store:43] [INIT] FAISS | type=hnsw, dim=768
+[2026-04-15 14:30:18,983] [INFO] [vector_store:50] Synchronizing FAISS index with PostgreSQL...
+[2026-04-15 14:30:18,984] [INFO] [vector_store:53] Session opened. Executing query...
+[2026-04-15 14:30:20,056] [INFO] [vector_store:60] Fetched 614 chunks from DB.
+[2026-04-15 14:30:20,056] [INFO] [vector_store:64] Resetting index for rebuild...
+[2026-04-15 14:30:20,056] [INFO] [vector_store:85] [ADD] Stacking 614 NumPy embeddings...
+[2026-04-15 14:30:20,071] [INFO] [vector_store:96] [ADD] Matrix ready. Shape: (614, 768). Ingesting...
+[2026-04-15 15:08:30,939] [INFO] [vector_store:48] [INIT] FAISS | type=hnsw, dim=768
+[2026-04-15 15:08:30,943] [INFO] [vector_store:55] Synchronizing FAISS index with PostgreSQL...
+[2026-04-15 15:08:30,948] [ERROR] [vector_store:72] Sync failed: name 'select' is not defined
+[2026-04-15 15:08:30,951] [ERROR] [logger_setup:110] sync_from_db failed: module 'sys' has no attribute 'error'
+[2026-04-15 15:08:30,954] [INFO] [logger_setup:114] sync_from_db completed in 0.01s
+[2026-04-15 15:09:19,938] [INFO] [vector_store:48] [INIT] FAISS | type=hnsw, dim=768
+[2026-04-15 15:09:19,947] [INFO] [vector_store:55] Synchronizing FAISS index with PostgreSQL...
+[2026-04-15 15:09:19,955] [ERROR] [vector_store:72] Sync failed: name 'select' is not defined
+[2026-04-15 15:09:19,958] [ERROR] [logger_setup:110] sync_from_db failed: module 'sys' has no attribute 'error'
+[2026-04-15 15:09:19,960] [INFO] [logger_setup:114] sync_from_db completed in 0.01s
+[2026-04-15 15:10:23,524] [INFO] [vector_store:49] [INIT] FAISS | type=hnsw, dim=768
+[2026-04-15 15:10:23,524] [INFO] [vector_store:56] Synchronizing FAISS index with PostgreSQL...
+[2026-04-15 15:19:51,376] [INFO] [vector_store:31] [INIT] Initializing FAISS | dim=768, type=hnsw
+[2026-04-15 15:19:51,379] [INFO] [vector_store:46] [INIT] FAISS index initialized successfully
+[2026-04-15 15:19:51,380] [INFO] [vector_store:57] [SYNC] Starting incremental sync from DB
+[2026-04-15 15:19:51,765] [INFO] [vector_store:86] [SYNC] Batch 1 fetched | size=100
+[2026-04-15 15:19:51,767] [INFO] [vector_store:115] [ADD] Adding 100 chunks
+[2026-04-15 15:19:51,779] [ERROR] [vector_store:166] [ADD ERROR] 'id'
+[2026-04-15 15:19:51,781] [ERROR] [logger_setup:110] add failed: module 'sys' has no attribute 'error'
+[2026-04-15 15:19:51,783] [INFO] [logger_setup:114] add completed in 0.02s
+[2026-04-15 15:19:51,862] [INFO] [vector_store:86] [SYNC] Batch 2 fetched | size=100
+[2026-04-15 15:19:51,877] [INFO] [vector_store:115] [ADD] Adding 100 chunks
+[2026-04-15 15:19:51,888] [ERROR] [vector_store:166] [ADD ERROR] 'id'
+[2026-04-15 15:19:51,889] [ERROR] [logger_setup:110] add failed: module 'sys' has no attribute 'error'
+[2026-04-15 15:19:51,891] [INFO] [logger_setup:114] add completed in 0.01s
+[2026-04-15 15:19:52,003] [INFO] [vector_store:86] [SYNC] Batch 3 fetched | size=100
+[2026-04-15 15:19:52,003] [INFO] [vector_store:115] [ADD] Adding 100 chunks
+[2026-04-15 15:19:52,017] [ERROR] [vector_store:166] [ADD ERROR] 'id'
+[2026-04-15 15:19:52,017] [ERROR] [logger_setup:110] add failed: module 'sys' has no attribute 'error'
+[2026-04-15 15:19:52,017] [INFO] [logger_setup:114] add completed in 0.01s
+[2026-04-15 15:19:52,166] [INFO] [vector_store:86] [SYNC] Batch 4 fetched | size=100
+[2026-04-15 15:19:52,166] [INFO] [vector_store:115] [ADD] Adding 100 chunks
+[2026-04-15 15:19:52,181] [ERROR] [vector_store:166] [ADD ERROR] 'id'
+[2026-04-15 15:19:52,184] [ERROR] [logger_setup:110] add failed: module 'sys' has no attribute 'error'
+[2026-04-15 15:19:52,185] [INFO] [logger_setup:114] add completed in 0.02s
+[2026-04-15 15:19:52,272] [INFO] [vector_store:86] [SYNC] Batch 5 fetched | size=100
+[2026-04-15 15:19:52,272] [INFO] [vector_store:115] [ADD] Adding 100 chunks
+[2026-04-15 15:19:52,284] [ERROR] [vector_store:166] [ADD ERROR] 'id'
+[2026-04-15 15:19:52,284] [ERROR] [logger_setup:110] add failed: module 'sys' has no attribute 'error'
+[2026-04-15 15:19:52,284] [INFO] [logger_setup:114] add completed in 0.02s
+[2026-04-15 15:19:52,359] [INFO] [vector_store:86] [SYNC] Batch 6 fetched | size=100
+[2026-04-15 15:19:52,359] [INFO] [vector_store:115] [ADD] Adding 100 chunks
+[2026-04-15 15:19:52,381] [ERROR] [vector_store:166] [ADD ERROR] 'id'
+[2026-04-15 15:19:52,385] [ERROR] [logger_setup:110] add failed: module 'sys' has no attribute 'error'
+[2026-04-15 15:19:52,388] [INFO] [logger_setup:114] add completed in 0.02s
+[2026-04-15 15:19:52,405] [INFO] [vector_store:86] [SYNC] Batch 7 fetched | size=14
+[2026-04-15 15:19:52,405] [INFO] [vector_store:115] [ADD] Adding 14 chunks
+[2026-04-15 15:19:52,412] [ERROR] [vector_store:166] [ADD ERROR] 'id'
+[2026-04-15 15:19:52,413] [ERROR] [logger_setup:110] add failed: module 'sys' has no attribute 'error'
+[2026-04-15 15:19:52,416] [INFO] [logger_setup:114] add completed in 0.01s
+[2026-04-15 15:19:52,422] [INFO] [vector_store:83] [SYNC] No more new chunks found
+[2026-04-15 15:19:52,423] [INFO] [vector_store:97] [SYNC COMPLETE] Total new vectors added: 614 | Total index size: 614
+[2026-04-15 15:19:52,424] [INFO] [logger_setup:114] sync_from_db completed in 1.04s
+[2026-04-15 15:19:52,426] [INFO] [vector_store:280] [SAVE] Saving index to faiss_store
+[2026-04-15 15:19:52,433] [INFO] [vector_store:295] [SAVE COMPLETE]
+[2026-04-15 15:23:54,648] [INFO] [vector_store:31] [INIT] Initializing FAISS | dim=768, type=hnsw
+[2026-04-15 15:23:54,657] [INFO] [vector_store:46] [INIT] FAISS index initialized successfully
+[2026-04-15 15:23:54,657] [INFO] [vector_store:57] [SYNC] Starting incremental sync from DB
+[2026-04-15 15:23:54,810] [INFO] [vector_store:86] [SYNC] Batch 1 fetched | size=100
+[2026-04-15 15:23:54,810] [INFO] [vector_store:115] [ADD] Adding 100 chunks
+[2026-04-15 15:23:54,823] [ERROR] [vector_store:166] [ADD ERROR] 'id'
+[2026-04-15 15:23:54,823] [ERROR] [logger_setup:110] add failed: module 'sys' has no attribute 'error'
+[2026-04-15 15:23:54,823] [INFO] [logger_setup:114] add completed in 0.01s
+[2026-04-15 15:23:54,918] [INFO] [vector_store:86] [SYNC] Batch 2 fetched | size=100
+[2026-04-15 15:23:54,919] [INFO] [vector_store:115] [ADD] Adding 100 chunks
+[2026-04-15 15:23:54,919] [ERROR] [vector_store:166] [ADD ERROR] 'id'
+[2026-04-15 15:23:54,919] [ERROR] [logger_setup:110] add failed: module 'sys' has no attribute 'error'
+[2026-04-15 15:23:54,919] [INFO] [logger_setup:114] add completed in 0.01s
+[2026-04-15 15:23:55,017] [INFO] [vector_store:86] [SYNC] Batch 3 fetched | size=100
+[2026-04-15 15:23:55,021] [INFO] [vector_store:115] [ADD] Adding 100 chunks
+[2026-04-15 15:23:55,027] [ERROR] [vector_store:166] [ADD ERROR] 'id'
+[2026-04-15 15:23:55,027] [ERROR] [logger_setup:110] add failed: module 'sys' has no attribute 'error'
+[2026-04-15 15:23:55,035] [INFO] [logger_setup:114] add completed in 0.01s
+[2026-04-15 15:23:55,425] [INFO] [vector_store:86] [SYNC] Batch 4 fetched | size=100
+[2026-04-15 15:23:55,426] [INFO] [vector_store:115] [ADD] Adding 100 chunks
+[2026-04-15 15:23:55,441] [ERROR] [vector_store:166] [ADD ERROR] 'id'
+[2026-04-15 15:23:55,445] [ERROR] [logger_setup:110] add failed: module 'sys' has no attribute 'error'
+[2026-04-15 15:23:55,446] [INFO] [logger_setup:114] add completed in 0.02s
+[2026-04-15 15:23:55,514] [INFO] [vector_store:86] [SYNC] Batch 5 fetched | size=100
+[2026-04-15 15:23:55,529] [INFO] [vector_store:115] [ADD] Adding 100 chunks
+[2026-04-15 15:23:55,536] [ERROR] [vector_store:166] [ADD ERROR] 'id'
+[2026-04-15 15:23:55,546] [ERROR] [logger_setup:110] add failed: module 'sys' has no attribute 'error'
+[2026-04-15 15:23:55,548] [INFO] [logger_setup:114] add completed in 0.02s
+[2026-04-15 15:23:55,630] [INFO] [vector_store:86] [SYNC] Batch 6 fetched | size=100
+[2026-04-15 15:23:55,632] [INFO] [vector_store:115] [ADD] Adding 100 chunks
+[2026-04-15 15:23:55,645] [ERROR] [vector_store:166] [ADD ERROR] 'id'
+[2026-04-15 15:23:55,646] [ERROR] [logger_setup:110] add failed: module 'sys' has no attribute 'error'
+[2026-04-15 15:23:55,646] [INFO] [logger_setup:114] add completed in 0.02s
+[2026-04-15 15:23:55,667] [INFO] [vector_store:86] [SYNC] Batch 7 fetched | size=14
+[2026-04-15 15:23:55,672] [INFO] [vector_store:115] [ADD] Adding 14 chunks
+[2026-04-15 15:23:55,679] [ERROR] [vector_store:166] [ADD ERROR] 'id'
+[2026-04-15 15:23:55,681] [ERROR] [logger_setup:110] add failed: module 'sys' has no attribute 'error'
+[2026-04-15 15:23:55,683] [INFO] [logger_setup:114] add completed in 0.01s
+[2026-04-15 15:23:55,694] [INFO] [vector_store:83] [SYNC] No more new chunks found
+[2026-04-15 15:23:55,696] [INFO] [vector_store:97] [SYNC COMPLETE] Total new vectors added: 614 | Total index size: 614
+[2026-04-15 15:23:55,701] [INFO] [logger_setup:114] sync_from_db completed in 1.04s
+[2026-04-15 15:23:55,704] [INFO] [vector_store:280] [SAVE] Saving index to faiss_store
+[2026-04-15 15:23:55,718] [INFO] [vector_store:295] [SAVE COMPLETE]
+[2026-04-15 15:29:26,906] [INFO] [vector_store:31] [INIT] Initializing FAISS | dim=768, type=hnsw
+[2026-04-15 15:29:26,912] [INFO] [vector_store:46] [INIT] FAISS index initialized successfully
+[2026-04-15 15:29:26,917] [INFO] [vector_store:57] [SYNC] Starting incremental sync from DB
+[2026-04-15 15:29:27,066] [INFO] [vector_store:86] [SYNC] Batch 1 fetched | size=100
+[2026-04-15 15:29:27,067] [INFO] [vector_store:115] [ADD] Adding 100 chunks
+[2026-04-15 15:29:27,085] [ERROR] [vector_store:166] [ADD ERROR] 'id'
+[2026-04-15 15:29:27,088] [ERROR] [logger_setup:110] add failed: module 'sys' has no attribute 'error'
+[2026-04-15 15:29:27,090] [INFO] [logger_setup:114] add completed in 0.02s
+[2026-04-15 15:29:27,193] [INFO] [vector_store:86] [SYNC] Batch 2 fetched | size=100
+[2026-04-15 15:29:27,195] [INFO] [vector_store:115] [ADD] Adding 100 chunks
+[2026-04-15 15:29:27,204] [ERROR] [vector_store:166] [ADD ERROR] 'id'
+[2026-04-15 15:29:27,206] [ERROR] [logger_setup:110] add failed: module 'sys' has no attribute 'error'
+[2026-04-15 15:29:27,207] [INFO] [logger_setup:114] add completed in 0.01s
+[2026-04-15 15:29:27,295] [INFO] [vector_store:86] [SYNC] Batch 3 fetched | size=100
+[2026-04-15 15:29:27,295] [INFO] [vector_store:115] [ADD] Adding 100 chunks
+[2026-04-15 15:29:27,319] [ERROR] [vector_store:166] [ADD ERROR] 'id'
+[2026-04-15 15:29:27,319] [ERROR] [logger_setup:110] add failed: module 'sys' has no attribute 'error'
+[2026-04-15 15:29:27,319] [INFO] [logger_setup:114] add completed in 0.01s
+[2026-04-15 15:29:27,402] [INFO] [vector_store:86] [SYNC] Batch 4 fetched | size=100
+[2026-04-15 15:29:27,402] [INFO] [vector_store:115] [ADD] Adding 100 chunks
+[2026-04-15 15:29:27,426] [ERROR] [vector_store:166] [ADD ERROR] 'id'
+[2026-04-15 15:29:27,428] [ERROR] [logger_setup:110] add failed: module 'sys' has no attribute 'error'
+[2026-04-15 15:29:27,430] [INFO] [logger_setup:114] add completed in 0.02s
+[2026-04-15 15:29:27,512] [INFO] [vector_store:86] [SYNC] Batch 5 fetched | size=100
+[2026-04-15 15:29:27,512] [INFO] [vector_store:115] [ADD] Adding 100 chunks
+[2026-04-15 15:29:27,522] [ERROR] [vector_store:166] [ADD ERROR] 'id'
+[2026-04-15 15:29:27,522] [ERROR] [logger_setup:110] add failed: module 'sys' has no attribute 'error'
+[2026-04-15 15:29:27,537] [INFO] [logger_setup:114] add completed in 0.02s
+[2026-04-15 15:29:27,608] [INFO] [vector_store:86] [SYNC] Batch 6 fetched | size=100
+[2026-04-15 15:29:27,608] [INFO] [vector_store:115] [ADD] Adding 100 chunks
+[2026-04-15 15:29:27,624] [ERROR] [vector_store:166] [ADD ERROR] 'id'
+[2026-04-15 15:29:27,624] [ERROR] [logger_setup:110] add failed: module 'sys' has no attribute 'error'
+[2026-04-15 15:29:27,624] [INFO] [logger_setup:114] add completed in 0.02s
+[2026-04-15 15:29:27,660] [INFO] [vector_store:86] [SYNC] Batch 7 fetched | size=14
+[2026-04-15 15:29:27,663] [INFO] [vector_store:115] [ADD] Adding 14 chunks
+[2026-04-15 15:29:27,670] [ERROR] [vector_store:166] [ADD ERROR] 'id'
+[2026-04-15 15:29:27,671] [ERROR] [logger_setup:110] add failed: module 'sys' has no attribute 'error'
+[2026-04-15 15:29:27,673] [INFO] [logger_setup:114] add completed in 0.01s
+[2026-04-15 15:29:27,681] [INFO] [vector_store:83] [SYNC] No more new chunks found
+[2026-04-15 15:29:27,684] [INFO] [vector_store:97] [SYNC COMPLETE] Total new vectors added: 614 | Total index size: 614
+[2026-04-15 15:29:27,685] [INFO] [logger_setup:114] sync_from_db completed in 0.77s
+[2026-04-15 15:29:27,686] [INFO] [vector_store:280] [SAVE] Saving index to faiss_store
+[2026-04-15 15:29:27,695] [INFO] [vector_store:295] [SAVE COMPLETE]
+[2026-04-15 15:30:35,139] [INFO] [vector_store:31] [INIT] Initializing FAISS HNSW | dim=768, M=32
+[2026-04-15 15:30:35,141] [INFO] [vector_store:44] [INIT COMPLETE] FAISS ready
+[2026-04-15 15:30:35,142] [INFO] [vector_store:55] [SYNC] Starting incremental DB sync
+[2026-04-15 15:30:35,556] [INFO] [vector_store:75] [SYNC] Processing batch: size=100
+[2026-04-15 15:30:35,565] [INFO] [logger_setup:114] add completed in 0.01s
+[2026-04-15 15:30:35,645] [INFO] [vector_store:75] [SYNC] Processing batch: size=100
+[2026-04-15 15:30:35,653] [INFO] [logger_setup:114] add completed in 0.01s
+[2026-04-15 15:30:35,728] [INFO] [vector_store:75] [SYNC] Processing batch: size=100
+[2026-04-15 15:30:35,743] [INFO] [logger_setup:114] add completed in 0.01s
+[2026-04-15 15:30:35,819] [INFO] [vector_store:75] [SYNC] Processing batch: size=100
+[2026-04-15 15:30:35,833] [INFO] [logger_setup:114] add completed in 0.01s
+[2026-04-15 15:30:35,906] [INFO] [vector_store:75] [SYNC] Processing batch: size=100
+[2026-04-15 15:30:35,922] [INFO] [logger_setup:114] add completed in 0.01s
+[2026-04-15 15:30:36,006] [INFO] [vector_store:75] [SYNC] Processing batch: size=100
+[2026-04-15 15:30:36,024] [INFO] [logger_setup:114] add completed in 0.01s
+[2026-04-15 15:30:36,049] [INFO] [vector_store:75] [SYNC] Processing batch: size=14
+[2026-04-15 15:30:36,056] [INFO] [logger_setup:114] add completed in 0.00s
+[2026-04-15 15:30:36,062] [INFO] [vector_store:72] [SYNC] No new chunks found
+[2026-04-15 15:30:36,062] [INFO] [vector_store:83] [SYNC COMPLETE] Total synced: 614 | Index Total: 614
+[2026-04-15 15:30:36,062] [INFO] [logger_setup:114] sync_from_db completed in 0.92s
+[2026-04-15 15:30:36,062] [INFO] [vector_store:213] [SAVE] Persisting index to faiss_store
+[2026-04-15 15:30:36,081] [INFO] [vector_store:224] [SAVE COMPLETE]
+[2026-04-15 15:36:02,195] [INFO] [vector_store:31] [INIT] Initializing FAISS HNSW | dim=768, M=32
+[2026-04-15 15:36:02,202] [INFO] [vector_store:44] [INIT COMPLETE] FAISS ready
+[2026-04-15 15:36:02,204] [INFO] [embeddings:23] [INIT] Embedder | model=nomic-embed-text, concurrency=10
+[2026-04-15 15:36:12,458] [INFO] [logger_setup:128] apply completed in 0.01s
+[2026-04-15 15:36:12,544] [ERROR] [logger_setup:110] expand_query failed: module 'sys' has no attribute 'error'
+[2026-04-15 15:36:12,544] [INFO] [logger_setup:114] expand_query completed in 0.10s
+[2026-04-15 15:36:12,666] [INFO] [logger_setup:114] get_unique_sections completed in 0.11s
+[2026-04-15 15:36:14,030] [INFO] [logger_setup:114] prepare_context completed in 1.48s
+[2026-04-15 15:36:14,030] [ERROR] [logger_setup:110] classify_expanded_queries failed: module 'sys' has no attribute 'error'
+[2026-04-15 15:36:14,036] [INFO] [logger_setup:114] classify_expanded_queries completed in 0.00s
+[2026-04-15 15:36:14,039] [INFO] [logger_setup:114] main_retrieval_flow completed in 0.00s
+[2026-04-15 17:44:05,815] [INFO] [vector_store:31] [INIT] Initializing FAISS HNSW | dim=768, M=32
+[2026-04-15 17:44:05,820] [INFO] [vector_store:44] [INIT COMPLETE] FAISS ready
+[2026-04-15 17:44:05,821] [INFO] [embeddings:23] [INIT] Embedder | model=nomic-embed-text, concurrency=10
+[2026-04-15 17:44:16,495] [INFO] [logger_setup:128] apply completed in 0.01s
+[2026-04-15 17:44:16,658] [ERROR] [logger_setup:110] expand_query failed: module 'sys' has no attribute 'error'
+[2026-04-15 17:44:16,658] [INFO] [logger_setup:114] expand_query completed in 0.17s
+[2026-04-15 17:44:16,658] [ERROR] [exception_handler:52] Error in [C:\Users\prasa\AppData\Local\Temp\ipykernel_852\876192035.py] at line [37] → Message: 'NoneType' object is not iterable
+[2026-04-15 17:49:50,444] [INFO] [vector_store:31] [INIT] Initializing FAISS HNSW | dim=768, M=32
+[2026-04-15 17:49:50,461] [INFO] [vector_store:44] [INIT COMPLETE] FAISS ready
+[2026-04-15 17:49:50,461] [INFO] [embeddings:23] [INIT] Embedder | model=nomic-embed-text, concurrency=10
+[2026-04-15 17:50:00,407] [INFO] [logger_setup:128] apply completed in 0.00s
+[2026-04-15 17:50:00,486] [ERROR] [logger_setup:110] expand_query failed: module 'sys' has no attribute 'error'
+[2026-04-15 17:50:00,487] [INFO] [logger_setup:114] expand_query completed in 0.08s
+[2026-04-15 17:50:01,051] [INFO] [logger_setup:114] get_unique_sections completed in 0.57s
+[2026-04-15 17:50:02,792] [INFO] [logger_setup:114] prepare_context completed in 2.30s
+[2026-04-15 17:50:02,899] [INFO] [logger_setup:114] classify_expanded_queries completed in 0.10s
+[2026-04-15 17:50:02,904] [INFO] [vector_store:55] [SYNC] Starting incremental DB sync
+[2026-04-15 17:50:03,360] [INFO] [vector_store:75] [SYNC] Processing batch: size=100
+[2026-04-15 17:50:03,379] [INFO] [logger_setup:114] add completed in 0.01s
+[2026-04-15 17:50:03,529] [INFO] [vector_store:75] [SYNC] Processing batch: size=100
+[2026-04-15 17:50:03,541] [INFO] [logger_setup:114] add completed in 0.01s
+[2026-04-15 17:50:03,643] [INFO] [vector_store:75] [SYNC] Processing batch: size=100
+[2026-04-15 17:50:03,659] [INFO] [logger_setup:114] add completed in 0.01s
+[2026-04-15 17:50:03,777] [INFO] [vector_store:75] [SYNC] Processing batch: size=100
+[2026-04-15 17:50:03,791] [INFO] [logger_setup:114] add completed in 0.01s
+[2026-04-15 17:50:04,199] [INFO] [vector_store:75] [SYNC] Processing batch: size=100
+[2026-04-15 17:50:04,215] [INFO] [logger_setup:114] add completed in 0.01s
+[2026-04-15 17:50:04,315] [INFO] [vector_store:75] [SYNC] Processing batch: size=100
+[2026-04-15 17:50:04,333] [INFO] [logger_setup:114] add completed in 0.02s
+[2026-04-15 17:50:04,364] [INFO] [vector_store:75] [SYNC] Processing batch: size=14
+[2026-04-15 17:50:04,374] [INFO] [logger_setup:114] add completed in 0.01s
+[2026-04-15 17:50:04,395] [INFO] [vector_store:72] [SYNC] No new chunks found
+[2026-04-15 17:50:04,401] [INFO] [vector_store:83] [SYNC COMPLETE] Total synced: 614 | Index Total: 614
+[2026-04-15 17:50:04,404] [INFO] [logger_setup:114] sync_from_db completed in 1.50s
+[2026-04-15 17:50:04,410] [ERROR] [exception_handler:52] Error in [f:\Loan_Details_RAG_System1\src\RAG\Strategies_RAG_Inference\retriever.py] at line [64] → Message: name 'BM25Okapi' is not defined
+[2026-04-15 17:50:04,416] [ERROR] [logger_setup:110] main_retrieval_flow failed: Error in [f:\Loan_Details_RAG_System1\src\RAG\Strategies_RAG_Inference\retriever.py] at line [64] → Message: name 'BM25Okapi' is not defined
+[2026-04-15 17:50:04,418] [INFO] [logger_setup:114] main_retrieval_flow completed in 1.51s
+[2026-04-15 17:52:46,731] [INFO] [vector_store:31] [INIT] Initializing FAISS HNSW | dim=768, M=32
+[2026-04-15 17:52:46,738] [INFO] [vector_store:44] [INIT COMPLETE] FAISS ready
+[2026-04-15 17:52:46,740] [INFO] [embeddings:23] [INIT] Embedder | model=nomic-embed-text, concurrency=10
+[2026-04-15 17:52:57,905] [INFO] [logger_setup:128] apply completed in 0.01s
+[2026-04-15 17:52:57,989] [ERROR] [logger_setup:110] expand_query failed: module 'sys' has no attribute 'error'
+[2026-04-15 17:52:57,989] [INFO] [logger_setup:114] expand_query completed in 0.09s
+[2026-04-15 17:52:58,076] [INFO] [logger_setup:114] get_unique_sections completed in 0.07s
+[2026-04-15 17:52:58,556] [INFO] [logger_setup:114] prepare_context completed in 0.55s
+[2026-04-15 17:52:58,639] [INFO] [logger_setup:114] classify_expanded_queries completed in 0.08s
+[2026-04-15 17:52:58,639] [INFO] [vector_store:55] [SYNC] Starting incremental DB sync
+[2026-04-15 17:52:58,754] [INFO] [vector_store:75] [SYNC] Processing batch: size=100
+[2026-04-15 17:52:58,765] [INFO] [logger_setup:114] add completed in 0.01s
+[2026-04-15 17:52:58,859] [INFO] [vector_store:75] [SYNC] Processing batch: size=100
+[2026-04-15 17:52:58,867] [INFO] [logger_setup:114] add completed in 0.01s
+[2026-04-15 17:52:58,970] [INFO] [vector_store:75] [SYNC] Processing batch: size=100
+[2026-04-15 17:52:58,982] [INFO] [logger_setup:114] add completed in 0.01s
+[2026-04-15 17:52:59,076] [INFO] [vector_store:75] [SYNC] Processing batch: size=100
+[2026-04-15 17:52:59,091] [INFO] [logger_setup:114] add completed in 0.01s
+[2026-04-15 17:52:59,207] [INFO] [vector_store:75] [SYNC] Processing batch: size=100
+[2026-04-15 17:52:59,222] [INFO] [logger_setup:114] add completed in 0.01s
+[2026-04-15 17:52:59,326] [INFO] [vector_store:75] [SYNC] Processing batch: size=100
+[2026-04-15 17:52:59,347] [INFO] [logger_setup:114] add completed in 0.02s
+[2026-04-15 17:52:59,367] [INFO] [vector_store:75] [SYNC] Processing batch: size=14
+[2026-04-15 17:52:59,372] [INFO] [logger_setup:114] add completed in 0.00s
+[2026-04-15 17:52:59,381] [INFO] [vector_store:72] [SYNC] No new chunks found
+[2026-04-15 17:52:59,382] [INFO] [vector_store:83] [SYNC COMPLETE] Total synced: 614 | Index Total: 614
+[2026-04-15 17:52:59,386] [INFO] [logger_setup:114] sync_from_db completed in 0.74s
+[2026-04-15 17:52:59,390] [ERROR] [exception_handler:52] Error in [f:\Loan_Details_RAG_System1\src\RAG\Strategies_RAG_Inference\retriever.py] at line [64] → Message: name 'BM25Okapi' is not defined
+[2026-04-15 17:52:59,395] [ERROR] [logger_setup:110] main_retrieval_flow failed: Error in [f:\Loan_Details_RAG_System1\src\RAG\Strategies_RAG_Inference\retriever.py] at line [64] → Message: name 'BM25Okapi' is not defined
+[2026-04-15 17:52:59,396] [INFO] [logger_setup:114] main_retrieval_flow completed in 0.75s
+[2026-04-15 18:03:28,630] [INFO] [vector_store:31] [INIT] Initializing FAISS HNSW | dim=768, M=32
+[2026-04-15 18:03:28,650] [INFO] [vector_store:44] [INIT COMPLETE] FAISS ready
+[2026-04-15 18:03:28,654] [INFO] [embeddings:23] [INIT] Embedder | model=nomic-embed-text, concurrency=10
+[2026-04-15 18:03:39,532] [INFO] [logger_setup:128] apply completed in 0.01s
+[2026-04-15 18:03:39,681] [ERROR] [logger_setup:110] expand_query failed: module 'sys' has no attribute 'error'
+[2026-04-15 18:03:39,681] [INFO] [logger_setup:114] expand_query completed in 0.16s
+[2026-04-15 18:03:39,892] [INFO] [logger_setup:114] get_unique_sections completed in 0.21s
+[2026-04-15 18:03:41,093] [INFO] [logger_setup:114] prepare_context completed in 1.41s
+[2026-04-15 18:03:41,227] [INFO] [logger_setup:114] classify_expanded_queries completed in 0.12s
+[2026-04-15 18:03:41,237] [INFO] [vector_store:55] [SYNC] Starting incremental DB sync
+[2026-04-15 18:03:41,452] [INFO] [vector_store:75] [SYNC] Processing batch: size=100
+[2026-04-15 18:03:41,468] [INFO] [logger_setup:114] add completed in 0.01s
+[2026-04-15 18:03:41,578] [INFO] [vector_store:75] [SYNC] Processing batch: size=100
+[2026-04-15 18:03:41,588] [INFO] [logger_setup:114] add completed in 0.01s
+[2026-04-15 18:03:41,696] [INFO] [vector_store:75] [SYNC] Processing batch: size=100
+[2026-04-15 18:03:41,706] [INFO] [logger_setup:114] add completed in 0.01s
+[2026-04-15 18:03:41,821] [INFO] [vector_store:75] [SYNC] Processing batch: size=100
+[2026-04-15 18:03:41,822] [INFO] [logger_setup:114] add completed in 0.01s
+[2026-04-15 18:03:41,938] [INFO] [vector_store:75] [SYNC] Processing batch: size=100
+[2026-04-15 18:03:41,942] [INFO] [logger_setup:114] add completed in 0.01s
+[2026-04-15 18:03:42,066] [INFO] [vector_store:75] [SYNC] Processing batch: size=100
+[2026-04-15 18:03:42,084] [INFO] [logger_setup:114] add completed in 0.02s
+[2026-04-15 18:03:42,098] [INFO] [vector_store:75] [SYNC] Processing batch: size=14
+[2026-04-15 18:03:42,110] [INFO] [logger_setup:114] add completed in 0.00s
+[2026-04-15 18:03:42,121] [INFO] [vector_store:72] [SYNC] No new chunks found
+[2026-04-15 18:03:42,122] [INFO] [vector_store:83] [SYNC COMPLETE] Total synced: 614 | Index Total: 614
+[2026-04-15 18:03:42,123] [INFO] [logger_setup:114] sync_from_db completed in 0.89s
+[2026-04-15 18:03:42,126] [ERROR] [exception_handler:52] Error in [f:\Loan_Details_RAG_System1\src\RAG\Strategies_RAG_Inference\retriever.py] at line [64] → Message: name 'BM25Okapi' is not defined
+[2026-04-15 18:03:42,126] [ERROR] [logger_setup:110] main_retrieval_flow failed: Error in [f:\Loan_Details_RAG_System1\src\RAG\Strategies_RAG_Inference\retriever.py] at line [64] → Message: name 'BM25Okapi' is not defined
+[2026-04-15 18:03:42,132] [INFO] [logger_setup:114] main_retrieval_flow completed in 0.90s
+[2026-04-15 18:42:50,401] [INFO] [vector_store:31] [INIT] Initializing FAISS HNSW | dim=768, M=32
+[2026-04-15 18:42:50,424] [INFO] [vector_store:44] [INIT COMPLETE] FAISS ready
+[2026-04-15 18:42:50,427] [INFO] [embeddings:23] [INIT] Embedder | model=nomic-embed-text, concurrency=10
+[2026-04-15 18:42:50,431] [INFO] [vector_store:55] [SYNC] Starting incremental DB sync
+[2026-04-15 18:42:50,831] [INFO] [vector_store:75] [SYNC] Processing batch: size=100
+[2026-04-15 18:42:50,851] [INFO] [logger_setup:114] add completed in 0.02s
+[2026-04-15 18:42:50,972] [INFO] [vector_store:75] [SYNC] Processing batch: size=100
+[2026-04-15 18:42:50,987] [INFO] [logger_setup:114] add completed in 0.01s
+[2026-04-15 18:42:51,102] [INFO] [vector_store:75] [SYNC] Processing batch: size=100
+[2026-04-15 18:42:51,119] [INFO] [logger_setup:114] add completed in 0.01s
+[2026-04-15 18:42:51,236] [INFO] [vector_store:75] [SYNC] Processing batch: size=100
+[2026-04-15 18:42:51,251] [INFO] [logger_setup:114] add completed in 0.01s
+[2026-04-15 18:42:51,353] [INFO] [vector_store:75] [SYNC] Processing batch: size=100
+[2026-04-15 18:42:51,368] [INFO] [logger_setup:114] add completed in 0.01s
+[2026-04-15 18:42:51,452] [INFO] [vector_store:75] [SYNC] Processing batch: size=100
+[2026-04-15 18:42:51,467] [INFO] [logger_setup:114] add completed in 0.01s
+[2026-04-15 18:42:51,497] [INFO] [vector_store:75] [SYNC] Processing batch: size=14
+[2026-04-15 18:42:51,502] [INFO] [logger_setup:114] add completed in 0.00s
+[2026-04-15 18:42:51,512] [INFO] [vector_store:72] [SYNC] No new chunks found
+[2026-04-15 18:42:51,513] [INFO] [vector_store:83] [SYNC COMPLETE] Total synced: 614 | Index Total: 614
+[2026-04-15 18:42:51,515] [INFO] [logger_setup:114] sync_from_db completed in 1.08s
+[2026-04-15 18:42:51,526] [ERROR] [logger_setup:110] retrieve_batch failed: Error in [C:\Users\prasa\AppData\Local\Temp\ipykernel_18028\9158247.py] at line [135] → Message: 'DocumentEmbedder' object has no attribute 'embed_query'
+[2026-04-15 18:42:51,528] [INFO] [logger_setup:114] retrieve_batch completed in 1.10s
+[2026-04-15 18:46:43,620] [INFO] [vector_store:31] [INIT] Initializing FAISS HNSW | dim=768, M=32
+[2026-04-15 18:46:43,633] [INFO] [vector_store:44] [INIT COMPLETE] FAISS ready
+[2026-04-15 18:46:43,637] [INFO] [embeddings:23] [INIT] Embedder | model=nomic-embed-text, concurrency=10
+[2026-04-15 18:46:43,642] [INFO] [vector_store:55] [SYNC] Starting incremental DB sync
+[2026-04-15 18:46:44,118] [INFO] [vector_store:75] [SYNC] Processing batch: size=100
+[2026-04-15 18:46:44,118] [INFO] [logger_setup:114] add completed in 0.01s
+[2026-04-15 18:46:44,227] [INFO] [vector_store:75] [SYNC] Processing batch: size=100
+[2026-04-15 18:46:44,227] [INFO] [logger_setup:114] add completed in 0.01s
+[2026-04-15 18:46:44,347] [INFO] [vector_store:75] [SYNC] Processing batch: size=100
+[2026-04-15 18:46:44,371] [INFO] [logger_setup:114] add completed in 0.01s
+[2026-04-15 18:46:44,468] [INFO] [vector_store:75] [SYNC] Processing batch: size=100
+[2026-04-15 18:46:44,486] [INFO] [logger_setup:114] add completed in 0.01s
+[2026-04-15 18:46:44,572] [INFO] [vector_store:75] [SYNC] Processing batch: size=100
+[2026-04-15 18:46:44,586] [INFO] [logger_setup:114] add completed in 0.01s
+[2026-04-15 18:46:44,669] [INFO] [vector_store:75] [SYNC] Processing batch: size=100
+[2026-04-15 18:46:44,683] [INFO] [logger_setup:114] add completed in 0.01s
+[2026-04-15 18:46:44,706] [INFO] [vector_store:75] [SYNC] Processing batch: size=14
+[2026-04-15 18:46:44,711] [INFO] [logger_setup:114] add completed in 0.00s
+[2026-04-15 18:46:44,718] [INFO] [vector_store:72] [SYNC] No new chunks found
+[2026-04-15 18:46:44,723] [INFO] [vector_store:83] [SYNC COMPLETE] Total synced: 614 | Index Total: 614
+[2026-04-15 18:46:44,725] [INFO] [logger_setup:114] sync_from_db completed in 1.08s
+[2026-04-15 18:46:44,735] [ERROR] [logger_setup:110] retrieve_batch failed: Error in [C:\Users\prasa\AppData\Local\Temp\ipykernel_18028\3748116837.py] at line [105] → Message: 'DocumentEmbedder' object has no attribute 'embed_query'
+[2026-04-15 18:46:44,736] [INFO] [logger_setup:114] retrieve_batch completed in 1.10s
+[2026-04-15 18:55:55,340] [INFO] [vector_store:31] [INIT] Initializing FAISS HNSW | dim=768, M=32
+[2026-04-15 18:55:55,349] [INFO] [vector_store:44] [INIT COMPLETE] FAISS ready
+[2026-04-15 18:55:55,356] [INFO] [embeddings:23] [INIT] Embedder | model=nomic-embed-text, concurrency=10
+[2026-04-15 18:55:55,364] [INFO] [vector_store:55] [SYNC] Starting incremental DB sync
+[2026-04-15 18:55:55,543] [INFO] [vector_store:75] [SYNC] Processing batch: size=100
+[2026-04-15 18:55:55,548] [INFO] [logger_setup:114] add completed in 0.01s
+[2026-04-15 18:55:55,647] [INFO] [vector_store:75] [SYNC] Processing batch: size=100
+[2026-04-15 18:55:55,663] [INFO] [logger_setup:114] add completed in 0.01s
+[2026-04-15 18:55:55,764] [INFO] [vector_store:75] [SYNC] Processing batch: size=100
+[2026-04-15 18:55:55,775] [INFO] [logger_setup:114] add completed in 0.01s
+[2026-04-15 18:55:55,872] [INFO] [vector_store:75] [SYNC] Processing batch: size=100
+[2026-04-15 18:55:55,890] [INFO] [logger_setup:114] add completed in 0.01s
+[2026-04-15 18:55:55,983] [INFO] [vector_store:75] [SYNC] Processing batch: size=100
+[2026-04-15 18:55:56,001] [INFO] [logger_setup:114] add completed in 0.01s
+[2026-04-15 18:55:56,077] [INFO] [vector_store:75] [SYNC] Processing batch: size=100
+[2026-04-15 18:55:56,113] [INFO] [logger_setup:114] add completed in 0.02s
+[2026-04-15 18:55:56,140] [INFO] [vector_store:75] [SYNC] Processing batch: size=14
+[2026-04-15 18:55:56,146] [INFO] [logger_setup:114] add completed in 0.00s
+[2026-04-15 18:55:56,156] [INFO] [vector_store:72] [SYNC] No new chunks found
+[2026-04-15 18:55:56,157] [INFO] [vector_store:83] [SYNC COMPLETE] Total synced: 614 | Index Total: 614
+[2026-04-15 18:55:56,160] [INFO] [logger_setup:114] sync_from_db completed in 0.80s
+[2026-04-15 18:55:56,172] [ERROR] [logger_setup:110] retrieve_batch failed: Error in [C:\Users\prasa\AppData\Local\Temp\ipykernel_18028\2528972850.py] at line [124] → Message: DocumentEmbedder._embed_single() missing 1 required positional argument: 'index'
+[2026-04-15 18:55:56,172] [INFO] [logger_setup:114] retrieve_batch completed in 0.81s
+[2026-04-15 20:22:18,103] [INFO] [vector_store:31] [INIT] Initializing FAISS HNSW | dim=768, M=32
+[2026-04-15 20:22:18,121] [INFO] [vector_store:44] [INIT COMPLETE] FAISS ready
+[2026-04-15 20:22:18,125] [INFO] [embeddings:23] [INIT] Embedder | model=nomic-embed-text, concurrency=10
+[2026-04-15 20:22:18,133] [INFO] [vector_store:55] [SYNC] Starting incremental DB sync
+[2026-04-15 20:22:18,333] [INFO] [vector_store:75] [SYNC] Processing batch: size=100
+[2026-04-15 20:22:18,345] [INFO] [logger_setup:114] add completed in 0.01s
+[2026-04-15 20:22:18,449] [INFO] [vector_store:75] [SYNC] Processing batch: size=100
+[2026-04-15 20:22:18,461] [INFO] [logger_setup:114] add completed in 0.01s
+[2026-04-15 20:22:18,567] [INFO] [vector_store:75] [SYNC] Processing batch: size=100
+[2026-04-15 20:22:18,580] [INFO] [logger_setup:114] add completed in 0.01s
+[2026-04-15 20:22:18,670] [INFO] [vector_store:75] [SYNC] Processing batch: size=100
+[2026-04-15 20:22:18,692] [INFO] [logger_setup:114] add completed in 0.01s
+[2026-04-15 20:22:18,779] [INFO] [vector_store:75] [SYNC] Processing batch: size=100
+[2026-04-15 20:22:18,797] [INFO] [logger_setup:114] add completed in 0.01s
+[2026-04-15 20:22:18,907] [INFO] [vector_store:75] [SYNC] Processing batch: size=100
+[2026-04-15 20:22:18,919] [INFO] [logger_setup:114] add completed in 0.01s
+[2026-04-15 20:22:18,954] [INFO] [vector_store:75] [SYNC] Processing batch: size=14
+[2026-04-15 20:22:18,963] [INFO] [logger_setup:114] add completed in 0.00s
+[2026-04-15 20:22:18,971] [INFO] [vector_store:72] [SYNC] No new chunks found
+[2026-04-15 20:22:18,973] [INFO] [vector_store:83] [SYNC COMPLETE] Total synced: 614 | Index Total: 614
+[2026-04-15 20:22:18,974] [INFO] [logger_setup:114] sync_from_db completed in 0.84s
+[2026-04-15 20:22:19,008] [ERROR] [logger_setup:110] retrieve_batch failed: Error in [C:\Users\prasa\AppData\Local\Temp\ipykernel_18028\2528972850.py] at line [124] → Message: DocumentEmbedder._embed_single() missing 1 required positional argument: 'index'
+[2026-04-15 20:22:19,013] [INFO] [logger_setup:114] retrieve_batch completed in 0.88s
+[2026-04-15 20:50:09,730] [INFO] [vector_store:31] [INIT] Initializing FAISS HNSW | dim=768, M=32
+[2026-04-15 20:50:09,730] [INFO] [vector_store:44] [INIT COMPLETE] FAISS ready
+[2026-04-15 20:51:21,859] [INFO] [vector_store:55] [SYNC] Starting incremental DB sync
+[2026-04-15 20:51:22,523] [INFO] [vector_store:75] [SYNC] Processing batch: size=100
+[2026-04-15 20:51:22,535] [INFO] [logger_setup:114] add completed in 0.01s
+[2026-04-15 20:51:22,655] [INFO] [vector_store:75] [SYNC] Processing batch: size=100
+[2026-04-15 20:51:22,672] [INFO] [logger_setup:114] add completed in 0.01s
+[2026-04-15 20:51:22,774] [INFO] [vector_store:75] [SYNC] Processing batch: size=100
+[2026-04-15 20:51:22,786] [INFO] [logger_setup:114] add completed in 0.01s
+[2026-04-15 20:51:22,889] [INFO] [vector_store:75] [SYNC] Processing batch: size=100
+[2026-04-15 20:51:22,895] [INFO] [logger_setup:114] add completed in 0.01s
+[2026-04-15 20:51:22,997] [INFO] [vector_store:75] [SYNC] Processing batch: size=100
+[2026-04-15 20:51:23,019] [INFO] [logger_setup:114] add completed in 0.01s
+[2026-04-15 20:51:23,116] [INFO] [vector_store:75] [SYNC] Processing batch: size=100
+[2026-04-15 20:51:23,133] [INFO] [logger_setup:114] add completed in 0.01s
+[2026-04-15 20:51:23,153] [INFO] [vector_store:75] [SYNC] Processing batch: size=14
+[2026-04-15 20:51:23,158] [INFO] [logger_setup:114] add completed in 0.00s
+[2026-04-15 20:51:23,169] [INFO] [vector_store:72] [SYNC] No new chunks found
+[2026-04-15 20:51:23,171] [INFO] [vector_store:83] [SYNC COMPLETE] Total synced: 614 | Index Total: 614
+[2026-04-15 20:51:23,174] [INFO] [logger_setup:114] sync_from_db completed in 1.31s
+[2026-04-15 20:51:24,169] [INFO] [logger_setup:114] search completed in 0.01s
+[2026-04-15 20:51:24,221] [INFO] [logger_setup:114] search completed in 0.00s
+[2026-04-15 20:51:24,229] [INFO] [logger_setup:114] retrieve_batch completed in 2.37s
+[2026-04-15 21:08:32,231] [INFO] [vector_store:31] [INIT] Initializing FAISS HNSW | dim=768, M=32
+[2026-04-15 21:08:32,231] [INFO] [vector_store:44] [INIT COMPLETE] FAISS ready
+[2026-04-15 21:08:32,243] [INFO] [vector_store:55] [SYNC] Starting incremental DB sync
+[2026-04-15 21:08:32,739] [INFO] [vector_store:75] [SYNC] Processing batch: size=100
+[2026-04-15 21:08:32,739] [INFO] [logger_setup:114] add completed in 0.01s
+[2026-04-15 21:08:32,830] [INFO] [vector_store:75] [SYNC] Processing batch: size=100
+[2026-04-15 21:08:32,844] [INFO] [logger_setup:114] add completed in 0.01s
+[2026-04-15 21:08:32,936] [INFO] [vector_store:75] [SYNC] Processing batch: size=100
+[2026-04-15 21:08:32,947] [INFO] [logger_setup:114] add completed in 0.01s
+[2026-04-15 21:08:33,032] [INFO] [vector_store:75] [SYNC] Processing batch: size=100
+[2026-04-15 21:08:33,046] [INFO] [logger_setup:114] add completed in 0.01s
+[2026-04-15 21:08:33,133] [INFO] [vector_store:75] [SYNC] Processing batch: size=100
+[2026-04-15 21:08:33,150] [INFO] [logger_setup:114] add completed in 0.01s
+[2026-04-15 21:08:33,230] [INFO] [vector_store:75] [SYNC] Processing batch: size=100
+[2026-04-15 21:08:33,245] [INFO] [logger_setup:114] add completed in 0.01s
+[2026-04-15 21:08:33,268] [INFO] [vector_store:75] [SYNC] Processing batch: size=14
+[2026-04-15 21:08:33,275] [INFO] [logger_setup:114] add completed in 0.00s
+[2026-04-15 21:08:33,283] [INFO] [vector_store:72] [SYNC] No new chunks found
+[2026-04-15 21:08:33,285] [INFO] [vector_store:83] [SYNC COMPLETE] Total synced: 614 | Index Total: 614
+[2026-04-15 21:08:33,287] [INFO] [logger_setup:114] sync_from_db completed in 1.04s
+[2026-04-15 21:08:34,123] [INFO] [logger_setup:114] search completed in 0.00s
+[2026-04-15 21:08:34,192] [INFO] [logger_setup:114] search completed in 0.00s
+[2026-04-15 21:08:34,192] [INFO] [logger_setup:114] retrieve_batch completed in 1.95s
+[2026-04-15 21:17:03,251] [INFO] [vector_store:31] [INIT] Initializing FAISS HNSW | dim=768, M=32
+[2026-04-15 21:17:03,251] [INFO] [vector_store:44] [INIT COMPLETE] FAISS ready
+[2026-04-15 21:17:03,251] [INFO] [vector_store:55] [SYNC] Starting incremental DB sync
+[2026-04-15 21:17:03,809] [INFO] [vector_store:75] [SYNC] Processing batch: size=100
+[2026-04-15 21:17:03,809] [INFO] [logger_setup:114] add completed in 0.01s
+[2026-04-15 21:17:03,908] [INFO] [vector_store:75] [SYNC] Processing batch: size=100
+[2026-04-15 21:17:03,930] [INFO] [logger_setup:114] add completed in 0.01s
+[2026-04-15 21:17:04,011] [INFO] [vector_store:75] [SYNC] Processing batch: size=100
+[2026-04-15 21:17:04,031] [INFO] [logger_setup:114] add completed in 0.01s
+[2026-04-15 21:17:04,129] [INFO] [vector_store:75] [SYNC] Processing batch: size=100
+[2026-04-15 21:17:04,142] [INFO] [logger_setup:114] add completed in 0.01s
+[2026-04-15 21:17:04,233] [INFO] [vector_store:75] [SYNC] Processing batch: size=100
+[2026-04-15 21:17:04,251] [INFO] [logger_setup:114] add completed in 0.01s
+[2026-04-15 21:17:04,351] [INFO] [vector_store:75] [SYNC] Processing batch: size=100
+[2026-04-15 21:17:04,366] [INFO] [logger_setup:114] add completed in 0.01s
+[2026-04-15 21:17:04,386] [INFO] [vector_store:75] [SYNC] Processing batch: size=14
+[2026-04-15 21:17:04,392] [INFO] [logger_setup:114] add completed in 0.00s
+[2026-04-15 21:17:04,399] [INFO] [vector_store:72] [SYNC] No new chunks found
+[2026-04-15 21:17:04,402] [INFO] [vector_store:83] [SYNC COMPLETE] Total synced: 614 | Index Total: 614
+[2026-04-15 21:17:04,405] [INFO] [logger_setup:114] sync_from_db completed in 1.14s
+[2026-04-15 21:17:05,636] [INFO] [logger_setup:114] search completed in 0.00s
+[2026-04-15 21:17:05,706] [INFO] [logger_setup:114] search completed in 0.00s
+[2026-04-15 21:17:05,706] [INFO] [logger_setup:114] retrieve_batch completed in 2.45s

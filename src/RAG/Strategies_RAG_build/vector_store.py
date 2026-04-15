@@ -2,202 +2,241 @@ import faiss
 import numpy as np
 import asyncio
 import pickle
-from typing import List, Dict, Any, Optional
-from sqlalchemy import select
+import sys
+from typing import List, Dict, Any, Optional, Union
 
-from src.Utils.logger_setup import get_log, track_performance
-from src.Utils.exception_handler import CustomException
+from sqlalchemy import select
 from src.RAG.models import ChunkModel
 from src.db.main import get_session
+from src.Utils.logger_setup import setup_logger, current_logger, track_performance
+from src.Utils.exception_handler import CustomException
 
 class FaissVectorStore:
     def __init__(
         self,
         dim: int = 768,
-        index_type: str = "hnsw",
         M: int = 32,
         ef_construction: int = 200,
-        nlist: int = 100
     ) -> None:
-        self.logger = get_log("FaissVectorStore")
-        self.dim = dim
-        self.index_type = index_type
-        self._lock = asyncio.Lock()
-
-        # 🔹 Core storage
-        self.index = None
-        self.id_to_chunk: Dict[int, ChunkModel] = {}
-
+        """
+        Initializes the FAISS HNSW index and local ID mappings.
+        """
         try:
-            if index_type == "hnsw":
-                self.index = faiss.IndexHNSWFlat(dim, M)
-                self.index.hnsw.efConstruction = ef_construction
-            elif index_type == "ivf":
-                quantizer = faiss.IndexFlatL2(dim)
-                self.index = faiss.IndexIVFFlat(quantizer, dim, nlist, faiss.METRIC_L2)
-            else:
-                raise ValueError("index_type must be 'hnsw' or 'ivf'")
+            self.logger = setup_logger("FaissVectorStore")
+            current_logger.set(self.logger)
 
-            self.logger.info(f"[INIT] FAISS | type={index_type}, dim={dim}")
+            self.dim = dim
+            self._lock = asyncio.Lock()
+
+            self.logger.info(f"[INIT] Initializing FAISS HNSW | dim={dim}, M={M}")
+
+            # 🔹 FAISS HNSW Index (Efficient for large-scale similarity search)
+            self.index = faiss.IndexHNSWFlat(dim, M)
+            self.index.hnsw.efConstruction = ef_construction
+            self.index.hnsw.efSearch = 50
+
+            # 🔹 Light-weight mappings to link FAISS results back to Postgres data
+            self.faiss_id_to_db_id: Dict[int, int] = {}
+            self.db_id_to_metadata: Dict[int, Dict[str, Any]] = {}
+
+            self._last_synced_id = 0
+
+            self.logger.info("[INIT COMPLETE] FAISS ready")
+
         except Exception as e:
-            raise CustomException(e, logger=self.logger)
+            # Removed 'sys' argument to match your CustomException signature
+            raise CustomException(e)
 
-    # ----------------------------------
-    # 🔹 DB SYNC (New Addition)
-    # ----------------------------------
+    # =========================================================
+    #  SYNC FROM DB (INCREMENTAL)
+    # =========================================================
     @track_performance
-    async def sync_from_db(self):
-        """Rebuilds the FAISS index by pulling all chunks from Postgres."""
-        self.logger.info("Synchronizing FAISS index with PostgreSQL...")
+    async def sync_from_db(self, batch_size: int = 100):
+        self.logger.info("[SYNC] Starting incremental DB sync")
+        total_added = 0
+
         try:
             async for session in get_session():
-                stmt = select(ChunkModel).order_by(ChunkModel.chunk_id.asc())
-                result = await session.execute(stmt)
-                chunks = result.scalars().all()
-                
-                if chunks:
-                    # Clear current state before rebuild
-                    async with self._lock:
-                        self.index.reset()
-                        self.id_to_chunk.clear()
-                        await self.add(chunks)
-                break
-            self.logger.info(f"Sync Complete. Total vectors: {self.index.ntotal}")
-        except Exception as e:
-            self.logger.error(f"Sync failed: {e}")
-            raise CustomException(e, logger=self.logger)
+                while True:
+                    stmt = (
+                        select(ChunkModel)
+                        .where(ChunkModel.id > self._last_synced_id)
+                        .order_by(ChunkModel.id.asc())
+                        .limit(batch_size)
+                    )
 
-    # ----------------------------------
-    # 🔹 ADD (Ingestion)
-    # ----------------------------------
+                    result = await session.execute(stmt)
+                    chunks = result.scalars().all()
+
+                    if not chunks:
+                        self.logger.info("[SYNC] No new chunks found")
+                        break
+
+                    self.logger.info(f"[SYNC] Processing batch: size={len(chunks)}")
+                    await self.add(chunks)
+
+                    self._last_synced_id = chunks[-1].id
+                    total_added += len(chunks)
+
+                break # Exit the session generator
+
+            self.logger.info(f"[SYNC COMPLETE] Total synced: {total_added} | Index Total: {self.index.ntotal}")
+
+        except Exception as e:
+            self.logger.error(f"[SYNC ERROR] {str(e)}")
+            raise CustomException(e)
+
+    # =========================================================
+    #  ADD CHUNKS (TYPE-SAFE)
+    # =========================================================
     @track_performance
-    async def add(self, chunks: List[ChunkModel]) -> None:
+    async def add(self, chunks: List[ChunkModel]):
         if not chunks:
-            self.logger.warning("[ADD] No chunks")
             return
 
         try:
+            # 1. Prepare valid embeddings (Ensure they aren't None)
+            valid_chunks = [c for c in chunks if c.embedding is not None]
+            if not valid_chunks:
+                self.logger.warning("[ADD] Batch contained no valid embeddings")
+                return
+
             embeddings = np.array(
-                [np.array(c.embedding, dtype="float32") for c in chunks]
+                [c.embedding for c in valid_chunks],
+                dtype="float32"
             )
 
             async with self._lock:
-                if self.index_type == "ivf" and not self.index.is_trained:
-                    self.logger.info("[ADD] Training IVF")
-                    await asyncio.to_thread(self.index.train, embeddings)
-
-                start_pos = len(self.id_to_chunk)
+                start_idx = self.index.ntotal
+                # FAISS addition is CPU bound; offload to a thread to keep event loop free
                 await asyncio.to_thread(self.index.add, embeddings)
 
-                # Map the FAISS internal index (0, 1, 2...) to the ChunkModel
-                for i, chunk in enumerate(chunks):
-                    self.id_to_chunk[start_pos + i] = chunk
+                for i, chunk in enumerate(valid_chunks):
+                    fid = start_idx + i
+                    
+                    # Robust ID extraction (Handles objects and ensures 'id' exists)
+                    db_id = getattr(chunk, 'id', None)
+                    if db_id is None:
+                        continue
 
-            self.logger.info(f"[ADD] Done | total={self.index.ntotal}")
+                    self.faiss_id_to_db_id[fid] = db_id
+
+                    # Safe Context Parsing (Handles dicts or objects in context_chunks)
+                    context_ids = []
+                    raw_context = getattr(chunk, 'context_chunks', [])
+                    if isinstance(raw_context, list):
+                        for c in raw_context:
+                            cid = c.get("id") if isinstance(c, dict) else getattr(c, 'id', None)
+                            if cid:
+                                context_ids.append(cid)
+
+                    # Populate Metadata mapping
+                    self.db_id_to_metadata[db_id] = {
+                        "text": getattr(chunk, 'chunk_text', ""),
+                        "metadata": getattr(chunk, 'chunk_metadata', {}),
+                        "confidence": getattr(chunk, 'confidence_score', 0.0),
+                        "context_ids": context_ids
+                    }
+
         except Exception as e:
-            self.logger.error("[ADD] Failed")
-            raise CustomException(e, logger=self.logger)
+            self.logger.error(f"[ADD ERROR] {str(e)}")
+            raise CustomException(e)
 
-    # ----------------------------------
-    # 🔹 SEARCH
-    # ----------------------------------
+    # =========================================================
+    #  SEARCH
+    # =========================================================
     @track_performance
     async def search(
         self,
-        query_embedding: List[float],
+        query_embedding: Union[List[float], np.ndarray],
         top_k: int = 5,
-        expand: bool = True
-    ) -> List[Dict[str, Any]]:
-        if self.index.ntotal == 0:
-            return []
-
+        expand_context: bool = True
+    ):
         try:
-            q = np.array([query_embedding]).astype("float32")
+            if self.index.ntotal == 0:
+                return []
+
+            q = np.array(query_embedding, dtype="float32").reshape(1, -1)
             distances, indices = await asyncio.to_thread(self.index.search, q, top_k)
 
-            base_results = []
-            for idx, dist in zip(indices[0], distances[0]):
-                if idx == -1: continue
-                
-                chunk = self.id_to_chunk.get(idx)
-                if not chunk: continue
+            results = []
+            for fid, dist in zip(indices[0], distances[0]):
+                if fid == -1: continue
 
-                base_results.append({
-                    "chunk_id": chunk.chunk_id,
-                    "chunk_text": chunk.chunk_text,
-                    "metadata": chunk.chunk_metadata,
-                    "confidence": chunk.confidence_score,
-                    # We use the pre-computed context IDs from your refactored chunker
-                    "context_ids": [c['chunk_id'] for c in chunk.context_chunks] if chunk.context_chunks else [],
-                    "distance": float(dist)
-                })
+                db_id = self.faiss_id_to_db_id.get(fid)
+                meta = self.db_id_to_metadata.get(db_id)
 
-            if not expand:
-                return base_results
+                if meta:
+                    results.append({
+                        "id": db_id,
+                        "chunk_text": meta["text"],
+                        "metadata": meta["metadata"],
+                        "confidence": meta["confidence"],
+                        "context_ids": meta["context_ids"],
+                        "distance": float(dist),
+                        "is_context": False
+                    })
 
-            return self._expand_context(base_results)
+            return self._expand_context(results) if expand_context else results
 
         except Exception as e:
-            self.logger.error(f"[SEARCH] Failed: {e}")
-            raise CustomException(e, logger=self.logger)
+            raise CustomException(e)
 
-    # ----------------------------------
-    # 🔹 OPTIMIZED CONTEXT EXPANSION
-    # ----------------------------------
-    def _expand_context(self, base_results: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
-        seen_chunk_ids = set()
+    def _expand_context(self, results):
         expanded = []
-        
-        # Create a fast lookup for chunk_id -> chunk mapping
-        # Since id_to_chunk keys are FAISS indices, we map by the property
-        chunk_id_map = {c.chunk_id: c for c in self.id_to_chunk.values()}
+        seen = {r["id"] for r in results}
 
-        for res in base_results:
-            # Add the base chunk first if not seen
-            if res["chunk_id"] not in seen_chunk_ids:
-                expanded.append(res)
-                seen_chunk_ids.add(res["chunk_id"])
+        for r in results:
+            expanded.append(r)
+            # Retrieve neighbor chunks for context (limit to first 3)
+            for cid in r.get("context_ids", [])[:3]:
+                if cid in seen: continue
 
-            # Add neighbors from context_chunks
-            for cid in res.get("context_ids", []):
-                if cid not in seen_chunk_ids:
-                    neighbor = chunk_id_map.get(cid)
-                    if neighbor:
-                        expanded.append({
-                            "chunk_id": neighbor.chunk_id,
-                            "chunk_text": neighbor.chunk_text,
-                            "metadata": neighbor.chunk_metadata,
-                            "confidence": neighbor.confidence_score,
-                            "is_context": True # Flag to distinguish from primary hit
-                        })
-                        seen_chunk_ids.add(cid)
-
+                meta = self.db_id_to_metadata.get(cid)
+                if meta:
+                    expanded.append({
+                        "id": cid,
+                        "chunk_text": meta["text"],
+                        "metadata": meta["metadata"],
+                        "confidence": meta["confidence"],
+                        "is_context": True,
+                        "distance": None
+                    })
+                    seen.add(cid)
         return expanded
 
-    # ----------------------------------
-    # 🔹 PERSISTENCE
-    # ----------------------------------
-    async def save(self, index_path: str, metadata_path: str):
+    # =========================================================
+    #  PERSISTENCE
+    # =========================================================
+    async def save(self, path: str):
         try:
-            await asyncio.to_thread(faiss.write_index, self.index, index_path)
-            with open(metadata_path, "wb") as f:
-                pickle.dump(self.id_to_chunk, f)
-            self.logger.info("[SAVE] Index and Metadata saved successfully.")
-        except Exception as e:
-            raise CustomException(e, logger=self.logger)
+            self.logger.info(f"[SAVE] Persisting index to {path}")
+            await asyncio.to_thread(faiss.write_index, self.index, f"{path}.index")
 
-    async def load(self, index_path: str, metadata_path: str):
+            payload = {
+                "faiss_to_db": self.faiss_id_to_db_id,
+                "metadata": self.db_id_to_metadata,
+                "last_id": self._last_synced_id
+            }
+
+            with open(f"{path}.meta", "wb") as f:
+                pickle.dump(payload, f)
+            self.logger.info("[SAVE COMPLETE]")
+        except Exception as e:
+            raise CustomException(e)
+
+    async def load(self, path: str):
         try:
-            self.index = await asyncio.to_thread(faiss.read_index, index_path)
-            with open(metadata_path, "rb") as f:
-                self.id_to_chunk = pickle.load(f)
-            self.logger.info(f"[LOAD] Index loaded with {self.index.ntotal} vectors.")
-        except Exception as e:
-            raise CustomException(e, logger=self.logger)
+            self.logger.info(f"[LOAD] Loading index from {path}")
+            self.index = await asyncio.to_thread(faiss.read_index, f"{path}.index")
 
-    def get_stats(self) -> Dict[str, Any]:
-        return {
-            "total_vectors": self.index.ntotal,
-            "dimension": self.dim,
-            "index_type": self.index_type
-        }
+            with open(f"{path}.meta", "rb") as f:
+                payload = pickle.load(f)
+
+            self.faiss_id_to_db_id = payload["faiss_to_db"]
+            self.db_id_to_metadata = payload["metadata"]
+            self._last_synced_id = payload["last_id"]
+
+            self.logger.info(f"[LOAD COMPLETE] Total vectors: {self.index.ntotal}")
+        except Exception as e:
+            raise CustomException(e)

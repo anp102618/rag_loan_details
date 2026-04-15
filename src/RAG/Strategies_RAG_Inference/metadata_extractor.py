@@ -1,15 +1,19 @@
 import sys
 from typing import Set
+import asyncio
+import nest_asyncio 
 from sqlalchemy import select, func
 from sqlalchemy.dialects.postgresql import JSONB
 
 # Internal Imports
 from src.RAG.models import ChunkModel
 from src.db.main import get_session
-from src.Utils.logger_setup import get_log, track_performance
+from src.Utils.logger_setup import setup_logger, current_logger, track_performance
 from src.Utils.exception_handler import CustomException
 
-logger = get_log("MetadataExtractor")
+logger = setup_logger("metadata_extractor")
+current_logger.set(logger)
+nest_asyncio.apply()
 
 class MetadataExtractor:
     """

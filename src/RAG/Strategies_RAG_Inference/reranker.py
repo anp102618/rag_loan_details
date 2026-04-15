@@ -1,12 +1,16 @@
 import sys
+import asyncio
+import nest_asyncio
 from typing import List, Dict, Any
 from sentence_transformers import CrossEncoder
 
 # Internal Imports
-from src.Utils.logger_setup import get_log, track_performance
+from src.Utils.logger_setup import setup_logger, current_logger, track_performance
 from src.Utils.exception_handler import CustomException
 
-logger = get_log("CrossEncoderReranker")
+logger = setup_logger("reranker")
+current_logger.set(logger)
+nest_asyncio.apply()
 
 class CrossEncoderReranker:
     def __init__(self, model_name: str = "cross-encoder/ms-marco-MiniLM-L-6-v2"):

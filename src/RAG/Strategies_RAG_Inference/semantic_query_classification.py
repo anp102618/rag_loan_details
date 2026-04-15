@@ -1,25 +1,26 @@
 import sys
 import json
 import asyncio
+import nest_asyncio
 import ollama  # Raw Ollama library
 import numpy as np
 from typing import List, Dict, Set, Optional
 from sklearn.metrics.pairwise import cosine_similarity
+from src.RAG.Strategies_RAG_Inference.metadata_extractor import MetadataExtractor
 
-# Internal Imports
-from src.Utils.logger_setup import get_log, track_performance
+from src.Utils.logger_setup import setup_logger, current_logger, track_performance
 from src.Utils.exception_handler import CustomException
-from metadata_extractor import MetadataExtractor
 
-# Initialize Logger
-logger = get_log("SectionClassifier")
+logger = setup_logger("query_classifier")
+current_logger.set(logger)
+nest_asyncio.apply()
 
 class QueryClassifier:
     """
     Classifies expanded queries into specific banking sections using 
     Nomic Embeddings and Qwen 2.5 via the raw Ollama API.
     """
-    def __init__(self, embed_model: str = "nomic-embed-text", llm_model: str = "qwen2.5"):
+    def __init__(self, embed_model: str = "nomic-embed-text", llm_model: str = "phi3.5"):
         try:
             self.embed_model = embed_model
             self.llm_model = llm_model
