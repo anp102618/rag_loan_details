@@ -12,3 +12,18 @@
 [2026-04-15 20:22:18,980] [INFO] [2528972850:116] Filtering complete. Unique chunks in scope: 86
 [2026-04-15 20:22:18,992] [ERROR] [2528972850:170] Failed _retrieve_single for query 'outline information ': DocumentEmbedder._embed_single() missing 1 required positional argument: 'index'
 [2026-04-15 20:22:19,001] [ERROR] [2528972850:70] Batch retrieval execution error: Error in [C:\Users\prasa\AppData\Local\Temp\ipykernel_18028\2528972850.py] at line [124] → Message: DocumentEmbedder._embed_single() missing 1 required positional argument: 'index'
+[2026-04-16 12:58:02,111] [INFO] [1075734400:23] HybridRetriever initialized.
+[2026-04-16 12:58:02,116] [INFO] [1075734400:57] Starting batch retrieval for 2 queries.
+[2026-04-16 12:58:02,928] [INFO] [1075734400:126] Retrieved 0 unique chunks.
+[2026-04-16 12:59:10,672] [INFO] [3413185948:23] HybridRetriever initialized.
+[2026-04-16 12:59:10,674] [INFO] [3413185948:57] Starting batch retrieval for 2 queries.
+[2026-04-16 12:59:11,505] [INFO] [3413185948:126] Retrieved 0 unique chunks.
+[2026-04-16 12:59:55,305] [INFO] [2624008593:23] HybridRetriever initialized.
+[2026-04-16 12:59:55,308] [INFO] [2624008593:57] Starting batch retrieval for 2 queries.
+[2026-04-16 12:59:57,141] [INFO] [2624008593:126] Retrieved 12 unique chunks.
+[2026-04-16 13:03:39,208] [INFO] [2445382186:20] HybridRetriever initialized.
+[2026-04-16 13:03:39,208] [INFO] [2445382186:72] Starting retrieval batch.
+[2026-04-16 13:03:40,382] [INFO] [2445382186:133] Returning 12 unique chunks with full details.
+[2026-04-16 13:05:12,461] [INFO] [2445382186:20] HybridRetriever initialized.
+[2026-04-16 13:05:12,466] [INFO] [2445382186:72] Starting retrieval batch.
+[2026-04-16 13:05:13,407] [INFO] [2445382186:133] Returning 12 unique chunks with full details.

@@ -56,3 +56,8 @@
 [2026-04-15 18:27:01,590] [INFO] [3392167073:43] Loaded 7 sections
 [2026-04-15 18:27:01,590] [INFO] [logger_setup:114] prepare_context completed in 0.44s
 [2026-04-15 18:28:07,945] [INFO] [logger_setup:114] classify_expanded_queries completed in 66.78s
+[2026-04-16 12:39:46,347] [INFO] [3392167073:26] LLM-only classifier initialized | Model: qwen2.5:7b
+[2026-04-16 12:39:47,238] [INFO] [logger_setup:114] get_unique_sections completed in 0.86s
+[2026-04-16 12:39:47,244] [INFO] [3392167073:43] Loaded 7 sections
+[2026-04-16 12:39:47,250] [INFO] [logger_setup:114] prepare_context completed in 0.88s
+[2026-04-16 12:42:21,663] [INFO] [logger_setup:114] classify_expanded_queries completed in 155.29s

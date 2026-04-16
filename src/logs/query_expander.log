@@ -49,3 +49,15 @@
 [2026-04-15 18:26:34,316] [INFO] [logger_setup:128] apply completed in 0.01s
 [2026-04-15 18:26:34,323] [INFO] [query_expander:98] Expanded into 2 queries.
 [2026-04-15 18:26:34,326] [INFO] [logger_setup:114] expand_query completed in 59.17s
+[2026-04-16 12:36:54,534] [INFO] [query_expander:26] QueryExpander active with qwen2.5:7b (Ollama native).
+[2026-04-16 12:36:54,569] [INFO] [logger_setup:128] apply completed in 0.03s
+[2026-04-16 12:38:10,456] [INFO] [logger_setup:128] apply completed in 0.02s
+[2026-04-16 12:38:10,503] [INFO] [logger_setup:128] apply completed in 0.01s
+[2026-04-16 12:38:10,503] [INFO] [query_expander:98] Expanded into 2 queries.
+[2026-04-16 12:38:10,519] [INFO] [logger_setup:114] expand_query completed in 75.98s
+[2026-04-16 22:25:23,428] [INFO] [query_expander:26] QueryExpander active with qwen2.5:7b (Ollama native).
+[2026-04-16 22:25:23,441] [INFO] [logger_setup:128] apply completed in 0.01s
+[2026-04-16 22:26:09,492] [INFO] [logger_setup:128] apply completed in 0.01s
+[2026-04-16 22:26:09,546] [INFO] [logger_setup:128] apply completed in 0.01s
+[2026-04-16 22:26:09,557] [INFO] [query_expander:98] Expanded into 2 queries.
+[2026-04-16 22:26:09,558] [INFO] [logger_setup:114] expand_query completed in 46.13s

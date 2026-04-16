@@ -1,0 +1,54 @@
+[2026-04-16 20:31:35,625] [INFO] [4092500738:103] [SYNC] Starting incremental sync
+[2026-04-16 20:31:36,037] [INFO] [4092500738:124] [SYNC] Added 100 chunks. Last ID: 100
+[2026-04-16 20:31:36,228] [INFO] [4092500738:124] [SYNC] Added 100 chunks. Last ID: 200
+[2026-04-16 20:31:36,367] [INFO] [4092500738:124] [SYNC] Added 100 chunks. Last ID: 300
+[2026-04-16 20:31:36,527] [INFO] [4092500738:124] [SYNC] Added 100 chunks. Last ID: 400
+[2026-04-16 20:31:36,686] [INFO] [4092500738:124] [SYNC] Added 100 chunks. Last ID: 500
+[2026-04-16 20:31:36,824] [INFO] [4092500738:124] [SYNC] Added 100 chunks. Last ID: 600
+[2026-04-16 20:31:36,868] [INFO] [4092500738:124] [SYNC] Added 14 chunks. Last ID: 614
+[2026-04-16 20:32:46,944] [INFO] [4092500738:103] [SYNC] Starting incremental sync
+[2026-04-16 20:32:47,151] [INFO] [4092500738:124] [SYNC] Added 100 chunks. Last ID: 100
+[2026-04-16 20:32:47,242] [INFO] [4092500738:124] [SYNC] Added 100 chunks. Last ID: 200
+[2026-04-16 20:32:47,365] [INFO] [4092500738:124] [SYNC] Added 100 chunks. Last ID: 300
+[2026-04-16 20:32:47,473] [INFO] [4092500738:124] [SYNC] Added 100 chunks. Last ID: 400
+[2026-04-16 20:32:47,582] [INFO] [4092500738:124] [SYNC] Added 100 chunks. Last ID: 500
+[2026-04-16 20:32:47,683] [INFO] [4092500738:124] [SYNC] Added 100 chunks. Last ID: 600
+[2026-04-16 20:32:47,712] [INFO] [4092500738:124] [SYNC] Added 14 chunks. Last ID: 614
+[2026-04-16 20:37:54,734] [INFO] [1343334054:31] VectorStore initialized with HNSW (Dimension: 768)
+[2026-04-16 20:37:54,741] [INFO] [1343334054:107] Starting sync from DB. Last synced ID: 0
+[2026-04-16 20:37:55,107] [INFO] [1343334054:98] Successfully added 100 vectors. Index total: 100
+[2026-04-16 20:37:55,129] [INFO] [1343334054:129] Synced batch of 100. New last_id: 100
+[2026-04-16 20:37:55,257] [INFO] [1343334054:98] Successfully added 100 vectors. Index total: 200
+[2026-04-16 20:37:55,265] [INFO] [1343334054:129] Synced batch of 100. New last_id: 200
+[2026-04-16 20:37:55,383] [INFO] [1343334054:98] Successfully added 100 vectors. Index total: 300
+[2026-04-16 20:37:55,394] [INFO] [1343334054:129] Synced batch of 100. New last_id: 300
+[2026-04-16 20:37:55,516] [INFO] [1343334054:98] Successfully added 100 vectors. Index total: 400
+[2026-04-16 20:37:55,521] [INFO] [1343334054:129] Synced batch of 100. New last_id: 400
+[2026-04-16 20:37:55,680] [INFO] [1343334054:98] Successfully added 100 vectors. Index total: 500
+[2026-04-16 20:37:55,685] [INFO] [1343334054:129] Synced batch of 100. New last_id: 500
+[2026-04-16 20:37:55,794] [INFO] [1343334054:98] Successfully added 100 vectors. Index total: 600
+[2026-04-16 20:37:55,801] [INFO] [1343334054:129] Synced batch of 100. New last_id: 600
+[2026-04-16 20:37:55,829] [INFO] [1343334054:98] Successfully added 14 vectors. Index total: 614
+[2026-04-16 20:37:55,837] [INFO] [1343334054:129] Synced batch of 14. New last_id: 614
+[2026-04-16 20:37:55,845] [INFO] [1343334054:122] Database sync complete. No new chunks found.
+[2026-04-16 20:37:56,659] [INFO] [1343334054:159] Search completed. Found 3 matches.
+[2026-04-16 22:53:22,311] [INFO] [839139047:54] Extracted 7 normalized sections.
+[2026-04-16 22:53:22,316] [INFO] [logger_setup:114] get_normalized_sections completed in 0.21s
+[2026-04-16 22:53:22,324] [ERROR] [1506406657:105] Failed to build vector store from DB
+[2026-04-16 22:53:22,326] [ERROR] [exception_handler:41] Error in [C:\Users\prasa\AppData\Local\Temp\ipykernel_4596\1506406657.py] at line [54] → Message: 'AsyncSession' object has no attribute 'query'
+[2026-04-16 22:53:22,326] [ERROR] [logger_setup:110] add failed: Error in [C:\Users\prasa\AppData\Local\Temp\ipykernel_4596\1506406657.py] at line [54] → Message: 'AsyncSession' object has no attribute 'query'
+[2026-04-16 22:53:22,326] [INFO] [logger_setup:114] add completed in 0.22s
+[2026-04-16 22:56:04,908] [INFO] [839139047:54] Extracted 7 normalized sections.
+[2026-04-16 22:56:04,910] [INFO] [logger_setup:114] get_normalized_sections completed in 0.03s
+[2026-04-16 22:56:05,775] [ERROR] [1418228976:108] Failed to build VectorStore from DB
+[2026-04-16 22:56:05,790] [ERROR] [exception_handler:41] Error in [C:\Users\prasa\AppData\Local\Temp\ipykernel_4596\1418228976.py] at line [66] → Message: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
+[2026-04-16 22:56:05,792] [ERROR] [logger_setup:110] add failed: Error in [C:\Users\prasa\AppData\Local\Temp\ipykernel_4596\1418228976.py] at line [66] → Message: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
+[2026-04-16 22:56:05,796] [INFO] [logger_setup:114] add completed in 0.92s
+[2026-04-16 22:58:36,197] [INFO] [839139047:54] Extracted 7 normalized sections.
+[2026-04-16 22:58:36,199] [INFO] [logger_setup:114] get_normalized_sections completed in 0.02s
+[2026-04-16 22:58:37,148] [INFO] [3229893171:111] VectorStore built successfully | sections=1
+[2026-04-16 22:58:37,152] [INFO] [logger_setup:114] add completed in 0.98s
+[2026-04-16 23:16:36,110] [INFO] [839139047:54] Extracted 7 normalized sections.
+[2026-04-16 23:16:36,110] [INFO] [logger_setup:114] get_normalized_sections completed in 0.13s
+[2026-04-16 23:16:36,723] [INFO] [2560127379:111] VectorStore built successfully | sections=7
+[2026-04-16 23:16:36,725] [INFO] [logger_setup:114] add completed in 0.74s

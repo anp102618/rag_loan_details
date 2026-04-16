@@ -2,241 +2,191 @@ import faiss
 import numpy as np
 import asyncio
 import pickle
-import sys
-from typing import List, Dict, Any, Optional, Union
-
+import os
+from typing import List, Union, Dict, Any, Optional
+from concurrent.futures import ThreadPoolExecutor
 from sqlalchemy import select
+
+# Project-specific imports
 from src.RAG.models import ChunkModel
 from src.db.main import get_session
-from src.Utils.logger_setup import setup_logger, current_logger, track_performance
+from src.Utils.logger_setup import setup_logger, track_performance
 from src.Utils.exception_handler import CustomException
 
-class FaissVectorStore:
-    def __init__(
-        self,
-        dim: int = 768,
-        M: int = 32,
-        ef_construction: int = 200,
-    ) -> None:
-        """
-        Initializes the FAISS HNSW index and local ID mappings.
-        """
+logger = setup_logger("VectorStore")
+
+class VectorStore:
+    def __init__(self, dimension: int = 768, index_type: str = "IVF_HNSW", nlist: int = 100):
+        self.dimension = dimension
+        self.index_type = index_type
+        self.nlist = nlist
+        self.executor = ThreadPoolExecutor(max_workers=4)
+        
+        # Internal state
+        self.metadata: Dict[int, Dict[str, Any]] = {}
+        self._last_synced_id = 0
+        
         try:
-            self.logger = setup_logger("FaissVectorStore")
-            current_logger.set(self.logger)
-
-            self.dim = dim
-            self._lock = asyncio.Lock()
-
-            self.logger.info(f"[INIT] Initializing FAISS HNSW | dim={dim}, M={M}")
-
-            # 🔹 FAISS HNSW Index (Efficient for large-scale similarity search)
-            self.index = faiss.IndexHNSWFlat(dim, M)
-            self.index.hnsw.efConstruction = ef_construction
-            self.index.hnsw.efSearch = 50
-
-            # 🔹 Light-weight mappings to link FAISS results back to Postgres data
-            self.faiss_id_to_db_id: Dict[int, int] = {}
-            self.db_id_to_metadata: Dict[int, Dict[str, Any]] = {}
-
-            self._last_synced_id = 0
-
-            self.logger.info("[INIT COMPLETE] FAISS ready")
-
+            self.index = self._initialize_index()
+            logger.info(f"VectorStore initialized with {index_type} (Dimension: {dimension})")
         except Exception as e:
-            # Removed 'sys' argument to match your CustomException signature
-            raise CustomException(e)
+            logger.error(f"Failed to initialize FAISS index: {str(e)}")
+            raise CustomException("Index initialization failed", status_code=500)
 
-    # =========================================================
-    #  SYNC FROM DB (INCREMENTAL)
-    # =========================================================
+    def _initialize_index(self):
+        """Builds the internal FAISS index structure."""
+        if self.index_type == "HNSW":
+            return faiss.IndexHNSWFlat(self.dimension, 32)
+        
+        elif self.index_type == "IVF_HNSW":
+            # HNSW quantizer + IVF partitions
+            quantizer = faiss.IndexHNSWFlat(self.dimension, 32)
+            return faiss.IndexIVFFlat(quantizer, self.dimension, self.nlist)
+            
+        elif self.index_type == "Flat":
+            return faiss.IndexFlatL2(self.dimension)
+            
+        raise CustomException(f"Unsupported index type: {self.index_type}", status_code=400)
+
+    def _format_vectors(self, vectors: Union[List, np.ndarray]) -> np.ndarray:
+        """Ensures vectors are float32 and 2D."""
+        v = np.array(vectors).astype('float32')
+        return v if v.ndim > 1 else v.reshape(1, -1)
+
     @track_performance
-    async def sync_from_db(self, batch_size: int = 100):
-        self.logger.info("[SYNC] Starting incremental DB sync")
-        total_added = 0
-
-        try:
-            async for session in get_session():
-                while True:
-                    stmt = (
-                        select(ChunkModel)
-                        .where(ChunkModel.id > self._last_synced_id)
-                        .order_by(ChunkModel.id.asc())
-                        .limit(batch_size)
-                    )
-
-                    result = await session.execute(stmt)
-                    chunks = result.scalars().all()
-
-                    if not chunks:
-                        self.logger.info("[SYNC] No new chunks found")
-                        break
-
-                    self.logger.info(f"[SYNC] Processing batch: size={len(chunks)}")
-                    await self.add(chunks)
-
-                    self._last_synced_id = chunks[-1].id
-                    total_added += len(chunks)
-
-                break # Exit the session generator
-
-            self.logger.info(f"[SYNC COMPLETE] Total synced: {total_added} | Index Total: {self.index.ntotal}")
-
-        except Exception as e:
-            self.logger.error(f"[SYNC ERROR] {str(e)}")
-            raise CustomException(e)
-
-    # =========================================================
-    #  ADD CHUNKS (TYPE-SAFE)
-    # =========================================================
-    @track_performance
-    async def add(self, chunks: List[ChunkModel]):
+    async def add(self, chunks: List[ChunkModel]) -> int:
+        """Asynchronous wrapper for adding chunks."""
         if not chunks:
-            return
+            return 0
+        loop = asyncio.get_running_loop()
+        return await loop.run_in_executor(self.executor, self._process_add, chunks)
 
+    def _process_add(self, chunks: List[ChunkModel]) -> int:
+        """Core logic to process embeddings and update metadata."""
         try:
-            # 1. Prepare valid embeddings (Ensure they aren't None)
-            valid_chunks = [c for c in chunks if c.embedding is not None]
-            if not valid_chunks:
-                self.logger.warning("[ADD] Batch contained no valid embeddings")
-                return
-
-            embeddings = np.array(
-                [c.embedding for c in valid_chunks],
-                dtype="float32"
-            )
-
-            async with self._lock:
-                start_idx = self.index.ntotal
-                # FAISS addition is CPU bound; offload to a thread to keep event loop free
-                await asyncio.to_thread(self.index.add, embeddings)
-
-                for i, chunk in enumerate(valid_chunks):
-                    fid = start_idx + i
-                    
-                    # Robust ID extraction (Handles objects and ensures 'id' exists)
-                    db_id = getattr(chunk, 'id', None)
-                    if db_id is None:
-                        continue
-
-                    self.faiss_id_to_db_id[fid] = db_id
-
-                    # Safe Context Parsing (Handles dicts or objects in context_chunks)
-                    context_ids = []
-                    raw_context = getattr(chunk, 'context_chunks', [])
-                    if isinstance(raw_context, list):
-                        for c in raw_context:
-                            cid = c.get("id") if isinstance(c, dict) else getattr(c, 'id', None)
-                            if cid:
-                                context_ids.append(cid)
-
-                    # Populate Metadata mapping
-                    self.db_id_to_metadata[db_id] = {
-                        "text": getattr(chunk, 'chunk_text', ""),
-                        "metadata": getattr(chunk, 'chunk_metadata', {}),
-                        "confidence": getattr(chunk, 'confidence_score', 0.0),
-                        "context_ids": context_ids
-                    }
-
+            embeddings = [c.embedding for c in chunks if c.embedding is not None]
+            if not embeddings:
+                logger.warning("No embeddings found in the provided chunks.")
+                return 0
+                
+            vectors = self._format_vectors(embeddings)
+            
+            # Handle IVF Training
+            if "IVF" in self.index_type and not self.index.is_trained:
+                if len(vectors) < self.nlist:
+                    logger.warning(f"Training skipped: Need {self.nlist} vectors, got {len(vectors)}.")
+                    return 0
+                logger.info(f"Training IVF index with {len(vectors)} vectors...")
+                self.index.train(vectors)
+            
+            start_id = self.index.ntotal
+            self.index.add(vectors)
+            
+            # Map FAISS ID to the exact ChunkModel schema
+            for i, chunk in enumerate(chunks):
+                faiss_id = start_id + i
+                self.metadata[faiss_id] = {
+                    "id": chunk.id,
+                    "chunk_text": chunk.chunk_text,
+                    "chunk_metadata": chunk.chunk_metadata,
+                    "confidence_score": chunk.confidence_score,
+                    "prev_chunk_id": chunk.prev_chunk_id,
+                    "next_chunk_id": chunk.next_chunk_id,
+                    "context_chunks": chunk.context_chunks
+                }
+            
+            logger.info(f"Successfully added {len(embeddings)} vectors. Index total: {self.index.ntotal}")
+            return len(embeddings)
+            
         except Exception as e:
-            self.logger.error(f"[ADD ERROR] {str(e)}")
-            raise CustomException(e)
+            logger.error(f"Error during vector addition: {str(e)}")
+            return 0
 
-    # =========================================================
-    #  SEARCH
-    # =========================================================
-    @track_performance
-    async def search(
-        self,
-        query_embedding: Union[List[float], np.ndarray],
-        top_k: int = 5,
-        expand_context: bool = True
-    ):
+    async def sync_from_db(self, batch_size: int = 100):
+        """Syncs the vector store with the PostgreSQL DB incrementally."""
+        logger.info(f"Starting sync from DB. Last synced ID: {self._last_synced_id}")
+        total_synced = 0
+
+        async for session in get_session():
+            while True:
+                stmt = (
+                    select(ChunkModel)
+                    .where(ChunkModel.id > self._last_synced_id)
+                    .order_by(ChunkModel.id.asc())
+                    .limit(batch_size)
+                )
+                result = await session.execute(stmt)
+                chunks = result.scalars().all()
+
+                if not chunks:
+                    logger.info("Database sync complete. No new chunks found.")
+                    break
+
+                count = await self.add(chunks)
+                if count > 0:
+                    self._last_synced_id = chunks[-1].id
+                    total_synced += count
+                    logger.info(f"Synced batch of {count}. New last_id: {self._last_synced_id}")
+                else:
+                    # If addition failed (e.g., training requirement not met), stop sync
+                    break
+            break 
+            
+        return total_synced
+
+    async def search(self, query_vector: List[float], k: int = 5) -> List[Dict[str, Any]]:
+        """Asynchronous search interface."""
+        loop = asyncio.get_running_loop()
+        return await loop.run_in_executor(self.executor, self._process_search, query_vector, k)
+
+    def _process_search(self, query_vector: List[float], k: int) -> List[Dict[str, Any]]:
+        """Performs search and returns dictionary items matching ChunkModel."""
+        if self.index.ntotal == 0:
+            logger.warning("Search attempted on an empty index.")
+            return []
+
         try:
-            if self.index.ntotal == 0:
-                return []
-
-            q = np.array(query_embedding, dtype="float32").reshape(1, -1)
-            distances, indices = await asyncio.to_thread(self.index.search, q, top_k)
-
+            vector = self._format_vectors(query_vector)
+            distances, indices = self.index.search(vector, k)
+            
             results = []
-            for fid, dist in zip(indices[0], distances[0]):
-                if fid == -1: continue
-
-                db_id = self.faiss_id_to_db_id.get(fid)
-                meta = self.db_id_to_metadata.get(db_id)
-
-                if meta:
-                    results.append({
-                        "id": db_id,
-                        "chunk_text": meta["text"],
-                        "metadata": meta["metadata"],
-                        "confidence": meta["confidence"],
-                        "context_ids": meta["context_ids"],
-                        "distance": float(dist),
-                        "is_context": False
-                    })
-
-            return self._expand_context(results) if expand_context else results
-
+            for dist, idx in zip(distances[0], indices[0]):
+                if idx != -1 and idx in self.metadata:
+                    chunk_data = self.metadata[idx].copy()
+                    chunk_data['search_distance'] = float(dist)
+                    results.append(chunk_data)
+            
+            logger.info(f"Search completed. Found {len(results)} matches.")
+            return results
+            
         except Exception as e:
-            raise CustomException(e)
+            logger.error(f"Search error: {str(e)}")
+            return []
 
-    def _expand_context(self, results):
-        expanded = []
-        seen = {r["id"] for r in results}
-
-        for r in results:
-            expanded.append(r)
-            # Retrieve neighbor chunks for context (limit to first 3)
-            for cid in r.get("context_ids", [])[:3]:
-                if cid in seen: continue
-
-                meta = self.db_id_to_metadata.get(cid)
-                if meta:
-                    expanded.append({
-                        "id": cid,
-                        "chunk_text": meta["text"],
-                        "metadata": meta["metadata"],
-                        "confidence": meta["confidence"],
-                        "is_context": True,
-                        "distance": None
-                    })
-                    seen.add(cid)
-        return expanded
-
-    # =========================================================
-    #  PERSISTENCE
-    # =========================================================
-    async def save(self, path: str):
+    def save(self, folder: str = "vector_store"):
+        """Saves both the FAISS index and the metadata dictionary."""
         try:
-            self.logger.info(f"[SAVE] Persisting index to {path}")
-            await asyncio.to_thread(faiss.write_index, self.index, f"{path}.index")
-
-            payload = {
-                "faiss_to_db": self.faiss_id_to_db_id,
-                "metadata": self.db_id_to_metadata,
-                "last_id": self._last_synced_id
-            }
-
-            with open(f"{path}.meta", "wb") as f:
-                pickle.dump(payload, f)
-            self.logger.info("[SAVE COMPLETE]")
+            os.makedirs(folder, exist_ok=True)
+            faiss.write_index(self.index, os.path.join(folder, "index.faiss"))
+            with open(os.path.join(folder, "metadata.pkl"), "wb") as f:
+                pickle.dump({"metadata": self.metadata, "last_id": self._last_synced_id}, f)
+            logger.info(f"VectorStore successfully saved to {folder}")
         except Exception as e:
-            raise CustomException(e)
+            logger.error(f"Failed to save VectorStore: {str(e)}")
 
-    async def load(self, path: str):
+    def load(self, folder: str = "vector_store") -> bool:
+        """Loads the store from disk."""
+        if not os.path.exists(folder):
+            logger.warning(f"Load failed: Folder {folder} does not exist.")
+            return False
         try:
-            self.logger.info(f"[LOAD] Loading index from {path}")
-            self.index = await asyncio.to_thread(faiss.read_index, f"{path}.index")
-
-            with open(f"{path}.meta", "rb") as f:
-                payload = pickle.load(f)
-
-            self.faiss_id_to_db_id = payload["faiss_to_db"]
-            self.db_id_to_metadata = payload["metadata"]
-            self._last_synced_id = payload["last_id"]
-
-            self.logger.info(f"[LOAD COMPLETE] Total vectors: {self.index.ntotal}")
+            self.index = faiss.read_index(os.path.join(folder, "index.faiss"))
+            with open(os.path.join(folder, "metadata.pkl"), "rb") as f:
+                data = pickle.load(f)
+                self.metadata = data["metadata"]
+                self._last_synced_id = data["last_id"]
+            logger.info(f"VectorStore loaded from {folder}. Total vectors: {self.index.ntotal}")
+            return True
         except Exception as e:
-            raise CustomException(e)
+            logger.error(f"Error loading VectorStore: {str(e)}")
+            return False

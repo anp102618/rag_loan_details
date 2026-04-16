@@ -446,3 +446,181 @@
 [2026-04-15 21:17:05,636] [INFO] [logger_setup:114] search completed in 0.00s
 [2026-04-15 21:17:05,706] [INFO] [logger_setup:114] search completed in 0.00s
 [2026-04-15 21:17:05,706] [INFO] [logger_setup:114] retrieve_batch completed in 2.45s
+[2026-04-16 12:45:59,289] [INFO] [vector_store:31] [INIT] Initializing FAISS HNSW | dim=768, M=32
+[2026-04-16 12:45:59,310] [INFO] [vector_store:44] [INIT COMPLETE] FAISS ready
+[2026-04-16 12:45:59,318] [INFO] [vector_store:55] [SYNC] Starting incremental DB sync
+[2026-04-16 12:45:59,666] [INFO] [vector_store:75] [SYNC] Processing batch: size=100
+[2026-04-16 12:45:59,694] [INFO] [logger_setup:114] add completed in 0.02s
+[2026-04-16 12:45:59,824] [INFO] [vector_store:75] [SYNC] Processing batch: size=100
+[2026-04-16 12:45:59,836] [INFO] [logger_setup:114] add completed in 0.01s
+[2026-04-16 12:45:59,955] [INFO] [vector_store:75] [SYNC] Processing batch: size=100
+[2026-04-16 12:45:59,969] [INFO] [logger_setup:114] add completed in 0.01s
+[2026-04-16 12:46:00,110] [INFO] [vector_store:75] [SYNC] Processing batch: size=100
+[2026-04-16 12:46:00,125] [INFO] [logger_setup:114] add completed in 0.01s
+[2026-04-16 12:46:00,228] [INFO] [vector_store:75] [SYNC] Processing batch: size=100
+[2026-04-16 12:46:00,242] [INFO] [logger_setup:114] add completed in 0.01s
+[2026-04-16 12:46:00,339] [INFO] [vector_store:75] [SYNC] Processing batch: size=100
+[2026-04-16 12:46:00,356] [INFO] [logger_setup:114] add completed in 0.01s
+[2026-04-16 12:46:00,379] [INFO] [vector_store:75] [SYNC] Processing batch: size=14
+[2026-04-16 12:46:00,388] [INFO] [logger_setup:114] add completed in 0.01s
+[2026-04-16 12:46:00,395] [INFO] [vector_store:72] [SYNC] No new chunks found
+[2026-04-16 12:46:00,401] [INFO] [vector_store:83] [SYNC COMPLETE] Total synced: 614 | Index Total: 614
+[2026-04-16 12:46:00,403] [INFO] [logger_setup:114] sync_from_db completed in 1.09s
+[2026-04-16 12:46:01,670] [INFO] [logger_setup:114] search completed in 0.01s
+[2026-04-16 12:46:01,728] [INFO] [logger_setup:114] search completed in 0.00s
+[2026-04-16 12:46:01,730] [INFO] [logger_setup:114] retrieve_batch completed in 2.41s
+[2026-04-16 12:58:02,082] [INFO] [vector_store:31] [INIT] Initializing FAISS HNSW | dim=768, M=32
+[2026-04-16 12:58:02,097] [INFO] [vector_store:44] [INIT COMPLETE] FAISS ready
+[2026-04-16 12:58:02,116] [INFO] [vector_store:55] [SYNC] Starting incremental DB sync
+[2026-04-16 12:58:02,295] [INFO] [vector_store:75] [SYNC] Processing batch: size=100
+[2026-04-16 12:58:02,309] [INFO] [logger_setup:114] add completed in 0.01s
+[2026-04-16 12:58:02,407] [INFO] [vector_store:75] [SYNC] Processing batch: size=100
+[2026-04-16 12:58:02,420] [INFO] [logger_setup:114] add completed in 0.01s
+[2026-04-16 12:58:02,512] [INFO] [vector_store:75] [SYNC] Processing batch: size=100
+[2026-04-16 12:58:02,524] [INFO] [logger_setup:114] add completed in 0.01s
+[2026-04-16 12:58:02,614] [INFO] [vector_store:75] [SYNC] Processing batch: size=100
+[2026-04-16 12:58:02,632] [INFO] [logger_setup:114] add completed in 0.01s
+[2026-04-16 12:58:02,749] [INFO] [vector_store:75] [SYNC] Processing batch: size=100
+[2026-04-16 12:58:02,765] [INFO] [logger_setup:114] add completed in 0.01s
+[2026-04-16 12:58:02,873] [INFO] [vector_store:75] [SYNC] Processing batch: size=100
+[2026-04-16 12:58:02,888] [INFO] [logger_setup:114] add completed in 0.01s
+[2026-04-16 12:58:02,909] [INFO] [vector_store:75] [SYNC] Processing batch: size=14
+[2026-04-16 12:58:02,915] [INFO] [logger_setup:114] add completed in 0.00s
+[2026-04-16 12:58:02,922] [INFO] [vector_store:72] [SYNC] No new chunks found
+[2026-04-16 12:58:02,924] [INFO] [vector_store:83] [SYNC COMPLETE] Total synced: 614 | Index Total: 614
+[2026-04-16 12:58:02,925] [INFO] [logger_setup:114] sync_from_db completed in 0.81s
+[2026-04-16 12:58:02,929] [INFO] [logger_setup:114] retrieve_batch completed in 0.81s
+[2026-04-16 12:59:10,665] [INFO] [vector_store:31] [INIT] Initializing FAISS HNSW | dim=768, M=32
+[2026-04-16 12:59:10,668] [INFO] [vector_store:44] [INIT COMPLETE] FAISS ready
+[2026-04-16 12:59:10,678] [INFO] [vector_store:55] [SYNC] Starting incremental DB sync
+[2026-04-16 12:59:10,790] [INFO] [vector_store:75] [SYNC] Processing batch: size=100
+[2026-04-16 12:59:10,790] [INFO] [logger_setup:114] add completed in 0.01s
+[2026-04-16 12:59:10,953] [INFO] [vector_store:75] [SYNC] Processing batch: size=100
+[2026-04-16 12:59:10,969] [INFO] [logger_setup:114] add completed in 0.01s
+[2026-04-16 12:59:11,094] [INFO] [vector_store:75] [SYNC] Processing batch: size=100
+[2026-04-16 12:59:11,109] [INFO] [logger_setup:114] add completed in 0.01s
+[2026-04-16 12:59:11,204] [INFO] [vector_store:75] [SYNC] Processing batch: size=100
+[2026-04-16 12:59:11,220] [INFO] [logger_setup:114] add completed in 0.01s
+[2026-04-16 12:59:11,323] [INFO] [vector_store:75] [SYNC] Processing batch: size=100
+[2026-04-16 12:59:11,338] [INFO] [logger_setup:114] add completed in 0.01s
+[2026-04-16 12:59:11,438] [INFO] [vector_store:75] [SYNC] Processing batch: size=100
+[2026-04-16 12:59:11,446] [INFO] [logger_setup:114] add completed in 0.02s
+[2026-04-16 12:59:11,482] [INFO] [vector_store:75] [SYNC] Processing batch: size=14
+[2026-04-16 12:59:11,489] [INFO] [logger_setup:114] add completed in 0.00s
+[2026-04-16 12:59:11,498] [INFO] [vector_store:72] [SYNC] No new chunks found
+[2026-04-16 12:59:11,500] [INFO] [vector_store:83] [SYNC COMPLETE] Total synced: 614 | Index Total: 614
+[2026-04-16 12:59:11,503] [INFO] [logger_setup:114] sync_from_db completed in 0.83s
+[2026-04-16 12:59:11,508] [INFO] [logger_setup:114] retrieve_batch completed in 0.84s
+[2026-04-16 12:59:55,287] [INFO] [vector_store:31] [INIT] Initializing FAISS HNSW | dim=768, M=32
+[2026-04-16 12:59:55,293] [INFO] [vector_store:44] [INIT COMPLETE] FAISS ready
+[2026-04-16 12:59:55,311] [INFO] [vector_store:55] [SYNC] Starting incremental DB sync
+[2026-04-16 12:59:55,486] [INFO] [vector_store:75] [SYNC] Processing batch: size=100
+[2026-04-16 12:59:55,508] [INFO] [logger_setup:114] add completed in 0.01s
+[2026-04-16 12:59:55,632] [INFO] [vector_store:75] [SYNC] Processing batch: size=100
+[2026-04-16 12:59:55,650] [INFO] [logger_setup:114] add completed in 0.01s
+[2026-04-16 12:59:55,786] [INFO] [vector_store:75] [SYNC] Processing batch: size=100
+[2026-04-16 12:59:55,806] [INFO] [logger_setup:114] add completed in 0.01s
+[2026-04-16 12:59:55,909] [INFO] [vector_store:75] [SYNC] Processing batch: size=100
+[2026-04-16 12:59:55,912] [INFO] [logger_setup:114] add completed in 0.01s
+[2026-04-16 12:59:56,043] [INFO] [vector_store:75] [SYNC] Processing batch: size=100
+[2026-04-16 12:59:56,068] [INFO] [logger_setup:114] add completed in 0.02s
+[2026-04-16 12:59:56,190] [INFO] [vector_store:75] [SYNC] Processing batch: size=100
+[2026-04-16 12:59:56,203] [INFO] [logger_setup:114] add completed in 0.01s
+[2026-04-16 12:59:56,225] [INFO] [vector_store:75] [SYNC] Processing batch: size=14
+[2026-04-16 12:59:56,231] [INFO] [logger_setup:114] add completed in 0.00s
+[2026-04-16 12:59:56,237] [INFO] [vector_store:72] [SYNC] No new chunks found
+[2026-04-16 12:59:56,239] [INFO] [vector_store:83] [SYNC COMPLETE] Total synced: 614 | Index Total: 614
+[2026-04-16 12:59:56,240] [INFO] [logger_setup:114] sync_from_db completed in 0.93s
+[2026-04-16 12:59:57,069] [INFO] [logger_setup:114] search completed in 0.01s
+[2026-04-16 12:59:57,134] [INFO] [logger_setup:114] search completed in 0.00s
+[2026-04-16 12:59:57,141] [INFO] [logger_setup:114] retrieve_batch completed in 1.84s
+[2026-04-16 13:03:39,179] [INFO] [vector_store:31] [INIT] Initializing FAISS HNSW | dim=768, M=32
+[2026-04-16 13:03:39,192] [INFO] [vector_store:44] [INIT COMPLETE] FAISS ready
+[2026-04-16 13:03:39,215] [INFO] [vector_store:55] [SYNC] Starting incremental DB sync
+[2026-04-16 13:03:39,478] [INFO] [vector_store:75] [SYNC] Processing batch: size=100
+[2026-04-16 13:03:39,487] [INFO] [logger_setup:114] add completed in 0.01s
+[2026-04-16 13:03:39,595] [INFO] [vector_store:75] [SYNC] Processing batch: size=100
+[2026-04-16 13:03:39,602] [INFO] [logger_setup:114] add completed in 0.01s
+[2026-04-16 13:03:39,696] [INFO] [vector_store:75] [SYNC] Processing batch: size=100
+[2026-04-16 13:03:39,714] [INFO] [logger_setup:114] add completed in 0.01s
+[2026-04-16 13:03:39,800] [INFO] [vector_store:75] [SYNC] Processing batch: size=100
+[2026-04-16 13:03:39,828] [INFO] [logger_setup:114] add completed in 0.01s
+[2026-04-16 13:03:39,942] [INFO] [vector_store:75] [SYNC] Processing batch: size=100
+[2026-04-16 13:03:39,960] [INFO] [logger_setup:114] add completed in 0.01s
+[2026-04-16 13:03:40,054] [INFO] [vector_store:75] [SYNC] Processing batch: size=100
+[2026-04-16 13:03:40,062] [INFO] [logger_setup:114] add completed in 0.01s
+[2026-04-16 13:03:40,074] [INFO] [vector_store:75] [SYNC] Processing batch: size=14
+[2026-04-16 13:03:40,090] [INFO] [logger_setup:114] add completed in 0.00s
+[2026-04-16 13:03:40,090] [INFO] [vector_store:72] [SYNC] No new chunks found
+[2026-04-16 13:03:40,090] [INFO] [vector_store:83] [SYNC COMPLETE] Total synced: 614 | Index Total: 614
+[2026-04-16 13:03:40,090] [INFO] [logger_setup:114] sync_from_db completed in 0.89s
+[2026-04-16 13:03:40,315] [INFO] [logger_setup:114] search completed in 0.00s
+[2026-04-16 13:03:40,382] [INFO] [logger_setup:114] search completed in 0.00s
+[2026-04-16 13:03:40,392] [INFO] [logger_setup:114] retrieve_batch completed in 1.18s
+[2026-04-16 13:05:12,456] [INFO] [vector_store:31] [INIT] Initializing FAISS HNSW | dim=768, M=32
+[2026-04-16 13:05:12,459] [INFO] [vector_store:44] [INIT COMPLETE] FAISS ready
+[2026-04-16 13:05:12,472] [INFO] [vector_store:55] [SYNC] Starting incremental DB sync
+[2026-04-16 13:05:12,626] [INFO] [vector_store:75] [SYNC] Processing batch: size=100
+[2026-04-16 13:05:12,626] [INFO] [logger_setup:114] add completed in 0.01s
+[2026-04-16 13:05:12,726] [INFO] [vector_store:75] [SYNC] Processing batch: size=100
+[2026-04-16 13:05:12,742] [INFO] [logger_setup:114] add completed in 0.01s
+[2026-04-16 13:05:12,842] [INFO] [vector_store:75] [SYNC] Processing batch: size=100
+[2026-04-16 13:05:12,858] [INFO] [logger_setup:114] add completed in 0.01s
+[2026-04-16 13:05:12,950] [INFO] [vector_store:75] [SYNC] Processing batch: size=100
+[2026-04-16 13:05:12,966] [INFO] [logger_setup:114] add completed in 0.01s
+[2026-04-16 13:05:13,059] [INFO] [vector_store:75] [SYNC] Processing batch: size=100
+[2026-04-16 13:05:13,074] [INFO] [logger_setup:114] add completed in 0.01s
+[2026-04-16 13:05:13,168] [INFO] [vector_store:75] [SYNC] Processing batch: size=100
+[2026-04-16 13:05:13,191] [INFO] [logger_setup:114] add completed in 0.02s
+[2026-04-16 13:05:13,229] [INFO] [vector_store:75] [SYNC] Processing batch: size=14
+[2026-04-16 13:05:13,236] [INFO] [logger_setup:114] add completed in 0.00s
+[2026-04-16 13:05:13,242] [INFO] [vector_store:72] [SYNC] No new chunks found
+[2026-04-16 13:05:13,242] [INFO] [vector_store:83] [SYNC COMPLETE] Total synced: 614 | Index Total: 614
+[2026-04-16 13:05:13,242] [INFO] [logger_setup:114] sync_from_db completed in 0.77s
+[2026-04-16 13:05:13,357] [INFO] [logger_setup:114] search completed in 0.00s
+[2026-04-16 13:05:13,407] [INFO] [logger_setup:114] search completed in 0.00s
+[2026-04-16 13:05:13,407] [INFO] [logger_setup:114] retrieve_batch completed in 0.95s
+[2026-04-16 13:15:10,925] [INFO] [vector_store:31] [INIT] Initializing FAISS HNSW | dim=768, M=32
+[2026-04-16 13:15:10,948] [INFO] [vector_store:44] [INIT COMPLETE] FAISS ready
+[2026-04-16 13:15:10,948] [INFO] [vector_store:55] [SYNC] Starting incremental DB sync
+[2026-04-16 13:15:11,133] [INFO] [vector_store:75] [SYNC] Processing batch: size=100
+[2026-04-16 13:15:11,140] [INFO] [logger_setup:114] add completed in 0.01s
+[2026-04-16 13:15:11,282] [INFO] [vector_store:75] [SYNC] Processing batch: size=100
+[2026-04-16 13:15:11,298] [INFO] [logger_setup:114] add completed in 0.01s
+[2026-04-16 13:15:11,424] [INFO] [vector_store:75] [SYNC] Processing batch: size=100
+[2026-04-16 13:15:11,440] [INFO] [logger_setup:114] add completed in 0.01s
+[2026-04-16 13:15:11,566] [INFO] [vector_store:75] [SYNC] Processing batch: size=100
+[2026-04-16 13:15:11,588] [INFO] [logger_setup:114] add completed in 0.02s
+[2026-04-16 13:15:11,718] [INFO] [vector_store:75] [SYNC] Processing batch: size=100
+[2026-04-16 13:15:11,737] [INFO] [logger_setup:114] add completed in 0.02s
+[2026-04-16 13:15:11,848] [INFO] [vector_store:75] [SYNC] Processing batch: size=100
+[2026-04-16 13:15:11,866] [INFO] [logger_setup:114] add completed in 0.02s
+[2026-04-16 13:15:11,893] [INFO] [vector_store:75] [SYNC] Processing batch: size=14
+[2026-04-16 13:15:11,900] [INFO] [logger_setup:114] add completed in 0.01s
+[2026-04-16 13:15:11,904] [INFO] [vector_store:72] [SYNC] No new chunks found
+[2026-04-16 13:15:11,915] [INFO] [vector_store:83] [SYNC COMPLETE] Total synced: 614 | Index Total: 614
+[2026-04-16 13:15:11,918] [INFO] [logger_setup:114] sync_from_db completed in 0.97s
+[2026-04-16 13:15:12,912] [INFO] [logger_setup:114] search completed in 0.01s
+[2026-04-16 13:15:12,975] [INFO] [logger_setup:114] search completed in 0.00s
+[2026-04-16 13:15:12,982] [INFO] [logger_setup:114] retrieve_batch completed in 2.04s
+[2026-04-16 20:31:36,033] [INFO] [logger_setup:114] add completed in 0.03s
+[2026-04-16 20:31:36,226] [INFO] [logger_setup:114] add completed in 0.01s
+[2026-04-16 20:31:36,367] [INFO] [logger_setup:114] add completed in 0.02s
+[2026-04-16 20:31:36,527] [INFO] [logger_setup:114] add completed in 0.01s
+[2026-04-16 20:31:36,686] [INFO] [logger_setup:114] add completed in 0.01s
+[2026-04-16 20:31:36,824] [INFO] [logger_setup:114] add completed in 0.01s
+[2026-04-16 20:31:36,865] [INFO] [logger_setup:114] add completed in 0.01s
+[2026-04-16 20:32:47,150] [INFO] [logger_setup:114] add completed in 0.01s
+[2026-04-16 20:32:47,242] [INFO] [logger_setup:114] add completed in 0.01s
+[2026-04-16 20:32:47,361] [INFO] [logger_setup:114] add completed in 0.01s
+[2026-04-16 20:32:47,473] [INFO] [logger_setup:114] add completed in 0.01s
+[2026-04-16 20:32:47,566] [INFO] [logger_setup:114] add completed in 0.01s
+[2026-04-16 20:32:47,667] [INFO] [logger_setup:114] add completed in 0.01s
+[2026-04-16 20:32:47,709] [INFO] [logger_setup:114] add completed in 0.00s
+[2026-04-16 20:37:55,124] [INFO] [logger_setup:114] add completed in 0.17s
+[2026-04-16 20:37:55,262] [INFO] [logger_setup:114] add completed in 0.01s
+[2026-04-16 20:37:55,383] [INFO] [logger_setup:114] add completed in 0.01s
+[2026-04-16 20:37:55,519] [INFO] [logger_setup:114] add completed in 0.01s
+[2026-04-16 20:37:55,684] [INFO] [logger_setup:114] add completed in 0.01s
+[2026-04-16 20:37:55,794] [INFO] [logger_setup:114] add completed in 0.01s
+[2026-04-16 20:37:55,837] [INFO] [logger_setup:114] add completed in 0.00s
