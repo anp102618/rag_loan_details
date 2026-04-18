@@ -3,3 +3,31 @@
 [2026-04-15 17:50:00,392] [INFO] [reranker:23] Cross-Encoder loaded: cross-encoder/ms-marco-MiniLM-L-6-v2
 [2026-04-15 17:52:57,890] [INFO] [reranker:23] Cross-Encoder loaded: cross-encoder/ms-marco-MiniLM-L-6-v2
 [2026-04-15 18:03:39,503] [INFO] [reranker:23] Cross-Encoder loaded: cross-encoder/ms-marco-MiniLM-L-6-v2
+[2026-04-18 10:09:43,461] [INFO] [2374736212:18] Cross-Encoder loaded: cross-encoder/ms-marco-MiniLM-L-6-v2
+[2026-04-18 10:10:11,325] [INFO] [2374736212:18] Cross-Encoder loaded: cross-encoder/ms-marco-MiniLM-L-6-v2
+[2026-04-18 10:20:42,563] [INFO] [1053714709:20] Ollama Async Reranker initialized with: qllama/bge-reranker-v2-m3
+[2026-04-18 10:20:42,571] [ERROR] [1053714709:79] Ollama Async Reranking failed: 'AsyncClient' object has no attribute 'rerank'
+[2026-04-18 10:20:42,574] [ERROR] [logger_setup:110] rerank_chunks failed: Error in [C:\Users\prasa\AppData\Local\Temp\ipykernel_12280\1053714709.py] at line [39] → Message: 'AsyncClient' object has no attribute 'rerank'
+[2026-04-18 10:20:42,577] [INFO] [logger_setup:114] rerank_chunks completed in 0.01s
+[2026-04-18 10:22:23,529] [INFO] [678761609:20] Ollama Reranker initialized with model: qllama/bge-reranker-v2-m3
+[2026-04-18 10:22:23,531] [ERROR] [678761609:84] Async Reranking failed: 'AsyncClient' object has no attribute 'rerank'
+[2026-04-18 10:22:23,533] [INFO] [logger_setup:114] rerank_chunks completed in 0.00s
+[2026-04-18 10:26:53,270] [INFO] [3776878763:21] LLM Reranker initialized with model: qwen2.5:3b
+[2026-04-18 10:26:53,451] [ERROR] [3776878763:119] Async LLM reranking failed: model 'qwen2.5:3b' not found (status code: 404)
+[2026-04-18 10:26:53,452] [INFO] [logger_setup:114] rerank_chunks completed in 0.18s
+[2026-04-18 10:27:29,179] [INFO] [633268816:21] LLM Reranker initialized with model: qllama/bge-reranker-v2-m3
+[2026-04-18 10:27:35,006] [ERROR] [633268816:80] JSON parsing failed: Expecting value: line 1 column 1 (char 0)
+[2026-04-18 10:27:35,012] [INFO] [logger_setup:114] rerank_chunks completed in 5.83s
+[2026-04-18 13:41:45,547] [INFO] [4078513214:26] Initialized CrossEncoderReranker | model=cross-encoder/ms-marco-MiniLM-L-6-v2 | device=cpu | batch_size=8
+[2026-04-18 13:43:42,343] [INFO] [4078513214:26] Initialized CrossEncoderReranker | model=cross-encoder/ms-marco-MiniLM-L-6-v2 | device=cpu | batch_size=8
+[2026-04-18 13:43:42,346] [INFO] [4078513214:64] Extracted 35 unique texts
+[2026-04-18 13:43:42,818] [INFO] [4078513214:110] Reranked 35 texts → returning top 5
+[2026-04-18 13:43:42,819] [INFO] [logger_setup:128] rerank_chunks completed in 0.47s
+[2026-04-18 13:44:40,303] [INFO] [174332276:26] Initialized CrossEncoderReranker | model=cross-encoder/ms-marco-MiniLM-L-6-v2 | device=cpu | batch_size=8
+[2026-04-18 13:44:40,303] [INFO] [174332276:64] Extracted 35 unique texts
+[2026-04-18 13:44:40,600] [INFO] [174332276:110] Reranked 35 texts → returning top 10
+[2026-04-18 13:44:40,600] [INFO] [logger_setup:128] rerank_chunks completed in 0.29s
+[2026-04-18 13:47:23,200] [INFO] [2114173746:25] Initialized CrossEncoderReranker | model=cross-encoder/ms-marco-MiniLM-L-6-v2 | device=cpu | batch_size=8
+[2026-04-18 13:47:23,200] [INFO] [2114173746:56] Extracted 35 unique texts
+[2026-04-18 13:47:23,722] [INFO] [2114173746:102] Reranked 35 texts → returning top 10
+[2026-04-18 13:47:23,726] [INFO] [logger_setup:128] rerank_chunks completed in 0.52s

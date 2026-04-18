@@ -61,3 +61,25 @@
 [2026-04-16 22:26:09,546] [INFO] [logger_setup:128] apply completed in 0.01s
 [2026-04-16 22:26:09,557] [INFO] [query_expander:98] Expanded into 2 queries.
 [2026-04-16 22:26:09,558] [INFO] [logger_setup:114] expand_query completed in 46.13s
+[2026-04-18 14:07:11,606] [INFO] [query_expander:26] QueryExpander active with qwen2.5:7b (Ollama native).
+[2026-04-18 14:07:11,616] [INFO] [logger_setup:128] apply completed in 0.01s
+[2026-04-18 14:07:52,567] [INFO] [logger_setup:128] apply completed in 0.02s
+[2026-04-18 14:07:52,603] [INFO] [query_expander:98] Expanded into 1 queries.
+[2026-04-18 14:07:52,603] [INFO] [logger_setup:114] expand_query completed in 41.00s
+[2026-04-18 14:09:02,243] [INFO] [query_expander:26] QueryExpander active with qwen2.5:7b (Ollama native).
+[2026-04-18 14:09:02,249] [INFO] [logger_setup:128] apply completed in 0.01s
+[2026-04-18 14:10:38,621] [INFO] [logger_setup:128] apply completed in 0.02s
+[2026-04-18 14:10:38,649] [INFO] [logger_setup:128] apply completed in 0.01s
+[2026-04-18 14:10:38,655] [INFO] [query_expander:98] Expanded into 2 queries.
+[2026-04-18 14:10:38,655] [INFO] [logger_setup:114] expand_query completed in 96.41s
+[2026-04-18 14:34:44,015] [INFO] [query_expander:26] QueryExpander active with qwen2.5:7b (Ollama native).
+[2026-04-18 14:34:44,026] [INFO] [logger_setup:128] apply completed in 0.01s
+[2026-04-18 14:36:02,055] [INFO] [logger_setup:128] apply completed in 0.01s
+[2026-04-18 14:36:02,091] [INFO] [logger_setup:128] apply completed in 0.01s
+[2026-04-18 14:36:02,097] [INFO] [query_expander:98] Expanded into 2 queries.
+[2026-04-18 14:36:02,099] [INFO] [logger_setup:114] expand_query completed in 78.08s
+[2026-04-18 14:36:22,694] [INFO] [query_expander:26] QueryExpander active with qwen2.5:7b (Ollama native).
+[2026-04-18 14:36:22,701] [INFO] [logger_setup:128] apply completed in 0.00s
+[2026-04-18 14:36:52,933] [INFO] [logger_setup:128] apply completed in 0.02s
+[2026-04-18 14:36:52,989] [INFO] [query_expander:98] Expanded into 1 queries.
+[2026-04-18 14:36:52,993] [INFO] [logger_setup:114] expand_query completed in 30.30s
