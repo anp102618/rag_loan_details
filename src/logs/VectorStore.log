@@ -84,3 +84,7 @@
 [2026-04-18 13:43:13,072] [INFO] [logger_setup:114] get_normalized_sections completed in 0.19s
 [2026-04-18 13:43:14,270] [INFO] [2560127379:111] VectorStore built successfully | sections=7
 [2026-04-18 13:43:14,274] [INFO] [logger_setup:114] add completed in 1.38s
+[2026-04-18 15:54:04,857] [INFO] [839139047:54] Extracted 7 normalized sections.
+[2026-04-18 15:54:04,865] [INFO] [logger_setup:114] get_normalized_sections completed in 0.08s
+[2026-04-18 15:54:06,141] [INFO] [2560127379:111] VectorStore built successfully | sections=7
+[2026-04-18 15:54:06,141] [INFO] [logger_setup:114] add completed in 1.36s

@@ -31,3 +31,7 @@
 [2026-04-18 13:47:23,200] [INFO] [2114173746:56] Extracted 35 unique texts
 [2026-04-18 13:47:23,722] [INFO] [2114173746:102] Reranked 35 texts → returning top 10
 [2026-04-18 13:47:23,726] [INFO] [logger_setup:128] rerank_chunks completed in 0.52s
+[2026-04-18 15:56:46,040] [INFO] [2114173746:25] Initialized CrossEncoderReranker | model=cross-encoder/ms-marco-MiniLM-L-6-v2 | device=cpu | batch_size=8
+[2026-04-18 15:56:46,040] [INFO] [2114173746:56] Extracted 40 unique texts
+[2026-04-18 15:56:46,879] [INFO] [2114173746:102] Reranked 40 texts → returning top 10
+[2026-04-18 15:56:46,879] [INFO] [logger_setup:128] rerank_chunks completed in 0.83s
